@@ -2,19 +2,23 @@
   # ("author_affiliations.csv", output from "Author_Categorization.R" script)
   # Written by AIK and KJF, last updated 30 Jan 2018
 
-## Load packages and files ####
+## Load packages and data file ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse) # Install and load libraries
 
-authors <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
+auth <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
 
-## Analysis of XXX ####
+## Analysis of XXX ####  <---- subheading where we'll organize our analyses and 
+  ## calculations! 
+
 # Change if different # categories
 sums = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]), sum(papersShoverPaps[,7]))
 sumsnoenv = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]))
 colors = c("blue", "yellow", "green", "orange", "pink")
 colors = c("red", "green", "purple", "dark blue", "dark green")
 
+
+## Plot outputs ## <-- subheading where we'll organize our plots!
 plot(as.numeric(rownames(yearSaver))[1:nrow(yearSaver) - 1], yearSaver[(1:nrow(yearSaver) - 1), 2], col = colors[1], pch = 20, ylab = "Frequency", xlab = "Year")
 for (i in 2:(ncol(yearSaver) - 1)) {
   points(yearSaver[(1:nrow(yearSaver) - 1), i + 1] ~ as.numeric(rownames(yearSaver))[1:nrow(yearSaver) - 1], col = colors[i], pch = 20)
