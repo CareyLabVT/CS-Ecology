@@ -2,13 +2,12 @@
 # records of authors in scientific journals on their "affiliation," grouping them
 # into pre-defined static categories of academic disciplines
 #
-# Written by Arianna Krinos using keywords from NKW, last edits on 25 December 2017
+# Written by AIK, last edits on 30 Jan 2018 by KJF
 
-library(ggplot2)
-library(reshape2)
-library(plyr)
-library(scales)
+# install.packages('pacman')
+pacman::p_load(tidyverse)
 
+## Define functions used later in the script ####
 #'
 #' Checks whether the current author is in the database; if so generates a new 
 #' row for that affiliation. 
@@ -157,18 +156,14 @@ authorsPerPaper <- function(autTog,repeatOffenders,ltnrow) {
   return(autPerP)
 }
 
-lt = read.csv("./CS-EcologyCollab/Ecology_FullRecords.csv")
-# lt = read.csv("./CS-EcologyCollab/EcologicalInformatics_FullRecords.csv") # choose one or other
+## Read in raw data from Web of Science ####
+raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>%
+  select(-(ACK:EI), -(GP:ID), -(TC:WC))
 
-
-
-
+## Read in categorization keywords ####
+## Placeholder for if we want to have keywords loaded as a csv ##
 
 ##### Categorizes the located affiliations #####
-
-
-# Groups everything Nicole flagged as keywords for the particular discipline.
-
 axKeyword = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
               "FIW", "NOAA", "National Oceanic and", "Consult", "Geol Survey", "Capita", "capital", "capitol",
               "Save Elephants", "USDA", "NASA")
@@ -251,15 +246,8 @@ categories = c("EarthScience", "InterdisciplinaryComputing",
                "Physics", "SocialScience", "Architecture")
 
 categories = c("CS", "MA", "EG", "PS", "SS", "ES")
-CSkeywords = c(ComputerSciencekeywords, InterdisciplinaryComputingkeywords)
-MAkeywords = c(Mathkeywords)
-EGkeywords = c(Engineeringkeywords)
-PSkeywords = c(Chemistrykeywords, Physicskeywords)
-SSkeywords = c(Architecturekeywords, SocialSciencekeywords, Humanitieskeywords)
-ESkeywords = c(EnvironmentalBiologykeywords, LifeSciencekeywords, EarthSciencekeywords)
 
-
-## Create the author database 
+## Create the author database ####
 authorCount = 0
 smallerAuthorCount = 0
 authorsTogether = c(0,0,0,0,0,0,0)
@@ -267,17 +255,18 @@ authorsTogetherLeaders = c(0,0,0,0,0,0,0)
 papersShover = c(0, 0, 0, 0, 0, 0)
 papersShoverPaps = c(rep(0, length(categories) + 2))
 repeatOffenders = c(0,0,0,0,0,0)
-lowYear = min(na.exclude(as.numeric(as.character(lt$YEAR))))
-highYear = max(na.exclude(as.numeric(as.character(lt$YEAR))))
+lowYear = min(na.exclude(as.numeric(as.character(raw$YEAR))))
+highYear = max(na.exclude(as.numeric(as.character(raw$YEAR))))
 yearSaver = matrix(0, ncol = length(categories), nrow = highYear - lowYear + 1)
 colnames(yearSaver) = c(1:length(categories)); row.names(yearSaver) = c(lowYear:highYear)
 started = FALSE; origLen = 1; # allows us to take num rows of original zeroed vector 
 patterning = c("\\[",'\\]') # allows us to split authors with affiliations according to
 # WebOfScience formatting
 
-  if (!is.na(lt$Affiliation1[jj]) && lt$Affiliation1[jj] != "") {
-    humptyDumpty = (c(unlist(strsplit(as.character(lt$Affiliation1[jj]), ""))))
-    paperNum = lt$paper_ID[jj]
+for (jj in 2:length(raw$Affiliation1)) {
+  if (!is.na(raw$Affiliation1[jj]) && raw$Affiliation1[jj] != "") {
+    humptyDumpty = (c(unlist(strsplit(as.character(raw$Affiliation1[jj]), ""))))
+    paperNum = raw$paper_ID[jj]
     affilNames = c(0)
     thisRow = c(rep(0,length(categories)))
     for (g in 1:length(humptyDumpty)) {
@@ -288,13 +277,13 @@ patterning = c("\\[",'\\]') # allows us to split authors with affiliations accor
           d = g1 + 2; authorName = c(humptyDumpty[g1 + 1]) # start reforming author name
           goagain = FALSE; goOnceAgain = FALSE; skip = FALSE;
           
-          if ((length(grep(patterning[1], lt$Affiliation1[jj])) == 0 ||
+          if ((length(grep(patterning[1], raw$Affiliation1[jj])) == 0 ||
                (goOnceAgain))) {
-            authorName = as.character(lt$AUTHOR[jj]); d = d - 2;
-            authors = c(unlist(strsplit(as.character(lt$AUTHOR[jj]), ";")))
+            authorName = as.character(raw$AUTHOR[jj]); d = d - 2;
+            authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
             if (length(authors) > 1 && counterOnceAgain <= length(authors)) {
               authorName = authors[counterOnceAgain]
-              affils = c(unlist(strsplit(as.character(lt$Affiliation1[jj]), ";")))
+              affils = c(unlist(strsplit(as.character(raw$Affiliation1[jj]), ";")))
               if (length(affils) >= counterOnceAgain) {
                 affilName = affils[counterOnceAgain]
               } else {
@@ -350,7 +339,7 @@ patterning = c("\\[",'\\]') # allows us to split authors with affiliations accor
             }
           }
           print(affilName)
-          currYear = as.numeric(as.character(lt$YEAR[jj]))
+          currYear = as.numeric(as.character(raw$YEAR[jj]))
           papersShover = rbind(papersShover, c(authorName, currYear, affilName, affilCat, affilType, paperNum))
           # authorName, currYear, affilName, affilCat, affilType, paperNum
           insert = TRUE
@@ -373,3 +362,7 @@ patterning = c("\\[",'\\]') # allows us to split authors with affiliations accor
     papersShoverPaps = rbind(papersShoverPaps, c(paperNum, currYear, thisRow))
   }
 }
+
+## Placeholder flag to write author database as a dataframe, export as .csv ####
+categories <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
+write_csv(categories, './output_data/author_affiliations.csv')
