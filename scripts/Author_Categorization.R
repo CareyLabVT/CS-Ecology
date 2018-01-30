@@ -1,6 +1,5 @@
-# Given a record file input formatted from the WebofScience net interface, sorts
-# records of authors in scientific journals on their "affiliation," grouping them
-# into pre-defined static categories of academic disciplines
+# Load WebofScience records pulled for Ecology journal articles and
+# assign authors to disciplinary categories based on "Affiliation" columns
 #
 # Written by AIK, last edits on 30 Jan 2018 by KJF
 
