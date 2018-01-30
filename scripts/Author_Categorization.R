@@ -156,14 +156,17 @@ authorsPerPaper <- function(autTog,repeatOffenders,ltnrow) {
   return(autPerP)
 }
 
-## Read in raw data from Web of Science ####
-raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>%
-  select(-(ACK:EI), -(GP:ID), -(TC:WC))
+## Read in raw data from Web of Science #### 
+raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
+  select(-(ACK:EI), -(SC:WC)) # Omit columns without unique identifying data
 
-## Read in categorization keywords ####
-## Placeholder for if we want to have keywords loaded as a csv ##
+## Read in categorization keywords and define categories as factors ####
+keywords <- read_csv('./raw_data/category_keywords.csv', col_types = list(
+  category = col_factor(c("Remove", "Architecture", "Chemistry", "Computer Science", 
+"Earth Science", "Education", "Engineering", "Environmental Biology", "Humanities", 
+"Interdisciplinary Computing", "Life Science", "Math", "Physics", "Social Science"))))
 
-##### Categorizes the located affiliations #####
+##### Categorizes the located affiliations <--- can we reformat use of keywords to use csv entries instead of these lists?#####
 axKeyword = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
               "FIW", "NOAA", "National Oceanic and", "Consult", "Geol Survey", "Capita", "capital", "capitol",
               "Save Elephants", "USDA", "NASA")
@@ -240,6 +243,7 @@ SocialSciencekeywords = c(unique(toupper(c("Culture", "CULTURE", "POLITi", "PSYC
 Educationkeywords = c("Educ") #, "CURRICULUM") # resulted in poor matches
 Architecturekeywords = c("Architecture")
 
+# Categories ####
 categories = c("EarthScience", "InterdisciplinaryComputing",
                "ComputerScience", "Math", "Education", "Engineering",
                "Humanities", "EnvironmentalBiology", "Chemistry", "LifeScience", 
@@ -363,6 +367,6 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
 }
 
-## Placeholder flag to write author database as a dataframe, export as .csv ####
+## Save author database as a dataframe, export as .csv ####
 categories <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
 write_csv(categories, './output_data/author_affiliations.csv')
