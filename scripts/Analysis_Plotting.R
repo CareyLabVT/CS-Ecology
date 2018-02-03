@@ -1,15 +1,15 @@
-# Use categorized author affiliations to estimate and plot collaboration rates
-  # ("author_affiliations.csv", output from "Author_Categorization.R" script)
-  # Written by AIK and KJF, last updated 30 Jan 2018
+#' Use categorized author affiliations to estimate and plot collaboration rates
+#' ("author_affiliations.csv", output from "Author_Categorization.R" script)
+#' Written by AIK and KJF, last updated 3 Feb 2018
 
-## Load packages and data file ####
+### Load packages and data file ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse) # Install and load libraries
 
 auth <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
 
 ## Analysis of XXX ####  <---- subheading where we'll organize our analyses and 
-  ## calculations! 
+## calculations! 
 
 # Change if different # categories
 sums = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]), sum(papersShoverPaps[,7]))
