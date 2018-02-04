@@ -150,7 +150,7 @@ for (jj in 2:length(raw$Affiliation1)) {
             affilName = paste(affilName, collapse = "") # push affiliation back together
           }
           
-          if (length(grep(paste(eval(as.name('axKeyword')), collapse = "|"), affilName,
+          if (length(grep(paste(keywords$ax, collapse = "|"), affilName,
                           fixed = FALSE, ignore.case = TRUE)) > 0) {
             affilType = 0
             affilCat = 0
@@ -199,7 +199,8 @@ for (jj in 2:length(raw$Affiliation1)) {
     papersShoverPaps = rbind(papersShoverPaps, c(paperNum, currYear, thisRow))
   }
 }
-
+colnames(papersShoverPaps) = c("paperID", "Year", categories)
 ## Save author database as a dataframe, export as .csv ####
-categories <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
+categorizations <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
+                                                             # - (AIK: yes, better way to output needed if we want to change it)
 write_csv(categories, './output_data/author_affiliations.csv')
