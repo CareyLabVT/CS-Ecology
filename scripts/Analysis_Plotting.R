@@ -5,7 +5,6 @@
 ### Load packages and data file ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse) # Install and load libraries
-library(ggplot2)
 library(reshape2)
 
 auth <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
@@ -107,7 +106,7 @@ holder = yearSaver[1:nrow(yearSaver) - 1,1:5]
 holder = holder / sumsnoES
 holder = holder[6:nrow(holder),]
 colnames(holder) = c(categories[1:length(categories) - 1])
-holder2 = melt(holder)
+holder2 = melt(holder) # should use "gather" function from tidyverse to minimize number of packages used (so no reshape2 needed)
 
 colorsnew = c(gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL), "red") # grayscale for non-CS, red for CS
 colorsnew[4] = "white" # can change individual colors 
