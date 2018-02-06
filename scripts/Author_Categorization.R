@@ -48,17 +48,18 @@ raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science e
 keywords <- read_csv('./raw_data/category_keywords.csv') %>% # load keywords long format
   group_by(category) %>% mutate(id=1:n()) %>% # group my category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
+keywords$Math[keywords$Math == tolower("math ")] = "math"
 
 ##### Lump categories into broad groups #####
 groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
 matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
-  CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
+  CS = c("Interdisciplinary Computing", "Computer Science", NA, NA),
   MA = c("Math", NA, NA, NA), 
   EG = c("Engineering", NA, NA, NA), 
   PS = c("Chemistry", "Physics", NA, NA),
-  SS = c("Education", "Humanities", "Architecture", "SocialScience"), 
-  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
+  SS = c("Education", "Humanities", "Architecture", "Social Science"), 
+  ES = c("Earth Science", "Environmental Biology", "Life Science", NA)))
 
 ## Create the author database ####
 # Data frame for papers with their respective authors

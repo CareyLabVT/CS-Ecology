@@ -85,7 +85,8 @@ meansold = eval(as.name(paste0('countemup', fromVar, toVar)))[1, 1:oldYears] /
 print(paste0("The mean of papers with authors from ", fromVar, " with ", toVar, " in the first ", oldYears, " years is:"))
 print(mean(meansold))
 
-# Change if different # categories
+
+##### Histogram for paper #####
 sums = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]), sum(papersShoverPaps[,7]))
 sumsnoenv = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]))
 
@@ -108,8 +109,8 @@ holder = holder[6:nrow(holder),]
 colnames(holder) = c(categories[1:length(categories) - 1])
 holder2 = melt(holder)
 
-colorsnew = c(gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL), "red")
-colorsnew[4] = "white"
+colorsnew = c(gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL), "red") # grayscale for non-CS, red for CS
+colorsnew[4] = "white" # can change individual colors 
 colornums = c(0)
 for (t in 1:nrow(holder2)) {
   colornums = c(colornums, colorsnew[holder2$Var2[t] == categories])
