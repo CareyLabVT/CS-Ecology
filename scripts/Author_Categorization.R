@@ -1,7 +1,7 @@
 #' Load WebofScience records pulled for Ecology journal articles and
 #' assign authors to disciplinary categories based on "Affiliation" columns
 #'
-#' Written by AIK, edits on 30 Jan 2018 by KJF, last edits by AIK on 3 Feb 18
+#' Written by AIK, last edits by KJF on 5 Feb 18
 
 # install.packages('pacman')
 pacman::p_load(tidyverse)
@@ -44,51 +44,32 @@ authorsPerPaper <- function(autTog,repeatOffenders,ltnrow) {
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
   select(-(ACK:EI), -(SC:WC)) # Omit columns without unique identifying data
 
-## Read in categorization keywords and define categories as factors ####
-keywords <- read_csv('./raw_data/category_keywords.csv', col_types = list(
-  category = col_factor(c("Remove", "Architecture", "Chemistry", "Computer Science", 
-"Earth Science", "Education", "Engineering", "Environmental Biology", "Humanities", 
-"Interdisciplinary Computing", "Life Science", "Math", "Physics", "Social Science"))))
+## Read in categorization keywords and reshape from long to wide ####
+keywords <- read_csv('./raw_data/category_keywords.csv') %>% # load keywords long format
+  group_by(category) %>% mutate(id=1:n()) %>% # group my category
+  spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
 
-##### Read in keyword categorizations #####
-keywords <- read.csv('./raw_data/keyword_categories.csv')
+##### Lump categories into broad groups #####
+groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
-# Categories ####
-categories_original = c("EarthScience", "InterdisciplinaryComputing",
-               "ComputerScience", "Math", "Education", "Engineering",
-               "Humanities", "EnvironmentalBiology", "Chemistry", "LifeScience", 
-               "Physics", "SocialScience", "Architecture") # all defined subcategories, based on keyword
-
-categories = c("CS", "MA", "EG", "PS", "SS", "ES") # Redefine categories as compact subheadings
-matchUp = matrix(NA, nrow = 4, ncol = 6) # group original categories to compact subheadings
-colnames(matchUp) = categories
-matchUp = data.frame(matchUp)
-matchUp$CS[1] = "InterdisciplinaryComputing"
-matchUp$CS[2] = "ComputerScience" 
-matchUp$MA[1] = "Math"
-matchUp$EG[1] = "Engineering"
-matchUp$PS[1] = "Chemistry"
-matchUp$PS[2] = "Physics"
-matchUp$SS[1] = "Education" # Renamed to human sciences 
-matchUp$SS[2] = "Humanities"
-matchUp$SS[3] = "Architecture"
-matchUp$SS[4] = "SocialScience"
-matchUp$ES[1] = "EarthScience"
-matchUp$ES[2] = "EnvironmentalBiology"
-matchUp$ES[3] = "LifeScience"
+matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
+  CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
+  MA = c("Math", NA, NA, NA), 
+  EG = c("Engineering", NA, NA, NA), 
+  PS = c("Chemistry", "Physics", NA, NA),
+  SS = c("Education", "Humanities", "Architecture", "SocialScience"), 
+  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
 
 ## Create the author database ####
-
 # Data frame for papers with their respective authors
 papersShover = c(0, 0, 0, 0, 0, 0)
-papersShoverPaps = c(rep(0, length(categories) + 2))
+papersShoverPaps = c(rep(0, length(groups) + 2))
 
 # Data frame for authors found by category in each year
 lowYear = min(na.exclude(as.numeric(as.character(raw$YEAR))))
 highYear = max(na.exclude(as.numeric(as.character(raw$YEAR))))
-yearSaver = matrix(0, ncol = length(categories), nrow = highYear - lowYear + 1)
-colnames(yearSaver) = c(1:length(categories)); row.names(yearSaver) = c(lowYear:highYear)
-
+yearSaver = matrix(0, ncol = length(groups), nrow = highYear - lowYear + 1)
+colnames(yearSaver) = c(1:length(groups)); row.names(yearSaver) = c(lowYear:highYear)
 
 patterning = c("\\[",'\\]') # allows us to split authors with affiliations according to
 # WebOfScience formatting
@@ -98,7 +79,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     humptyDumpty = (c(unlist(strsplit(as.character(raw$Affiliation1[jj]), ""))))
     paperNum = raw$paper_ID[jj]
     affilNames = c(0)
-    thisRow = c(rep(0,length(categories)))
+    thisRow = c(rep(0,length(groups)))
     for (g in 1:length(humptyDumpty)) {
       if (humptyDumpty[g] == '[' || g == 1) {
         ## This should be its own function - of course before any sharing if done
@@ -150,12 +131,12 @@ for (jj in 2:length(raw$Affiliation1)) {
             affilName = paste(affilName, collapse = "") # push affiliation back together
           }
           
-          if (length(grep(paste(keywords$ax, collapse = "|"), affilName,
+          if (length(grep(paste(keywords$Remove, collapse = "|"), affilName,
                           fixed = FALSE, ignore.case = TRUE)) > 0) {
             affilType = 0
             affilCat = 0
           } else {
-            for (z in 1:length(categories)) { 
+            for (z in 1:length(groups)) { 
               innerCategories = c(as.character(na.exclude(matchUp[,z]))) # grab subcategories
               colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # grab columns of keyword matrix to analyze
               words = ""
@@ -166,7 +147,7 @@ for (jj in 2:length(raw$Affiliation1)) {
               if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affilName
                               , fixed = FALSE, ignore.case = TRUE)) > 0) {
                 affilType = z
-                affilCat = categories[z] # select the appropriate affiliation
+                affilCat = groups[z] # select the appropriate affiliation
                 break
               }
               else {
@@ -199,8 +180,8 @@ for (jj in 2:length(raw$Affiliation1)) {
     papersShoverPaps = rbind(papersShoverPaps, c(paperNum, currYear, thisRow))
   }
 }
-colnames(papersShoverPaps) = c("paperID", "Year", categories)
+colnames(papersShoverPaps) = c("paperID", "Year", groups)
 ## Save author database as a dataframe, export as .csv ####
 categorizations <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
                                                              # - (AIK: yes, better way to output needed if we want to change it)
-write_csv(categories, './output_data/author_affiliations.csv')
+write_csv(categorizations, './output_data/author_affiliations.csv')
