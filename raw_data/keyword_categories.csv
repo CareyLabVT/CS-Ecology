@@ -1,8 +1,8 @@
-ax,EarthScience,InterdisciplinaryComputing,ComputerScience,Math,Education,Engineering,Humanities,EnvironmentalBiology,Chemistry,LifeScience,Physics,SocialScience,Architecture
-FIW,geo ,informat,comp sci,math ,educ,engn ,english,bio,chem,communicable,phys,culture,architecture
+Remove,EarthScience,InterdisciplinaryComputing,ComputerScience,Math,Education,Engineering,Humanities,EnvironmentalBiology,Chemistry,LifeScience,Physics,SocialScience,Architecture
+FIW,geo ,informat,comp sci,math ,educ,engn ,english,bio,chem,communicable,phys ,culture,architecture
 NOAA,geol,bioinform,informat & enabling technol,mathemat,NA,engn,latin,bot,atomic,pharm,langmuir,politi,NA
 National Oceanic and,earth,data sci,computat sci,stat ,NA,control sci,liberal arts,evol,balcones,infect,gleb wataghin,psychiat,NA
-Consult,meteorol,inform tech,madalgo,stat,NA,engr,bunting inst,univ politecn valencia,NA,hlth,reg bariloche,govt,NA
+Consult,meteorol,inform tech,madalgo,stat ,NA,engr,bunting inst,univ politecn valencia,NA,hlth,reg bariloche,govt,NA
 Geol Survey,spatial,info tech,informat,statistics,NA,NA,literature,eco,NA,food,inst balseiro,anthropol,NA
 Capita,energy,ecoinfo,informatics,santa fe inst,NA,NA,archeol,ent,NA,neurobiol,ctr atom bariloche,social,NA
 capital,climate,computat land,complejidad,nevanlinna inst,NA,NA,arqueol,orn,NA,bacteriol,nucl,law ,NA
