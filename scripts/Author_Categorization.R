@@ -45,22 +45,28 @@ raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science e
   select(-(ACK:EI), -(SC:WC)) # Omit columns without unique identifying data
 
 ## Read in categorization keywords and reshape from long to wide ####
-keywords <- read_csv('./raw_data/category_keywords.csv') %>% # load keywords long format
+keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% #, strip.white = FALSE) %>% # load keywords long format
   group_by(category) %>% mutate(id=1:n()) %>% # group my category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
-
+for (i in 1:ncol(keywords)) {
+  counter = 1
+  while (!is.na(keywords[counter,i])) {
+   keywords[counter,i] = gsub("\\[comma\\]", ",",as.character(keywords[counter,i]))
+   counter = counter +1 
+  }
+}
 # Kait : to use this formatting I'll have to change my scheme somehow
 
 ##### Lump categories into broad groups #####
 groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
 matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
-  CS = c("Interdisciplinary Computing", "Computer Science", NA, NA),
+  CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
   MA = c("Math", NA, NA, NA), 
   EG = c("Engineering", NA, NA, NA), 
   PS = c("Chemistry", "Physics", NA, NA),
-  SS = c("Education", "Humanities", "Architecture", "Social Science"), 
-  ES = c("Earth Science", "Environmental Biology", "Life Science", NA)))
+  SS = c("Education", "Humanities", "Architecture", "SocialScience"), 
+  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
 
 ## Create the author database ####
 # Data frame for papers with their respective authors
@@ -81,32 +87,34 @@ for (jj in 2:length(raw$Affiliation1)) {
   thisRow = c(rep(0,length(groups)))
   paperNum = raw$paper_ID[jj]
   currYear = as.numeric(as.character(raw$YEAR[jj]))
-  affiliations = unlist(strsplit(as.character(tester), "\\[.*?\\]"))
+  affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]"))
   affiliations = affiliations[-(affiliations == "")]
-  for (i in 1:length(affiliations)) {
-    authors = gsub("\\].*?;", "", tester) # remove the affiliations from the Affiliation1 list
-    authorsBreakdown = unlist(strsplit(authors, "\\[")) # split author by affiliation
-    authorsBreakdown = authorsBreakdown[-(authorsBreakdown == "")] # remove empty entries
-    authorsBreakdown[length(authorsBreakdown)] = # remove final untrimmed affiliation
-      (unlist(strsplit(authorsBreakdown[length(authorsBreakdown)], "\\]")))[1]
-    numAuthors = length(unlist(strsplit(authorsBreakdown[i], ";"))) # split author within present affil
-    
-    removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), affiliations[i],
-                               fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed
-    if (!removeAffil) {
-      for (z in 1:length(groups)) {
-        innerCategories = c(as.character(na.exclude(matchUp[,z]))) # grab subcategories
-        colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # grab columns of keyword matrix to analyze
-        words = ""
-        for (j in 1:length(colnums)) {
-          words = c(words, as.character(na.exclude(keywords[,colnums[j]]))) # combine all relevant
-          # keywords 
-        }
-        if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affilName
-                        , fixed = FALSE, ignore.case = TRUE)) > 0) { # check whether affilName matches conglomerate
-                                                                     # keyword group
-          thisRow[z] = thisRow[z] + 1
-          break
+  if (length(affiliations) > 0) {
+    for (i in 1:length(affiliations)) {
+      authors = gsub("\\].*?;", "", affiliations) # remove the affiliations from the Affiliation1 list
+      authorsBreakdown = unlist(strsplit(authors, "\\[")) # split author by affiliation
+      authorsBreakdown = authorsBreakdown[-(authorsBreakdown == "")] # remove empty entries
+      authorsBreakdown[length(authorsBreakdown)] = # remove final untrimmed affiliation
+        (unlist(strsplit(authorsBreakdown[length(authorsBreakdown)], "\\]")))[1]
+      numAuthors = length(unlist(strsplit(authorsBreakdown[i], ";"))) # split author within present affil
+      
+      removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), affiliations[i],
+                                 fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed
+      if (!removeAffil) {
+        for (z in 1:length(groups)) {
+          innerCategories = c(as.character(na.exclude(matchUp[,z]))) # grab subcategories
+          colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # grab columns of keyword matrix to analyze
+          words = ""
+          for (j in 1:length(colnums)) {
+            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant
+            # keywords 
+          }
+          if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affiliations[i]
+                          , fixed = FALSE, ignore.case = TRUE)) > 0) { # check whether affilName matches conglomerate
+            # keyword group
+            thisRow[z] = thisRow[z] + 1
+            break
+          }
         }
       }
     }
