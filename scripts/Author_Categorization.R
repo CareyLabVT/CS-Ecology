@@ -45,25 +45,22 @@ raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science e
   select(-(ACK:EI), -(SC:WC)) # Omit columns without unique identifying data
 
 ## Read in categorization keywords and reshape from long to wide ####
-keywords <- read.csv('./raw_data/keyword_categories.csv') 
-  # Kait : to use this formatting I'll have to change my scheme somehow
-  #%>% # load keywords long format
-  #group_by(category) %>% mutate(id=1:n()) %>% # group my category
-  #spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
-#keywords$Math[keywords$Math == tolower("math")] = "math "
-#keywords$Physics[keywords$Physics == tolower("phys")] = "phys "
-#keywords$Math[keywords$Math == tolower("stat")] = "stat "
+keywords <- read_csv('./raw_data/category_keywords.csv') %>% # load keywords long format
+  group_by(category) %>% mutate(id=1:n()) %>% # group my category
+  spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
+
+# Kait : to use this formatting I'll have to change my scheme somehow
 
 ##### Lump categories into broad groups #####
 groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
 matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
-  CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
+  CS = c("Interdisciplinary Computing", "Computer Science", NA, NA),
   MA = c("Math", NA, NA, NA), 
   EG = c("Engineering", NA, NA, NA), 
   PS = c("Chemistry", "Physics", NA, NA),
-  SS = c("Education", "Humanities", "Architecture", "SocialScience"), 
-  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
+  SS = c("Education", "Humanities", "Architecture", "Social Science"), 
+  ES = c("Earth Science", "Environmental Biology", "Life Science", NA)))
 
 ## Create the author database ####
 # Data frame for papers with their respective authors
@@ -79,114 +76,46 @@ colnames(yearSaver) = c(1:length(groups)); row.names(yearSaver) = c(lowYear:high
 patterning = c("\\[",'\\]') # allows us to split authors with affiliations according to
 # WebOfScience formatting
 
+
 for (jj in 2:length(raw$Affiliation1)) {
-  if (!is.na(raw$Affiliation1[jj]) && raw$Affiliation1[jj] != "") {
-    humptyDumpty = (c(unlist(strsplit(as.character(raw$Affiliation1[jj]), ""))))
-    paperNum = raw$paper_ID[jj]
-    affilNames = c(0)
-    thisRow = c(rep(0,length(groups)))
-    for (g in 1:length(humptyDumpty)) {
-      if (humptyDumpty[g] == '[' || g == 1) {
-        ## This should be its own function - of course before any sharing if done
-        goagain = TRUE; g1 = g; goOnceAgain = FALSE; counterOnceAgain = 1
-        while (goagain || goOnceAgain) {
-          d = g1 + 2; authorName = c(humptyDumpty[g1 + 1]) # start reforming author name
-          goagain = FALSE; goOnceAgain = FALSE; skip = FALSE;
-          
-          if ((length(grep(patterning[1], raw$Affiliation1[jj])) == 0 ||
-               (goOnceAgain))) {
-            authorName = as.character(raw$AUTHOR[jj]); d = d - 2;
-            authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
-            if (length(authors) > 1 && counterOnceAgain <= length(authors)) {
-              authorName = authors[counterOnceAgain]
-              affils = c(unlist(strsplit(as.character(raw$Affiliation1[jj]), ";")))
-              if (length(affils) >= counterOnceAgain) {
-                affilName = affils[counterOnceAgain]
-              } else {
-                affilName = affils[length(affils)]
-              }
-              if (counterOnceAgain + 1 <= length(authors)) {
-                counterOnceAgain = counterOnceAgain + 1
-                goOnceAgain = TRUE
-              }
-              skip = TRUE
-            }
-          } else {
-            while (humptyDumpty[d] != ']') {
-              if (humptyDumpty[d] == ';') {
-                goagain = TRUE
-                starting = d + 1
-              } else if (!goagain) {
-                authorName = c(authorName, humptyDumpty[d]); 
-              }
-              d = d + 1; 
-            }
-            authorName = paste(authorName, collapse = "") # push author name back together
-          }
-          if (!skip) {
-            if (humptyDumpty[d] != '[') {
-              affilName = c(humptyDumpty[d]);
-            } else {
-              affilName = c(humptyDumpty[d + 1]); d = d + 1
-            }
-            while (!is.na(humptyDumpty[d]) && humptyDumpty[d] != '[' && d != length(humptyDumpty)
-                   && humptyDumpty[d] != ';') {
-              affilName = c(affilName, humptyDumpty[d]); d = d + 1;
-            }
-            affilName = paste(affilName, collapse = "") # push affiliation back together
-          }
-          
-          if (length(grep(paste(keywords$Remove, collapse = "|"), affilName,
-                          fixed = FALSE, ignore.case = TRUE)) > 0) {
-            affilType = 0
-            affilCat = 0
-          } else {
-            for (z in 1:length(groups)) { 
-              innerCategories = c(as.character(na.exclude(matchUp[,z]))) # grab subcategories
-              colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # grab columns of keyword matrix to analyze
-              words = ""
-              for (j in 1:length(colnums)) {
-                words = c(words, as.character(na.exclude(keywords[,colnums[j]]))) # combine all relevant
-                                                                                         # keywords 
-              }
-              if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affilName
-                              , fixed = FALSE, ignore.case = TRUE)) > 0) {
-                affilType = z
-                affilCat = groups[z] # select the appropriate affiliation
-                break
-              }
-              else {
-                affilType = 0
-                affilCat = 0
-              }
-            }
-          }
-          print(affilName)
-          currYear = as.numeric(as.character(raw$YEAR[jj]))
-          papersShover = rbind(papersShover, c(authorName, currYear, affilName, affilCat, affilType, paperNum))
-          # authorName, currYear, affilName, affilCat, affilType, paperNum
-          insert = TRUE
-          for (j in 1:length(affilNames)) {
-            if (affilNames[j] == affilName) {
-              insert = FALSE
-            }
-          }
-          if (insert) {
-            thisRow[affilType] = thisRow[affilType] + 1
-            yearSaver[currYear - lowYear + 1, affilType] = yearSaver[currYear - lowYear + 1, affilType] + 1
-          }
-          affilNames = c(affilNames, affilName)
-          if (goagain) {
-            g1 = starting
-          }
+  thisRow = c(rep(0,length(groups)))
+  paperNum = raw$paper_ID[jj]
+  currYear = as.numeric(as.character(raw$YEAR[jj]))
+  affiliations = unlist(strsplit(as.character(tester), "\\[.*?\\]"))
+  affiliations = affiliations[-(affiliations == "")]
+  for (i in 1:length(affiliations)) {
+    authors = gsub("\\].*?;", "", tester) # remove the affiliations from the Affiliation1 list
+    authorsBreakdown = unlist(strsplit(authors, "\\[")) # split author by affiliation
+    authorsBreakdown = authorsBreakdown[-(authorsBreakdown == "")] # remove empty entries
+    authorsBreakdown[length(authorsBreakdown)] = # remove final untrimmed affiliation
+      (unlist(strsplit(authorsBreakdown[length(authorsBreakdown)], "\\]")))[1]
+    numAuthors = length(unlist(strsplit(authorsBreakdown[i], ";"))) # split author within present affil
+    
+    removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), affiliations[i],
+                               fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed
+    if (!removeAffil) {
+      for (z in 1:length(groups)) {
+        innerCategories = c(as.character(na.exclude(matchUp[,z]))) # grab subcategories
+        colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # grab columns of keyword matrix to analyze
+        words = ""
+        for (j in 1:length(colnums)) {
+          words = c(words, as.character(na.exclude(keywords[,colnums[j]]))) # combine all relevant
+          # keywords 
+        }
+        if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affilName
+                        , fixed = FALSE, ignore.case = TRUE)) > 0) { # check whether affilName matches conglomerate
+                                                                     # keyword group
+          thisRow[z] = thisRow[z] + 1
+          break
         }
       }
     }
-    papersShoverPaps = rbind(papersShoverPaps, c(paperNum, currYear, thisRow))
   }
+  papersShoverPaps = rbind(papersShoverPaps, c(paperNum, currYear, thisRow))
 }
+
 colnames(papersShoverPaps) = c("paperID", "Year", groups)
+
 ## Save author database as a dataframe, export as .csv ####
-categorizations <- as.data.frame(as.table(papersShoverPaps)) #### <--- I don't think this output is right yet
-                                                             # - (AIK: yes, better way to output needed if we want to change it)
-write_csv(categorizations, './output_data/author_affiliations.csv')
+categorizations <- as.data.frame(papersShoverPaps)  # Transform affiliation matrix to dataframe
+write_csv(categorizations, './output_data/author_affiliations.csv') # Export author affiliations as .csv

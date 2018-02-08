@@ -15,20 +15,22 @@ keywords_messing = read.csv("./raw_data/keyword_categories.csv")
 #     index = index + 1
 #   }
 # }
-
-categories = c("EarthScience", "InterdisciplinaryComputing",
+categories = c("ax", "EarthScience", "InterdisciplinaryComputing",
                "ComputerScience", "Math", "Education", "Engineering",
                "Humanities", "EnvironmentalBiology", "Chemistry", "LifeScience", 
                "Physics", "SocialScience", "Architecture")
+
+keywords_messing = c(rep(NA, length(categories)))
+keywords_messing = rbind(keywords_messing, keywords_messing)
 for (j in 1:length(categories)) {
-  index = 1
+  index = 3
   currCat = categories[j]
-  colCtr = 1 + j
+  colCtr = j
   for (i in 1:length(tolower(eval(as.name(paste0(currCat, "keywords")))))) {
-    if (colCtr > ncol(keywords_messing)) {
-      keywords_messing = cbind(keywords_messing, (c(rep(NA, nrow(keywords_messing)))))
-      colnames(keywords_messing)[ncol(keywords_messing)] = currCat
-    }
+    #if (colCtr > length(keywords_messing) || colCtr > ncol(keywords_messing)) {
+    #  keywords_messing = cbind(keywords_messing, (c(rep(NA, nrow(keywords_messing)))))
+    #  colnames(keywords_messing)[ncol(keywords_messing)] = currCat
+    #}
     if (all(is.na(keywords_messing[,colCtr])) ||
         (!any(na.exclude(keywords_messing[,colCtr]) == tolower(eval(as.name(paste0(currCat, "keywords")))[i])) &&
         !any(grepl(paste0(na.exclude(keywords_messing[,colCtr]), collapse = "|"), tolower(eval(as.name(paste0(currCat, "keywords")))[i])))
@@ -43,8 +45,13 @@ for (j in 1:length(categories)) {
   }
 }
 
+keywords_messing = keywords_messing[3:nrow(keywords_messing),]
+colnames(keywords_messing) = categories
+colnames(keywords_messing)[1] = "Remove"
+keywords_messing = data.frame(keywords_messing)
+
 write.csv(keywords_messing, "./raw_data/keyword_categories.csv", row.names = FALSE, quote = FALSE)
-axKeyword = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
+axkeywords = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
               "FIW", "NOAA", "National Oceanic and", "Consult", "Geol Survey", "Capita", "capital", "capitol",
               "Save Elephants", "USDA", "NASA")
 EarthSciencekeywords = c("GEO ", "Geol", "Earth", "GEOL", "EARTH", "Meteorol", "Spatial", "SPATIAL",
