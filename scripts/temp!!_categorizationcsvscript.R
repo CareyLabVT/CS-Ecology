@@ -33,8 +33,8 @@ for (j in 1:length(categories)) {
     #}
     if (all(is.na(keywords_messing[,colCtr])) ||
         (!any(na.exclude(keywords_messing[,colCtr]) == tolower(eval(as.name(paste0(currCat, "keywords")))[i])) &&
-        !any(grepl(paste0(na.exclude(keywords_messing[,colCtr]), collapse = "|"), tolower(eval(as.name(paste0(currCat, "keywords")))[i])))
-        && !any(grepl(tolower(eval(as.name(paste0(currCat, "keywords")))[i]), (na.exclude(keywords_messing[,colCtr])))))) {
+        !any(grepl(paste0(na.exclude(keywords_messing[,colCtr]), collapse = "|"), tolower(eval(as.name(paste0(currCat, "keywords")))[i]))))) {
+        #&& !any(grepl(tolower(eval(as.name(paste0(currCat, "keywords")))[i]), (na.exclude(keywords_messing[,colCtr])))))) {
       if (index > nrow(keywords_messing)) {
         keywords_messing = rbind(keywords_messing, c(rep(NA, ncol(keywords_messing))))
       }
@@ -50,7 +50,22 @@ colnames(keywords_messing) = categories
 colnames(keywords_messing)[1] = "Remove"
 keywords_messing = data.frame(keywords_messing)
 
-write.csv(keywords_messing, "./raw_data/keyword_categories.csv", row.names = FALSE, quote = FALSE)
+keywords_messing_2 = c(0,0)
+for (g in 1:(nrow(keywords_messing))) {
+  for (f in 1:ncol(keywords_messing)) {
+    if (!is.na(as.character(keywords_messing[g,f]))) {
+      keywords_messing_2 = rbind(keywords_messing_2, c(colnames(keywords_messing)[f], as.character(keywords_messing[g,f])))
+    }
+  }
+}
+keywords_messing_2 = keywords_messing_2[2:nrow(keywords_messing_2),]
+colnames(keywords_messing_2) = c("category", "keyword")
+keywords_messing_2[,2] = gsub(",", "[comma]", keywords_messing_2[,2])
+write.csv(keywords_messing_2, "./raw_data/keyword_categories.csv", row.names = FALSE, quote = FALSE)
+
+
+keywords_messing_3 = as.data.frame(keywords_messing_2)
+#write.table(keywords_messing_2, file = "./raw_data/keyword_categories2.csv", sep = "\t", row.names = FALSE, col.names = c("category", "keyword"))
 axkeywords = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
               "FIW", "NOAA", "National Oceanic and", "Consult", "Geol Survey", "Capita", "capital", "capitol",
               "Save Elephants", "USDA", "NASA")
