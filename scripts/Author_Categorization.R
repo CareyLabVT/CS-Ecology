@@ -88,10 +88,16 @@ for (jj in 2:length(raw$Affiliation1)) {
   paperNum = raw$paper_ID[jj]
   currYear = as.numeric(as.character(raw$YEAR[jj]))
   affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]"))
-  affiliations = affiliations[-(affiliations == "")]
+  if (length(affiliations) == 1) {
+    authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
+    if (length(authors) > 1) {
+      affiliations = c(unlist(strsplit(as.character(affiliations), ";")))
+    }
+  }
+  affiliations = affiliations[(affiliations != "")] # remove empty entries
   if (length(affiliations) > 0) {
     for (i in 1:length(affiliations)) {
-      authors = gsub("\\].*?;", "", affiliations) # remove the affiliations from the Affiliation1 list
+      authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # remove the affiliations from the Affiliation1 list
       authorsBreakdown = unlist(strsplit(authors, "\\[")) # split author by affiliation
       authorsBreakdown = authorsBreakdown[-(authorsBreakdown == "")] # remove empty entries
       authorsBreakdown[length(authorsBreakdown)] = # remove final untrimmed affiliation
@@ -112,7 +118,8 @@ for (jj in 2:length(raw$Affiliation1)) {
           if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affiliations[i]
                           , fixed = FALSE, ignore.case = TRUE)) > 0) { # check whether affilName matches conglomerate
             # keyword group
-            thisRow[z] = thisRow[z] + 1
+            thisRow[z] = thisRow[z] + 1 # * numAuthors - if you want to count for multiple authors
+            print(paste0("Affiliation: ", affiliations[i], " was assigned to |", groups[z], "|"))
             break
           }
         }
