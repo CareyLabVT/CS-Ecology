@@ -14,6 +14,7 @@
 
 #### Load necessary packages #### 
 pacman::p_load(tidyverse)
+library(stringr)
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
