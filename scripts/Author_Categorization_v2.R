@@ -64,7 +64,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   #}
-  if (length(authors) == 0) {
+  if (length(authors) == 0 && length(affiliations)) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
     if (length(affiliations) == 1) {#(length(authors) > length(affiliations)) {
       for (j in 1:length(authors)) {
@@ -82,25 +82,30 @@ for (jj in 2:length(raw$Affiliation1)) {
           authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[length(affiliations)]))
         }
       }
+      
+      # authorsAndAffils = authorsAndAffils[!(duplicated(authorsAndAffils[,1])),] # only use first affiliation on paper 
+      # reduces # of computer science/interdisciplinary affils 
     }
-  } else {
+  } else if (length(affiliations) > 0 ) {
     authors = unlist(strsplit(authors, "\\[")) # split author by affiliation
     authors = authors[-(authors == "")] # remove empty entries
     authors[length(authors)] = # remove final untrimmed affiliation
       (unlist(strsplit(authors[length(authors)], "\\]")))[1]
-    for (j in 1:length(authors)) {
-      strippedAuthors = unlist(strsplit(authors[j], ";"))
-      for (t in 1:length(strippedAuthors)) {
-        authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliations[j])))
+    if (length(authors) > 0) {
+      for (j in 1:length(authors)) {
+        strippedAuthors = unlist(strsplit(authors[j], ";"))
+        for (t in 1:length(strippedAuthors)) {
+          if (length(affiliations) != 0) {
+            authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliations[j])))
+          }
+        }
       }
     }
-    authorsAndAffils = authorsAndAffils[!(duplicated(authorsAndAffils[,1])),] # only use first affiliation on paper 
-      # reduces # of computer science/interdisciplinary affils 
   }
   authorsAndAffils = data.frame(authorsAndAffils)
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),]
-  colnames(authorsAndAffils) = c("Author", "Affiliation")
-  if (nrow(authorsAndAffils) > 0) {
+  if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) {
+    colnames(authorsAndAffils) = c("Author", "Affiliation")
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
       thisRow = c(rep(0, 7))
@@ -167,4 +172,6 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
 }
 affiliationDataFrame = affiliationDataFrame[2:nrow(affiliationDataFrame),]
-colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "Affiliation")
+colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
+
+write.csv(affiliationDataFrame,"./output_data/firstcut_affiliationdataframe_17Feb18.csv", row.names = FALSE)
