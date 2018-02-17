@@ -10,7 +10,7 @@ Humanities,english
 EnvironmentalBiology,bio
 Chemistry,chem
 LifeScience,communicable
-Physics,phys
+Physics,phys 
 SocialScience,culture
 Architecture,architecture
 Remove,usgs
@@ -93,7 +93,7 @@ InterdisciplinaryComputing,computat ecol
 ComputerScience,computat
 EnvironmentalBiology,plant
 LifeScience,epidemiol
-Physics,theor
+Physics,inst adv
 SocialScience,pondichery
 Remove,geol survey
 EarthScience,polar
@@ -101,7 +101,6 @@ InterdisciplinaryComputing,theory & modeling
 ComputerScience,complejidad
 EnvironmentalBiology,life
 LifeScience,serv alta tecno
-Physics,inst adv
 SocialScience,saami studies
 Remove,capita
 EarthScience,space

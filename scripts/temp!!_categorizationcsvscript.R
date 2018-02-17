@@ -46,6 +46,7 @@ for (j in 1:length(categories)) {
 }
 
 keywords_messing = keywords_messing[3:nrow(keywords_messing),]
+
 colnames(keywords_messing) = categories
 colnames(keywords_messing)[1] = "Remove"
 keywords_messing = data.frame(keywords_messing)
@@ -64,6 +65,9 @@ keywords_messing_2[,2] = gsub(",", "[comma]", keywords_messing_2[,2])
 write.csv(keywords_messing_2, "./raw_data/keyword_categories.csv", row.names = FALSE, quote = FALSE)
 
 
+# NOTES - 
+# Removed "theor" from env bio - prevents CS affiliations for modeling centers 
+# changed "phys" to "phys " to avoid getting so many physiol - still going to get things like phys anthropol 
 keywords_messing_3 = as.data.frame(keywords_messing_2)
 #write.table(keywords_messing_2, file = "./raw_data/keyword_categories2.csv", sep = "\t", row.names = FALSE, col.names = c("category", "keyword"))
 axkeywords = c("British Antarctic Survey", "USGS", "Geological Survey", "Kennedy Space", "Fish and Wildlife",
@@ -88,8 +92,8 @@ Mathkeywords = c("math ", "Math ", "MATH ", "Mathemat",
                  "Mathematics", "Mathemati", "Mathematics", 
                  "Stat ", "stat,", "STATISTICS",  "Santa Fe Inst", 
                  "Nevanlinna Inst",  "DEPT MATEMAT")
-Physicskeywords = c("Phys", "PHYS", "Langmuir", "LANGMUIR",  "Gleb Wataghin", "Reg Bariloche",
-                    "Inst Balseiro", "Ctr Atom Bariloche",  "Nucl", "NUCL", "isotrace", "theor", "Inst adv") # removed "Planck Inst"
+Physicskeywords = c("Phys ", "PHYS ", "Langmuir", "LANGMUIR",  "Gleb Wataghin", "Reg Bariloche",
+                    "Inst Balseiro", "Ctr Atom Bariloche",  "Nucl", "NUCL", "isotrace", "Inst adv") # removed "Planck Inst"
 Engineeringkeywords = c("Engn ", "ENGN,", "Control Sci", "Engr", "Coll Engn & Architecture")
 LifeSciencekeywords = c(unique(toupper(c("Communicable", "Pharm", "INFECT", "Infect", "Hlth", "HLTH", "Food", "FOOD",
                                          "NEUROBIOL", "Neurobiol", "Bacteriol",  "MICROBIOL", "BACTERIOL",  "Microbiol",
