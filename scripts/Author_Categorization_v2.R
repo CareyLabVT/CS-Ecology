@@ -57,21 +57,22 @@ for (jj in 2:length(raw$Affiliation1)) {
   currYear = as.numeric(as.character(raw$YEAR[jj]))
   authorsAndAffils = c(0, 0)
   affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]")) 
-  # create a character string with a separate affiliation for each author
-  authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # remove the affiliations from the Affiliation1 list
+  # create a character string the length of the total number of authors on each paper,
+  # with each value in the string containing the complete affiliation for each author
+  authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
   if (length(affiliations) == 1) {
     #if (length(authors) > 1) {
-    affiliations = c(unlist(strsplit(as.character(affiliations), ";")))
+    affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   #}
   if (length(authors) == 0 && length(affiliations)) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
-    if (length(affiliations) == 1) {#(length(authors) > length(affiliations)) {
+    if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation  #(length(authors) > length(affiliations)) {
       for (j in 1:length(authors)) {
         authorsAndAffils = cbind(authorsAndAffils, c(authors[j], affiliations[1]))
       }
-    } else if (length(authors) == length(affiliations)) {
+    } else if (length(authors) == length(affiliations)) { 
       for (j in 1:length(authors)) {
         authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[j]))
       }
@@ -87,7 +88,7 @@ for (jj in 2:length(raw$Affiliation1)) {
       # authorsAndAffils = authorsAndAffils[!(duplicated(authorsAndAffils[,1])),] # only use first affiliation on paper 
       # reduces # of computer science/interdisciplinary affils 
     }
-  } else if (length(affiliations) > 0 ) {
+  } else if (length(affiliations) > 0) {
     authors = unlist(strsplit(authors, "\\[")) # split author by affiliation
     authors = authors[-(authors == "")] # remove empty entries
     authors[length(authors)] = # remove final untrimmed affiliation
