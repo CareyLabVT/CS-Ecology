@@ -89,11 +89,7 @@ for (jj in 2:length(raw$Affiliation1)) {
       # reduces # of computer science/interdisciplinary affils 
     }
   } else if (length(affiliations) > 0) {
-<<<<<<< HEAD
     authors = unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
-=======
-    authors = unlist(strsplit(authors, "\\[")) # split author by affiliation
->>>>>>> e0bb78c463f5309f8b824faadf552f2cbc1d359f
     authors = authors[-(authors == "")] # remove empty entries
     authors[length(authors)] = # remove final untrimmed affiliation for last author
       (unlist(strsplit(authors[length(authors)], "\\]")))[1]
@@ -111,13 +107,16 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
-  if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) {
+  
+  if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) { # now we match each affiliation with the keywords
     colnames(authorsAndAffils) = c("Author", "Affiliation") # add column names
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
       thisRow = c(rep(0, 7))
       removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), authorsAndAffils[i,2],
-                                 fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed
+                                 fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed: 
+                                  # if FALSE, then affiliation did not match any keywords that would trigger removal from analysis
+                                  # if TRUE, then affiliation matched keywords that would cause that affiliation to be removed
       keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                     paste(keywords$Remove, collapse = "|"))
       if (!is.na(keyword_matched)) {
@@ -130,12 +129,12 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
         thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
         #thisRow[2] = z
-        thisRow[2] = paperAffilNumber
-        thisRow[3] = as.numeric(as.character(raw$YEAR[jj]))
-        thisRow[4] = keyword_matched
+        thisRow[2] = paperAffilNumber #paper ID number
+        thisRow[3] = as.numeric(as.character(raw$YEAR[jj])) # year of paper
+        thisRow[4] = keyword_matched # identifies the words in the affiliation that matched the disciplinary keywords
         thisRow[5] = "Remove"
-        thisRow[6] = as.character(authorsAndAffils[i,2])
-        thisRow[7] = as.character(authorsAndAffils[i,1])
+        thisRow[6] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
+        thisRow[7] = as.character(authorsAndAffils[i,1]) # author's name
         #thisRow[4] # fill in Keyword and Affiliation
         print(paste0("Affiliation: ", affiliations[i], " was assigned to |", groups[z], "|"))
       } else {
