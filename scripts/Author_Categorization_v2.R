@@ -14,12 +14,11 @@
 
 #### Load necessary packages #### 
 pacman::p_load(tidyverse)
-library(stringr)
+#library(stringr) # stringr should default load as part of tidyverse above
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
-  select(-(ACK:EI), -(SC:WC)) # Omit columns without unique identifying data
-raw = raw[, which(names(raw) %in% c("paper_ID", "AUTHOR", "Affiliation1", "YEAR"))]
+  select("paper_ID", "AUTHOR", "Affiliation1", "YEAR") # Retain only these columns
 
 #### Read in categorization keywords and reshape from long to wide ####
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
@@ -178,8 +177,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     }
   }
 }
-affiliationDataFrame = affiliationDataFrame[2:nrow(affiliationDataFrame),]
-affiliationDataFrame = as.data.frame(affiliationDataFrame) #THIS DOESN'T RUN- NEEDS TO BE FIXED
+affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
-write.csv(affiliationDataFrame,"./output_data/firstcut_affiliationdataframe_17Feb18.csv", row.names = FALSE)
+write_csv(affiliationDataFrame,"./output_data/author_affiliations.csv")
