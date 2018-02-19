@@ -62,7 +62,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
   if (length(affiliations) == 1) {
     #if (length(authors) > 1) {
-    affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) 
+    affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   #}
@@ -89,7 +89,11 @@ for (jj in 2:length(raw$Affiliation1)) {
       # reduces # of computer science/interdisciplinary affils 
     }
   } else if (length(affiliations) > 0) {
+<<<<<<< HEAD
     authors = unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
+=======
+    authors = unlist(strsplit(authors, "\\[")) # split author by affiliation
+>>>>>>> e0bb78c463f5309f8b824faadf552f2cbc1d359f
     authors = authors[-(authors == "")] # remove empty entries
     authors[length(authors)] = # remove final untrimmed affiliation for last author
       (unlist(strsplit(authors[length(authors)], "\\]")))[1]
@@ -108,7 +112,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
   if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) {
-    colnames(authorsAndAffils) = c("Author", "Affiliation")
+    colnames(authorsAndAffils) = c("Author", "Affiliation") # add column names
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
       thisRow = c(rep(0, 7))
