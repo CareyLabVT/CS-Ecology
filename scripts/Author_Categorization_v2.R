@@ -25,8 +25,8 @@ raw = raw[, which(names(raw) %in% c("paper_ID", "AUTHOR", "Affiliation1", "YEAR"
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
-# This loop translates [comma], which I used as a placeholder, to a real comma 
-for (i in 1:ncol(keywords)) {
+
+for (i in 1:ncol(keywords)) { # This loop translates [comma], which I used as a placeholder, to a real comma 
   counter = 1
   while (!is.na(keywords[counter,i])) {
     keywords[counter,i] = gsub("\\[comma\\]", ",",as.character(keywords[counter,i]))
@@ -37,7 +37,7 @@ for (i in 1:ncol(keywords)) {
 ##### Lump categories into broad groups #####
 groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
-matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
+matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to groups in a dataframe
   CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
   MA = c("Math", NA, NA, NA), 
   EG = c("Engineering", NA, NA, NA), 
@@ -49,14 +49,15 @@ matchUp <- data.frame() %>% bind_rows(list(        # Assign categories to groups
 # Data frame for papers with their respective authors
 #papersShover = c(0, 0, 0, 0, 0, 0)
 #papersShoverPaps = c(rep(0, length(groups) + 2))
-affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0)
+affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated in loop
 
 for (jj in 2:length(raw$Affiliation1)) {
   #thisRow = c(rep(0,length(groups)))
   paperNum = raw$paper_ID[jj]
   currYear = as.numeric(as.character(raw$YEAR[jj]))
   authorsAndAffils = c(0, 0)
-  affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]"))
+  affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]")) 
+  # create a character string with a separate affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # remove the affiliations from the Affiliation1 list
   if (length(affiliations) == 1) {
     #if (length(authors) > 1) {
