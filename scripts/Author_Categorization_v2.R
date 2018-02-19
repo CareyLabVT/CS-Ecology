@@ -37,7 +37,7 @@ for (i in 1:ncol(keywords)) { # This loop translates [comma], which I used as a 
 ##### Lump categories into broad groups #####
 groups = c("CS", "MA", "EG", "PS", "SS", "ES") # Define groups by abbreviation
 
-matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to groups in a dataframe
+matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to groups in a dataframe that has four rows
   CS = c("InterdisciplinaryComputing", "ComputerScience", NA, NA),
   MA = c("Math", NA, NA, NA), 
   EG = c("Engineering", NA, NA, NA), 
@@ -49,7 +49,8 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
 # Data frame for papers with their respective authors
 #papersShover = c(0, 0, 0, 0, 0, 0)
 #papersShoverPaps = c(rep(0, length(groups) + 2))
-affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated in loop
+affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
+  #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
 for (jj in 2:length(raw$Affiliation1)) {
   #thisRow = c(rep(0,length(groups)))
@@ -178,6 +179,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
 }
 affiliationDataFrame = affiliationDataFrame[2:nrow(affiliationDataFrame),]
+affiliationDataFrame = as.data.frame(affiliationDataFrame) #THIS DOESN'T RUN- NEEDS TO BE FIXED
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
 write.csv(affiliationDataFrame,"./output_data/firstcut_affiliationdataframe_17Feb18.csv", row.names = FALSE)
