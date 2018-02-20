@@ -1,6 +1,7 @@
 #WE NEED TO HAVE INTRO MATERIAL HERE
 
-#### Load necessary packages #### 
+#### Install and load packages #### 
+#install.packages('pacman')
 pacman::p_load(tidyverse)
 
 #### Read in raw data from Web of Science #### 
