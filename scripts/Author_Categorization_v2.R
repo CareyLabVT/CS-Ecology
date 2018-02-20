@@ -1,20 +1,7 @@
-
-# - use the for loop to assign disciplinary affiliations to each paper_ID (*not* the lumped categories of CS, MA, etc. but the level of Chemistry, Physics, etc)
-# -within the for loop, create the author affiliation data frame. Importantly, this data frame also needs to be in long format, with four columns: “Paper_ID” (this is its number), 
-#   “Affiliation_ID” (this is another numeric identifier (1, 2, 3…) for each affiliation listed in the order they are listed on the paper, even if they are repeats and they are later
-#    going to be excluded), Keyword, and Affiliation (with the two latter columns matching the keywords CSV columns). The Keyword is the character string from the affiliation that gets 
-#    used to classify the affiliation a certain way, with the Affiliation the disciplinary affiliation.
-# 
-# AIK (14 Feb 18) - I suggest adding a Year column to this long format dataframe - I use that a lot
-#
-# -now we clean up the data frame: omit repeat affiliations within the same paper, omit government entities, omit papers that don’t have any affiliations, etc.
-# -export this data frame as an “AuthorAffiliationDatabase.CSV”
-# -now we look at each paper for our collaboration analysis- create a new for loop that goes through the data frame and assigns the lumped categories (CS, MA, etc.) [note: didn’t we get rid of ‘interdisciplinary computing’?] 
-# - create a new data frame “InterdisciplinaryCollaboration.CSV” that looks similar to what Arianna created in the github output file, but with columns: “Paper_ID”, “MA”, “CS”, etc. and with the values in the categories the number of authors with those affiliations. There should also be ‘Total authors’ and ‘Total affiliations’ columns in this CSV so we have an easy gut-check about papers not having as many affiliations as authors (because we want each author per paper to have at least one affiliation). From this final data frame, we can then do the plotting (but in the separate plotting R script).
+#WE NEED TO HAVE INTRO MATERIAL HERE
 
 #### Load necessary packages #### 
 pacman::p_load(tidyverse)
-#library(stringr) # stringr should default load as part of tidyverse above
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
@@ -46,8 +33,6 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
 
 #### Create the author database ####
 # Data frame for papers with their respective authors
-#papersShover = c(0, 0, 0, 0, 0, 0)
-#papersShoverPaps = c(rep(0, length(groups) + 2))
 affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
   #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
@@ -68,7 +53,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   #}
   if (length(authors) == 0 && length(affiliations)) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
-    if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation  #(length(authors) > length(affiliations)) {
+    if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
         authorsAndAffils = cbind(authorsAndAffils, c(authors[j], affiliations[1]))
       }
