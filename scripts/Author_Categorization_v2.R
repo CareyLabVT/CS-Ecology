@@ -1,7 +1,10 @@
-#WE NEED TO HAVE INTRO MATERIAL HERE
+#' Load Web of Science records pulled for Ecology journal articles and
+#' assign authors to disciplinary categories based on their institutional affiliations 
+#'
+#' Written by AIK based on original script by NKW, and edited by KJF and CCC
+#' Last edits by CCC on 20 February 2018
 
 #### Install and load packages #### 
-#install.packages('pacman')
 pacman::p_load(tidyverse)
 
 #### Read in raw data from Web of Science #### 
@@ -13,7 +16,7 @@ keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% #
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
 
-for (i in 1:ncol(keywords)) { # This loop translates [comma], which I used as a placeholder, to a real comma 
+for (i in 1:ncol(keywords)) { # This loop translates [comma], which is used as a placeholder, to a real comma 
   counter = 1
   while (!is.na(keywords[counter,i])) {
     keywords[counter,i] = gsub("\\[comma\\]", ",",as.character(keywords[counter,i]))
@@ -70,9 +73,6 @@ for (jj in 2:length(raw$Affiliation1)) {
           authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[length(affiliations)]))
         }
       }
-      
-      # authorsAndAffils = authorsAndAffils[!(duplicated(authorsAndAffils[,1])),] # only use first affiliation on paper 
-      # reduces # of computer science/interdisciplinary affils 
     }
   } else if (length(affiliations) > 0) {
     authors = unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
@@ -150,7 +150,6 @@ for (jj in 2:length(raw$Affiliation1)) {
             thisRow[5] = groups[z]
             thisRow[6] = as.character(authorsAndAffils[i,2])
             thisRow[7] = as.character(authorsAndAffils[i,1])
-            #thisRow[4] # fill in Keyword and Affiliation
             print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |", groups[z], "|"))
             break
           }
