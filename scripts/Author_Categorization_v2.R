@@ -55,7 +55,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   #}
-  if (length(authors) == 0 && length(affiliations)) {
+  if (length(authors) == 0 && length(affiliations)>0) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
@@ -99,10 +99,6 @@ for (jj in 2:length(raw$Affiliation1)) {
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
       thisRow = c(rep(0, 7))
-      removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), authorsAndAffils[i,2],
-                                 fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed: 
-                                  # if FALSE, then affiliation did not match any keywords that would trigger removal from analysis
-                                  # if TRUE, then affiliation matched keywords that would cause that affiliation to be removed
       keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                     paste(keywords$Remove, collapse = "|"))
       if (!is.na(keyword_matched)) {
@@ -135,9 +131,6 @@ for (jj in 2:length(raw$Affiliation1)) {
           keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                         paste0(as.character(words[2:length(words)]), collapse = "|"))
           if (!is.na(keyword_matched)) {
-          #if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affiliations[i]
-          #                , fixed = FALSE, ignore.case = TRUE, value = TRUE)) > 0) { # check whether affilName matches conglomerate
-            # keyword group
             if (i > 1 && trimws(oldRow[6]) != trimws(as.character(authorsAndAffils[i,2]))) {
               #(i + 1) < nrow(authorsAndAffils) && thisRow[i + 1] != authorsAndAffils[i]) {
               paperAffilNumber = paperAffilNumber + 1
@@ -161,7 +154,8 @@ for (jj in 2:length(raw$Affiliation1)) {
       oldRow = thisRow
     }
   }
-}
+} # suppressing warning because loop concatenates multiple instances of the same paper IDs and treats it as a dataframe
+
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
