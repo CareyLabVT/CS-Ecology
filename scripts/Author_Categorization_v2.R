@@ -1,4 +1,8 @@
-#WE NEED TO HAVE INTRO MATERIAL HERE
+#' Load Web of Science records pulled for Ecology journal articles and
+#' assign authors to disciplinary categories based on their institutional affiliations 
+#'
+#' Written by AIK based on original script by NKW, and edited by KJF and CCC
+#' Last edits by CCC on 20 February 2018
 
 #### Install and load packages #### 
 #install.packages('pacman')
@@ -13,7 +17,7 @@ keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% #
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
 
-for (i in 1:ncol(keywords)) { # This loop translates [comma], which I used as a placeholder, to a real comma 
+for (i in 1:ncol(keywords)) { # This loop translates [comma], which is used as a placeholder, to a real comma 
   counter = 1
   while (!is.na(keywords[counter,i])) {
     keywords[counter,i] = gsub("\\[comma\\]", ",",as.character(keywords[counter,i]))
