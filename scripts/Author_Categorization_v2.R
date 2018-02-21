@@ -1,20 +1,11 @@
+#' Load Web of Science records pulled for Ecology journal articles and
+#' assign authors to disciplinary categories based on their institutional affiliations 
+#'
+#' Written by AIK based on original script by NKW, and edited by KJF and CCC
+#' Last edits by AIK on 21 February 2018
 
-# - use the for loop to assign disciplinary affiliations to each paper_ID (*not* the lumped categories of CS, MA, etc. but the level of Chemistry, Physics, etc)
-# -within the for loop, create the author affiliation data frame. Importantly, this data frame also needs to be in long format, with four columns: “Paper_ID” (this is its number), 
-#   “Affiliation_ID” (this is another numeric identifier (1, 2, 3…) for each affiliation listed in the order they are listed on the paper, even if they are repeats and they are later
-#    going to be excluded), Keyword, and Affiliation (with the two latter columns matching the keywords CSV columns). The Keyword is the character string from the affiliation that gets 
-#    used to classify the affiliation a certain way, with the Affiliation the disciplinary affiliation.
-# 
-# AIK (14 Feb 18) - I suggest adding a Year column to this long format dataframe - I use that a lot
-#
-# -now we clean up the data frame: omit repeat affiliations within the same paper, omit government entities, omit papers that don’t have any affiliations, etc.
-# -export this data frame as an “AuthorAffiliationDatabase.CSV”
-# -now we look at each paper for our collaboration analysis- create a new for loop that goes through the data frame and assigns the lumped categories (CS, MA, etc.) [note: didn’t we get rid of ‘interdisciplinary computing’?] 
-# - create a new data frame “InterdisciplinaryCollaboration.CSV” that looks similar to what Arianna created in the github output file, but with columns: “Paper_ID”, “MA”, “CS”, etc. and with the values in the categories the number of authors with those affiliations. There should also be ‘Total authors’ and ‘Total affiliations’ columns in this CSV so we have an easy gut-check about papers not having as many affiliations as authors (because we want each author per paper to have at least one affiliation). From this final data frame, we can then do the plotting (but in the separate plotting R script).
-
-#### Load necessary packages #### 
+#### Install and load packages #### 
 pacman::p_load(tidyverse)
-#library(stringr) # stringr should default load as part of tidyverse above
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
@@ -25,7 +16,7 @@ keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% #
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
   spread(category, keyword) %>% select(-id) # reshape keywords from long to wide
 
-for (i in 1:ncol(keywords)) { # This loop translates [comma], which I used as a placeholder, to a real comma 
+for (i in 1:ncol(keywords)) { # This loop translates [comma], which is used as a placeholder, to a real comma 
   counter = 1
   while (!is.na(keywords[counter,i])) {
     keywords[counter,i] = gsub("\\[comma\\]", ",",as.character(keywords[counter,i]))
@@ -45,25 +36,25 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
   ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
 
 #### Create the author database ####
-# Data frame for papers with their respective authors
 affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
   #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
 for (jj in 2:length(raw$Affiliation1)) {
-  paperNum = raw$paper_ID[jj]
-  currYear = as.numeric(as.character(raw$YEAR[jj]))
+  paperNum = raw$paper_ID[jj] # unique paper ID
+  currYear = as.numeric(as.character(raw$YEAR[jj])) #year in which paper was published
   authorsAndAffils = c(0, 0)
   affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]")) 
   # create a character string the length of the total number of authors on each paper,
   # with each value in the string containing the complete affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
   if (length(affiliations) == 1) {
+    #if (length(authors) > 1) {
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
-  affiliations = affiliations[(affiliations != "")]
-  if (length(authors) == 0 && length(affiliations) != 0) {
+  affiliations = affiliations[(affiliations != "")] # remove empty entries
+  if (length(authors) == 0 && length(affiliations)>0) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
-    if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation  #(length(authors) > length(affiliations)) {
+    if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
         authorsAndAffils = cbind(authorsAndAffils, c(authors[j], affiliations[1]))
       }
@@ -79,9 +70,6 @@ for (jj in 2:length(raw$Affiliation1)) {
           authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[length(affiliations)]))
         }
       }
-      
-      # authorsAndAffils = authorsAndAffils[!(duplicated(authorsAndAffils[,1])),] # only use first affiliation on paper 
-      # reduces # of computer science/interdisciplinary affils 
     }
   } else if (length(affiliations) > 0) {
     authors = unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
@@ -108,10 +96,6 @@ for (jj in 2:length(raw$Affiliation1)) {
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
       thisRow = c(rep(0, 7))
-      removeAffil = (length(grep(paste(keywords$Remove, collapse = "|"), authorsAndAffils[i,2],
-                                 fixed = FALSE, ignore.case = TRUE)) > 0) # flag for whether to proceed: 
-                                  # if FALSE, then affiliation did not match any keywords that would trigger removal from analysis
-                                  # if TRUE, then affiliation matched keywords that would cause that affiliation to be removed
       keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                     paste(keywords$Remove, collapse = "|"))
       if (!is.na(keyword_matched)) {
@@ -132,7 +116,8 @@ for (jj in 2:length(raw$Affiliation1)) {
           colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # identify columns of keyword dataframe to analyze
           words = ""
           for (j in 1:length(colnums)) {
-            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant keywords 
+            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant
+            # keywords 
           }
           keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                         paste0(as.character(words[2:length(words)]), collapse = "|"))
@@ -158,8 +143,9 @@ for (jj in 2:length(raw$Affiliation1)) {
       oldRow = thisRow
     }
   }
-}
+} # suppressing warning because loop concatenates multiple instances of the same paper IDs and treats it as a dataframe
+
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
-affiliationDataFrame = data.frame(affiliationDataFrame)
+
 write_csv(affiliationDataFrame,"./output_data/author_affiliations.csv")
