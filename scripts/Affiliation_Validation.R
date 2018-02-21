@@ -12,6 +12,6 @@ subset <- read_csv('./output_data/author_affiliations.csv') %>% # Load author af
   sample_frac(0.05, replace = FALSE) %>% # Subsample 5% of authors without replacement
   mutate(Validator = rep(val, length = nrow(.))) %>% # Assign validator ID at random
   arrange(Validator) %>% # Sort rows by validator ID
-  mutate(ManualAffiliation = '') # Create empty column for validator to assign affiliation
+  mutate(ManualKeyword = '', ManualAffiliation = '') # Add empty column for validator to assign keyword & affiliation
 
 write_csv(subset, './output_data/validation/validation.csv') # Export as csv to validation subfolder
