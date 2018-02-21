@@ -46,13 +46,10 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
 
 #### Create the author database ####
 # Data frame for papers with their respective authors
-#papersShover = c(0, 0, 0, 0, 0, 0)
-#papersShoverPaps = c(rep(0, length(groups) + 2))
 affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
   #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
 for (jj in 2:length(raw$Affiliation1)) {
-  #thisRow = c(rep(0,length(groups)))
   paperNum = raw$paper_ID[jj]
   currYear = as.numeric(as.character(raw$YEAR[jj]))
   authorsAndAffils = c(0, 0)
@@ -61,12 +58,10 @@ for (jj in 2:length(raw$Affiliation1)) {
   # with each value in the string containing the complete affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
   if (length(affiliations) == 1) {
-    #if (length(authors) > 1) {
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
-  affiliations = affiliations[(affiliations != "")] # remove empty entries
-  #}
-  if (length(authors) == 0 && length(affiliations)) {
+  affiliations = affiliations[(affiliations != "")]
+  if (length(authors) == 0 && length(affiliations) != 0) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation  #(length(authors) > length(affiliations)) {
       for (j in 1:length(authors)) {
@@ -120,22 +115,16 @@ for (jj in 2:length(raw$Affiliation1)) {
       keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                     paste(keywords$Remove, collapse = "|"))
       if (!is.na(keyword_matched)) {
-        #if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affiliations[i]
-        #                , fixed = FALSE, ignore.case = TRUE, value = TRUE)) > 0) { # check whether affilName matches conglomerate
-        # keyword group
         if (i > 1 && trimws(oldRow[6]) != trimws(as.character(authorsAndAffils[i,2]))) {
-          #(i + 1) < nrow(authorsAndAffils) && thisRow[i + 1] != authorsAndAffils[i]) {
           paperAffilNumber = paperAffilNumber + 1
         }
         thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
-        #thisRow[2] = z
         thisRow[2] = paperAffilNumber #paper ID number
         thisRow[3] = as.numeric(as.character(raw$YEAR[jj])) # year of paper
         thisRow[4] = keyword_matched # identifies the words in the affiliation that matched the disciplinary keywords
         thisRow[5] = "Remove"
         thisRow[6] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
         thisRow[7] = as.character(authorsAndAffils[i,1]) # author's name
-        #thisRow[4] # fill in Keyword and Affiliation
         print(paste0("Affiliation: ", affiliations[i], " was assigned to |", groups[z], "|"))
       } else {
         for (z in 1:length(groups)) {
@@ -143,35 +132,28 @@ for (jj in 2:length(raw$Affiliation1)) {
           colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # identify columns of keyword dataframe to analyze
           words = ""
           for (j in 1:length(colnums)) {
-            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant
-            # keywords 
+            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant keywords 
           }
           keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                         paste0(as.character(words[2:length(words)]), collapse = "|"))
           if (!is.na(keyword_matched)) {
-          #if (length(grep(paste0(as.character(words[2:length(words)]), collapse = "|"), affiliations[i]
-          #                , fixed = FALSE, ignore.case = TRUE, value = TRUE)) > 0) { # check whether affilName matches conglomerate
-            # keyword group
             if (i > 1 && trimws(oldRow[6]) != trimws(as.character(authorsAndAffils[i,2]))) {
-              #(i + 1) < nrow(authorsAndAffils) && thisRow[i + 1] != authorsAndAffils[i]) {
               paperAffilNumber = paperAffilNumber + 1
             }
             thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
-            #thisRow[2] = z
             thisRow[2] = paperAffilNumber
             thisRow[3] = as.numeric(as.character(raw$YEAR[jj]))
             thisRow[4] = keyword_matched
             thisRow[5] = groups[z]
             thisRow[6] = as.character(authorsAndAffils[i,2])
             thisRow[7] = as.character(authorsAndAffils[i,1])
-            #thisRow[4] # fill in Keyword and Affiliation
             print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |", groups[z], "|"))
             break
           }
         }
       }
       if (thisRow[1] != 0) {
-        affiliationDataFrame = rbind(affiliationDataFrame, thisRow)
+        invisible(suppressWarnings((affiliationDataFrame = rbind(affiliationDataFrame, thisRow))))
       }
       oldRow = thisRow
     }
@@ -179,5 +161,5 @@ for (jj in 2:length(raw$Affiliation1)) {
 }
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
-
+affiliationDataFrame = data.frame(affiliationDataFrame)
 write_csv(affiliationDataFrame,"./output_data/author_affiliations.csv")
