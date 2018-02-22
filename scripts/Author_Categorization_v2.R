@@ -38,7 +38,8 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
 #### Create the author database ####
 affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
   #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
-
+rownamecounter = 1
+options(warn = -1) # turning off warnings for inner concatenation 
 for (jj in 2:length(raw$Affiliation1)) {
   paperNum = raw$paper_ID[jj] # unique paper ID
   currYear = as.numeric(as.character(raw$YEAR[jj])) #year in which paper was published
@@ -65,7 +66,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     } else {
       for (j in 1:length(authors)) {
         if (j < length(affiliations)) {
-          authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[j]))
+          authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, c(authors[j], affiliations[j]))))
         } else {
           authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[length(affiliations)]))
         }
@@ -138,13 +139,15 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
       }
       if (thisRow[1] != 0) {
-        invisible(suppressWarnings((affiliationDataFrame = rbind(affiliationDataFrame, thisRow))))
+        toAdd = data.frame(thisRow); colnames(toAdd) = rownamecounter
+        invisible(suppressWarnings((affiliationDataFrame = rbind(affiliationDataFrame, t(toAdd)))))
+        rownamecounter = rownamecounter + 1
       }
       oldRow = thisRow
     }
   }
 } # suppressing warning because loop concatenates multiple instances of the same paper IDs and treats it as a dataframe
-
+options(warn = 0)
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
