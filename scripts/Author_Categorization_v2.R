@@ -9,7 +9,7 @@ pacman::p_load(tidyverse)
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
-  select("paper_ID", "AUTHOR", "Affiliation1", "YEAR") # Retain only these columns
+  select("paper_ID", "AUTHOR", "Affiliation1", "Affiliation2", "YEAR") # Retain only these columns
 
 #### Read in categorization keywords and reshape from long to wide ####
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
@@ -48,12 +48,14 @@ for (jj in 2:length(raw$Affiliation1)) {
   # create a character string the length of the total number of authors on each paper,
   # with each value in the string containing the complete affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
+  goHere = FALSE
   if (length(affiliations) == 1) {
     #if (length(authors) > 1) {
+    goHere = TRUE
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
-  if (length(authors) == 0 && length(affiliations)>0) {
+  if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 )) {#(length(authors) == 0 && length(affiliations)>0) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
@@ -88,6 +90,9 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
       }
     }
+  } else {
+    affiliations = unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) 
+    authorsAndAffils = c(trimws(affiliations[2]), trimws(affiliations[1]))
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
@@ -136,9 +141,19 @@ for (jj in 2:length(raw$Affiliation1)) {
             print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |", groups[z], "|"))
             break
           }
+          if (z == length(groups)) {
+            thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
+            thisRow[2] = paperAffilNumber
+            thisRow[3] = as.numeric(as.character(raw$YEAR[jj]))
+            thisRow[4] = "NoMatch"
+            thisRow[5] = "Unmatched"
+            thisRow[6] = as.character(authorsAndAffils[i,2])
+            thisRow[7] = as.character(authorsAndAffils[i,1])
+            print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was not assigned"))
+          }
         }
       }
-      if (thisRow[1] != 0) {
+      if (!is.na(thisRow[1]) && thisRow[1] != 0) {
         toAdd = data.frame(thisRow); colnames(toAdd) = rownamecounter
         invisible(suppressWarnings((affiliationDataFrame = rbind(affiliationDataFrame, t(toAdd)))))
         rownamecounter = rownamecounter + 1
