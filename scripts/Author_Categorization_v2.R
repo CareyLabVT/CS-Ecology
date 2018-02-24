@@ -166,4 +166,8 @@ options(warn = 0)
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
 colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
 
-write_csv(affiliationDataFrame,"./output_data/author_affiliations.csv")
+withoutUnmatched = affiliationDataFrame[affiliationDataFrame$Keyword != "NoMatch",]
+unmatchedEntries = affiliationDataFrame[affiliationDataFrame$Keyword == "NoMatch",]
+write_csv(withoutUnmatched,"./output_data/author_affiliations.csv")
+write_csv(unmatchedEntries,"./output_data/unmatched_authors.csv")
+write_csv(affiliationDataFrame,"./output_data/matched_unmatched.csv")

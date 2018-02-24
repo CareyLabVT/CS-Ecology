@@ -74,7 +74,7 @@ InterdisciplinaryComputing,ecoinfo
 ComputerScience,informat[comma]
 Math,nevanlinna inst
 Humanities,arqueol
-EnvironmentalBiology,orn
+EnvironmentalBiology,ornit
 LifeScience,bacteriol
 Physics,nucl
 SocialScience,law 
@@ -173,7 +173,6 @@ LifeScience,canc
 EarthScience,ambientales
 EnvironmentalBiology,env
 LifeScience,helmholtz ctr
-EarthScience,inst arctic
 EnvironmentalBiology,fish
 LifeScience,karolinska inst
 EarthScience,radiocarbon
@@ -186,7 +185,8 @@ EarthScience,quaternary
 EnvironmentalBiology,rivers
 LifeScience,neurosci
 EarthScience,remote sensing
-EnvironmentalBiology,land
+EnvironmentalBiology," land,"
+EnvironmentalBiology, land 
 LifeScience,liggins inst
 EarthScience,palaeontol
 EnvironmentalBiology,soil
@@ -203,7 +203,7 @@ EnvironmentalBiology,range
 LifeScience,inst butantan
 EnvironmentalBiology,hort
 LifeScience,forens
-EnvironmentalBiology,smithsonian
+Remove,smithsonian
 LifeScience,helmintol
 EnvironmentalBiology,lake
 LifeScience,salut
@@ -273,7 +273,7 @@ EnvironmentalBiology,avanzados blanes
 EnvironmentalBiology,vegetal
 EnvironmentalBiology,lab costero calfuco
 EnvironmentalBiology,aquaculture
-EnvironmentalBiology,ag
+EnvironmentalBiology,agr
 EnvironmentalBiology,alfred wegener
 EnvironmentalBiology,vogelwarte
 EnvironmentalBiology,mediterr
@@ -288,7 +288,7 @@ EnvironmentalBiology,russell labs
 EnvironmentalBiology,hoffmann inst
 EnvironmentalBiology,complutense
 EnvironmentalBiology,ralph m parsons
-EnvironmentalBiology,tree ring lab
+EnvironmentalBiology,tree ring 
 EnvironmentalBiology,ctr wood
 EnvironmentalBiology,okol
 EnvironmentalBiology,verteb
@@ -307,7 +307,7 @@ EnvironmentalBiology,shrub sci lab
 EnvironmentalBiology,belle w baruch
 EnvironmentalBiology,boreal inst
 EnvironmentalBiology,ekol
-EnvironmentalBiology,pesticide lab
+EnvironmentalBiology,pesticide
 EnvironmentalBiology,asko
 EnvironmentalBiology,greeley mem lab
 EnvironmentalBiology,buckhout
@@ -316,3 +316,35 @@ EnvironmentalBiology,pasture sci
 EnvironmentalBiology,maritime
 EnvironmentalBiology,harbor
 EnvironmentalBiology,sea
+SocialScience,geog
+Math,math[comma]
+EarthScience,arct
+EarthScience,plateau
+EarthScience,ciencia solo
+SocialScience,polit sci
+LifeScience,gen syst sci
+EarthScience,aquifer
+SocialScience,civiliz
+EnvironmentalBiology,arboret
+EnvironmentalBiology,grassland
+EnvironmentalBiology,rangeland
+Remove,morton arboretum
+EnvironmentalBiology,resources sci
+EarthScience,geosci
+Remove,cty arbor
+EarthScience,renewable resources
+SocialScience,econ
+Physics,"phys,"
+ComputerScience,syst simulat
+EnvironmentalBiology,naqu integrated observat
+EnvironmentalBiology,blandy expt
+EnvironmentalBiology,herbari
+SocialScience,psychol
+EarthScience,aos program
+EarthScience,espm
+Physics,jet prop lab
+Architecture,design
+EnvironmentalBiology,wetland
+EnvironmentalBiology,environm
+Remove,oceanopolis
+EnvironmentalBiology,arid land
