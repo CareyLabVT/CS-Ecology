@@ -106,7 +106,6 @@ Remove,capita
 EarthScience,space
 InterdisciplinaryComputing,bioinf
 ComputerScience,eugene lawler
-EnvironmentalBiology,genet
 LifeScience,aarhus inst
 SocialScience,ctr noumea
 Remove,capitol
@@ -170,7 +169,7 @@ LifeScience,pathol
 EarthScience,nordiques
 EnvironmentalBiology,estuar
 LifeScience,canc
-EarthScience,ambientales
+EnvironmentalBiology,ambientales
 EnvironmentalBiology,env
 LifeScience,helmholtz ctr
 EnvironmentalBiology,fish
@@ -182,7 +181,7 @@ EarthScience,hydrophys
 EnvironmentalBiology,watershed
 LifeScience,inst vogelforsch
 EarthScience,quaternary
-EnvironmentalBiology,rivers
+EnvironmentalBiology,rivers 
 LifeScience,neurosci
 EarthScience,remote sensing
 EnvironmentalBiology," land,"
@@ -242,7 +241,6 @@ LifeScience,ctr louis emberger
 EnvironmentalBiology,fram
 LifeScience,ophthalmol
 EnvironmentalBiology,james hutton
-LifeScience,barnes lab
 EnvironmentalBiology,percy fitzpatrick
 LifeScience,usda
 EnvironmentalBiology,barnes lab
@@ -349,7 +347,7 @@ EnvironmentalBiology,environm
 Remove,oceanopolis
 EnvironmentalBiology,arid land
 EnvironmentalBiology,woods hole
-LifeScience,inra
+Remove,inra
 EnvironmentalBiology,Fabrikschleichach 
 EnvironmentalBiology,wave res lab
 EnvironmentalBiology,ctr no studies
@@ -394,3 +392,5 @@ Remove,nih
 Remove,us epa
 Remove,pacific nw lab
 EnvironmentalBiology,mt res stn
+Remove,swiss fed res
+EnvironmentalBiology,cary inst

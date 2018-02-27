@@ -1,4 +1,5 @@
 Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
+2,1,2017,bio,ES," Oregon State Univ, Dept Integrat Biol, Corvallis, OR 97331 USA","Benkwitt, Cassandra E."
 3,1,2017,eco,ES," Univ Chile, Dept Ciencias Ecol, Santiago, Chile; ","Maldonado, Karin"
 3,1,2017,eco,ES," Univ Chile, Dept Ciencias Ecol, Santiago, Chile; ","Sabat, Pablo"
 3,2,2017,bio,ES," Pontificia Univ Catolica Chile, Fac Ciencias Biol, Dept Ecolog & Ctr Appl Ecol Sustainabil CAPES, Santiago 6513677, Chile; ","Bozinovic, Francisco"
@@ -436,8 +437,13 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 71,1,2017,life,ES," Univ Sydney, Sch Life & Environm Sci, Sydney, NSW 2006, Australia; ","Brown, Gregory P."
 71,1,2017,life,ES," Univ Sydney, Sch Life & Environm Sci, Sydney, NSW 2006, Australia; ","Shine, Richard"
 72,1,2017,ornit,ES," Swiss Ornithol Inst, Seerose 1, CH-6204 Sempach, Switzerland; ","Milanesi, P."
-72,2,2017,env,ES," ETH, Dept Environm Syst Sci, Univ Str 16, CH-8092 Zurich, Switzerland","Holderegger, R."
-72,2,2017,env,ES," ETH, Dept Environm Syst Sci, Univ Str 16, CH-8092 Zurich, Switzerland","Zellweger, F."
+72,2,2017,swiss fed res,Remove," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Milanesi, P."
+72,2,2017,swiss fed res,Remove," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Holderegger, R."
+72,2,2017,swiss fed res,Remove," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Bollmann, K."
+72,2,2017,swiss fed res,Remove," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Gugerli, F."
+72,2,2017,swiss fed res,Remove," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Zellweger, F."
+72,3,2017,env,ES," ETH, Dept Environm Syst Sci, Univ Str 16, CH-8092 Zurich, Switzerland","Holderegger, R."
+72,3,2017,env,ES," ETH, Dept Environm Syst Sci, Univ Str 16, CH-8092 Zurich, Switzerland","Zellweger, F."
 73,1,2017,marine,ES," Northeastern Univ, Ctr Marine Sci, 430 Nahant Rd, Nahant, MA 01908 USA; Northeastern Univ, Dept Marine & Environm Sci, 430 Nahant Rd, Nahant, MA 01908 USA","Donelan, Sarah C. Northeastern Univ, Dept Marine & Environm Sci, 430 Nahant Rd, Nahant, MA 01908 USA"
 74,1,2017,smithsonian,Remove," Smithsonian Trop Res Inst, Apartado 0843-03092, Balboa, Ancon, Panama; ","Sharpe, D. M. T."
 74,1,2017,smithsonian,Remove," Smithsonian Trop Res Inst, Apartado 0843-03092, Balboa, Ancon, Panama; ","Gonzalez, R."
@@ -945,7 +951,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 166,2,2016,env,ES," Univ Calif Berkeley, Dept Environm Sci Policy & Management, 130 Mulford Hall, Berkeley, CA 94720 USA; ","Battles, John J."
 166,3,2016,"engn,",EG," Syracuse Univ, Dept Civil & Environm Engn, Syracuse, NY 13244 USA; ","Koppers, Mary Margaret"
 166,3,2016,"engn,",EG," Syracuse Univ, Dept Civil & Environm Engn, Syracuse, NY 13244 USA; ","Johnson, Chris E."
-166,4,2016,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Likens, Gene E."
+166,4,2016,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Likens, Gene E."
 166,5,2016,eco,ES," Univ Connecticut, Dept Ecol & Evolutionary Biol, Storrs, CT 06269 USA","Likens, Gene E."
 167,1,2016,bio,ES," Univ Sherbrooke, Dept Biol, 2500 Blvd Univ, Sherbrooke, PQ J1K 2R1, Canada; ","Urli, Morgane"
 167,1,2016,bio,ES," Univ Sherbrooke, Dept Biol, 2500 Blvd Univ, Sherbrooke, PQ J1K 2R1, Canada; ","Brown, Carissa D."
@@ -1005,7 +1011,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 174,1,2016,eco,ES," UPMC, CNRS, UMR 7618, Inst Ecol & Environm Sci Paris, F-75005 Paris, France; ","Spataro, Thierry"
 174,2,2016,med,ES," Univ London Imperial Coll Sci Technol & Med, Dept Infect Dis Epidemiol, Norfolk Pl, London W21PG, England; ","Bompard, Anais"
 174,3,2016,bio,ES," Univ Lyon 1, CNRS, Lab Biometrie & Biol Evolut, UMR 5558, F-69622 Villeurbanne, France; ","Amat, Isabelle"
-174,4,2016,agr,ES," Univ Nice Sophia Antipolis, UMR 1355, Inst Sophia Agrobiotech 7254, CNRS,INRA, F-06903 Sophia Antipolis, France; ","Fauvergue, Xavier"
+174,4,2016,inra,Remove," Univ Nice Sophia Antipolis, UMR 1355, Inst Sophia Agrobiotech 7254, CNRS,INRA, F-06903 Sophia Antipolis, France; ","Fauvergue, Xavier"
 174,5,2016,agr,ES," AgroParisTech, F-75005 Paris, France","Spataro, Thierry"
 175,1,2016,helmholtz ctr,ES," UFZ Helmholtz Ctr Environm Res, Dept Ecol Modelling, Permoserstrasse 15, D-04318 Leipzig, Germany; ","Singer, Alexander"
 175,1,2016,helmholtz ctr,ES," UFZ Helmholtz Ctr Environm Res, Dept Ecol Modelling, Permoserstrasse 15, D-04318 Leipzig, Germany; ","Frank, Karin"
@@ -1025,7 +1031,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 176,7,2016,bio,ES," Univ Jyvaskyla, Dept Biol & Environm Sci, POB 35, Jyvaskyla 40014, Finland; ","Lopez-Sepulcre, Andres"
 176,8,2016,bio,ES," Coll William & Mary, Dept Biol, Williamsburg, VA 23187 USA; ","Lamphere, Bradley A."
 176,9,2016,bio,ES," Univ Victoria, Dept Biol, POB 1700 STN CSC, Victoria, BC V8W 2Y2, Canada; ","El-Sabaawi, Rana W."
-176,10,2016,rivers,ES," Univ Calif Riverside, Dept Biol, 209 Univ Lab Bldg, Riverside, CA 92521 USA; ","Reznick, David N."
+176,10,2016,bio,ES," Univ Calif Riverside, Dept Biol, 209 Univ Lab Bldg, Riverside, CA 92521 USA; ","Reznick, David N."
 176,11,2016,eco,ES," Univ Georgia, Odum Sch Ecol, Athens, GA 30602 USA","Pringle, Catherine M."
 177,2,2016,smithsonian,Remove," Smithsonian Environm Res Ctr, Edgewater, MD 21037 USA","Feller, I. C."
 178,1,2016,bio,ES," Univ Calif Berkeley, Dept Integrat Biol, 1005 Valley Life Sci Bldg 3140, Berkeley, CA 94720 USA; ","Salazar, Diego"
@@ -1380,7 +1386,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 243,1,2016,marine,ES," Univ Queensland, Marine Spatial Ecol Lab, Sch Biol Sci, Goddard Bldg, Brisbane, Qld 4072, Australia; ","Brown, Christopher J."
 243,1,2016,marine,ES," Univ Queensland, Marine Spatial Ecol Lab, Sch Biol Sci, Goddard Bldg, Brisbane, Qld 4072, Australia; ","Harborne, Alastair R."
 243,1,2016,marine,ES," Univ Queensland, Marine Spatial Ecol Lab, Sch Biol Sci, Goddard Bldg, Brisbane, Qld 4072, Australia; ","Mumby, Peter J."
-243,2,2016,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Brown, Christopher J."
+243,2,2016,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Brown, Christopher J."
 243,3,2016,bio,ES," Univ Queensland, Sch Biol Sci, Australian Res Council, Ctr Excellence Coral Reef Studies, Goddard Bldg, Brisbane, Qld 4072, Australia; ","Harborne, Alastair R."
 243,3,2016,bio,ES," Univ Queensland, Sch Biol Sci, Australian Res Council, Ctr Excellence Coral Reef Studies, Goddard Bldg, Brisbane, Qld 4072, Australia; ","Mumby, Peter J."
 243,4,2016,bio,ES," Florida Int Univ, Dept Biol Sci, 3000 NE 151 St, North Miami, FL 33181 USA; ","Paris, Claire B."
@@ -1536,7 +1542,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 267,4,2016,geosci,ES," Univ Jena, Inst Geosci, Burgweg 11, D-07749 Jena, Germany; UFZ, Helmholtz Ctr Environm Res, Dept Community Ecol, Theodor Lieser Str 4, D-06120 Halle, Germany; ","Hildebrandt, Anke UFZ, Helmholtz Ctr Environm Res, Dept Community Ecol, Theodor Lieser Str 4, D-06120 Halle, Germany"
 267,4,2016,geosci,ES," Univ Jena, Inst Geosci, Burgweg 11, D-07749 Jena, Germany; UFZ, Helmholtz Ctr Environm Res, Dept Community Ecol, Theodor Lieser Str 4, D-06120 Halle, Germany; ",
 267,5,2016,bot,ES," Univ Freiburg, Geobot, Inst Biol 2, Schanzlestr 1, D-79104 Freiburg, Germany; ","Gockele, Annette"
-267,6,2016,inst wsl,Remove," Swiss Fed Res Inst WSL, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Gessler, Arthur"
+267,6,2016,swiss fed res,Remove," Swiss Fed Res Inst WSL, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Gessler, Arthur"
 267,7,2016,max planck,Remove," Max Planck Inst Biogeochem, Hans Knoell Str 10, D-07745 Jena, Germany; ","Lange, Markus"
 267,8,2016,eco,ES," Univ Jena, Inst Ecol, Dornburger Str 159, D-07743 Jena, Germany; ","Ebeling, Anne"
 267,9,2016,life,ES," Tech Univ Munich, Sch Life Sci Weihenstephan, Dept Ecol & Ecosyst Management, Terr Ecol Res Grp, Hans Carl von Carlowitz Pl 2, D-85354 Freising Weihenstephan, Germany","Weisser, Wolfgang W."
@@ -2031,10 +2037,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 364,1,2016,bio,ES," Univ Helsinki, Dept Biosci, POB 65, FI-00014 Helsinki, Finland","Candolin, Ulrika"
 364,1,2016,bio,ES," Univ Helsinki, Dept Biosci, POB 65, FI-00014 Helsinki, Finland","Tukiainen, Iina"
 364,1,2016,bio,ES," Univ Helsinki, Dept Biosci, POB 65, FI-00014 Helsinki, Finland","Bertell, Elina"
-365,2,2016,agr,ES," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Cayuela, Hugo"
-365,2,2016,agr,ES," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Arsovski, Dragan"
-365,2,2016,agr,ES," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Miaud, Claude"
-365,2,2016,agr,ES," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Besnard, Aurelien"
+365,2,2016,inra,Remove," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Cayuela, Hugo"
+365,2,2016,inra,Remove," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Arsovski, Dragan"
+365,2,2016,inra,Remove," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Miaud, Claude"
+365,2,2016,inra,Remove," PSL Res Univ, UM, SupAgro, EPHE,CNRS,INRA,IRD,UMR CEFE 5175, F-34293 Montpellier, France; ","Besnard, Aurelien"
 365,3,2016,bio,ES," OBIOS Objectifs BIOdiversiteS, F-17250 Pont Labbe Darnoult, France; ","Thirion, Jean-Maric"
 365,4,2016,nat,ES," Agence Verdun, Off Natl Forets, F-55100 Verdun, France; ","Bonnaire, Eric"
 365,5,2016,eco,ES," CERFE, Ctr Rech & Format Ecoethol, F-08240 Boult Aux Bois, France","Pichenot, Julian"
@@ -2042,7 +2048,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 366,1,2016,env,ES," Univ Calif Berkeley, Dept Environm Sci Policy & Management, Berkeley, CA 94720 USA; ","Knape, Jonas"
 366,1,2016,env,ES," Univ Calif Berkeley, Dept Environm Sci Policy & Management, Berkeley, CA 94720 USA; ","de Valpine, Perry"
 366,2,2016,agr,ES," Swedish Univ Agr Sci, Dept Ecol, S-75007 Uppsala, Sweden","Knape, Jonas"
-367,2,2016,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
+367,2,2016,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
 367,3,2016,earth,ES," Boston Univ, Dept Earth & Environm Sci, 130 Commonwealth Ave, Boston, MA 02215 USA","Rollinson, Christine R."
 368,1,2016,agr,ES," Swedish Univ Agr Sci, Dept Forest Ecol & Management, SE-90183 Umea, Sweden; ","Hasselquist, Niles J."
 368,1,2016,agr,ES," Swedish Univ Agr Sci, Dept Forest Ecol & Management, SE-90183 Umea, Sweden; ","Metcalfe, Daniel B."
@@ -2055,10 +2061,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 368,3,2016,env,ES," Duke Univ, Nicholas Sch Environm, Div Environm Sci & Policy, Durham, NC 27708 USA; ","Oren, Ram"
 368,4,2016,phys ,PS," Lund Univ, Dept Phys Geog & Ecosyst Sci, SE-22362 Lund, Sweden; ","Metcalfe, Daniel B."
 368,5,2016,geog,SS," Univ Vienna, Dept Geog & Reg Res, A-1090 Vienna, Austria","Inselsbacher, Erich"
-369,1,2016,inra,ES," INRA, UMR Fractionnement AgroRessources & Environm 614, 2 Esplanade Roland Garros, F-51100 Reims, France; ","Fanin, Nicolas"
-369,1,2016,inra,ES," INRA, UMR Fractionnement AgroRessources & Environm 614, 2 Esplanade Roland Garros, F-51100 Reims, France; ","Bertrand, Isabelle"
+369,1,2016,inra,Remove," INRA, UMR Fractionnement AgroRessources & Environm 614, 2 Esplanade Roland Garros, F-51100 Reims, France; ","Fanin, Nicolas"
+369,1,2016,inra,Remove," INRA, UMR Fractionnement AgroRessources & Environm 614, 2 Esplanade Roland Garros, F-51100 Reims, France; ","Bertrand, Isabelle"
 369,2,2016,agr,ES," Swedish Univ Agr Sci, Dept Forest Ecol & Management, S-90183 Umea, Sweden; ","Fanin, Nicolas"
-369,3,2016,inra,ES," INRA, UMR Eco&Sols, 2 Pl Viala, F-34060 Montpellier 1, France","Bertrand, Isabelle"
+369,3,2016,inra,Remove," INRA, UMR Eco&Sols, 2 Pl Viala, F-34060 Montpellier 1, France","Bertrand, Isabelle"
 370,1,2016,bio,ES," Univ Oklahoma, Dept Biol, Grad Program Ecol & Evolut, Norman, OK 73019 USA; ","Kaspari, Michael"
 370,1,2016,bio,ES," Univ Oklahoma, Dept Biol, Grad Program Ecol & Evolut, Norman, OK 73019 USA; ","Clay, Natalie A."
 370,1,2016,bio,ES," Univ Oklahoma, Dept Biol, Grad Program Ecol & Evolut, Norman, OK 73019 USA; ","Lucas, Jane"
@@ -2288,7 +2294,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 410,4,2016,arct,ES," Univ Colorado, Inst Arctic & Alpine Res, Boulder, CO 80309 USA; ","Churchill, Amber C."
 410,5,2016,eco,ES," Univ Colorado, Dept Ecol & Evolutionary Biol, Boulder, CO 80309 USA; ","Churchill, Amber C."
 410,6,2016,forest,ES," Oregon State Univ, Dept Forest Ecosyst & Soc, Corvallis, OR 97331 USA; ","Frey, Sarah J. K."
-410,7,2016,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Fuss, Colin B."
+410,7,2016,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Fuss, Colin B."
 410,8,2016,min,ES," Univ Minnesota, Dept Ecol Evolut & Behav, St Paul, MN 55455 USA; ","Kazanski, Clare E."
 410,9,2016,plant,ES," Michigan State Univ, Dept Plant Soil & Microbial Sci, E Lansing, MI 48824 USA; ","Munoz, Juan D."
 410,10,2016,bio,ES," Boston Univ, Dept Biol, Boston, MA 02215 USA; ","Reinmann, Andrew B."
@@ -2378,7 +2384,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 425,1,2016,fish,ES," Oregon State Univ, Dept Fisheries & Wildlife, Corvallis, OR 97331 USA; ","Massey, Aimee L."
 425,2,2016,bio,ES," Univ Florida, Dept Biol, Gainesville, FL 32611 USA; ","Holt, Robert D."
 425,3,2016,bio,ES," Bard Coll, Dept Biol, Annandale On Hudson, NY 12504 USA; ","Keesing, Felicia"
-425,4,2016,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
+425,4,2016,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
 425,5,2016,env,ES," Univ E Anglia, Sch Environm Sci, Norwich Res Pk, Norwich NR4 7TJ, Norfolk, England","Peres, Carlos A."
 426,1,2016,eco,ES," Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 48109 USA; ","Wood, Chelsea L."
 426,2,2016,geol survey,Remove," Univ Calif Santa Barbara, US Geol Survey, Western Ecol Res Ctr, Inst Marine Sci, Santa Barbara, CA 93106 USA; ","Lafferty, Kevin D."
@@ -2602,9 +2608,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 465,2,2015,bio,ES," Univ Munich, Dept Biol 2, D-82152 Planegg Martinsried, Germany","Diehl, Sebastian"
 465,2,2015,bio,ES," Univ Munich, Dept Biol 2, D-82152 Planegg Martinsried, Germany","Pitsch, Nadine"
 466,1,2015,env,ES," Univ Saskatchewan, Sch Environm & Sustainabil, Saskatoon, SK S7N 5B3, Canada; ","Jardine, Timothy D."
-466,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Jardine, Timothy D."
-466,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Marshall, Jonathan"
-466,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Valdez, Dominic"
+466,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Jardine, Timothy D."
+466,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Marshall, Jonathan"
+466,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Valdez, Dominic"
 466,3,2015,informat ,CS," Queensland Dept Sci Informat Technol & Innovat, Brisbane, Qld 4001, Australia; ","Woods, Ryan"
 466,3,2015,informat ,CS," Queensland Dept Sci Informat Technol & Innovat, Brisbane, Qld 4001, Australia; ","Marshall, Jonathan"
 466,3,2015,informat ,CS," Queensland Dept Sci Informat Technol & Innovat, Brisbane, Qld 4001, Australia; ","Fawcett, James"
@@ -3338,7 +3344,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1013,1,2014,bio,ES," Lincoln Univ, BioProtect Res Ctr, Lincoln 7647, New Zealand; ","Wangen, Steven R."
 1013,1,2014,bio,ES," Lincoln Univ, BioProtect Res Ctr, Lincoln 7647, New Zealand; ","Meffin, Ross"
 1013,1,2014,bio,ES," Lincoln Univ, BioProtect Res Ctr, Lincoln 7647, New Zealand; ","Duncan, Richard P."
-1013,2,2014,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Diez, Jeffrey M."
+1013,2,2014,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Diez, Jeffrey M."
 1013,3,2014,eco,ES," Lincoln Univ, Dept Ecol, Lincoln 7647, New Zealand; ","Sullivan, Jon J."
 1013,4,2014,eco,ES," Univ Canberra, Inst Appl Ecol, Canberra, ACT 2601, Australia","Duncan, Richard P."
 1014,1,2014,geog,SS," Univ Colorado, Dept Geog, Boulder, CO 80304 USA; ","Hart, Sarah J."
@@ -3374,12 +3380,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1019,1,2014,bio,ES," Univ Queensland, Sch Biol Sci, Australian Res Council Ctr Excellence Coral Reef, Brisbane, Qld 4072, Australia; ","Pandolfi, John M."
 1019,2,2014,marine,ES," So Cross Univ, Marine Ecol Res Ctr, Lismore, NSW 2480, Australia; ","Harrison, Peter L."
 1019,3,2014,env,ES," Univ Queensland, Australian Res Council Ctr Excellence Environm De, Sch Biol Sci, Brisbane, Qld 4072, Australia","Beger, Maria"
-1020,1,2014,inst wsl,Remove," Swiss Fed Res Inst WSL Biodivers & Conservat Biol, Birmensdorf, Switzerland; ","Braaker, S."
-1020,1,2014,inst wsl,Remove," Swiss Fed Res Inst WSL Biodivers & Conservat Biol, Birmensdorf, Switzerland; ","Obrist, M. K."
+1020,1,2014,swiss fed res,Remove," Swiss Fed Res Inst WSL Biodivers & Conservat Biol, Birmensdorf, Switzerland; ","Braaker, S."
+1020,1,2014,swiss fed res,Remove," Swiss Fed Res Inst WSL Biodivers & Conservat Biol, Birmensdorf, Switzerland; ","Obrist, M. K."
 1020,2,2014,eco,ES," Swiss Fed Inst Technol, Inst Terr Ecosyst, Zurich, Switzerland; ","Braaker, S."
 1020,2,2014,eco,ES," Swiss Fed Inst Technol, Inst Terr Ecosyst, Zurich, Switzerland; ","Ghazoul, J."
-1020,3,2014,inst wsl,Remove," Swiss Fed Res Inst WSL, Bellinzona, Switzerland","Braaker, S."
-1020,3,2014,inst wsl,Remove," Swiss Fed Res Inst WSL, Bellinzona, Switzerland","Moretti, M."
+1020,3,2014,swiss fed res,Remove," Swiss Fed Res Inst WSL, Bellinzona, Switzerland","Braaker, S."
+1020,3,2014,swiss fed res,Remove," Swiss Fed Res Inst WSL, Bellinzona, Switzerland","Moretti, M."
 1021,1,2014,earth,ES," Univ New Hampshire, Dept Earth Sci, Durham, NH 03824 USA; ","Pringle, James M."
 1021,2,2014,earth,ES," Univ New Hampshire, Inst Earth Oceans & Space, Durham, NH 03824 USA; ","Pringle, James M."
 1021,3,2014,eco,ES," Univ Georgia, Odum Sch Ecol, Athens, GA 30602 USA; ","Byers, James E."
@@ -3511,8 +3517,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1053,1,2014,eco,ES," CNRS, Ctr Ecol Fonct & Evolut, UMR 5175, F-34293 Montpellier 5, France; ","Rambal, Serge"
 1053,1,2014,eco,ES," CNRS, Ctr Ecol Fonct & Evolut, UMR 5175, F-34293 Montpellier 5, France; ","Fayolle, Adeline"
 1053,1,2014,eco,ES," CNRS, Ctr Ecol Fonct & Evolut, UMR 5175, F-34293 Montpellier 5, France; ","Garnier, Eric"
-1053,2,2014,inra,ES," INRA, Elevage Ruminants Reg Chaudes, F-34060 Montpellier 01, France; ","Hubert, Daniel"
-1053,3,2014,inra,ES," INRA, Domaine de La Fage, F-12250 Roquefort, France","Foulquie, Didier"
+1053,2,2014,inra,Remove," INRA, Elevage Ruminants Reg Chaudes, F-34060 Montpellier 01, France; ","Hubert, Daniel"
+1053,3,2014,inra,Remove," INRA, Domaine de La Fage, F-12250 Roquefort, France","Foulquie, Didier"
 1054,1,2014,bio,ES," Univ So Mississippi, Dept Biol Sci, Hattiesburg, MS 39406 USA; ","Kuehn, Kevin A."
 1054,2,2014,bio,ES," Eastern Michigan Univ, Dept Biol, Ctr Aquat Microbial Ecol, Ypsilanti, MI 48197 USA; ","Francoeur, Steven N."
 1054,2,2014,bio,ES," Eastern Michigan Univ, Dept Biol, Ctr Aquat Microbial Ecol, Ypsilanti, MI 48197 USA; ","Neely, Robert K."
@@ -3710,14 +3716,14 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1098,4,2014,bio,ES," Western Washington Univ, Dept Biol, Bellingham, WA 98225 USA; ","Trenham, Peter C."
 1098,5,2014,eco,ES," Univ Calif Los Angeles, Dept Ecol & Evolutionary Biol, Los Angeles, CA 90095 USA; ","Shaffer, H. Bradley"
 1098,6,2014,conservat,ES," Univ Calif Los Angeles, La Kretz Ctr Calif Conservat Sci, Los Angeles, CA 90095 USA","Shaffer, H. Bradley"
-1099,1,2014,inra,ES," INRA, BIOGECO, UMR1202, F-33612 Cestas, France; ","Barnagaud, Jean-Yves"
-1099,1,2014,inra,ES," INRA, BIOGECO, UMR1202, F-33612 Cestas, France; ","Barbaro, Luc"
+1099,1,2014,inra,Remove," INRA, BIOGECO, UMR1202, F-33612 Cestas, France; ","Barnagaud, Jean-Yves"
+1099,1,2014,inra,Remove," INRA, BIOGECO, UMR1202, F-33612 Cestas, France; ","Barbaro, Luc"
 1099,2,2014,bio,ES," Univ Bordeaux, BIOGECO, UMR1202, F-33405 Talence, France; ","Barnagaud, Jean-Yves"
 1099,2,2014,bio,ES," Univ Bordeaux, BIOGECO, UMR1202, F-33405 Talence, France; ","Barbaro, Luc"
 1099,3,2014,informat ,CS," Aarhus Univ, Dept Biosci, Ctr Informat Res Complex Ecol, DK-8000 Aarhus C, Denmark; ","Barnagaud, Jean-Yves"
-1099,4,2014,inra,ES," INRA, UR BIOGER, F-78850 Thiverval Grignon, France; ","Papaix, Julien"
-1099,5,2014,inra,ES," INRA, UR MIAJ, F-78352 Jouy En Josas, France; ","Papaix, Julien"
-1099,6,2014,inra,ES," INRA, UMR DYNAFOR 1201, F-31326 Castanet Tolosan, France; ","Deconchat, Marc"
+1099,4,2014,inra,Remove," INRA, UR BIOGER, F-78850 Thiverval Grignon, France; ","Papaix, Julien"
+1099,5,2014,inra,Remove," INRA, UR MIAJ, F-78352 Jouy En Josas, France; ","Papaix, Julien"
+1099,6,2014,inra,Remove," INRA, UMR DYNAFOR 1201, F-31326 Castanet Tolosan, France; ","Deconchat, Marc"
 1099,7,2014,forest,ES," Scion New Zealand Forest Res Inst, Christchurch 8540, New Zealand","Brockerhoff, Eckehard G."
 1100,1,2014,env,ES," Univ Calif Santa Cruz, Dept Environm Studies, Santa Cruz, CA 95064 USA","Selmants, Paul C."
 1100,1,2014,env,ES," Univ Calif Santa Cruz, Dept Environm Studies, Santa Cruz, CA 95064 USA","Zavaleta, Erika S."
@@ -3807,10 +3813,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1124,2,2013,freshwater,ES," Leibniz Inst Freshwater Ecol & Inland Fisheries I, D-12587 Berlin, Germany; ","Hilt, Sabine"
 1124,3,2013,agr,ES," Leibniz Ctr Agr Landscape Res ZALF, D-15374 Muncheberg, Germany; ","Premke, Katrin"
 1124,4,2013,chem,PS," Univ Potsdam, Inst Biochem & Biol, D-14469 Potsdam, Germany","Grossart, Hans-Peter"
-1125,1,2013,inra,ES," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Alric, Benjamin"
-1125,1,2013,inra,ES," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Jenny, Jean-Philippe"
-1125,1,2013,inra,ES," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Berthon, Vincent"
-1125,1,2013,inra,ES," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Perga, Marie-Elodie"
+1125,1,2013,inra,Remove," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Alric, Benjamin"
+1125,1,2013,inra,Remove," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Jenny, Jean-Philippe"
+1125,1,2013,inra,Remove," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Berthon, Vincent"
+1125,1,2013,inra,Remove," Univ Savoie, INRA, UMR CARRTEL 0042, F-74203 Thonon Les Bains, France; ","Perga, Marie-Elodie"
 1125,2,2013,climate,ES," CNRS, UMR Lab Climate Sci & Environm 8212, F-91198 Gif Sur Yvette, France","Reyss, Jean-Louis"
 1126,1,2013,ent,ES," Agencia Estatal Consejo Super Invest Cient, Inst Ciencias Mar, Barcelona 08003, Spain; ","Bjoerk, Johannes R."
 1126,1,2013,ent,ES," Agencia Estatal Consejo Super Invest Cient, Inst Ciencias Mar, Barcelona 08003, Spain; ","Diez-Vives, C."
@@ -3836,7 +3842,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1130,1,2013,eco,ES," Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 48109 USA; ","Le Moine, James M."
 1130,1,2013,eco,ES," Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 48109 USA; ","Kling, George W."
 1130,1,2013,eco,ES," Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 48109 USA; ","Nadelhoffer, Knute J."
-1130,2,2013,inra,ES," INRA, UR Plantes & Syst Horticoles 1115, F-84914 Avignon 09, France; ","Capowiez, Yvan"
+1130,2,2013,inra,Remove," INRA, UR Plantes & Syst Horticoles 1115, F-84914 Avignon 09, France; ","Capowiez, Yvan"
 1130,3,2013,radiol,ES," Univ Michigan, Dept Radiol, Ann Arbor, MI 48109 USA","Goodsitt, Mitchell M."
 1130,3,2013,radiol,ES," Univ Michigan, Dept Radiol, Ann Arbor, MI 48109 USA","Larson, Sandra C."
 1131,1,2013,plant,ES," Univ Bern, Inst Plant Sci, CH-3013 Bern, Switzerland","Newbery, David M."
@@ -4268,7 +4274,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1218,2,2013,min,ES," Univ Minnesota, Dept Ecol Evolut & Behav, St Paul, MN 55108 USA","Cavender-Bares, Jeannine"
 1219,1,2013,agr,ES," Hebrew Univ Jerusalem, Robert H Smith Fac Agr Food & Environm, Robert H Smith Inst Plant Sci & Genet Agr, IL-76100 Rehovot, Israel; ","Sheffer, Efrat"
 1219,1,2013,agr,ES," Hebrew Univ Jerusalem, Robert H Smith Fac Agr Food & Environm, Robert H Smith Inst Plant Sci & Genet Agr, IL-76100 Rehovot, Israel; ","Kigel, Jaime"
-1219,2,2013,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
+1219,2,2013,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
 1219,3,2013,agr,ES," Agr Res Org, Volcani Ctr, Inst Plant Sci, Dept Agron & Nat Resources, IL-50250 Bet Dagan, Israel","Perevolotsky, Avi"
 1220,1,2013,geosci,ES," Oregon State Univ, Dept Geosci, Corvallis, OR 97331 USA; ","Tepley, Alan J."
 1220,2,2013,forest,ES," Oregon State Univ, Dept Forest Ecosyst & Soc, Corvallis, OR 97331 USA; ","Tepley, Alan J."
@@ -4288,8 +4294,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1223,3,2013,bio,ES," Univ Utah, Dept Biol, Salt Lake City, UT 84112 USA; ","Lokvam, John"
 1223,4,2013,bio,ES," Univ Nacl Amazonia Peruana, Dept Biol, Iquitos, Peru; ","Zuniga, J. Milagros Ayarza"
 1223,5,2013,eco,ES," Univ Antilles Guyane, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
-1223,6,2013,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
-1223,6,2013,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Baraloto, Christopher"
+1223,6,2013,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
+1223,6,2013,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Baraloto, Christopher"
 1223,7,2013,forest,ES," Univ Nacl Amazonia Peruana, Dept Forestal, Iquitos, Peru; ","Pilco, Magno Vasquez"
 1223,8,2013,bio,ES," Univ Florida, Dept Biol, Gainesville, FL 32611 USA","Baraloto, Christopher"
 1224,1,2013,eco,ES," Netherlands Inst Ecol NIOO KNAW, Dept Aquat Ecol, NL-6708 PB Wageningen, Netherlands; ","Bakker, Elisabeth S."
@@ -4330,7 +4336,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1232,1,2013,water,ES," Radboud Univ Nijmegen, Inst Water & Wetland Res, Dept Anim Ecol & Ecophysiol, NL-6500 GL Nijmegen, Netherlands; ","Huijbers, Chantal M."
 1232,1,2013,water,ES," Radboud Univ Nijmegen, Inst Water & Wetland Res, Dept Anim Ecol & Ecophysiol, NL-6500 GL Nijmegen, Netherlands; ","Nagelkerken, Ivan"
 1232,1,2013,water,ES," Radboud Univ Nijmegen, Inst Water & Wetland Res, Dept Anim Ecol & Ecophysiol, NL-6500 GL Nijmegen, Netherlands; ","Jongejans, Eelke"
-1232,2,2013,rivers,ES," Griffith Univ, Australian Rivers Inst Coasts & Estuaries, Nathan, Qld 4222, Australia; ","Huijbers, Chantal M."
+1232,2,2013,rivers ,ES," Griffith Univ, Australian Rivers Inst Coasts & Estuaries, Nathan, Qld 4222, Australia; ","Huijbers, Chantal M."
 1232,3,2013,sea,ES," Univ Adelaide, Southern Seas Ecol Labs, Sch Earth & Environm Sci, Adelaide, SA 5005, Australia; ","Nagelkerken, Ivan"
 1232,4,2013,water,ES," Radboud Univ Nijmegen, Inst Water & Wetland Res, Dept Expt Plant Ecol, NL-6500 GL Nijmegen, Netherlands","Jongejans, Eelke"
 1233,1,2013,bio,ES,"Univ Florida, Dept Biol, Gainesville, FL 32611 USA",0
@@ -5104,8 +5110,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1393,3,2013,smithsonian,Remove," Smithsonian Trop Res Inst, Balboa, Ancon, Panama","Turner, Benjamin L."
 1394,1,2013,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada","Ziter, Carly"
 1394,1,2013,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada","MacDougall, Andrew S."
-1395,1,2013,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Findlay, S."
-1395,1,2013,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Fischer, D."
+1395,1,2013,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Findlay, S."
+1395,1,2013,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Fischer, D."
 1396,1,2013,bio,ES," Univ Queensland, Sch Biol Sci, Brisbane, Qld 4079, Australia; ","Ferguson, Nick"
 1396,1,2013,bio,ES," Univ Queensland, Sch Biol Sci, Brisbane, Qld 4079, Australia; ","White, Craig R."
 1396,1,2013,bio,ES," Univ Queensland, Sch Biol Sci, Brisbane, Qld 4079, Australia; ","Marshall, Dustin J."
@@ -5343,14 +5349,14 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1449,1,2012,zoo,ES," Univ Oxford, Dept Zool, Wildlife Conservat Res Unit, Recanati Kaplan Ctr, Abingdon OX13 5QL, Oxon, England","Valeix, Marion"
 1449,1,2012,zoo,ES," Univ Oxford, Dept Zool, Wildlife Conservat Res Unit, Recanati Kaplan Ctr, Abingdon OX13 5QL, Oxon, England","Loveridge, Andrew J."
 1449,1,2012,zoo,ES," Univ Oxford, Dept Zool, Wildlife Conservat Res Unit, Recanati Kaplan Ctr, Abingdon OX13 5QL, Oxon, England","Macdonald, David W."
-1450,1,2012,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Conlisk, Erin"
+1450,1,2012,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Conlisk, Erin"
 1450,2,2012,econ,SS," Univ Calif San Diego, Dept Econ, La Jolla, CA 92093 USA","Conlisk, John"
 1451,1,2012,bio,ES," Univ Queensland, Sch Biol Sci, St Lucia, Qld 4072, Australia; ","Doropoulos, Christopher"
 1451,1,2012,bio,ES," Univ Queensland, Sch Biol Sci, St Lucia, Qld 4072, Australia; ","Ward, Selina"
 1451,1,2012,bio,ES," Univ Queensland, Sch Biol Sci, St Lucia, Qld 4072, Australia; ","Marshell, Alyssa"
 1451,1,2012,bio,ES," Univ Queensland, Sch Biol Sci, St Lucia, Qld 4072, Australia; ","Mumby, Peter J."
 1451,2,2012,env,ES," Griffith Univ, Sch Environm, Nathan, Qld 4111, Australia; ","Diaz-Pulido, Guillermo"
-1451,3,2012,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia","Diaz-Pulido, Guillermo"
+1451,3,2012,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia","Diaz-Pulido, Guillermo"
 1452,1,2012,bio,ES," Dalhousie Univ, Dept Biol, Halifax, NS B3H 4J1, Canada","Minto, Coilin"
 1452,1,2012,bio,ES," Dalhousie Univ, Dept Biol, Halifax, NS B3H 4J1, Canada","Worm, Boris"
 1453,1,2012,climate,ES," Univ Maine, Climate Change Inst, Orono, ME 04469 USA; ","Saros, Jasmine E."
@@ -5468,7 +5474,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1478,1,2012,env,ES," Univ Calif Davis, Dept Environm Sci & Policy, Davis, CA 95616 USA","Fernandez-Going, B. M."
 1478,1,2012,env,ES," Univ Calif Davis, Dept Environm Sci & Policy, Davis, CA 95616 USA","Anacker, B. L."
 1478,1,2012,env,ES," Univ Calif Davis, Dept Environm Sci & Policy, Davis, CA 95616 USA","Harrison, S. P."
-1479,1,2012,inra,ES," INRA, BIOGECO, UMR1202, F-33610 Cestas, France; Univ Bordeaux, BIOGECO, UMR1202, F-33400 Talence, France","Castagneyrol, Bastien Univ Bordeaux, BIOGECO, UMR1202, F-33400 Talence, France"
+1479,1,2012,inra,Remove," INRA, BIOGECO, UMR1202, F-33610 Cestas, France; Univ Bordeaux, BIOGECO, UMR1202, F-33400 Talence, France","Castagneyrol, Bastien Univ Bordeaux, BIOGECO, UMR1202, F-33400 Talence, France"
 1480,1,2012,plant,ES," N Carolina State Univ, Dept Plant Biol, Raleigh, NC 27695 USA","Grady, John M."
 1480,1,2012,plant,ES," N Carolina State Univ, Dept Plant Biol, Raleigh, NC 27695 USA","Hoffmann, William A."
 1481,1,2012,eco,ES," Univ Calif San Diego, Ecol Behav & Evolut Sect, La Jolla, CA 92093 USA; ","Cleland, Elsa E."
@@ -6360,9 +6366,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2514,1,2012,bio,ES," Univ Calif Berkeley, Dept Integrat Biol, Berkeley, CA 94720 USA; ","Vasquez Pilco, Magno"
 2514,1,2012,bio,ES," Univ Calif Berkeley, Dept Integrat Biol, Berkeley, CA 94720 USA; ","Fine, Paul V. A."
 2514,2,2012,eco,ES," Univ Antilles Guyane, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
-2514,3,2012,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
-2514,3,2012,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Baraloto, Christopher"
-2514,3,2012,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Fortunel, Claire"
+2514,3,2012,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Lamarre, Greg P. A."
+2514,3,2012,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Baraloto, Christopher"
+2514,3,2012,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97310, French Guiana; ","Fortunel, Claire"
 2514,4,2012,bio,ES," Univ Florida, Dept Biol, Gainesville, FL 32611 USA; ","Baraloto, Christopher"
 2514,5,2012,bot,ES," Inst Nacl de Pesquisas da Amazonia, Bot Grad Program, Manaus, Amazonas, Brazil; ","Davila, Nallarett"
 2514,6,2012,bio,ES," Univ Amazonia Peruana, Dept Biol, Iquitos, Peru; ","Grandez Rios, Julio"
@@ -6680,7 +6686,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2570,1,2012,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA; ","Carroll, Ian T."
 2570,1,2012,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA; ","Nisbet, Roger M."
 2570,2,2012,nat,ES," Univ Michigan, Sch Nat Resources & Environm, Ann Arbor, MI 48109 USA","Cardinale, Bradley J."
-2572,1,2012,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92512 USA; ","Jenerette, G. Darrel"
+2572,1,2012,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92512 USA; ","Jenerette, G. Darrel"
 2572,2,2012,soil,ES," N Dakota State Univ, Dept Soil Sci, Fargo, ND 58108 USA","Chatterjee, Amitava"
 2573,1,2012,nat,ES," Natl Inst Environm Studies, Tsukuba, Ibaraki 3058506, Japan","Akasaka, Munemitsu"
 2573,1,2012,nat,ES," Natl Inst Environm Studies, Tsukuba, Ibaraki 3058506, Japan","Takamura, Noriko"
@@ -6813,7 +6819,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2607,3,2012,bio,ES," Univ Bergen, Dept Biol, N-5020 Bergen, Norway","Schei, Fride Hoistad"
 2608,1,2012,bio,ES," Univ Sherbrooke, Dept Biol, Sherbrooke, PQ J1K 2R1, Canada; ","Shipley, Bill"
 2608,2,2012,evol,ES," Univ Zurich, Inst Evolutionary & Environm Studies, CH-8057 Zurich, Switzerland; ","Paine, C. E. Timothy"
-2608,3,2012,inra,ES," INRA, UMR Ecol Forets Guyane, Kourou 97387, French Guiana","Baraloto, Christopher"
+2608,3,2012,inra,Remove," INRA, UMR Ecol Forets Guyane, Kourou 97387, French Guiana","Baraloto, Christopher"
 2609,1,2012,chem,PS," Univ Vienna, Dept Chem Ecol & Ecosyst Res, A-1090 Vienna, Austria; ","Mooshammer, Maria"
 2609,1,2012,chem,PS," Univ Vienna, Dept Chem Ecol & Ecosyst Res, A-1090 Vienna, Austria; ","Wanek, Wolfgang"
 2609,1,2012,chem,PS," Univ Vienna, Dept Chem Ecol & Ecosyst Res, A-1090 Vienna, Austria; ","Schnecker, Joerg"
@@ -7180,9 +7186,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2696,1,2012,bio,ES," Univ Saskatchewan, Dept Biol, Saskatoon, SK S7N 5E2, Canada","McLoughlin, P. D."
 2698,1,2011,agr,ES," Agrocampus Ouest, UMR1099 BiO3P, F-35042 Rennes, France; ","Hamelin, Frederic M."
 2698,1,2011,agr,ES," Agrocampus Ouest, UMR1099 BiO3P, F-35042 Rennes, France; ","Castel, Magda"
-2698,2,2011,inra,ES," INRA, UMR1099 BiO3P, F-35653 Le Rheu, France; ","Poggi, Sylvain"
-2698,2,2011,inra,ES," INRA, UMR1099 BiO3P, F-35653 Le Rheu, France; ","Andrivon, Didier"
-2698,3,2011,inra,ES," INRA, URIH UR880, F-06903 Sophia Antipolis, France; ","Mailleret, Ludovic"
+2698,2,2011,inra,Remove," INRA, UMR1099 BiO3P, F-35653 Le Rheu, France; ","Poggi, Sylvain"
+2698,2,2011,inra,Remove," INRA, UMR1099 BiO3P, F-35653 Le Rheu, France; ","Andrivon, Didier"
+2698,3,2011,inra,Remove," INRA, URIH UR880, F-06903 Sophia Antipolis, France; ","Mailleret, Ludovic"
 2698,4,2011,bio,ES," INRIA, BIOCORE, F-06902 Sophia Antipolis, France","Mailleret, Ludovic"
 2699,1,2011,evol,ES," Uppsala Univ, Evolutionary Biol Ctr, Dept Ecol & Genet, SE-75236 Uppsala, Sweden; ","Sletvold, Nina"
 2699,1,2011,evol,ES," Uppsala Univ, Evolutionary Biol Ctr, Dept Ecol & Genet, SE-75236 Uppsala, Sweden; ","Agren, Jon"
@@ -7260,7 +7266,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2719,1,2011,bio,ES," Univ Sherbrooke, Dept Biol, Sherbrooke, PQ J1K 2R1, Canada; ","Bergeron, Patrick"
 2719,1,2011,bio,ES," Univ Sherbrooke, Dept Biol, Sherbrooke, PQ J1K 2R1, Canada; ","Garant, Dany"
 2719,2,2011,bio,ES," Univ Quebec, Dept Sci Biol, Montreal, PQ H3C 3P8, Canada; ","Reale, Denis"
-2720,1,2011,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Groffman, Peter M."
+2720,1,2011,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Groffman, Peter M."
 2720,2,2011,zoo,ES," Miami Univ, Dept Zool, Oxford, OH 45056 USA","Fisk, Melany C."
 2722,1,2011,bio,ES,"Univ S Florida, Dept Integrat Biol, Tampa, FL 33620 USA",0
 2723,1,2011,wild,ES," Texas A&M Univ, Dept Wildlife & Fisheries Sci, College Stn, TX 77843 USA; ","Roach, Katherine A."
@@ -7432,7 +7438,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2755,1,2011,env,ES," Ohio State Univ, Sch Environm & Nat Resources, Columbus, OH 43210 USA","Jones, Todd M."
 2756,1,2011,smithsonian,Remove," Smithsonian Migratory Bird Ctr, Washington, DC 20008 USA; ","Wilson, Scott"
 2756,1,2011,smithsonian,Remove," Smithsonian Migratory Bird Ctr, Washington, DC 20008 USA; ","Marra, Peter P."
-2756,2,2011,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","LaDeau, Shannon L."
+2756,2,2011,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","LaDeau, Shannon L."
 2756,3,2011,bio,ES," Univ Copenhagen, Dept Biol, Ctr Macroecol Evolut & Climate, DK-2100 Copenhagen, Denmark","Tottrup, Anders P."
 2757,1,2011,marine,ES," Northeastern Univ, Ctr Marine Sci, Nahant, MA 01908 USA; ","Trussell, Geoffrey C."
 2757,1,2011,marine,ES," Northeastern Univ, Ctr Marine Sci, Nahant, MA 01908 USA; ","Matassa, Catherine M."
@@ -7528,7 +7534,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2771,3,2011,eco,ES," Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08540 USA; ","Hedin, Lars O."
 2771,4,2011,plant,ES," Univ Cambridge, Dept Plant Sci, Cambridge CB2 3EA, England; ","Tanner, Edmund V. J."
 2771,5,2011,eco,ES," Ctr Ecol & Hydrol, Wallingford OX10 8BB, Oxon, England; ","Sayer, Emma J."
-2771,6,2011,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, Louis S."
+2771,6,2011,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, Louis S."
 2771,7,2011,zoo,ES," Univ Oklahoma, Dept Zool, Norman, OK 73019 USA; ","Kaspari, Michael"
 2771,8,2011,bio,ES," Louisiana State Univ, Dept Biol Sci, Baton Rouge, LA 70803 USA; ","Harms, Kyle E."
 2771,9,2011,busgen inst,ES," Univ Gottingen, Busgen Inst, D-37077 Gottingen, Germany","Corre, Marife D."
@@ -7692,7 +7698,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2808,1,2011, land ,ES," Montana State Univ, Dept Land Resources & Environm Sci, Bozeman, MT 59717 USA; ","Meadow, James"
 2808,1,2011, land ,ES," Montana State Univ, Dept Land Resources & Environm Sci, Bozeman, MT 59717 USA; ","Zabinski, Catherine A."
 2808,2,2011,bio,ES," Univ S Florida, Dept Integrat Biol, Tampa, FL 33620 USA; ","Rohr, Jason R."
-2808,3,2011,inra,ES," Univ Bourgogne, INRA, UMR MSE, F-21000 Dijon, France","Redecker, Dirk"
+2808,3,2011,inra,Remove," Univ Bourgogne, INRA, UMR MSE, F-21000 Dijon, France","Redecker, Dirk"
 2809,1,2011,agr,ES," Agroscope Reckenholz Tanikon Res Stn ART, CH-8046 Zurich, Switzerland; ","Wagg, Cameron"
 2809,1,2011,agr,ES," Agroscope Reckenholz Tanikon Res Stn ART, CH-8046 Zurich, Switzerland; ","Stadler, Marina"
 2809,1,2011,agr,ES," Agroscope Reckenholz Tanikon Res Stn ART, CH-8046 Zurich, Switzerland; ","van der Heijden, Marcel G. A."
@@ -7767,7 +7773,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2830,2,2011,limn,ES," Univ Wisconsin, Ctr Limnol, Madison, WI 53706 USA; ","Vander Zanden, M. Jake"
 2830,3,2011,"stat,",MA," Univ Wisconsin, Dept Stat, Madison, WI 53706 USA; ","Clayton, Murray K."
 2830,4,2011,plant,ES," Univ Wisconsin, Dept Plant Pathol, Madison, WI 53706 USA; ","Clayton, Murray K."
-2830,5,2011,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Cole, Jonathan J."
+2830,5,2011,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Cole, Jonathan J."
 2830,6,2011,bio,ES," Univ Notre Dame, Dept Biol Sci, Notre Dame, IN 46556 USA; ","Coloso, James J."
 2830,7,2011,env,ES," Univ Virginia, Dept Environm Sci, Charlottesville, VA 22903 USA; ","Pace, Michael L."
 2830,8,2011,geol survey,Remove," US Geol Survey, Lake Ontario Biol Stn, Oswego, NY 13126 USA","Weidel, Brian C."
@@ -8190,10 +8196,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2928,2,2011,forest,ES," Univ British Columbia, Dept Forest Sci, Vancouver, BC V6T 1Z4, Canada; ","Kominoski, John S."
 2928,3,2011,env,ES," Evergreen State Coll, Environm Studies Program, Olympia, WA 98505 USA; ","LeRoy, Carri J."
 2928,4,2011,geog,SS," Univ Maryland Baltimore Cty, Dept Geog & Environm Syst, Baltimore, MD 21250 USA","Swan, Christopher M."
-2929,1,2011,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Oufiero, Christopher E."
-2929,1,2011,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Walsh, Matthew R."
-2929,1,2011,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Reznick, David N."
-2929,1,2011,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Garland, Theodore, Jr."
+2929,1,2011,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Oufiero, Christopher E."
+2929,1,2011,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Walsh, Matthew R."
+2929,1,2011,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Reznick, David N."
+2929,1,2011,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Garland, Theodore, Jr."
 2930,1,2011,bio,ES," San Diego State Univ, Dept Biol, San Diego, CA 92182 USA; ","Long, Jeremy D."
 2930,2,2011,marine,ES," Northeastern Univ, Ctr Marine Sci, Nahant, MA 01908 USA; ","Mitchell, Jocelyn L."
 2930,3,2011,marine,ES," Coll Charleston, Grice Marine Lab, Charleston, SC 29412 USA; ","Sotka, Erik E."
@@ -8229,7 +8235,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2936,3,2011,nat,ES," Jasper Natl Pk, Jasper, AB T0E 1E0, Canada","Wilmshurst, John F."
 2937,1,2011,bio,ES," Univ Nacl Comahue, INIBIOMA CONICET, Ctr Reg Univ Bariloche, Lab Ecotono, RA-8400 San Carlos De Bariloche, Rio Negro, Argentina","Werenkraut, Victoria"
 2937,1,2011,bio,ES," Univ Nacl Comahue, INIBIOMA CONICET, Ctr Reg Univ Bariloche, Lab Ecotono, RA-8400 San Carlos De Bariloche, Rio Negro, Argentina","Ruggiero, Adriana"
-2938,1,2010,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
+2938,1,2010,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Canham, Charles D."
 2938,2,2010,eco,ES," Cornell Univ, Dept Ecol & Evolutionary Biol, Ithaca, NY 14853 USA","Thomas, R. Quinn"
 2939,1,2010,bio,ES," Univ Victoria, Dept Biol, Water & Aquat Sci Res Program, Stn CSC, Victoria, BC V8W 3N5, Canada","Narwani, Anita"
 2939,1,2010,bio,ES," Univ Victoria, Dept Biol, Water & Aquat Sci Res Program, Stn CSC, Victoria, BC V8W 3N5, Canada","Mazumder, Asit"
@@ -8260,7 +8266,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2944,2,2010,bio,ES," Louisiana State Univ, Dept Biol Sci, Baton Rouge, LA 70803 USA; ","Harms, Kyle E."
 2944,3,2010,evol,ES," Univ Zurich, Inst Evolut Biol & Umweltwissensch, CH-8057 Zurich, Switzerland; ","Paine, C. E. Timothy"
 2944,4,2010,smithsonian,Remove," Smithsonian Trop Res Inst, Balboa, Panama","Harms, Kyle E."
-2946,1,2010,eco,ES,"Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA",0
+2946,1,2010,cary inst,ES,"Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA",0
 2947,1,2010,math ,MA,"Univ Alberta, Dept Math & Stat Sci, Edmonton, AB T6G 2G1, Canada",0
 2948,1,2010,"stat,",MA,"Univ Minnesota, Div Biostat, Minneapolis, MN 55455 USA",0
 2949,1,2010,bioinform,CS,"Emory Univ, Rollins Sch Publ Hlth, Dept Biostat & Bioinformat, Atlanta, GA 30322 USA",0
@@ -8468,15 +8474,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2996,2,2010,bio,ES," Univ Sherbrooke, Dept Biol, Sherbrooke, PQ J1K 2R1, Canada; ","Robillard, Audrey"
 2996,3,2010,nat,ES," McGill Univ, Dept Nat Resource Sci, Ste Anne De Bellevue, PQ H9X 3V9, Canada; ","Gregoire, Jacinthe"
 2996,4,2010,bio,ES," Univ Laval, Dept Biol, Ste Foy, PQ G1K 7P4, Canada","Duclos, Vanessa"
-2997,1,2010,inst wsl,Remove," Swiss Fed Res Inst WSL, CH-6500 Bellinzona, Switzerland; ","Sattler, T."
-2997,1,2010,inst wsl,Remove," Swiss Fed Res Inst WSL, CH-6500 Bellinzona, Switzerland; ","Moretti, M."
+2997,1,2010,swiss fed res,Remove," Swiss Fed Res Inst WSL, CH-6500 Bellinzona, Switzerland; ","Sattler, T."
+2997,1,2010,swiss fed res,Remove," Swiss Fed Res Inst WSL, CH-6500 Bellinzona, Switzerland; ","Moretti, M."
 2997,2,2010,eco,ES," Univ Bern, Inst Ecol & Evolut, Div Conservat Biol, CH-3012 Bern, Switzerland; ","Sattler, T."
 2997,2,2010,eco,ES," Univ Bern, Inst Ecol & Evolut, Div Conservat Biol, CH-3012 Bern, Switzerland; ","Arlettaz, R."
 2997,2,2010,eco,ES," Univ Bern, Inst Ecol & Evolut, Div Conservat Biol, CH-3012 Bern, Switzerland; ","Bontadina, F."
 2997,3,2010,bio,ES," Univ Montreal, Dept Sci Biol, Montreal, PQ H3C 3J7, Canada; ","Borcard, D."
 2997,3,2010,bio,ES," Univ Montreal, Dept Sci Biol, Montreal, PQ H3C 3J7, Canada; ","Legendre, P."
 2997,3,2010,bio,ES," Univ Montreal, Dept Sci Biol, Montreal, PQ H3C 3J7, Canada; ","Moretti, M."
-2997,4,2010,inst wsl,Remove," Swiss Fed Res Inst WSL, CH-8903 Birmensdorf, Switzerland","Obrist, M. K."
+2997,4,2010,swiss fed res,Remove," Swiss Fed Res Inst WSL, CH-8903 Birmensdorf, Switzerland","Obrist, M. K."
 2998,1,2010,kennedy space,Remove," Innovat Hlth Applicat, Kennedy Space Ctr, FL 32899 USA; ","Breininger, David R."
 2998,1,2010,kennedy space,Remove," Innovat Hlth Applicat, Kennedy Space Ctr, FL 32899 USA; ","Duncan, Brean W."
 2998,1,2010,kennedy space,Remove," Innovat Hlth Applicat, Kennedy Space Ctr, FL 32899 USA; ","Stolen, Eric D."
@@ -8601,7 +8607,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3026,9,2010,eco,ES," Univ Helsinki, Dept Ecol & Environm Sci, Lahti 15140, Finland; ","Mikola, J."
 3026,9,2010,eco,ES," Univ Helsinki, Dept Ecol & Environm Sci, Lahti 15140, Finland; ","Setala, H."
 3026,10,2010,ent,ES," Cent Lab Gen Ecol, Biodivers Dept, Sofia 1113, Bulgaria; ","Mladenov, A. G."
-3026,11,2010,inra,ES," Nancy Univ, INPL INRA, Agron & Environm, F-54505 Vandoeuvre Les Nancy, France; ","Robin, C."
+3026,11,2010,inra,Remove," Nancy Univ, INPL INRA, Agron & Environm, F-54505 Vandoeuvre Les Nancy, France; ","Robin, C."
 3026,12,2010,soil,ES," Univ Wageningen & Res Ctr, Soil Ctr, NL-6708 PB Wageningen, Netherlands; ","de Ruiter, P. C."
 3027,1,2010,bio,ES," Univ Penn, Dept Biol, Philadelphia, PA 19104 USA; ","Ji, Baoming"
 3027,1,2010,bio,ES," Univ Penn, Dept Biol, Philadelphia, PA 19104 USA; ","Casper, Brenda B."
@@ -8804,8 +8810,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3085,1,2010,eco,ES," Univ Calif Irvine, Dept Ecol & Evolutionary Biol, Irvine, CA 92697 USA; ","McGuire, Krista L."
 3085,1,2010,eco,ES," Univ Calif Irvine, Dept Ecol & Evolutionary Biol, Irvine, CA 92697 USA; ","Allison, Steven D."
 3085,1,2010,eco,ES," Univ Calif Irvine, Dept Ecol & Evolutionary Biol, Irvine, CA 92697 USA; ","Treseder, Kathleen K."
-3085,2,2010,rivers,ES," Univ Calif Riverside, Dept Plant Pathol & Microbiol, Riverside, CA 92521 USA; ","Bent, Elizabeth"
-3085,2,2010,rivers,ES," Univ Calif Riverside, Dept Plant Pathol & Microbiol, Riverside, CA 92521 USA; ","Borneman, James"
+3085,2,2010,plant,ES," Univ Calif Riverside, Dept Plant Pathol & Microbiol, Riverside, CA 92521 USA; ","Bent, Elizabeth"
+3085,2,2010,plant,ES," Univ Calif Riverside, Dept Plant Pathol & Microbiol, Riverside, CA 92521 USA; ","Borneman, James"
 3085,3,2010,epidemiol,ES," Univ Calif Irvine, Dept Epidemiol, Irvine, CA 92697 USA; ","Majumder, Arundhati"
 3085,4,2010,earth,ES," Univ Calif Irvine, Dept Earth Syst Sci, Irvine, CA 92697 USA","Allison, Steven D."
 3086,1,2010,bio,ES," Univ Calif Berkeley, Dept Integrat Biol, Berkeley, CA 94720 USA; ","Hausmann, Natasha Teutsch"
@@ -8832,8 +8838,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3090,2,2010,marine,ES," Univ Tasmania, Ctr Marine Sci, Hobart, Tas 7001, Australia; ","Bestley, Sophie"
 3090,2,2010,marine,ES," Univ Tasmania, Ctr Marine Sci, Hobart, Tas 7001, Australia; ","Patterson, Toby A."
 3090,3,2010,zoo,ES," Univ Tasmania, Sch Zool, Hobart, Tas 7001, Australia","Hindell, Mark A."
-3091,1,2010,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Caraco, Nina"
-3091,1,2010,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Cole, Jonathan J."
+3091,1,2010,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Caraco, Nina"
+3091,1,2010,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Cole, Jonathan J."
 3091,2,2010,aquat,ES," Ohio State Univ, Aquat Ecol Lab, Dept Evolut Ecol & Organismal Biol, Columbus, OH 43212 USA; ","Bauer, James E."
 3091,3,2010,geosci,ES," Univ Massachusetts, Dept Geosci, Amherst, MA 01003 USA; ","Petsch, Steven"
 3091,4,2010,forest,ES," Yale Univ, Sch Forestry & Environm Studies, New Haven, CT 06511 USA","Raymond, Peter"
@@ -8944,7 +8950,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3121,2,2010,marine,ES," Victorian Marine Sci Consortium, Queenscliff, Vic 3225, Australia; ","Macreadie, Peter I."
 3121,3,2010,arthur rylah,ES," Arthur Rylah Inst, Dept Sustainabil & Environm, Heidelburg, Vic 3084, Australia; ","Hindell, Jeremy S."
 3121,4,2010,marine,ES," Marine & Freshwater Fisheries Res Inst, Queenscliff, Vic 3225, Australia; ","Jenkins, Gregory P."
-3121,5,2010,rivers,ES," Griffith Univ, Australian Rivers Inst, Gold Coast Campus, Qld 9726, Australia; ","Connolly, Rod M."
+3121,5,2010,rivers ,ES," Griffith Univ, Australian Rivers Inst, Gold Coast Campus, Qld 9726, Australia; ","Connolly, Rod M."
 3121,6,2010,env,ES," Griffith Univ, Sch Environm, Gold Coast Campus, Qld 9726, Australia","Connolly, Rod M."
 3122,1,2010,marine,ES," Leibniz Inst Marine Sci, D-24105 Kiel, Germany","Matthiessen, Birte"
 3122,1,2010,marine,ES," Leibniz Inst Marine Sci, D-24105 Kiel, Germany","Mielke, Erik"
@@ -8973,9 +8979,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3126,3,2010,us epa,Remove," US EPA, Natl Exposure Res Lab, Athens, GA 30605 USA; ","Molina, Marirosa"
 3126,4,2010,ent,ES," Guangdong Acad Sci, Guangdong Entomol Inst, Guangzhou 510260, Guangdong, Peoples R China; ","Li, Jianxiong"
 3126,5,2010,eco,ES," Rice Univ, Dept Ecol & Evolutionary Biol, Houston, TX 77005 USA","Siemann, Evan"
-3127,2,2010,inra,ES," INRA, UMR 1083, F-34060 Montpellier 01, France","Souquet, Jean-Marc"
-3127,2,2010,inra,ES," INRA, UMR 1083, F-34060 Montpellier 01, France","Meudec, Emmanuelle"
-3127,2,2010,inra,ES," INRA, UMR 1083, F-34060 Montpellier 01, France","Cheynier, Veronique"
+3127,2,2010,inra,Remove," INRA, UMR 1083, F-34060 Montpellier 01, France","Souquet, Jean-Marc"
+3127,2,2010,inra,Remove," INRA, UMR 1083, F-34060 Montpellier 01, France","Meudec, Emmanuelle"
+3127,2,2010,inra,Remove," INRA, UMR 1083, F-34060 Montpellier 01, France","Cheynier, Veronique"
 3128,1,2010,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada","MacDougall, Andrew S."
 3128,1,2010,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada","Duwyn, Alisha"
 3128,1,2010,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada","Jones, Natalie T."
@@ -9322,8 +9328,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3214,5,2010,bio,ES," Univ Aberdeen, Sch Biol Sci, Aberdeen AB24 3UU, Scotland","Burslem, David F. R. P."
 3215,1,2010,plant,ES," Univ Utrecht, Dept Plant Ecol & Biodivers, NL-3508 TB Utrecht, Netherlands; ","Selaya, N. Galia"
 3215,1,2010,plant,ES," Univ Utrecht, Dept Plant Ecol & Biodivers, NL-3508 TB Utrecht, Netherlands; ","Anten, Niels P. R."
-3216,1,2010,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Regan, Helen M."
-3216,1,2010,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Swab, Rebecca"
+3216,1,2010,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Regan, Helen M."
+3216,1,2010,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Swab, Rebecca"
 3216,2,2010,bio,ES," San Diego State Univ, Dept Biol, San Diego, CA 92182 USA","Crookston, John B."
 3216,2,2010,bio,ES," San Diego State Univ, Dept Biol, San Diego, CA 92182 USA","Franklin, Janet"
 3216,2,2010,bio,ES," San Diego State Univ, Dept Biol, San Diego, CA 92182 USA","Lawson, Dawn M."
@@ -9665,7 +9671,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3305,4,2010,usda,Remove," US Forest Serv, USDA, Pedro, OH 45659 USA","Kirschbaum, Chad"
 3306,1,2010,ent,ES," Penn State Univ, Dept Entomol, University Pk, PA 16802 USA; ","Bjornstad, Ottar N."
 3306,2,2010,bio,ES," Penn State Univ, Dept Biol, University Pk, PA 16802 USA; ","Bjornstad, Ottar N."
-3306,3,2010,inra,ES," INRA, UR Zool Forestiere 633, F-45075 Orleans, France; ","Robinet, Christelle"
+3306,3,2010,inra,Remove," INRA, UR Zool Forestiere 633, F-45075 Orleans, France; ","Robinet, Christelle"
 3306,4,2010,usda,Remove," US Forest Serv, No Res Stn, USDA, Morgantown, WV 26505 USA","Robinet, Christelle"
 3306,4,2010,usda,Remove," US Forest Serv, No Res Stn, USDA, Morgantown, WV 26505 USA","Liebhold, Andrew M."
 3307,1,2010,plant,ES," Katholieke Univ Leuven, Div Plant Ecol & Systemat, B-3001 Heverlee, Belgium; ","Jacquemyn, Hans"
@@ -9752,9 +9758,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3328,1,2009,eco,ES," Univ Colorado, Dept Ecol & Evolutionary Biol, Boulder, CO 80309 USA; ","Collinge, Sharon K."
 3328,1,2009,eco,ES," Univ Colorado, Dept Ecol & Evolutionary Biol, Boulder, CO 80309 USA; ","Ray, Chris"
 3328,2,2009,env,ES," Univ Colorado, Environm Studies Program, Boulder, CO 80309 USA","Collinge, Sharon K."
-3329,1,2009,inra,ES," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Salles, Joana F."
-3329,1,2009,inra,ES," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Poly, Franck"
-3329,1,2009,inra,ES," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Le Roux, Xavier"
+3329,1,2009,inra,Remove," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Salles, Joana F."
+3329,1,2009,inra,Remove," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Poly, Franck"
+3329,1,2009,inra,Remove," Univ Lyon 1, INRA, Ecol Microbienne UMR 5557, USC 1193, F-69622 Villeurbanne, France; ","Le Roux, Xavier"
 3329,2,2009,env,ES," Univ Zurich, Inst Environm Sci, CH-8057 Zurich, Switzerland","Schmid, Bernhard"
 3330,1,2009,arct,ES," Univ Colorado, Inst Arctic & Alpine Res, INSTAAR, Boulder, CO 80309 USA; ","Wieder, William R."
 3330,1,2009,arct,ES," Univ Colorado, Inst Arctic & Alpine Res, INSTAAR, Boulder, CO 80309 USA; ","Townsend, Alan R."
@@ -10282,7 +10288,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3459,1,2009,eco,ES," Univ Arizona, Dept Ecol & Evolutionary Biol, Tucson, AZ 85721 USA","Enquist, Brian J."
 3460,1,2009,usda,Remove,"ARS, USDA, Rangeland Resources Res Unit, Ft Collins, CO 80526 USA",0
 3461,1,2009,bio,ES," Calif State Univ, Dept Biol Sci, San Marcos, CA 92096 USA; ","Vourlitis, George L."
-3461,2,2009,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA","Pasquini, Sarah C."
+3461,2,2009,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA","Pasquini, Sarah C."
 3462,1,2009,eco,ES," Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08544 USA","Menge, Duncan N. L."
 3462,1,2009,eco,ES," Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08544 USA","Hedin, Lars O."
 3463,1,2009,bio,ES," Univ Liverpool, Sch Biol Sci, Liverpool L69 7ZB, Merseyside, England","Lowe, Chris D."
@@ -10499,7 +10505,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3515,2,2009,chem,PS," Oak Ridge Natl Lab, Div Chem Sci, Oak Ridge, TN 37932 USA; ","Cole, David R."
 3515,3,2009,geosci,ES," Univ Nevada, Dept Geosci, Las Vegas, NV 89154 USA","Buck, Brenda J."
 3516,1,2009,bio,ES," Syracuse Univ, Biol Res Labs, Syracuse, NY 13244 USA; ","Frank, Douglas A."
-3516,2,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Groffman, Peter M."
+3516,2,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Groffman, Peter M."
 3517,1,2009,plant,ES," Humboldt Univ, Inst Plant Nutr, Landwirtschaftlich Gartner Fak, FG Pflanzenernahrung & Dungung, D-10099 Berlin, Germany; ","Bessler, Holger"
 3517,1,2009,plant,ES," Humboldt Univ, Inst Plant Nutr, Landwirtschaftlich Gartner Fak, FG Pflanzenernahrung & Dungung, D-10099 Berlin, Germany; ","Engels, Christof"
 3517,2,2009,max planck,Remove," Max Planck Inst Biogeochem, D-07749 Jena, Germany; ","Temperton, Vicky M."
@@ -10669,7 +10675,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3563,1,2009,eco,ES," Rutgers State Univ, Dept Ecol Evolut & Nat Resources, New Brunswick, NJ 08901 USA","Binckley, Christopher A."
 3564,2,2009,math ,MA," Univ London Imperial Coll Sci Technol & Med, Inst Math Sci, London SW7 2PG, England","Rhodes, C. J."
 3565,1,2009,geol survey,Remove,"Univ Calif Santa Barbara, Inst Marine Sci, US Geol Survey, Western Ecol Res Ctr, Santa Barbara, CA 93106 USA",0
-3567,1,2009,eco,ES,"Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA",0
+3567,1,2009,cary inst,ES,"Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA",0
 3568,1,2009,med,ES," Univ Michigan, Howard Hughes Med Inst, Ann Arbor, MI 49109 USA; ","Pascual, Mercedes"
 3568,2,2009,eco,ES," Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 49109 USA; ","Pascual, Mercedes"
 3568,3,2009,trop,ES," Univ London London Sch Hyg & Trop Med, Dept Infect & Trop Dis, London WC1E 7HT, England","Bouma, Menno J."
@@ -10791,9 +10797,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3594,4,2009,joseph fourier,ES," Univ Grenoble 1, UMS CNRS UJF 2925, Stn Alpine Joseph Fourier, F-38041 Grenoble 9, France; ","Quetier, Fabien"
 3594,4,2009,joseph fourier,ES," Univ Grenoble 1, UMS CNRS UJF 2925, Stn Alpine Joseph Fourier, F-38041 Grenoble 9, France; ","Robson, Matt"
 3594,4,2009,joseph fourier,ES," Univ Grenoble 1, UMS CNRS UJF 2925, Stn Alpine Joseph Fourier, F-38041 Grenoble 9, France; ","Thebault, Aurelie"
-3594,5,2009,inra,ES," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Ansquer, Pauline"
-3594,5,2009,inra,ES," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Cruz, Pablo"
-3594,5,2009,inra,ES," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Jouany, Claire"
+3594,5,2009,inra,Remove," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Ansquer, Pauline"
+3594,5,2009,inra,Remove," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Cruz, Pablo"
+3594,5,2009,inra,Remove," INRA, Equipe ORPHEE, ARCHE, UMR 1248, F-31326 Castanet Tolosan, France; ","Jouany, Claire"
 3594,6,2009,bot,ES," Univ Coimbra, Dept Bot, P-3000 Coimbra, Portugal; ","Freitas, Helena"
 3594,7,2009,bio,ES," Univ S Bohemia, Fac Biol Sci, Dept Bot, Ceske Budejovice 37005, Czech Republic; ","Dolezal, Jiri"
 3594,7,2009,bio,ES," Univ S Bohemia, Fac Biol Sci, Dept Bot, Ceske Budejovice 37005, Czech Republic; ","Leps, Jan"
@@ -10817,9 +10823,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3597,1,2009,env,ES," Univ Zurich, Inst Environm Sci, CH-8057 Zurich, Switzerland","Baudois, Oksana"
 3597,1,2009,env,ES," Univ Zurich, Inst Environm Sci, CH-8057 Zurich, Switzerland","Eichenberger-Glinz, Susann"
 3597,1,2009,env,ES," Univ Zurich, Inst Environm Sci, CH-8057 Zurich, Switzerland","Schmid, Bernhard"
-3598,1,2009,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Querejeta, Jose I."
-3598,1,2009,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Egerton-Warburton, Louise M."
-3598,1,2009,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Allen, Michael F."
+3598,1,2009,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Querejeta, Jose I."
+3598,1,2009,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Egerton-Warburton, Louise M."
+3598,1,2009,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Allen, Michael F."
 3598,2,2009,bio,ES," CSIC, Ctr Edafol & Biol Aplicada Segura, Dept Conservac Suelos & Aguas, Murcia 30100, Spain; ","Querejeta, Jose I."
 3598,3,2009,bot,ES," Chicago Bot Garden, Glencoe, IL 60022 USA; ","Egerton-Warburton, Louise M."
 3599,1,2009,bio,ES," Univ Montreal, Dept Sci Biol, Montreal, PQ H3C 3J7, Canada; ","Legendre, Pierre"
@@ -11088,11 +11094,11 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3671,1,2009,wild,ES," So Illinois Univ, Cooperat Wildlife Res Lab, Ctr Ecol, Carbondale, IL 62901 USA; ","Connors, Matthew J."
 3671,2,2009,zoo,ES," So Illinois Univ, Dept Zool, Ctr Ecol, Carbondale, IL 62901 USA; ","Schauber, Eric M."
 3671,2,2009,zoo,ES," So Illinois Univ, Dept Zool, Ctr Ecol, Carbondale, IL 62901 USA; ","Connors, Matthew J."
-3671,3,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Schauber, Eric M."
-3671,3,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Connors, Matthew J."
-3671,3,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Goodwin, Brett J."
-3671,3,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Jones, Clive G."
-3671,3,2009,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
+3671,3,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Schauber, Eric M."
+3671,3,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Connors, Matthew J."
+3671,3,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Goodwin, Brett J."
+3671,3,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Jones, Clive G."
+3671,3,2009,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
 3671,4,2009,bio,ES," Univ N Dakota, Dept Biol, Grand Forks, ND 58202 USA","Goodwin, Brett J."
 3672,1,2009,marine,ES," Univ Newcastle, Sch Marine Sci & Technol, Newcastle Upon Tyne NE1 7RU, Tyne & Wear, England; ","MacNeil, M. Aaron"
 3672,1,2009,marine,ES," Univ Newcastle, Sch Marine Sci & Technol, Newcastle Upon Tyne NE1 7RU, Tyne & Wear, England; ","Graham, Nicholas A. J."
@@ -11205,7 +11211,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3701,4,2008,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA; ","Dahm, C. N."
 3701,4,2008,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA; ","Fellows, C. S."
 3701,4,2008,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA; ","Crenshaw, C. L."
-3701,5,2008,rivers,ES," Griffith Univ, Australian Rivers Inst, Fac Environm Sci, Nathan, Qld 4111, Australia; ","Fellows, C. S."
+3701,5,2008,rivers ,ES," Griffith Univ, Australian Rivers Inst, Fac Environm Sci, Nathan, Qld 4111, Australia; ","Fellows, C. S."
 3701,6,2008,env,ES," Griffith Univ, Grifith Sch Environm, Fac Environm Sci, Nathan, Qld 4111, Australia; ","Fellows, C. S."
 3701,7,2008,nat,ES," Loyola Univ Chicago, Dept Nat Sci, Evanston, IL 60626 USA","Peterson, C. G."
 3703,1,2008,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA; ","Collins, Scott L."
@@ -11455,12 +11461,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3761,3,2008,reef,ES," James Cook Univ, ARC Ctr Excellence Coral Reef Studies, Townsville, Qld 4811, Australia; ","Connolly, Sean R."
 3761,4,2008,marine,ES," James Cook Univ, Sch Marine & Trop Biol, Townsville, Qld 4811, Australia","Connolly, Sean R."
 3762,1,2008,bio,ES," Union Coll, Dept Biol Sci, Schenectady, NY 12308 USA; ","Logiudice, Kathleen"
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Logiudice, Kathleen"
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Duerr, Shannon T. K."
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Newhouse, Michael J."
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Schmidt, Kenneth A."
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Killilea, Mary E."
-3762,2,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Logiudice, Kathleen"
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Duerr, Shannon T. K."
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Newhouse, Michael J."
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Schmidt, Kenneth A."
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Killilea, Mary E."
+3762,2,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
 3763,1,2008,forest,ES," Colorado State Univ, Dept Forest Rangeland & Watershed Stewardship, Ft Collins, CO 80523 USA; ","Boyden, Suzanne"
 3763,1,2008,forest,ES," Colorado State Univ, Dept Forest Rangeland & Watershed Stewardship, Ft Collins, CO 80523 USA; ","Binkley, Dan"
 3763,2,2008,eco,ES," Colorado State Univ, Grad Degree Program Ecol, Ft Collins, CO 80523 USA; ","Boyden, Suzanne"
@@ -11473,8 +11479,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3765,1,2008,educ,SS," No Arizona Univ, Ctr Environm Sci & Educ, Flagstaff, AZ 86011 USA; ","Johnson, Nancy Collins"
 3765,1,2008,educ,SS," No Arizona Univ, Ctr Environm Sci & Educ, Flagstaff, AZ 86011 USA; ","Rowland, Diane L."
 3765,2,2008,usda,Remove," ARS, USDA, Natl Peanut Res Lab, Dawson, GA 31742 USA; ","Rowland, Diane L."
-3765,3,2008,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Corkidi, Lea"
-3765,3,2008,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Allen, Edith B."
+3765,3,2008,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Corkidi, Lea"
+3765,3,2008,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Allen, Edith B."
 3765,4,2008,life,ES," Tree Life Nursery, San Juan Capistrano, CA 92693 USA","Corkidi, Lea"
 3766,1,2008,bio,ES," Univ Quebec, Dept Sci Biol, CEF, Montreal, PQ H3C 3P8, Canada","Gravel, Dominique"
 3766,1,2008,bio,ES," Univ Quebec, Dept Sci Biol, CEF, Montreal, PQ H3C 3P8, Canada","Beaudet, Marilou"
@@ -11714,8 +11720,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3827,1,2008,bio,ES," Penn State Univ, Mueller Lab, Dept Biol, Ctr Infect Dis Dynam, University Pk, PA 16802 USA","Vandegrift, Kurt J."
 3827,1,2008,bio,ES," Penn State Univ, Mueller Lab, Dept Biol, Ctr Infect Dis Dynam, University Pk, PA 16802 USA","Raffel, Thomas R."
 3827,1,2008,bio,ES," Penn State Univ, Mueller Lab, Dept Biol, Ctr Infect Dis Dynam, University Pk, PA 16802 USA","Hudson, Peter J."
-3828,1,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Brunner, Jesse L."
-3828,1,2008,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Ostfeld, Richard S."
+3828,1,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Brunner, Jesse L."
+3828,1,2008,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA","Ostfeld, Richard S."
 3829,1,2008,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada; ","Andruskiw, Mark"
 3829,1,2008,bio,ES," Univ Guelph, Dept Integrat Biol, Guelph, ON N1G 2W1, Canada; ","Fryxell, John M."
 3829,2,2008,forest,ES," Canadian Forest Serv, Sault Ste Marie, ON P6A 2E5, Canada; ","Thompson, Ian D."
@@ -11885,8 +11891,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3879,1,2008,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA; ","Campbell, Diane R."
 3879,1,2008,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA; ","Waser, Nickolas M."
 3879,1,2008,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA; ","Brody, Alison K."
-3879,2,2008,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Price, Mary V."
-3879,2,2008,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Waser, Nickolas M."
+3879,2,2008,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Price, Mary V."
+3879,2,2008,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Waser, Nickolas M."
 3879,3,2008,eco,ES," Univ Calif Irvine, Dept Ecol & Evolutionary Biol, Irvine, CA 92697 USA; ","Campbell, Diane R."
 3879,4,2008,bio,ES," Univ Vermont, Dept Biol, Burlington, VT 05405 USA","Brody, Alison K."
 3880,1,2008,ent,ES," Washington State Univ, Dept Entomol, Pullman, WA 99163 USA","Straub, Cory S."
@@ -12808,7 +12814,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4159,3,2007,bio,ES," Humboldt State Univ, Dept Biol Sci, Arcata, CA 95521 USA"," Nunez, MA"
 4159,3,2007,bio,ES," Humboldt State Univ, Dept Biol Sci, Arcata, CA 95521 USA"," Oswalt, CM"
 4159,3,2007,bio,ES," Humboldt State Univ, Dept Biol Sci, Arcata, CA 95521 USA"," Lane, KE"
-4160,1,2007,inra,ES,"INRA, F-06903 Sophia Antipolis, France","Fauvergue, X"
+4160,1,2007,inra,Remove,"INRA, F-06903 Sophia Antipolis, France","Fauvergue, X"
 4161,1,2007,plant,ES,"Univ Calif Davis, Dept Plant Sci, Ecol Grad Grp, Davis, CA 95616 USA",0
 4162,1,2007,eco,ES,"Univ Calif Irvine, Dept Ecol & Evolut Biol, Irvine, CA 92697 USA","Hawkins, BA"
 4162,2,2007,eco,ES," Univ Alcala de Henares, Dept Ecol, E-28871 Madrid, Spain"," Albuquerque, FS"
@@ -13033,7 +13039,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4232,1,2007,bio,ES,"Univ Laval, Dept Biol, Ste Foy, PQ G1K 7P4, Canada","Gauthier, G"
 4232,2,2007,ctr etud nord,ES," Univ Laval, Ctr Etud Nordiques, Ste Foy, PQ G1K 7P4, Canada"," Besbeas, P"
 4232,3,2007,math ,MA," Univ Kent, Inst Math & Stat, Canterbury CT2 7NF, Kent, England"," Lebreton, JD"
-4233,1,2007,inra,ES,"INRA, F-54280 Seichamps, France","Dambrine, E"
+4233,1,2007,inra,Remove,"INRA, F-54280 Seichamps, France","Dambrine, E"
 4233,2,2007,tech st jerome,ES," Fac Sci & Tech St Jerome, CNRS, Inst Mediteranneen Ecol & Paleoecol, F-13397 Marseille 20, France"," Dupouey, JL"
 4233,3,2007,eco,ES," CNRS, Lab Chrono Ecol, F-25030 Besancon, France"," Laut, L"
 4233,3,2007,eco,ES," CNRS, Lab Chrono Ecol, F-25030 Besancon, France"," Humbert, L"
@@ -13100,7 +13106,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4257,6,2007,pasture sci,ES," Univ Ft Hare, Dept Livestock & Pasture Sci, ZA-5700 Alice, South Africa"," Sowry, R"
 4257,6,2007,pasture sci,ES," Univ Ft Hare, Dept Livestock & Pasture Sci, ZA-5700 Alice, South Africa"," Trollope, L"
 4257,6,2007,pasture sci,ES," Univ Ft Hare, Dept Livestock & Pasture Sci, ZA-5700 Alice, South Africa"," Trollope, WSW"
-4258,1,2007,rivers,ES,"Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA",0
+4258,1,2007,bot,ES,"Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA",0
 4259,1,2007,eco,ES,"Univ Arizona, Dept Ecol & Evolutionary Biol, Tucson, AZ 85721 USA",0
 4260,1,2007,bio,ES,"Indiana Univ, Dept Biol, Bloomington, IN 47405 USA","Hall, SR"
 4260,2,2007,bio,ES," Univ Texas, Sect Integrat Biol, Austin, TX 78712 USA"," Leibold, MA"
@@ -13368,7 +13374,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4350,2,2007,agr,ES," Swedish Univ Agr Sci, Dept Forest Vegetat Ecol, S-90183 Umea, Sweden"," Delorme, S"
 4350,3,2007,nat,ES," Off Natl Forets, F-48000 Mende, France"," Hornberg, G"
 4350,3,2007,nat,ES," Off Natl Forets, F-48000 Mende, France"," Zackrisson, O"
-4351,1,2007,inra,ES,"INRA, UMR Ecol Forets Guyane, Kourou, French Guiana","Baraloto, C"
+4351,1,2007,inra,Remove,"INRA, UMR Ecol Forets Guyane, Kourou, French Guiana","Baraloto, C"
 4351,2,2007,engr,EG," ENGREF, UMR Ecol Forets Guyane, Kourou, French Guiana"," Morneau, F"
 4351,3,2007,foret,ES," CIRAD Foret, UMR Ecol Forets Guyane, Kourou, French Guiana"," Bonal, D"
 4351,4,2007,engr,EG," ENGREF, UMR, Lab Etud Ressources Foret Bois, F-54042 Nancy, France"," Blanc, L"
@@ -13838,7 +13844,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4515,3,2006,ent,ES," Univ Wageningen & Res Ctr, Entomol Lab, NL-6700 EH Wageningen, Netherlands"," van der Putten, WH"
 4516,1,2006,plant,ES,"Michigan State Univ, Dept Plant Biol, E Lansing, MI 48824 USA",0
 4517,1,2006,eco,ES,"Univ Oregon, Ctr Ecol & Evolutionary Biol, Eugene, OR 97405 USA",0
-4518,1,2006,eco,ES,"WSL Swiss Fed Res Inst, Sect Ecol Genet, CH-8093 Birmensdorf, Switzerland",0
+4518,1,2006,swiss fed res,Remove,"WSL Swiss Fed Res Inst, Sect Ecol Genet, CH-8093 Birmensdorf, Switzerland",0
 4519,1,2006,geog,SS,"Univ Western Australia, Sch Earth & Geog Sci, Ctr Land Rehabil, Crawley, WA 6009, Australia","Cookson, WR"
 4519,2,2006,plant,ES," Univ Giessen, Dept Plant Ecol, D-35392 Giessen, Germany"," Muller, C"
 4519,3,2006,bio,ES," Murdoch Univ, Sch Biol Sci & Biotechnol, Div Sci, Murdoch, WA 6150, Australia"," O'Brien, PA"
@@ -14006,8 +14012,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4579,6,2006,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," MacIntyre, S"
 4580,1,2006,inst adv,PS,"Charles Darwin Univ, Sch Environm Res, Inst Adv Studies, Darwin, NT 0909, Australia",0
 4581,1,2006,bio,ES,"Univ Alberta, Dept Biol, Edmonton, AB T6G 2E9, Canada",0
-4582,1,2006,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Rotenberry, JT"
-4582,2,2006,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Preston, KL"
+4582,1,2006,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Rotenberry, JT"
+4582,2,2006,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Preston, KL"
 4582,3,2006,usgs,Remove," USGS, Forest & Rangeland Ecosyst Sci Ctr, Snake River Field Stn, Boise, ID 83706 USA"," Knick, ST"
 4583,1,2006,bio,ES,"Stanford Univ, Dept Biol Sci, Stanford, CA 94305 USA","Cornwell, WK"
 4583,2,2006,geol survey,Remove," US Geol Survey, Western Ecol Res Ctr, Sequoia Kings Canyon Field Stn, Three Rivers, CA 93271 USA"," Schwilk, DW"
@@ -14362,8 +14368,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4722,6,2006,fish,ES," Oregon State Univ, Dept Fisheries & Wildlife, Corvallis, OR 97331 USA"," Voelzer, JF"
 4722,6,2006,fish,ES," Oregon State Univ, Dept Fisheries & Wildlife, Corvallis, OR 97331 USA"," Chelgren, ND"
 4722,6,2006,fish,ES," Oregon State Univ, Dept Fisheries & Wildlife, Corvallis, OR 97331 USA"," Herzog, MP"
-4723,1,2006,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Preston, KL"
-4723,2,2006,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
+4723,1,2006,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Preston, KL"
+4723,2,2006,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
 4724,1,2006,usgs,Remove,"USGS Patuxent Wildlife Res Ctr, Laurel, MD 20708 USA","Kendall, WL"
 4724,2,2006,"stat,",MA," N Carolina State Univ, Dept Stat, Biomath Program, Raleigh, NC 27695 USA"," Conn, PB"
 4724,2,2006,"stat,",MA," N Carolina State Univ, Dept Stat, Biomath Program, Raleigh, NC 27695 USA"," Hines, JE"
@@ -14648,8 +14654,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4844,1,2005,eco,ES,"Univ Colorado, Dept Ecol & Evolutionary Biol, Boulder, CO 80309 USA",0
 4845,1,2005,zoo,ES,"Stockholm Univ, Dept Zool, SE-10691 Stockholm, Sweden",0
 4846,1,2005,eco,ES,"Univ Michigan, Dept Ecol & Evolutionary Biol, Ann Arbor, MI 48109 USA","Baraloto, C"
-4846,2,2005,inra,ES," INRA, UMR Ecol Forets Guyane, F-97387 Kourou, Guyane, France"," Goldberg, DE"
-4846,2,2005,inra,ES," INRA, UMR Ecol Forets Guyane, F-97387 Kourou, Guyane, France"," Bonal, D"
+4846,2,2005,inra,Remove," INRA, UMR Ecol Forets Guyane, F-97387 Kourou, Guyane, France"," Goldberg, DE"
+4846,2,2005,inra,Remove," INRA, UMR Ecol Forets Guyane, F-97387 Kourou, Guyane, France"," Bonal, D"
 4847,1,2005,bio,ES,"McGill Univ, Biol Dept, Montreal, PQ H3A 1B1, Canada",0
 4848,1,2005,bio,ES,"Virginia Polytech Inst & State Univ, Dept Biol, Blacksburg, VA 24061 USA","Brookshire, ENJ"
 4848,2,2005,eco,ES," Cornell Univ, Dept Ecol & Evolutionary Biol, Ithaca, NY 14853 USA"," Valett, HM"
@@ -14671,6 +14677,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4855,1,2005,bio,ES,"Univ Missouri, Dept Biol, St Louis, MO 63121 USA","Ricklefs, RE"
 4855,2,2005,sea,ES," Univ Washington, Burke Museum, Seattle, WA 98195 USA"," Rohwer, S"
 4858,1,2005,zoo,ES,"Univ Wisconsin, Dept Zool, Madison, WI 53706 USA",0
+4859,1,2005,swiss fed res,Remove,"WSL Swiss Fed Res Inst, CH-8903 Birmensdorf, Switzerland","Wagner, HH"
 4859,2,2005,zoo,ES," Univ Toronto, Dept Zool, Toronto, ON M5S 3G5, Canada"," Fortin, MJ"
 4860,1,2005,bio,ES,"Univ Sherbrooke, Dept Biol, Sherbrooke, PQ J1K 2R1, Canada","Belisle, M"
 4861,1,2005,env,ES,"Duke Univ, Nicholas Sch Environm & Earth Sci, Durham, NC 27708 USA",0
@@ -14709,7 +14716,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4873,2,2005,bio,ES," Univ S Carolina, Dept Biol, Columbia, SC 29208 USA"," Blaney, BH"
 4873,2,2005,bio,ES," Univ S Carolina, Dept Biol, Columbia, SC 29208 USA"," Raguso, RA"
 4874,1,2005,bio,ES,"Rocky Mt Biol Labs, Crested Butte, CO 81224 USA","Price, MV"
-4874,2,2005,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Waser, NM"
+4874,2,2005,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Waser, NM"
 4874,3,2005,eco,ES," Univ Georgia, Inst Ecol, Athens, GA 30602 USA"," Irwin, RE"
 4874,4,2005,eco,ES," Univ Calif Irvine, Dept Ecol & Evolutionary Biol, Irvine, CA 92697 USA"," Campbell, DR"
 4874,5,2005,bio,ES," Univ Vermont, Dept Biol, Burlington, VT 05405 USA"," Brody, AK"
@@ -14898,7 +14905,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4944,4,2005,plant,ES," Univ Calif Davis, Dept Plant Biol, Davis, CA 95616 USA"," Rice, KJ"
 4945,1,2005,eco,ES,"Univ Grenoble 1, CNRS, Lab Ecol Alpine, UMR 5553, F-38041 Grenoble, France","Liancourt, P"
 4945,2,2005,bio,ES," Univ Montana, Div Biol Sci, Missoula, MT 59812 USA"," Callaway, RM"
-4945,3,2005,inra,ES," Univ Bordeaux 1, INRA, UMR BIOGECO 1202, F-33405 Talence, France"," Michalet, R"
+4945,3,2005,inra,Remove," Univ Bordeaux 1, INRA, UMR BIOGECO 1202, F-33405 Talence, France"," Michalet, R"
 4946,1,2005,nat,ES,"Natl Inst Water & Atmospher Res, Hamilton, New Zealand","Hewitt, JE"
 4946,2,2005,conservat,ES," Dept Conservat, Hamilton, New Zealand"," Thrush, SE"
 4946,2,2005,conservat,ES," Dept Conservat, Hamilton, New Zealand"," Halliday, J"
@@ -14910,7 +14917,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4949,2,2005,hlth,ES," San Diego State Univ, Grad Sch Publ Hlth, San Diego, CA 92182 USA"," Shine, R"
 4951,1,2005,geol survey,Remove,"Utah State Univ, Utah Cooperat Fish & Wildlife Res Unit, US Geol Survey, Biol Resources Div, Logan, UT 84322 USA","Edwards, TC"
 4951,2,2005,math ,MA," Utah State Univ, Dept Math & Stat, Logan, UT 84322 USA"," Cutler, DR"
-4951,3,2005,inst wsl,Remove," Swiss Fed Res Inst WSL, Dept Landscape Res, CH-8903 Birmensdorf, Switzerland"," Zimmermann, NE"
+4951,3,2005,swiss fed res,Remove," Swiss Fed Res Inst WSL, Dept Landscape Res, CH-8903 Birmensdorf, Switzerland"," Zimmermann, NE"
 4951,4,2005,usda,Remove," USDA, Forest Serv, Siuslaw Natl Forest, Corvallis, OR 97339 USA"," Geiser, L"
 4951,5,2005, land ,ES," Bur Land Management, Oregon State Off, Portland, OR 97204 USA"," Alegria, J"
 4952,1,2005,bio,ES,"Florida Int Univ, Dept Biol Sci, Miami, FL 33199 USA","Philippi, T"
@@ -15139,7 +15146,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5040,3,2005,env,ES," Dartmouth Coll, Environm Studies Program, Hanover, NH 03755 USA"," McLauchlan, K"
 5040,4,2005,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," Schimel, JP"
 5041,1,2005,bot,ES,"Swiss Fed Inst Technol, ETH, Geobot Inst, CH-8044 Zurich, Switzerland",0
-5042,1,2005,rivers,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
+5042,1,2005,ent,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
 5043,1,2005,bio,ES,"CSIC, Estac Biol Donana, Dept Appl Biol, Seville 41013, Spain",0
 5044,1,2005,aquat,ES,"Univ Washington, Sch Aquat & Fishery Sci, Seattle, WA 98195 USA","Dickerson, BR"
 5044,2,2005,bio,ES," Dalhousie Univ, Dept Biol, Halifax, NS B3H 4J1, Canada"," Brinck, KW"
@@ -15501,7 +15508,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5191,3,2004,arct,ES," Univ Colorado, Inst Arctic & Alpine Res, Boulder, CO 80309 USA"," Wright, SJ"
 5192,1,2004,eco,ES,"Brown Univ, Dept Ecol & Evolutionary Biol, Providence, RI 02912 USA",0
 5193,1,2004,bio,ES,"Univ Pittsburgh, Dept Biol Sci, Pittsburgh, PA 15260 USA",0
-5194,1,2004,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
+5194,1,2004,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
 5195,1,2004,eco,ES,"Univ Oregon, Ctr Ecol & Evolutionary Biol, Eugene, OR 97403 USA","Roy, BA"
 5195,2,2004,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA"," Gusewell, S"
 5195,3,2004,bot,ES," ETH, Geobot Inst, CH-8044 Zurich, Switzerland"," Harte, J"
@@ -15596,7 +15603,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5236,1,2004,zoo,ES,"Univ Toronto, Dept Zool, Toronto, ON M5S 3G5, Canada",0
 5237,1,2004,bio,ES,"Dartmouth Coll, Dept Biol Sci, Hanover, NH 03755 USA",0
 5238,1,2004,bio,ES,"Univ Calif Berkeley, Dept Integrat Biol, Berkeley, CA 94720 USA",0
-5239,1,2004,rivers,ES,"Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA","Li, BL"
+5239,1,2004,bot,ES,"Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA","Li, BL"
 5239,2,2004,nucl,PS," Petersburg Nucl Phys Inst, Div Theoret Phys, Gatchina 188300, St Petersburg, Russia"," Gorshkov, VG"
 5239,2,2004,nucl,PS," Petersburg Nucl Phys Inst, Div Theoret Phys, Gatchina 188300, St Petersburg, Russia"," Makarieva, AM"
 5240,1,2004,min,ES,"Univ Minnesota, St Paul, MN 55108 USA",0
@@ -15608,7 +15615,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5242,3,2004,nat,ES," Los Alamos Natl Lab, Div Theoret, Los Alamos, NM 87545 USA"," West, GB"
 5243,1,2004,woods hole,ES,"Woods Hole Oceanog Inst, Woods Hole, MA 02543 USA","Solow, AR"
 5244,1,2004,bio,ES,"Univ Montreal, Dept Sci Biol, Montreal, PQ H3C 3J7, Canada","Borcard, D"
-5244,2,2004,inra,ES," INRA, Stn Hydrobiol Lacustre, F-74203 Thonon Les Bains, France"," Legendre, P"
+5244,2,2004,inra,Remove," INRA, Stn Hydrobiol Lacustre, F-74203 Thonon Les Bains, France"," Legendre, P"
 5244,3,2004,bio,ES," Univ Turku, Dept Biol, FIN-20014 Turku, Finland"," Avois-Jacquet, C"
 5244,3,2004,bio,ES," Univ Turku, Dept Biol, FIN-20014 Turku, Finland"," Tuomisto, H"
 5245,1,2004,zoo,ES,"Univ Canterbury, Dept Zool, Christchurch 1, New Zealand","Schiel, DR"
@@ -15866,7 +15873,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5356,1,2004,env,ES,"Univ Calif Davis, Dept Environm Hort, Davis, CA 95616 USA","Huntzinger, M"
 5356,2,2004,populat,ES," Univ Calif Davis, Ctr Populat Biol, Davis, CA 95616 USA"," Young, TP"
 5356,3,2004,ent,ES," Univ Calif Davis, Dept Entomol, Davis, CA 95616 USA"," Palmer, TM"
-5357,1,2004,rivers,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
+5357,1,2004,ent,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
 5358,1,2004,reef,ES,"James Cook Univ, Ctr Coral Reef Biodivers, Townsville, Qld 4811, Australia","Munday, PL"
 5359,1,2004,bio,ES,"Colorado State Univ, Dept Biol, Ft Collins, CO 80523 USA","Hoffman, AL"
 5359,1,2004,bio,ES," Colorado State Univ, Dept Biol, Ft Collins, CO 80523 USA"," Wiens, JA"
@@ -15948,6 +15955,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5397,1,2004,bio,ES,"Louisiana State Univ, Dept Biol Sci, Baton Rouge, LA 70803 USA",0
 5398,1,2004,smithsonian,Remove,"Smithsonian Trop Res Inst, Balboa 2072, Ancon, Panama",0
 5399,1,2004,math ,MA,"Utah State Univ, Dept Math & Stat, Logan, UT 84322 USA","Powell, JA"
+5399,2,2004,swiss fed res,Remove," WSL, Swiss Fed Res Inst, Dept Landscape Dynam, CH-8903 Birmensdorf, Switzerland"," Zimmermann, NE"
 5400,1,2004,nat,ES,"Univ Michigan, Sch Nat Resources & Environm, Ann Arbor, MI 48109 USA",0
 5401,1,2004,phys ,PS,"Lund Univ, Geobiosphere Sci Ctr, Dept Phys Geog & Ecosyst Analysis, S-22362 Lund, Sweden","Hickler, T"
 5401,2,2004,min,ES," Univ Minnesota, Dept Ecol Evolut & Behav, St Paul, MN 55108 USA"," Smith, B"
@@ -16079,7 +16087,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5449,2,2003,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," Klepeis, DM"
 5449,2,2003,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," Mahall, BE"
 5450,1,2003,plant,ES,"Univ Cambridge, Dept Plant Sci, Epidemiol & Modelling Grp, Cambridge CB2 3EA, England",0
-5451,1,2003,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
+5451,1,2003,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
 5452,1,2003,bio,ES,"Univ Laval, Dept Biol, Ste Foy, PQ G1K 7P4, Canada","Gauthier, G"
 5452,2,2003,etudes nord,ES," Univ Laval, Ctr Etudes Nordiques, Ste Foy, PQ G1K 7P4, Canada"," Bety, J"
 5452,3,2003,wild,ES," Canadian Wildlife Serv, Saskatoon, SK S7N 0X4, Canada"," Hobson, KA"
@@ -16221,8 +16229,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5517,1,2003,agr,ES,"CEMAGREF, Unite Rech Ecosyst & Paysages Montagnards, F-38402 St Martin Dheres, France","Pages, JP"
 5517,2,2003,eco,ES," Univ Grenoble 1, Lab Ecosyst & Changements Environm, Ctr Biol Alpine, F-38041 Grenoble, France"," Pache, G"
 5517,3,2003,agr,ES," Maison Agr, Ctr Reg Propriete Forestiere Rhone Alpes, F-38000 Grenoble, France"," Joud, D"
-5517,4,2003,bio,ES," Univ Bordeaux 1, UMR, BIOGECO, INRA,Lab Ecol Communautes D, F-33405 Talence, France"," Magnan, N"
-5517,4,2003,bio,ES," Univ Bordeaux 1, UMR, BIOGECO, INRA,Lab Ecol Communautes D, F-33405 Talence, France"," Michalet, R"
+5517,4,2003,inra,Remove," Univ Bordeaux 1, UMR, BIOGECO, INRA,Lab Ecol Communautes D, F-33405 Talence, France"," Magnan, N"
+5517,4,2003,inra,Remove," Univ Bordeaux 1, UMR, BIOGECO, INRA,Lab Ecol Communautes D, F-33405 Talence, France"," Michalet, R"
 5518,1,2003,forest,ES,"Univ Wageningen & Res Ctr, Forest Ecol & Forest Management Grp, NL-6700 AH Wageningen, Netherlands","Sterck, FJ"
 5518,2,2003,eco,ES," Univ Nacl Autonoma Mexico, Ctr Invest Ecosyst, Morelia 58190, Michoacan, Mexico"," During, HJ"
 5519,1,2003,min,ES,"Univ Minnesota, Dept Ecol Evolut & Behav, St Paul, MN 55108 USA","McFadden, JP"
@@ -16259,7 +16267,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5540,1,2003,bio,ES,"Univ Calgary, Dept Biol Sci, Div Ecol, Calgary, AB T2N 1N4, Canada","Biro, PA"
 5540,2,2003,min,ES," Univ British Columbia, British Columbia Minist Water Land & Air Protect, Vancouver, BC V6T 1Z4, Canada"," Post, JR"
 5540,2,2003,min,ES," Univ British Columbia, British Columbia Minist Water Land & Air Protect, Vancouver, BC V6T 1Z4, Canada"," Parkinson, EA"
-5541,1,2003,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Kristan, WB"
+5541,1,2003,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Kristan, WB"
 5541,2,2003,usgs,Remove," USGS BRD, Western Ecol Res Ctr, San Diego, CA 92123 USA"," Boarman, WI"
 5542,1,2003,eco,ES,"Univ Jena, Inst Ecol, D-07743 Jena, Germany","Voigt, W"
 5542,2,2003,low temp,ES," Hokkaido Univ, Inst Low Temp Sci, Sapporo, Hokkaido, Japan"," Perner, J"
@@ -16392,10 +16400,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5595,2,2003,bio,ES," Duke Univ, Dept Biol, Durham, NC 27708 USA"," Clark, JS"
 5596,1,2003,nat,ES,"Cornell Univ, Dept Nat Resources, Ithaca, NY 14853 USA",0
 5597,1,2003,ent,ES,"Univ Paris 06, CNRS, ENS, Lab Fonctionnement & Evolut Syst Ecol, F-75230 Paris 05, France","Simioni, G"
-5597,2,2003,inra,ES," Univ Clermont Ferrand, INRA, PIAF, UMR, F-63039 Clermont Ferrand, France"," Gignoux, J"
-5597,2,2003,inra,ES," Univ Clermont Ferrand, INRA, PIAF, UMR, F-63039 Clermont Ferrand, France"," Le Roux, X"
+5597,2,2003,inra,Remove," Univ Clermont Ferrand, INRA, PIAF, UMR, F-63039 Clermont Ferrand, France"," Gignoux, J"
+5597,2,2003,inra,Remove," Univ Clermont Ferrand, INRA, PIAF, UMR, F-63039 Clermont Ferrand, France"," Le Roux, X"
 5598,1,2003,env,ES,"No Arizona Univ, Merriam Powell Ctr Environm Res, Flagstaff, AZ 86011 USA","Johnson, NC"
-5598,2,2003,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA"," Rowland, DL"
+5598,2,2003,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA"," Rowland, DL"
 5598,3,2003,bot,ES," Chicago Bot Garden, Conservat Sci, Glencoe, IL 60022 USA"," Corkidi, L"
 5598,3,2003,bot,ES," Chicago Bot Garden, Conservat Sci, Glencoe, IL 60022 USA"," Egerton-Warburton, LM"
 5598,3,2003,bot,ES," Chicago Bot Garden, Conservat Sci, Glencoe, IL 60022 USA"," Allen, EB"
@@ -16551,7 +16559,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5663,1,2003,bio,ES,"Univ Calif Los Angeles, Dept Mol Cell & Dev Biol, Los Angeles, CA 90095 USA","Hirsch, AM"
 5663,2,2003,hort,ES," Ohio State Univ, Dept Hort & Crop Sci, Columbus, OH 43210 USA"," Bauer, WD"
 5663,3,2003,plant,ES," N Carolina State Univ, Dept Plant Pathol, Raleigh, NC 27695 USA"," Bird, DM"
-5663,4,2003,inra,ES," INRA, CNRS, Lab Biol Mol Relat Plantes Microorganismes, F-31326 Castanet Tolosan, France"," Cullimore, J"
+5663,4,2003,inra,Remove," INRA, CNRS, Lab Biol Mol Relat Plantes Microorganismes, F-31326 Castanet Tolosan, France"," Cullimore, J"
 5663,5,2003,bioinform,CS," Virginia Bioinformat Inst, Blacksburg, VA 24061 USA"," Tyler, B"
 5663,6,2003,crop,ES," Univ Calif Davis, Dept Vegetable Crops, Davis, CA 95616 USA"," Yoder, JI"
 5664,1,2003,populat,ES,"Univ Calif Davis, Ctr Populat Biol, Davis, CA 95616 USA",0
@@ -16833,7 +16841,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5797,1,2002,aquat,ES,"Univ Washington, Sch Aquat & Fishery Sci, Seattle, WA 98195 USA","Drake, DC"
 5797,2,2002,forest,ES," Univ Washington, Coll Forest Resources, Seattle, WA 98195 USA"," Naiman, RJ"
 5797,2,2002,forest,ES," Univ Washington, Coll Forest Resources, Seattle, WA 98195 USA"," Helfield, JM"
-5798,1,2002,inra,ES,"INRA, Phytoecol Team, F-54280 Seichamps, France","Dupouey, JL"
+5798,1,2002,inra,Remove,"INRA, Phytoecol Team, F-54280 Seichamps, France","Dupouey, JL"
 5799,1,2002,bot,ES,"Iowa State Univ Sci & Technol, Dept Bot, Ames, IA 50011 USA","Dornbush, ME"
 5799,2,2002,forest,ES," Iowa State Univ Sci & Technol, Dept Forestry, Ames, IA 50011 USA"," Isenhart, TM"
 5799,2,2002,forest,ES," Iowa State Univ Sci & Technol, Dept Forestry, Ames, IA 50011 USA"," Raich, JW"
@@ -16901,7 +16909,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5824,1,2002,bio,ES,"No Arizona Univ, Dept Biol Sci, Flagstaff, AZ 86011 USA","Ruel, J"
 5824,2,2002,env,ES," No Arizona Univ, Merriam Powell Ctr Environm Res, Flagstaff, AZ 86011 USA"," Whitham, TG"
 5825,1,2002,populat,ES,"Univ Calif Davis, Ctr Populat Biol, Davis, CA 95616 USA","Adler, LS"
-5826,1,2002,rivers,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
+5826,1,2002,ent,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
 5827,1,2002,marine,ES,"Univ N Carolina, Inst Marine Sci, Morehead City, NC 28557 USA","Sotka, EE"
 5827,2,2002,bio,ES," Univ N Carolina, Dept Biol, Morehead City, NC 28557 USA"," Hay, ME"
 5828,1,2002,bio,ES,"Univ Oulu, Dept Biol, FIN-90014 Oulu, Finland","Stark, S"
@@ -17018,7 +17026,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5883,1,2002,bio,ES,"Georgia Inst Technol, Sch Biol, Atlanta, GA 30332 USA",0
 5884,1,2002,eco,ES,"Cornell Univ, Dept Ecol & Evolutionary Biol, Ithaca, NY 14853 USA","Shertzer, KW"
 5884,2,2002,"stat,",MA," N Carolina State Univ, Dept Stat, Raleigh, NC 27695 USA"," Ellner, SP"
-5885,1,2002,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Bronikowski, AM"
+5885,1,2002,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Bronikowski, AM"
 5885,2,2002,zoo,ES," Univ Toronto, Dept Zool, Toronto, ON M5S 3G5, Canada"," Clark, ME"
 5885,3,2002,bio,ES," N Dakota State Univ, Dept Biol Sci, Fargo, ND 58105 USA"," Rodd, FH"
 5885,4,2002,zoo,ES," Univ Wisconsin, Dept Zool, Madison, WI 53706 USA"," Reznick, DN"
@@ -17116,7 +17124,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5926,1,2002,zoo,ES,"Oregon State Univ, Dept Zool, Corvallis, OR 97331 USA","Hixon, MA"
 5926,2,2002,eco,ES," Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08544 USA"," Pacala, SW"
 5926,2,2002,eco,ES," Princeton Univ, Dept Ecol & Evolutionary Biol, Princeton, NJ 08544 USA"," Sandin, SA"
-5927,1,2002,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
+5927,1,2002,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA",0
 5928,1,2002,bio,ES,"Calif State Univ Los Angeles, Dept Biol Sci, Los Angeles, CA 90032 USA",0
 5929,1,2002,zoo,ES,"Univ Washington, Dept Zool, Seattle, WA 98195 USA",0
 5930,1,2002,zoo,ES,"Univ Washington, Dept Zool, Seattle, WA 98195 USA",0
@@ -17467,7 +17475,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6094,1,2001,bio,ES,"Univ Laval, Dept Biol, GIROQ, Quebec City, PQ G1K 7P4, Canada",0
 6095,1,2001,bio,ES,"Univ Ottawa, Ottawa Carleton Inst Biol, Ottawa, ON K1N 6N5, Canada",0
 6096,1,2001,eco,ES,"Penn State Univ, Intercoll Grad Degree Program Ecol, University Pk, PA 16802 USA",0
-6097,1,2001,rivers,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
+6097,1,2001,ent,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
 6098,1,2001,eco,ES,"Univ Calif Santa Cruz, Dept Ecol & Evolutionary Biol, Ctr Populat Biol, Santa Cruz, CA 95064 USA","Trenham, PC"
 6098,2,2001,evol,ES," Univ Calif Santa Cruz, Sect Evolut & Ecol, Santa Cruz, CA 95064 USA"," Koenig, WD"
 6098,3,2001,nat,ES," Univ Calif, Hastings Nat Hist Reservat, Carmel Valley, CA 93924 USA"," Shaffer, HB"
@@ -17698,7 +17706,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6217,1,2001,bio,ES,"Dartmouth Coll, Dept Biol Sci, Hanover, NH 03755 USA",0
 6218,1,2001,bio,ES,"Univ Calif Los Angeles, Dept Organism Biol Ecol & Evolut, Los Angeles, CA 90095 USA","Grether, GF"
 6218,2,2001,usda,Remove," USDA ARS, Mote Marine Lab, Sarasota, FL 34236 USA"," Millie, DF"
-6218,3,2001,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Bryant, MJ"
+6218,3,2001,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Bryant, MJ"
 6218,4,2001,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," Reznick, DN"
 6218,4,2001,eco,ES," Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA"," Mayea, W"
 6219,1,2001,evol,ES,"Univ Calif Davis, Sect Evolut & Ecol, Davis, CA 95616 USA","Spiller, DA"
@@ -17934,7 +17942,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6323,3,2001,nat,ES," Duke Univ Div, Brookhaven Natl Lab, Nicholas Sch Environm, Durham, NC 27708 USA"," Schlesinger, WH"
 6324,1,2001,bot,ES,"Univ Florida, Dept Bot, Gainesville, FL 32611 USA",0
 6325,1,2001,bio,ES,"Indiana Univ, Dept Biol, Bloomington, IN 47405 USA",0
-6326,1,2001,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Morey, S"
+6326,1,2001,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Morey, S"
 6326,2,2001,fish,ES," US Fish & Wildlife Serv, Portland, OR 97232 USA"," Reznick, D"
 6327,1,2001,bio,ES,"Univ Michigan, Dept Biol, Ann Arbor, MI 48109 USA",0
 6328,1,2001,bio,ES,"Univ Michigan, Dept Biol, Ann Arbor, MI 48109 USA",0
@@ -18162,8 +18170,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6421,2,2000,eco,ES," CNRS, Ctr Ecol Fonct & Evolut, F-34293 Montpellier 5, France"," Hossaert-McKey, M"
 6422,1,2000,bio,ES,"Univ Alberta, Dept Biol Sci, Edmonton, AB T6G 2E9, Canada",0
 6423,1,2000,zoo,ES,"Univ Washington, Dept Zool, Seattle, WA 98195 USA",0
-6424,1,2000,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Misenhelter, MD"
-6424,2,2000,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
+6424,1,2000,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Misenhelter, MD"
+6424,2,2000,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
 6425,1,2000,zoo,ES,"Univ Toronto, Dept Zool, Toronto, ON M5S 3G5, Canada",0
 6426,1,2000,eco,ES,"Univ Lyon 1, CNRS, UMR 5023, Lab Ecol Hydrosyst Fluviaux, F-69622 Villeurbanne, France","Doledec, S"
 6426,2,2000,bio,ES," Univ Lyon 1, CNRS, UMR 5558, Lab Biomerie & Biol Evolut, F-69622 Villeurbanne, France"," Chessel, D"
@@ -18432,8 +18440,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6513,1,2015,"engn,",EG," Univ Sunshine Coast, Sch Sci & Engn, Q-4558 Maroochydore, Australia; ","Huijbers, Chantal M."
 6513,1,2015,"engn,",EG," Univ Sunshine Coast, Sch Sci & Engn, Q-4558 Maroochydore, Australia; ","Olds, Andrew D."
 6513,2,2015,eco,ES," Deakin Univ, Ctr Integrat Ecol, Sch Life & Environm Sci, Burwood, Vic 3125, Australia; ","Weston, Michael A."
-6513,3,2015,rivers,ES," Griffith Univ, Australian Rivers Inst Coast & Estuaries, Nathan, Qld Q-4222, Australia; ","Huijbers, Chantal M."
-6513,3,2015,rivers,ES," Griffith Univ, Australian Rivers Inst Coast & Estuaries, Nathan, Qld Q-4222, Australia; ","Connolly, Rod M."
+6513,3,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst Coast & Estuaries, Nathan, Qld Q-4222, Australia; ","Huijbers, Chantal M."
+6513,3,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst Coast & Estuaries, Nathan, Qld Q-4222, Australia; ","Connolly, Rod M."
 6513,4,2015,env,ES," Griffith Univ, Sch Environm, Nathan, Qld Q-4222, Australia","Huijbers, Chantal M."
 6513,4,2015,env,ES," Griffith Univ, Sch Environm, Nathan, Qld Q-4222, Australia","Connolly, Rod M."
 6514,1,2015,zoo,ES," Palacky Univ, Dept Zool, Fac Sci, Olomouc 77146, Czech Republic; ","Krist, Milos"
@@ -18450,7 +18458,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6516,2,2015,nat,ES," Natl Dong Hwa Univ, Dept Nat Resources & Environm Studies, Hualien 974, Taiwan; ","Chen, Yu-Yun"
 6516,3,2015,bio,ES," Meredith Coll, Dept Biol Sci, Raleigh, NC 27607 USA; ","Pickering, Maria"
 6516,4,2015,forest,ES," Forest Res Inst Malaysia, Kepong 52109, Selangor, Malaysia","Fletcher, Christine D."
-6517,1,2015,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Anderson, Kurt E."
+6517,1,2015,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Anderson, Kurt E."
 6517,2,2015,bio,ES," Florida State Univ, Dept Biol Sci, Tallahassee, FL 32306 USA","Inouye, Brian D."
 6517,2,2015,bio,ES," Florida State Univ, Dept Biol Sci, Tallahassee, FL 32306 USA","Underwood, Nora"
 6518,1,2015,eco,ES," Univ Arizona, Dept Ecol & Evolutionary Biol, Tucson, AZ 85721 USA","Larios, Eugenio"
@@ -18766,16 +18774,16 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6573,2,2015,forest,ES," Yale Univ, Sch Forestry & Environm Studies, New Haven, CT 06511 USA; ","Kuebbing, Sara E."
 6573,3,2015,nat,ES," Univ Copenhagen, Nat Hist Museum Denmark, DK-2100 Copenhagen O, Denmark; ","Classen, Aimee T."
 6573,4,2015,engn ,EG," Univ Tennessee, Dept Biosyst Engn & Soil Sci, Knoxville, TN 37996 USA","Call, Jaime J."
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Moreau, Delphine"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Pivato, Barbara"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Bru, David"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Busset, Hugues"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Deau, Florence"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Faivre, Celine"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Matejicek, Annick"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Strbik, Florence"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Philippot, Laurent"
-6574,1,2015,inra,ES," INRA, Agroecol UMR1347, F-21000 Dijon, France","Mougel, Christophe"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Moreau, Delphine"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Pivato, Barbara"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Bru, David"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Busset, Hugues"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Deau, Florence"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Faivre, Celine"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Matejicek, Annick"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Strbik, Florence"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Philippot, Laurent"
+6574,1,2015,inra,Remove," INRA, Agroecol UMR1347, F-21000 Dijon, France","Mougel, Christophe"
 6575,1,2015,spatial,ES," Univ Calif Santa Cruz, Ctr Integrated Spatial Res, Dept Environm Studies, Santa Cruz, CA 95064 USA; ","Wilmers, Christopher C."
 6575,1,2015,spatial,ES," Univ Calif Santa Cruz, Ctr Integrated Spatial Res, Dept Environm Studies, Santa Cruz, CA 95064 USA; ","Nickel, Barry"
 6575,1,2015,spatial,ES," Univ Calif Santa Cruz, Ctr Integrated Spatial Res, Dept Environm Studies, Santa Cruz, CA 95064 USA; ","Smith, Justine A."
@@ -18828,8 +18836,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6587,1,2015,bio,ES," Florida Int Univ, Dept Biol Sci, Int Ctr Trop Bot, Miami, FL 33199 USA; ","Feeley, Kenneth J."
 6587,2,2015,trop,ES," Fairchild Trop Bot Garden, Coral Gables, FL 33156 USA","Rehm, Evan M."
 6587,2,2015,trop,ES," Fairchild Trop Bot Garden, Coral Gables, FL 33156 USA","Feeley, Kenneth J."
-6588,1,2015,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Pasquini, Sarah C."
-6588,1,2015,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, Louis S."
+6588,1,2015,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Pasquini, Sarah C."
+6588,1,2015,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, Louis S."
 6588,2,2015,smithsonian,Remove," Smithsonian Trop Res Inst, Balboa, Panama","Wright, S. Joseph"
 6588,2,2015,smithsonian,Remove," Smithsonian Trop Res Inst, Balboa, Panama","Santiago, Louis S."
 6589,1,2015,bio,ES," Gustavus Adolphus Coll, Dept Biol & Environm Studies, St Peter, MN 56082 USA; ","Kittelson, Pamela M."
@@ -18998,7 +19006,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6613,2,2015,bio,ES," CNRS, Lab Biometrie & Biol Evolut, UMR5558, F-69622 Villeurbanne, France; ","Douhard, Mathieu"
 6613,2,2015,bio,ES," CNRS, Lab Biometrie & Biol Evolut, UMR5558, F-69622 Villeurbanne, France; ","Bonenfant, Christophe"
 6613,3,2015,zoo,ES," Univ Oxford, Dept Zool, Oxford OX1 3PS, England; ","Coulson, Tim"
-6613,4,2015,inra,ES," INRA, CEFS UR035, F-31326 Castanet Tolosan, France; ","Hewison, A. J. Mark"
+6613,4,2015,inra,Remove," INRA, CEFS UR035, F-31326 Castanet Tolosan, France; ","Hewison, A. J. Mark"
 6613,5,2015,nat,ES," Ctr Natl Etud & Rech Appl Cervides & Sanglier, Off Natl Chasse & Faune Sauvage, F-75017 Paris, France","Klein, Francois"
 6613,5,2015,nat,ES," Ctr Natl Etud & Rech Appl Cervides & Sanglier, Off Natl Chasse & Faune Sauvage, F-75017 Paris, France","Delorme, Daniel"
 6613,5,2015,nat,ES," Ctr Natl Etud & Rech Appl Cervides & Sanglier, Off Natl Chasse & Faune Sauvage, F-75017 Paris, France","Warnant, Claude"
@@ -19255,8 +19263,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6664,1,2015,eco,ES," Univ Groningen, Ctr Ecol & Evolutionary Studies, Dept Microbial Ecol, NL-9747 AG Groningen, Netherlands; ","Marring, Irene"
 6664,1,2015,eco,ES," Univ Groningen, Ctr Ecol & Evolutionary Studies, Dept Microbial Ecol, NL-9747 AG Groningen, Netherlands; ","van Elsas, Jan Dirk"
 6664,1,2015,eco,ES," Univ Groningen, Ctr Ecol & Evolutionary Studies, Dept Microbial Ecol, NL-9747 AG Groningen, Netherlands; ","Salles, Joana Falcao"
-6664,2,2015,eco,ES," Univ Lyon 1, Microbial Ecol Lab, CNRS, INRA, F-69622 Villeurbanne, France","Poly, Franck"
-6664,2,2015,eco,ES," Univ Lyon 1, Microbial Ecol Lab, CNRS, INRA, F-69622 Villeurbanne, France","Le Roux, Xavier"
+6664,2,2015,inra,Remove," Univ Lyon 1, Microbial Ecol Lab, CNRS, INRA, F-69622 Villeurbanne, France","Poly, Franck"
+6664,2,2015,inra,Remove," Univ Lyon 1, Microbial Ecol Lab, CNRS, INRA, F-69622 Villeurbanne, France","Le Roux, Xavier"
 6665,1,2015,bio,ES," Univ Louisville, Dept Biol, Louisville, KY 40292 USA; ","Emery, Sarah M."
 6665,2,2015,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA","Bell-Dereske, Lukas"
 6665,2,2015,bio,ES," Univ New Mexico, Dept Biol, Albuquerque, NM 87131 USA","Rudgers, Jennifer A."
@@ -19274,7 +19282,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6669,2,2015,eco,ES," Univ Arizona, Dept Ecol & Evolutionary Biol, Tucson, AZ 85721 USA; ","Blonder, Benjamin"
 6669,2,2015,eco,ES," Univ Arizona, Dept Ecol & Evolutionary Biol, Tucson, AZ 85721 USA; ","Enquist, Brian J."
 6669,3,2015,geog,SS," Univ Oxford, Sch Geog & Environm, Oxford OX1 2JD, England; ","Borregaard, Michael K."
-6669,4,2015,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Donoghue, John C., II"
+6669,4,2015,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA; ","Donoghue, John C., II"
 6669,5,2015,bot,ES," Missouri Bot Garden, St Louis, MO 63110 USA; ","Jorgensen, Peter M."
 6669,6,2015,bio,ES," Univ Maryland, Dept Biol, College Pk, MD 20742 USA; ","Kraft, Nathan J. B."
 6669,7,2015,bio,ES," McGill Univ, Dept Biol, Quebec Ctr Biodivers Sci, Montreal, PQ H3A 0G4, Canada; ","Lessard, Jean-Philippe"
@@ -19405,12 +19413,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6695,1,2015,env,ES," Northern Australia Hub, Dept Environm, Natl Environm Res Program, Canberra, ACT 2601, Australia; ","Pettit, Neil E."
 6695,1,2015,env,ES," Northern Australia Hub, Dept Environm, Natl Environm Res Program, Canberra, ACT 2601, Australia; ","Pusey, Bradley J."
 6695,1,2015,env,ES," Northern Australia Hub, Dept Environm, Natl Environm Res Program, Canberra, ACT 2601, Australia; ","Bunn, Stuart E."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Jardine, Timothy D."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Bond, Nicholas R."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Burford, Michele A."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Kennard, Mark J."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Ward, Douglas P."
-6695,2,2015,rivers,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Bunn, Stuart E."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Jardine, Timothy D."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Bond, Nicholas R."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Burford, Michele A."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Kennard, Mark J."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Ward, Douglas P."
+6695,2,2015,rivers ,ES," Griffith Univ, Australian Rivers Inst, Nathan, Qld 4111, Australia; ","Bunn, Stuart E."
 6695,3,2015,water,ES," Univ Saskatchewan, Global Inst Water Secur, Sch Environm & Sustainabil, Saskatoon, SK S7H 4J6, Canada; ","Jardine, Timothy D."
 6695,4,2015,eco,ES," CSIRO, Ecosci Precinct, Brisbane, Qld 4102, Australia; ","Bayliss, Peter"
 6695,5,2015,nat,ES," Univ Western Australia, Ctr Excellence Nat Resource Management, Albany, WA 6332, Australia; ","Davies, Peter M."
@@ -19441,15 +19449,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6699,1,2015,forest,ES," Purdue Univ, Dept Forestry & Nat Resources, W Lafayette, IN 47907 USA; ","Swihart, Robert K."
 6699,2,2015,"math,",MA," Purdue Univ, Dept Math, W Lafayette, IN 47907 USA; ","Feng, Zhilan"
 6699,3,2015,"engn,",EG," Washington State Univ, Dept Biol Syst Engn, Pullman, WA 99163 USA","Govindan, Byju N."
-6700,1,2015,inra,ES," INRA, UMR CBGP, F-34988 Montferrier Sur Lez, France; ","Veran, Sophie"
-6700,1,2015,inra,ES," INRA, UMR CBGP, F-34988 Montferrier Sur Lez, France; ","Piry, Sylvain"
+6700,1,2015,inra,Remove," INRA, UMR CBGP, F-34988 Montferrier Sur Lez, France; ","Veran, Sophie"
+6700,1,2015,inra,Remove," INRA, UMR CBGP, F-34988 Montferrier Sur Lez, France; ","Piry, Sylvain"
 6700,2,2015,bio,ES," Univ Sydney, Sch Biol Sci, Sydney, NSW 2006, Australia; ","Simpson, Stephen J."
 6700,2,2015,bio,ES," Univ Sydney, Sch Biol Sci, Sydney, NSW 2006, Australia; ","Berthier, Karine"
 6700,3,2015,ent,ES," Texas A&M Univ, Dept Entomol, College Stn, TX 77843 USA; ","Sword, Gregory A."
 6700,4,2015,govt,SS," Australian Govt Dept Agr Fisheries & Forestry, Australian Plague Locust Commiss, Canberra, ACT 2601, Australia; ","Deveson, Edward"
 6700,5,2015,nat,ES," Australian Natl Univ, Fenner Sch Environm & Soc, Canberra, ACT 0200, Australia; ","Deveson, Edward"
 6700,6,2015,usgs,Remove," USGS Patuxent Wildlife Res Ctr, Laurel, MD 20708 USA; ","Hines, James E."
-6700,7,2015,inra,ES," INRA, Pathol Vegetale UR0407, F-84143 Montfavet, France","Berthier, Karine"
+6700,7,2015,inra,Remove," INRA, Pathol Vegetale UR0407, F-84143 Montfavet, France","Berthier, Karine"
 6701,1,2015,buesgen inst,ES," Univ Gottingen, Buesgen Inst, Soil Sci Trop & Subtrop Ecosyst, D-37077 Gottingen, Germany; ","Baldos, Angelica P."
 6701,1,2015,buesgen inst,ES," Univ Gottingen, Buesgen Inst, Soil Sci Trop & Subtrop Ecosyst, D-37077 Gottingen, Germany; ","Corre, Marife D."
 6701,1,2015,buesgen inst,ES," Univ Gottingen, Buesgen Inst, Soil Sci Trop & Subtrop Ecosyst, D-37077 Gottingen, Germany; ","Veldkamp, Edzo"
@@ -19492,22 +19500,22 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6703,5,2015,bio,ES," Aarhus Univ, Dept Biosci, DK-4000 Roskilde, Denmark; ","Forchhammer, Mads C."
 6703,6,2015,polar,ES," Penn State Univ, Polar Ctr, University Pk, PA 16802 USA; ","Forchhammer, Mads C."
 6703,7,2015,nat,ES," Greenland Inst Nat Resources, GCRC, Nuuk 3900, Greenland","Forchhammer, Mads C."
-6704,1,2015,inra,ES," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Cantarel, Amelie A. M."
-6704,1,2015,inra,ES," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Pommier, Thomas"
-6704,1,2015,inra,ES," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Dumont, Maxime"
-6704,1,2015,inra,ES," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Poly, Franck"
+6704,1,2015,inra,Remove," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Cantarel, Amelie A. M."
+6704,1,2015,inra,Remove," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Pommier, Thomas"
+6704,1,2015,inra,Remove," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Dumont, Maxime"
+6704,1,2015,inra,Remove," Univ Lyon 1, USC INRA 1364, UMR CNRS 5557, Lab Ecol Microbienne, F-69622 Villeurbanne, France; ","Poly, Franck"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Desclos-Theveniau, Marie"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Diquelou, Sylvain"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Grassein, Fabrice"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Laine, Philippe"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Lemauviel-Lavenant, Servane"
 6704,2,2015,eco,ES," Univ Caen Basse Normandie, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Personeni, Emmanuelle"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Desclos-Theveniau, Marie"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Diquelou, Sylvain"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Grassein, Fabrice"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Laine, Philippe"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Lemauviel-Lavenant, Servane"
-6704,3,2015,inra,ES," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Personeni, Emmanuelle"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Desclos-Theveniau, Marie"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Diquelou, Sylvain"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Grassein, Fabrice"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Laine, Philippe"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Lemauviel-Lavenant, Servane"
+6704,3,2015,inra,Remove," INRA, UMR Ecophysiol Vegetale Agron & Nutr N C S 950, Esplanade Paix, F-14032 Caen, France; ","Personeni, Emmanuelle"
 6704,4,2015,ent,ES," Helmholtz Zentrum Munchen, Res Unit Environm Genom, D-85764 Neuherberg, Germany; ","Kastl, Eva-Maria"
 6704,4,2015,ent,ES," Helmholtz Zentrum Munchen, Res Unit Environm Genom, D-85764 Neuherberg, Germany; ","Schloter, Michael"
 6704,5,2015,eco,ES," Univ Grenoble 1, UMR 5553, CNRS, Lab Ecol, F-38041 Grenoble 9, France","Grigulis, Karl"
@@ -20208,7 +20216,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6827,16,2014,nat,ES," Oak Ridge Natl Lab, Div Environm Sci, Oak Ridge, TN 37831 USA; ","Griffiths, N. A."
 6827,17,2014,env,ES," Florida Int Univ, Southeast Environm Res Ctr, Miami, FL 33199 USA; ","Crowl, T."
 6827,18,2014,bio,ES," Florida Int Univ, Dept Biol, Miami, FL 33199 USA; ","Crowl, T."
-6827,19,2014,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Rosi-Marshall, E. J."
+6827,19,2014,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Rosi-Marshall, E. J."
 6827,20,2014,bio,ES," Univ Victoria, Dept Biol, Victoria, BC V8P 5C2, Canada; ","El-Sabaawi, R."
 6827,21,2014,bio,ES," CSIC, CEAB, Biogeodynam & Biodivers Grp, Blanes, Catalonia, Spain","Marti, E."
 6828,1,2014,bio,ES," Univ Alabama, Dept Biol Sci, Tuscaloosa, AL 35487 USA; ","Benstead, Jonathan P."
@@ -20452,7 +20460,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6882,2,2014,eco,ES," Univ Calif Los Angeles, Dept Ecol & Evolutionary Biol, Los Angeles, CA 90095 USA","Fong, Peggy"
 6883,1,2014,eco,ES," Brown Univ, Dept Ecol & Evolutionary Biol, Providence, RI 02912 USA; ","Schreeg, L. A."
 6883,2,2014,marine,ES," Marine Biol Lab, Ctr Ecosyst, Woods Hole, MA 02543 USA; ","Schreeg, L. A."
-6883,3,2014,rivers,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, L. S."
+6883,3,2014,bot,ES," Univ Calif Riverside, Dept Bot & Plant Sci, Riverside, CA 92521 USA; ","Santiago, L. S."
 6883,4,2014,smithsonian,Remove," Smithsonian Trop Res Inst, Panama City, Panama","Santiago, L. S."
 6883,4,2014,smithsonian,Remove," Smithsonian Trop Res Inst, Panama City, Panama","Wright, S. J."
 6883,4,2014,smithsonian,Remove," Smithsonian Trop Res Inst, Panama City, Panama","Turner, B. L."
@@ -20673,8 +20681,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6930,2,2014,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA; ","Waser, Nickolas M."
 6930,2,2014,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA; ","Harte, John"
 6930,3,2014,bio,ES," Univ Texas Austin, Sect Integrat Biol, Austin, TX 78701 USA; ","Kivlin, Stephanie N."
-6930,4,2014,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Price, Mary V."
-6930,4,2014,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Waser, Nickolas M."
+6930,4,2014,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Price, Mary V."
+6930,4,2014,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA; ","Waser, Nickolas M."
 6930,5,2014,env,ES," Univ Calif Berkeley, Dept Environm Sci Policy & Management, Berkeley, CA 94720 USA","Harte, John"
 6931,1,2014,bio,ES," Stanford Univ, Dept Biol, Stanford, CA 94305 USA; ","Wood, Chelsea L."
 6931,1,2014,bio,ES," Stanford Univ, Dept Biol, Stanford, CA 94305 USA; ","Guerra, Ana Sofia"
@@ -21008,9 +21016,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6991,2,2014,instaar,ES," Univ Colorado, INSTAAR, Boulder, CO 80309 USA; ","Prevey, Janet S."
 6991,2,2014,instaar,ES," Univ Colorado, INSTAAR, Boulder, CO 80309 USA; ","Seastedt, Timothy R."
 6991,3,2014,bio,ES," Univ Colorado, Dept Integrat Biol, Denver, CO 80202 USA","Hartley, Laurel M."
-6992,1,2014,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Hersh, Michelle H."
-6992,1,2014,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","LaDeau, Shannon L."
-6992,1,2014,eco,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
+6992,1,2014,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Hersh, Michelle H."
+6992,1,2014,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","LaDeau, Shannon L."
+6992,1,2014,cary inst,ES," Cary Inst Ecosyst Studies, Millbrook, NY 12545 USA; ","Ostfeld, Richard S."
 6992,2,2014,bio,ES," Bard Coll, Program Biol, Annandale On Hudson, NY 12504 USA; ","Hersh, Michelle H."
 6992,3,2014,ent,ES," Univ Nacl Litoral, Consejo Nacl Invest Cient & Tecn CONICET, Dept Ciencias Nat, Fac Humanidades & Ciencias, RA-3000 Santa Fe, Argentina","Andrea Previtali, M."
 6993,1,2014,eco,ES," Stockholm Univ, Dept Ecol Environm & Plant Sci, S-10691 Stockholm, Sweden; ","Hamback, Peter A."
@@ -21072,7 +21080,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7019,1,2000,zoo,ES,"Miami Univ, Dept Zool, Oxford, OH 45056 USA",0
 7020,1,2000,"phys,",PS,"GKSS Res Ctr, Inst Hydrophys, D-21502 Geesthacht, Germany","Guss, S"
 7020,2,2000,max planck,Remove," Max Planck Inst Limnol, D-24306 Plon, Germany"," Albrecht, D"
-7021,1,2000,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Morey, S"
+7021,1,2000,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Morey, S"
 7021,2,2000,fish,ES," US Fish & Wildlife Serv, Portland, OR 97232 USA"," Reznick, D"
 7022,1,2000,smithsonian,Remove,"Smithsonian Migratory Bird Ctr, Dept Zool Res, Washington, DC 20008 USA","Greenberg, R"
 7023,1,2000,eco,ES,"Brown Univ, Dept Ecol & Evolutionary Biol, Providence, RI 02912 USA",0
@@ -21277,7 +21285,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7114,2,2000,agr,ES," Cornell Univ, New York State Agr Expt Stn, Dept Plant Pathol, Geneva, NY 14456 USA"," Gadoury, D"
 7114,2,2000,agr,ES," Cornell Univ, New York State Agr Expt Stn, Dept Plant Pathol, Geneva, NY 14456 USA"," Seem, RC"
 7115,1,2000,populat,ES,"Univ Calif Davis, Ctr Populat Biol, Livermore, CA 95616 USA",0
-7116,1,2000,rivers,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
+7116,1,2000,ent,ES,"Univ Calif Riverside, Dept Entomol, Riverside, CA 92521 USA",0
 7117,1,2000,eco,ES,"Inst Ecol, Dept Plant Populat Biol, NL-6666 ZG Heteren, Netherlands",0
 7118,1,2000,bio,ES,"Queens Univ, Dept Biol, Kingston, ON K7L 3N6, Canada",0
 7120,1,2000,bio,ES,"Wright State Univ, Dept Biol Sci, Dayton, OH 45435 USA",0
@@ -21316,7 +21324,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7139,1,2000,bio,ES,"Georgia Inst Technol, Sch Biol, Atlanta, GA 30332 USA","Cruz-Rivera, E"
 7139,2,2000,marine,ES," Univ N Carolina, Inst Marine Sci, Morehead City, NC 28557 USA"," Hay, ME"
 7140,1,2000,geol survey,Remove,"US Geol Survey, Forest & Rangeland Ecosyst Sci Ctr, Boise, ID 83706 USA","Knick, ST"
-7140,2,2000,rivers,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
+7140,2,2000,conservat,ES," Univ Calif Riverside, Ctr Conservat Biol, Riverside, CA 92521 USA"," Rotenberry, JT"
 7141,1,2000,nat,ES,"Natl Zool Pk, Conservat & Res Ctr, Front Royal, VA 22630 USA",0
 7142,1,2000,populat,ES,"Univ Helsinki, Div Populat Biol, Dept Ecol & Systemat, FIN-00014 Helsinki, Finland","Hanski, I"
 7142,2,2000,"stat,",MA," Univ Joensuu, Dept Stat, FIN-80101 Joensuu, Finland"," Alho, J"
@@ -22034,8 +22042,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7515,1,1998,bio,ES,"Univ Rochester, Dept Biol, Rochester, NY 14627 USA",0
 7516,1,1998,bio,ES,"Univ Calif Davis, Div Biol Sci, Sect Evol & Ecol, Davis, CA 95616 USA","Morrison, LW"
 7517,1,1998,bio,ES,"Univ Louisville, Dept Biol, Louisville, KY 40292 USA",0
-7518,1,1998,rivers,ES,"Univ Calif Riverside, Nat Reserve Syst, Riverside, CA 92521 USA","Rotenberry, JT"
-7518,2,1998,rivers,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Wiens, JA"
+7518,1,1998,nat,ES,"Univ Calif Riverside, Nat Reserve Syst, Riverside, CA 92521 USA","Rotenberry, JT"
+7518,2,1998,bio,ES," Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA"," Wiens, JA"
 7519,1,1998,eco,ES,"Inst Terr Ecol, Banchory AB31 4BY, Kincardine, Scotland",0
 7520,1,1998,zoo,ES,"Univ British Columbia, Dept Zool, Ecol Grp, Vancouver, BC V6T 1Z4, Canada","O'Donoghue, M"
 7520,2,1998,bio,ES," Univ Alberta, Dept Biol Sci, Edmonton, AB T6G 2E9, Canada"," Boutin, S"
@@ -22047,7 +22055,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7522,1,1998,bio,ES,"Univ Oslo, Dept Biol, Div Zool, N-0316 Oslo, Norway","Andreassen, HP"
 7523,1,1998,eco,ES,"Univ Chicago, Dept Ecol & Evolut, Chicago, IL 60637 USA",0
 7524,1,1998,bio,ES,"Dalhousie Univ, Dept Biol, Life Sci Ctr, Halifax, NS B3H 4J1, Canada",0
-7525,1,1998,rivers,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Price, MV"
+7525,1,1998,bio,ES,"Univ Calif Riverside, Dept Biol, Riverside, CA 92521 USA","Price, MV"
 7525,2,1998,bio,ES," Rocky Mt Biol Labs, Crested Butte, CO 81224 USA"," Waser, NM"
 7526,1,1998,bio,ES,"Univ Calif Santa Cruz, Dept Biol, Santa Cruz, CA 95064 USA",0
 7527,1,1998,marine,ES,"Univ Calif Bodega, Marine Lab, Bodega Bay, CA 94923 USA",0
@@ -22257,7 +22265,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7654,1,1997,bio,ES,"ILLINOIS STATE UNIV,DEPT BIOL SCI,ECOL GRP,NORMAL,IL 61761",0
 7655,1,1997,smithsonian,Remove,"SMITHSONIAN INST, MUSEUM NATL HIST NAT, DEPT VERTEBRATE ZOOL, WASHINGTON, DC 20560 USA",0
 7656,1,1997,eco,ES,"UNIV CALIF IRVINE,DEPT ECOL & EVOLUT BIOL,IRVINE,CA 92717","MelendezAckerman, E"
-7656,2,1997,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Campbell, DR"
+7656,2,1997,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Campbell, DR"
 7656,3,1997,bio,ES," ROCKY MT BIOL LABS,CRESTED BUTTE,CO 81224"," Waser, NM"
 7657,1,1997,bio,ES,"NO TERR UNIV,SCH BIOL SCI,DARWIN,NT 0909,AUSTRALIA","Williams, RJ"
 7657,2,1997,bio,ES," CSIRO,INRE,BIOMETR UNIT,CANBERRA,ACT 2601,AUSTRALIA"," Myers, BA"
@@ -22379,7 +22387,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7752,2,1997,forest,ES," UNIV WASHINGTON, COLL FOREST RESOURCES, SEATTLE, WA 98195 USA"," Franklin, J"
 7753,1,1997,bio,ES,"OPEN UNIV,DEPT BIOL,ECOL & CONSERVAT RES GRP,MILTON KEYNES MK7 6AA,BUCKS,ENGLAND",0
 7754,1,1997,zoo,ES,"OREGON STATE UNIV, DEPT ZOOL, CORVALLIS, OR 97331 USA",0
-7756,1,1997,inra,ES,"INRA, ECOPHYSIOL UNIT, F-54280 CHAMPENOUX, FRANCE","Bert, D"
+7756,1,1997,inra,Remove,"INRA, ECOPHYSIOL UNIT, F-54280 CHAMPENOUX, FRANCE","Bert, D"
 7756,2,1997,tree ring ,ES," UNIV ARIZONA, TREE RING RES LAB, TUCSON, AZ 85721 USA"," Leavitt, SW"
 7756,2,1997,tree ring ,ES," UNIV ARIZONA, TREE RING RES LAB, TUCSON, AZ 85721 USA"," Dupouey, JL"
 7760,1,1997,bio,ES,"UNIV LAVAL,DEPT BIOL,ST FOY,PQ G1K 7P4,CANADA",0
@@ -22483,10 +22491,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7822,2,1997,eco,ES," UNIV PARIS 06, INST ECOL, CNRS URA 258, F-75252 PARIS 05, FRANCE"," Clobert, J"
 7822,2,1997,eco,ES," UNIV PARIS 06, INST ECOL, CNRS URA 258, F-75252 PARIS 05, FRANCE"," Perrins, CM"
 7823,1,1997,bio,ES,"YORK UNIV,DEPT BIOL,N YORK,ON M3J 1P3,CANADA","Rodd, FH"
-7823,2,1997,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Reznick, DN"
+7823,2,1997,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Reznick, DN"
 7824,1,1997,bio,ES,"YORK UNIV,DEPT BIOL,N YORK,ON M3J 1P3,CANADA","Rodd, FH"
-7824,2,1997,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Reznick, DN"
-7824,2,1997,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Sokolowski, MB"
+7824,2,1997,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Reznick, DN"
+7824,2,1997,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Sokolowski, MB"
 7826,1,1997,bio,ES,"MCGILL UNIV,DEPT BIOL,MONTREAL,PQ H3A 1B1,CANADA",0
 7827,1,1997,bio,ES,"INDIANA UNIV,DEPT BIOL,BLOOMINGTON,IN 47405",0
 7829,1,1997,sea,ES,"NERC,SEA MAMMAL RES UNIT,CAMBRIDGE CB3 0ET,ENGLAND","Arnbom, T"
@@ -22653,8 +22661,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7972,1,1996,bio,ES,"UNIV MONTANA,DEPT BIOL,MISSOULA,MT 59812",0
 7973,1,1996,bio,ES,"UNIV LEEDS,DEPT PURE & APPL BIOL,LEEDS LS2 9JT,W YORKSHIRE,ENGLAND",0
 7977,1,1996,bio,ES,"ROCKY MT BIOL LABS,CRESTED BUTTE,CO 81224","Campbell, DR"
-7977,2,1996,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Waser, NM"
-7977,2,1996,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Price, MV"
+7977,2,1996,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Waser, NM"
+7977,2,1996,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," Price, MV"
 7980,1,1996,agr,ES,"AGR UNIV NORWAY,DEPT BIOL & NAT CONSERVAT,N-1432 AS,NORWAY",0
 7981,1,1996,bio,ES,"UNIV OTTAWA, DEPT BIOL, OTTAWA, ON K1N 6N5, CANADA",0
 7983,1,1996,marine,ES,"UNIV N CAROLINA,INST MARINE SCI,MOREHEAD CITY,NC 28557",0
@@ -22889,7 +22897,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8217,3,1995,agr,ES," UNIV HAWAII,DEPT AGRON & SOIL SCI,HONOLULU,HI 96822"," MUELLERDOMBOIS, D"
 8217,3,1995,agr,ES," UNIV HAWAII,DEPT AGRON & SOIL SCI,HONOLULU,HI 96822"," VITOUSEK, PM"
 8218,1,1995,crop,ES,"MICHIGAN STATE UNIV,DEPT CROP & SOIL SCI,HICKORY CORNERS,MI 49060","ROBERTSON, GP"
-8218,2,1995,rivers,ES," UNIV CALIF RIVERSIDE,DEPT NEMATOL,RIVERSIDE,CA 92521"," FRECKMAN, DW"
+8218,2,1995,nematol,ES," UNIV CALIF RIVERSIDE,DEPT NEMATOL,RIVERSIDE,CA 92521"," FRECKMAN, DW"
 8219,1,1995,eco,ES,"CNRS,CTR ECOL SYST FLUVIAUX,F-31055 TOULOUSE,FRANCE",0
 8220,1,1995,zoo,ES,"UNIV CANTERBURY, DEPT ZOOL, CHRISTCHURCH 1, NEW ZEALAND",0
 8221,1,1995,zoo,ES,"N CAROLINA STATE UNIV,DEPT ZOOL,RALEIGH,NC 27695",0
@@ -22971,7 +22979,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8305,1,1995,zoo,ES,"UNIV ALBERTA,DEPT ZOOL,EDMONTON,AB T6G 2E9,CANADA",0
 8306,1,1995,bio,ES,"ALLEGHENY COLL,DEPT BIOL,MEADVILLE,PA 16335",0
 8307,1,1995,virol,ES,"NERC,INST VIROL & ENVIRONM MICROBIOL,ECOL & BIOCONTROL SECT,OXFORD OX1 3SR,ENGLAND",0
-8309,1,1995,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT ENTOMOL,RIVERSIDE,CA 92507",0
+8309,1,1995,ent,ES,"UNIV CALIF RIVERSIDE,DEPT ENTOMOL,RIVERSIDE,CA 92507",0
 8310,1,1995,min,ES,"UNIV MINNESOTA,DEPT ECOL EVOLUT & BEHAV,ST PAUL,MN 55108","BROWN, DG"
 8310,2,1995,eco,ES," UNIV CALIF IRVINE,DEPT ECOL & EVOLUT BIOL,IRVINE,CA 92717"," WEIS, AE"
 8311,1,1995,bio,ES,"PENN STATE UNIV,DEPT BIOL,UNIVERSITY PK,PA 16801",0
@@ -23017,7 +23025,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8351,2,1995,zoo,ES," UNIV HAWAII,DEPT ZOOL,HONOLULU,HI 96822"," UETZ, GW"
 8351,3,1995,bio,ES," CONCORDIA UNIV,DEPT BIOL,MONTREAL,PQ H3G 1M8,CANADA"," GILLESPIE, RG"
 8351,3,1995,bio,ES," CONCORDIA UNIV,DEPT BIOL,MONTREAL,PQ H3G 1M8,CANADA"," GIRALDEAU, LA"
-8352,1,1995,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT ENTOMOL,RIVERSIDE,CA 92507","MURDOCH, WW"
+8352,1,1995,ent,ES,"UNIV CALIF RIVERSIDE,DEPT ENTOMOL,RIVERSIDE,CA 92507","MURDOCH, WW"
 8352,2,1995,bio,ES," DALHOUSIE UNIV,DEPT BIOL,HALIFAX,NS B3H 4J1,CANADA"," LUCK, RF"
 8352,3,1995,agr,ES," AGR CANADA,RES STN,LETHBRIDGE,AB T1J 4B1,CANADA"," SWARBRICK, SL"
 8352,4,1995,forest,ES," SO FOREST EXPT STN,FOREST INSECT RES,PINEVILLE,LA 71360"," WALDE, S"
@@ -23053,7 +23061,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8377,7,1994,forest,ES," US FOREST SERV,HUBBARD BROOK EXPTL FOREST,CAMPTON,NH 03223"," MARTIN, CW"
 8378,1,1994,bio,ES,"UNIV CALGARY,DEPT BIOL,CALGARY T2N 1N4,AB,CANADA",0
 8381,1,1994,bio,ES,"UNIV CALIF LOS ANGELES,DEPT BIOL,LOS ANGELES,CA 90024",0
-8382,1,1994,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
+8382,1,1994,bio,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
 8383,1,1994,plant,ES,"UNIV UTRECHT,DEPT PLANT ECOL & EVOLUT BIOL,3508 TB UTRECHT,NETHERLANDS","VANGROENENDAEL, J"
 8383,2,1994,bio,ES," MICHIGAN STATE UNIV,KELLOGG BIOL STN,HICKORY CORNERS,MI 49060"," DEKROON, H"
 8383,3,1994,bio,ES," STANFORD UNIV,DEPT BIOL SCI,STANFORD,CA 94305"," KALISZ, S"
@@ -23362,12 +23370,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8644,2,1993,bio,ES," FLORIDA STATE UNIV,DEPT BIOL SCI,TALLAHASSEE,FL 32306"," TRAVIS, J"
 8644,2,1993,bio,ES," FLORIDA STATE UNIV,DEPT BIOL SCI,TALLAHASSEE,FL 32306"," POTVIN, C"
 8646,1,1993,bio,ES,"FLORIDA STATE UNIV,DEPT BIOL SCI B-142,TALLAHASSEE,FL 32306",0
-8647,1,1993,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BOT & PLANT SCI,RIVERSIDE,CA 92521","SHAW, RG"
+8647,1,1993,bot,ES,"UNIV CALIF RIVERSIDE,DEPT BOT & PLANT SCI,RIVERSIDE,CA 92521","SHAW, RG"
 8647,2,1993,bio,ES," UNIV MONTANA,DEPT BIOL SCI,MISSOULA,MT 59812"," MITCHELLOLDS, T"
 8648,1,1993,bio,ES,"UNIV MONTREAL,DEPT SCI BIOL,MONTREAL H3C 3J7,QUEBEC,CANADA",0
 8650,1,1993,bio,ES,"FLORIDA STATE UNIV, DEPT BIOL SCI, TALLAHASSEE, FL 32306 USA",0
 8651,1,1993,marine,ES,"STANFORD UNIV,HOPKINS MARINE STN,PACIFIC GROVE,CA 93950",0
-8655,1,1993,inra,ES,"INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE",0
+8655,1,1993,inra,Remove,"INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE",0
 8656,1,1993,bio,ES,"UNIV CALIF LOS ANGELES,BIOMED & ENVIRONM SCI LAB,LOS ANGELES,CA 90024",0
 8657,1,1993,eco,ES,"TULANE UNIV,DEPT ECOL EVOLUT & ORGANISMAL BIOL,NEW ORLEANS,LA 70118","ELLISON, AM"
 8657,2,1993,bio,ES," UNIV MISSOURI,DEPT BIOL,ST LOUIS,MO 63121"," DENSLOW, JS"
@@ -23418,7 +23426,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8706,2,1993,forest,ES," FORESTRY RES INST CHRISTCHURCH,CHRISTCHURCH,NEW ZEALAND"," ALLEN, RB"
 8707,1,1993,bio,ES,"UNIV MIAMI, DEPT BIOL, CORAL GABLES, FL 33124 USA",0
 8708,1,1993,bio,ES,"ROCKY MT BIOL LABS,CRESTED BUTTE,CO 81224","CAMPBELL, DR"
-8708,2,1993,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," HALAMA, KJ"
+8708,2,1993,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," HALAMA, KJ"
 8709,1,1993,bot,ES,"UNIV CALIF DAVIS,DEPT BOT,DAVIS,CA 95616",0
 8710,1,1993,bot,ES,"UNIV TORONTO, DEPT BOT, TORONTO M5S 3B2, ON, CANADA",0
 8711,1,1993,bio,ES,"VANDERBILT UNIV,DEPT BIOL,NASHVILLE,TN 37235",0
@@ -23608,7 +23616,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8846,1,1992,bio,ES,"FLORIDA STATE UNIV,DEPT BIOL SCI,TALLAHASSEE,FL 32306",0
 8847,1,1992,bio,ES,"FLORIDA STATE UNIV,DEPT BIOL SCI B142,TALLAHASSEE,FL 32306",0
 8848,1,1992,harbor,ES,"HARBOR BRANCH OCEANOG INST INC, 5600 OLD DIXIE HIGHWAY, FT PIERCE, FL 34946 USA",0
-8849,1,1992,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
+8849,1,1992,bio,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
 8850,1,1992,desert,ES,"BEN GURION UNIV NEGEV,JACOB BLAUSTEIN INST DESERT RES,MITRANI CTR DESERT ECOL,IL-84993 SEDE BOQER,ISRAEL","DEGEN, AA"
 8850,2,1992,desert,ES," BEN GURION UNIV NEGEV,JACOB BLAUSTEIN INST DESERT RES,DEPT LIFE SCI,IL-84993 SEDE BOQER,ISRAEL"," PINSHOW, B"
 8850,3,1992,desert,ES," BEN GURION UNIV NEGEV,JACOB BLAUSTEIN INST DESERT RES,DEPT LIFE SCI,IL-84105 BEER SHEVA,ISRAEL"," YOSEF, R"
@@ -23728,8 +23736,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8979,2,1992,bio,ES," UNIV KANSAS,DEPT SYSTEMAT & BIOL,LAWRENCE,KS 66044"," FRY, B"
 8979,2,1992,bio,ES," UNIV KANSAS,DEPT SYSTEMAT & BIOL,LAWRENCE,KS 66044"," OBRIEN, WJ"
 8982,1,1992,nat,ES,"COLORADO STATE UNIV,NAT RESOURCE ECOL LAB,FT COLLINS,CO 80523",0
-8983,1,1992,inra,ES,"UNIV PARIS 06,INRA,BIOGEOCHIM ISOTOP LAB,CNRS,URA 196,F-75252 PARIS 05,FRANCE",0
-8986,1,1992,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521","MITCHELL, RJ"
+8983,1,1992,inra,Remove,"UNIV PARIS 06,INRA,BIOGEOCHIM ISOTOP LAB,CNRS,URA 196,F-75252 PARIS 05,FRANCE",0
+8986,1,1992,bio,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521","MITCHELL, RJ"
 8986,2,1992,bio,ES," ROCKY MTN BIOL LAB,CRESTED BUTTE,CO 81224"," WASER, NM"
 8987,1,1992,bot,ES,"UNIV CALIF DAVIS,DEPT BOT,DAVIS,CA 95616","YOUNG, HJ"
 8987,2,1992,populat,ES," UNIV CALIF DAVIS,CTR POPULAT BIOL,DAVIS,CA 95616"," YOUNG, TP"
@@ -23751,10 +23759,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9004,3,1992,bot,ES," WASHINGTON STATE UNIV,DEPT BOT,PULLMAN,WA 99164"," SMITH, JL"
 9004,3,1992,bot,ES," WASHINGTON STATE UNIV,DEPT BOT,PULLMAN,WA 99164"," BLACK, RA"
 9005,1,1992,bio,ES,"UNIV MONTREAL,DEPT SCI BIOL,MONTREAL H3C 3J7,QUEBEC,CANADA",0
-9006,1,1992,inra,ES,"UNIV PARIS 06,INRA,BIOGEOCHIM ISOTOP LAB,CNRS,UA 196,F-75252 PARIS 05,FRANCE","MARTIN, A"
-9006,2,1992,inra,ES," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," MARIOTTI, A"
-9006,2,1992,inra,ES," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," BALESDENT, J"
-9006,2,1992,inra,ES," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," LAVELLE, P"
+9006,1,1992,inra,Remove,"UNIV PARIS 06,INRA,BIOGEOCHIM ISOTOP LAB,CNRS,UA 196,F-75252 PARIS 05,FRANCE","MARTIN, A"
+9006,2,1992,inra,Remove," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," MARIOTTI, A"
+9006,2,1992,inra,Remove," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," BALESDENT, J"
+9006,2,1992,inra,Remove," INRA,SCI SOL STN,F-78026 VERSAILLES,FRANCE"," LAVELLE, P"
 9007,1,1992,zoo,ES,"UNIV NEW ENGLAND,DEPT ZOOL,ARMIDALE,NSW 2351,AUSTRALIA","LOWMAN, MD"
 9007,2,1992,bot,ES," UNIV NEW ENGLAND,DEPT BOT,ARMIDALE,NSW 2351,AUSTRALIA"," HEATWOLE, H"
 9009,1,1992,bio,ES,"ROCKY MT BIOL LABS,GOTHIC,CO 81224",0
@@ -23868,10 +23876,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9132,1,1991,populat,ES,"UNIV CALIF DAVIS,CTR POPULAT BIOL,DAVIS,CA 95616","YOUNG, TP"
 9132,2,1991,bio,ES," PRINCETON UNIV,DEPT BIOL,PRINCETON,NJ 08544"," HUBBELL, SP"
 9133,1,1991,ent,ES,"UNIV GEORGIA,DEPT ENTOMOL,ATHENS,GA 30602","DYER, MI"
-9133,2,1991,rivers,ES," UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521"," COLEMAN, DC"
-9133,3,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," FRECKMAN, DW"
-9133,3,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," MCNAUGHTON, SJ"
-9133,3,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," STRAIN, BR"
+9133,2,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," FRECKMAN, DW"
+9133,2,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," MCNAUGHTON, SJ"
+9133,2,1991,bio,ES," BIOL RES LABS,SYRACUSE,NY 13206"," STRAIN, BR"
 9135,1,1991,bot,ES,"MARIE SELBY BOT GARDEN,SARASOTA,FL 34236",0
 9136,1,1991,evol,ES,"UNIV CHICAGO,COMM EVOLUT BIOL,CHICAGO,IL 60637",0
 9142,1,1991,eco,ES,"UNIV GEORGIA,INST ECOL,ATHENS,GA 30602",0
@@ -24159,7 +24166,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9471,1,1990,bio,ES,"RUTGERS STATE UNIV,DEPT BIOL SCI,PISCATAWAY,NJ 08855","CARSON, WP"
 9471,2,1990,arboret,ES," MARY FLAGLER CARY ARBORETUM,NEW YORK BOT GARDEN,INST ECOSYST STUDIES,MILLBROOK,NY 12545"," PICKETT, STA"
 9473,1,1990,neurobiol,ES,"CORNELL UNIV,NEUROBIOL & BEHAV SECT,ITHACA,NY 14853",0
-9474,1,1990,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
+9474,1,1990,bio,ES,"UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521",0
 9475,1,1990,bio,ES,"UNIV CALIF LOS ANGELES,BIOMED & ENVIRONM SCI LAB,LOS ANGELES,CA 90024",0
 9476,1,1990,bio,ES,"UNIV S CAROLINA,DEPT BIOL SCI,COLUMBIA,SC 29208",0
 9480,1,1990,zoo,ES,"UNIV WASHINGTON,DEPT ZOOL NJ-15,SEATTLE,WA 98195",0
@@ -24184,15 +24191,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9500,1,1989,bio,ES,"SAN DIEGO STATE UNIV,DEPT BIOL,SAN DIEGO,CA 92182","FRECKMAN, DW"
 9500,2,1989,eco,ES," SAN DIEGO STATE UNIV,SYST ECOL RES GRP,SAN DIEGO,CA 92182"," VIRGINIA, RA"
 9502,1,1989,bio,ES,"NO ARIZONA UNIV,DEPT BIOL SCI,FLAGSTAFF,AZ 86011","CRAIG, TP"
-9503,1,1989,rivers,ES,"UNIV CALIF RIVERSIDE,DIV BIOL CONTROL,RIVERSIDE,CA 92521","WALDE, SJ"
+9503,1,1989,bio,ES,"UNIV CALIF RIVERSIDE,DIV BIOL CONTROL,RIVERSIDE,CA 92521","WALDE, SJ"
 9503,2,1989,bio,ES," UNIV CALIF SANTA BARBARA,DEPT BIOL SCI,SANTA BARBARA,CA 93106"," LUCK, RF"
 9503,2,1989,bio,ES," UNIV CALIF SANTA BARBARA,DEPT BIOL SCI,SANTA BARBARA,CA 93106"," YU, DS"
 9503,2,1989,bio,ES," UNIV CALIF SANTA BARBARA,DEPT BIOL SCI,SANTA BARBARA,CA 93106"," MURDOCH, WW"
 9504,1,1989,bio,ES,"DALHOUSIE UNIV,DEPT BIOL,HALIFAX B3H 4J1,NS,CANADA","MURDOCH, WW"
-9504,2,1989,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," LUCK, RF"
-9504,2,1989,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," WALDE, SJ"
-9504,2,1989,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," REEVE, JD"
-9504,2,1989,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," YU, DS"
+9504,2,1989,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," LUCK, RF"
+9504,2,1989,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," WALDE, SJ"
+9504,2,1989,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," REEVE, JD"
+9504,2,1989,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," YU, DS"
 9507,1,1989,zoo,ES,"UNIV CALIF BERKELEY, DEPT ZOOL, BERKELEY, CA 94720 USA","MINTA, S"
 9507,2,1989,wild,ES," UNIV CALIF BERKELEY, DEPT WILDLIFE & FISHERIES BIOL, BERKELEY, CA 94720 USA"," MANGEL, M"
 9508,1,1989,bio,ES,"UNIV N CAROLINA,DEPT BIOL,CHAPEL HILL,NC 27599",0
@@ -25131,7 +25138,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10601,1,1984,oceanog,ES,"UNIV WASHINGTON,SCH OCEANOG,SEATTLE,WA 98195",0
 10602,1,1984,smithsonian,Remove,"SMITHSONIAN TROP RES INST,BALBOA,PANAMA",0
 10603,1,1984,bio,ES,"UNIV CALIF LOS ANGELES,BIOMED & ENVIRONM SCI LAB,LOS ANGELES,CA 90024","MERKER, GP"
-10603,2,1984,rivers,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," NAGY, KA"
+10603,2,1984,bio,ES," UNIV CALIF RIVERSIDE,DEPT BIOL,RIVERSIDE,CA 92521"," NAGY, KA"
 10604,1,1984,nat,ES,"CARNEGIE MUSEUM NAT HIST,AMPHIBIANS & REPTILES SECT,PITTSBURGH,PA 15213","VOGT, RC"
 10604,2,1984,genet,ES," UNIV WISCONSIN,DEPT GENET,MADISON,WI 53706"," BULL, JJ"
 10605,1,1984,zoo,ES,"UNIV WASHINGTON,DEPT ZOOL NJ-15,SEATTLE,WA 98195","NAGY, KA"
@@ -25258,7 +25265,6 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10766,1,1984,zoo,ES,"UNIV WASHINGTON,DEPT ZOOL,SEATTLE,WA 98195",0
 10767,1,1984,bio,ES,"UNIV CALIF SANTA BARBARA, DEPT BIOL SCI, SANTA BARBARA, CA 93106 USA",0
 10770,1,1984,marine,ES,"BODEGA MARINE LAB,BODEGA BAY,CA 94923",0
-10772,1,1984,rivers,ES,"UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521",0
 10773,1,1984,bio,ES,"SYRACUSE UNIV,BIOL RES LABS,SYRACUSE,NY 13210",0
 10774,1,1984,phys ,PS,"UNIV WISCONSIN,DEPT GEOL & GEOPHYS SCI,MILWAUKEE,WI 53201",0
 10775,1,1984,forest,ES,"DUKE UNIV,SCH FORESTRY & ENVIRONM STUDIES,DURHAM,NC 27706",0
@@ -25402,7 +25408,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10946,3,1983,oceanog,ES," UNIV CALIF SAN DIEGO,SCRIPPS INST OCEANOG,INTERAMER TROP TUNA COMMISS,LA JOLLA,CA 92093"," YOUNG, DR"
 10946,4,1983,coastal,ES," SO CALIF COASTAL WATER RES PROJECT,LONG BEACH,CA 90806"," SCHAFER, HA"
 10946,4,1983,coastal,ES," SO CALIF COASTAL WATER RES PROJECT,LONG BEACH,CA 90806"," KAPLAN, IR"
-10948,1,1983,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT BOT & PLANT SCI,RIVERSIDE,CA 92521",0
+10948,1,1983,bot,ES,"UNIV CALIF RIVERSIDE,DEPT BOT & PLANT SCI,RIVERSIDE,CA 92521",0
 10949,1,1983,bio,ES,"UNIV SO CALIF,DEPT BIOL SCI,LOS ANGELES,CA 90089",0
 10950,1,1983,env,ES,"UNIV TEXAS DALLAS,GRAD PROGRAM ENVIRONM SCI,RICHARDSON,TX 75080",0
 10951,1,1983,bio,ES,"MCMASTER UNIV,DEPT BIOL,HAMILTON L8S 4K1,ONTARIO,CANADA",0
@@ -25417,10 +25423,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10956,4,1983,bio,ES," ST LOUIS UNIV,DEPT BIOL,ST LOUIS,MO 63103"," DINA, SJ"
 10957,1,1983,bio,ES,"RUTGERS STATE UNIV,DEPT BIOL SCI BOT,NEW BRUNSWICK,NJ 08903",0
 10958,1,1983,eco,ES,"UNIV CALIF IRVINE,DEPT ECOL & EVOLUT BIOL,IRVINE,CA 92717","NILSEN, ET"
-10958,2,1983,rivers,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," SHARIFI, MR"
-10958,2,1983,rivers,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," RUNDEL, PW"
-10958,2,1983,rivers,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," JARRELL, WM"
-10958,2,1983,rivers,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," VIRGINIA, RA"
+10958,2,1983,soil,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," SHARIFI, MR"
+10958,2,1983,soil,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," RUNDEL, PW"
+10958,2,1983,soil,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," JARRELL, WM"
+10958,2,1983,soil,ES," UNIV CALIF RIVERSIDE,DEPT SOILS & ENVIRONM SCI,RIVERSIDE,CA 92521"," VIRGINIA, RA"
 10959,1,1983,forest,ES,"HARVARD UNIV FOREST,PETERSHAM,MA 01366",0
 10963,1,1983,zoo,ES,"DUKE UNIV,DEPT ZOOL,DURHAM,NC 27706",0
 10964,1,1983,zoo,ES,"OHIO STATE UNIV,DEPT ZOOL,COLUMBUS,OH 43210",0
@@ -25801,7 +25807,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 11448,1,1980,eco,ES,"UTAH STATE UNIV,CTR ECOL,LOGAN,UT 84322","ROBBERECHT, R"
 11448,2,1980,bot,ES," DUKE UNIV,DEPT BOT,DURHAM,NC 27706"," CALDWELL, MM"
 11448,2,1980,bot,ES," DUKE UNIV,DEPT BOT,DURHAM,NC 27706"," BILLINGS, WD"
-11449,1,1980,rivers,ES,"UNIV CALIF RIVERSIDE, DEPT BIOL, RIVERSIDE, CA 92507 USA",0
+11449,1,1980,bio,ES,"UNIV CALIF RIVERSIDE, DEPT BIOL, RIVERSIDE, CA 92507 USA",0
 11453,1,1980,eco,ES,"CALIF STATE UNIV SAN DIEGO,SYST ECOL RES GRP,SAN DIEGO,CA 92182","SHAVER, GR"
 11453,2,1980,arct,ES," UNIV ALASKA,INST ARCTIC BIOL,FAIRBANKS,AK 99701"," CHAPIN, FS"
 11454,1,1980,bio,ES,"OREGON STATE UNIV,DEPT BIOL,CORVALLIS,OR 97331",0
@@ -25821,7 +25827,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 11478,1,1980,marine,ES,"UNIV CALIF SANTA BARBARA,INST MARINE SCI,SANTA BARBARA,CA 93106","HIXON, MA"
 11479,1,1980,zoo,ES,"UNIV WISCONSIN,DEPT ZOOL,MADISON,WI 53706",0
 11486,1,1980,eco,ES,"CORNELL UNIV,ECOL & SYSTEMAT SECT,ITHACA,NY 14853",0
-11487,1,1980,rivers,ES,"UNIV CALIF RIVERSIDE,DEPT SOIL & ENVIRONM SCI,RIVERSIDE,CA 92521",0
+11487,1,1980,soil,ES,"UNIV CALIF RIVERSIDE,DEPT SOIL & ENVIRONM SCI,RIVERSIDE,CA 92521",0
 11490,1,1980,bio,ES,"BOSTON UNIV,DEPT BIOL,BOSTON,MA 02215",0
 11491,1,1980,bio,ES,"SUNY ALBANY,DEPT BIOL SCI,ALBANY,NY 12222",0
 11493,1,1980,bio,ES,"MISSISSIPPI STATE UNIV,DEPT BIOL SCI,STATE COLL,MS 39762",0

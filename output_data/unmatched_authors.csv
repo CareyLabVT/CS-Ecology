@@ -27,11 +27,6 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 58,51,2017,NoMatch,Unmatched," Autonomous Univ Barcelona, E-08193 Barcelona, Spain; ","Retana, Javier"
 67,2,2017,NoMatch,Unmatched," Himal Prakriti, Pithoragarh 262554, Uttarakhand, India; ","Kalyanaraman, Ramnarayan"
 71,1,2017,NoMatch,Unmatched," Resource Evaluat & Dev, Sydney, NSW, Australia","Lyons, Jessica Ann"
-72,1,2017,NoMatch,Unmatched," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Milanesi, P."
-72,1,2017,NoMatch,Unmatched," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Holderegger, R."
-72,1,2017,NoMatch,Unmatched," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Bollmann, K."
-72,1,2017,NoMatch,Unmatched," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Gugerli, F."
-72,1,2017,NoMatch,Unmatched," WSL Swiss Fed Res Inst, Zurcherstr 111, CH-8903 Birmensdorf, Switzerland; ","Zellweger, F."
 74,1,2017,NoMatch,Unmatched," McGill Univ, Redpath Museum, Montreal, PQ H3A 2K6, Canada; ","Sharpe, D. M. T."
 77,5,2017,NoMatch,Unmatched," Univ Iceland, Reykjavik, Iceland; ","Einarsson, Arni"
 86,1,2017,NoMatch,Unmatched," Univ Padua, DAFNAE, Viale Univ 16, I-75651 Padua, Italy","Marini, Lorenzo"
@@ -810,7 +805,6 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4826,1,2005,NoMatch,Unmatched," Cornell Univ, Ithaca, NY 14853 USA"," Agrawal, AA"
 4827,1,2005,NoMatch,Unmatched," Gainesville Coll, Watkinsville, GA 30677 USA"," O'Brien, EM"
 4857,1,2005,NoMatch,Unmatched,"Univ Toronto, Toronto, ON, Canada",0
-4859,1,2005,NoMatch,Unmatched,"WSL Swiss Fed Res Inst, CH-8903 Birmensdorf, Switzerland","Wagner, HH"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Hochachka, WM"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Butcher, G"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Dhondt, AA"
@@ -902,7 +896,6 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5368,1,2004,NoMatch,Unmatched," Autonomous Univ Barcelona, CREAF, E-08193 Bellaterra, Barcelona, Spain"," Retana, J"
 5370,1,2004,NoMatch,Unmatched,"Sheldon Jackson Coll, Sitka, AK 99835 USA","Schnurr, JL"
 5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France",0
-5399,1,2004,NoMatch,Unmatched," WSL, Swiss Fed Res Inst, Dept Landscape Dynam, CH-8903 Birmensdorf, Switzerland"," Zimmermann, NE"
 5407,4,2004,NoMatch,Unmatched," URACCAN, Bluefields, Nicaragua"," Ruiz, J"
 5408,1,2004,NoMatch,Unmatched,"Univ Louisiana, Lafayette, LA USA","Mopper, S"
 5408,1,2004,NoMatch,Unmatched," Univ Toronto, Toronto, ON, Canada"," Agrawal, AA"
@@ -1309,6 +1302,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9131,1,1991,NoMatch,Unmatched," INST NACL PESQUISAS,BR-69000 MANAUS,AMAZONAS,BRAZIL"," JUNK, WJ"
 9133,1,1991,NoMatch,Unmatched," DUKE UNIV,DUKE UNIV PHYTOTRON,DURHAM,NC 27706"," ACRA, MA"
 9133,1,1991,NoMatch,Unmatched," SRI INT,MENLO PK,CA 94025"," WANG, GM"
+9133,1,1991,NoMatch,Unmatched," UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521"," COLEMAN, DC"
 9201,2,1991,NoMatch,Unmatched," VERSAR,COLUMBIA,MD 20771"," STREBEL, DE"
 9201,2,1991,NoMatch,Unmatched," BENNINGTON COLL,DIV SCI,BENNINGTON,VT 05201"," WOODS, KD"
 9201,2,1991,NoMatch,Unmatched," SCI APPLICAT RES,LANHAM,MD 20771"," GOETZ, SJ"
@@ -1354,6 +1348,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139",0
 10745,1,1984,NoMatch,Unmatched,"DUPONT CO,SAVANNAH RIVER LAB,AIKE,SC 29808",0
 10760,1,1984,NoMatch,Unmatched,"KELSALL RES LTD,DELTA V4M 2W9,BC,CANADA",0
+10772,1,1984,NoMatch,Unmatched,"UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521",0
 10809,1,1983,NoMatch,Unmatched," BREEDLOVE & ASSOCIATES INC,GAINESVILLE,FL 32601"," BONACCORSO, FJ"
 10809,1,1983,NoMatch,Unmatched," BREEDLOVE & ASSOCIATES INC,GAINESVILLE,FL 32601"," ZINN, TL"
 10811,1,1983,NoMatch,Unmatched,"SERENGETI RES INST,SERONERA,TANZANIA",0
