@@ -6,6 +6,7 @@
 
 #### Install and load packages #### 
 pacman::p_load(tidyverse)
+library(stringr) # for me this doesn't load with tinyverse for some reason
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
@@ -33,7 +34,7 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
   EG = c("Engineering", NA, NA, NA), 
   PS = c("Chemistry", "Physics", NA, NA),
   SS = c("Education", "Humanities", "Architecture", "SocialScience"), 
-  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", NA)))
+  ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", "InterdisciplinaryEnvironmental")))
 
 #### Create the author database ####
 affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 

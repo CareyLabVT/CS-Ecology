@@ -355,17 +355,17 @@ EnvironmentalBiology,ismer
 EnvironmentalBiology,marinas
 EnvironmentalBiology,ciencias mar
 EnvironmentalBiology,grönlandlehre
-EnvironmentalBiology,global change
+InterdisciplinaryEnvironmental,global change
 EnvironmentalBiology,leidy lab
 Remove,inst wsl
 EnvironmentalBiology,vucel
 Chemistry,helsinki[comma] dating
 EnvironmentalBiology,terramare
 Math,matemat
-EnvironmentalBiology,complex syst
-EnvironmentalBiology,sustainab
-EnvironmentalBiology,oulanka res
-EnvironmentalBiology,resilience ctr
+InterdisciplinaryEnvironmental,complex syst
+InterdisciplinaryEnvironmental,sustainab
+InterdisciplinaryEnvironmental,oulanka res
+InterdisciplinaryEnvironmental,resilience ctr
 LifeScience,global coe
 Remove,max planck
 EnvironmentalBiology,mammal
@@ -384,7 +384,7 @@ EnvironmentalBiology,river studies
 EnvironmentalBiology,evnironm
 EnvironmentalBiology,tyson res
 Engineering,mat sci
-SocialScience,cires
+InterdisciplinaryEnvironmental,cires
 EnvironmentalBiology,lter
 InterdisciplinaryComputing,theoret dynam
 Remove,ifremer
