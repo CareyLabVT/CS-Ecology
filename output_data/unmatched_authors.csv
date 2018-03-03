@@ -140,15 +140,16 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 489,1,2015,NoMatch,Unmatched," Univ Lyon, F-69000 Lyon, France; ","Bonenfant, Christophe"
 489,1,2015,NoMatch,Unmatched," Univ Lyon, F-69000 Lyon, France; ","Cohas, Aurelie"
 580,1,1979,NoMatch,Unmatched," MICHIGAN STATE UNIV, E LANSING, MI 48823 USA"," EVANS, FC"
-628,1,1979,NoMatch,Unmatched,"UNIV SO CALIF,ALLAN HANCOCK FDN,LOS ANGELES,CA 90007",0
+628,1,1979,NoMatch,Unmatched,"UNIV SO CALIF,ALLAN HANCOCK FDN,LOS ANGELES,CA 90007","DEVITA, J"
 676,1,1979,NoMatch,Unmatched," JUNIOR COLL ALBANY,ALBANY,NY 12208"," SCOTT, JT"
-681,1,1978,NoMatch,Unmatched,"YALE UNIV, NEW HAVEN, CT 06520 USA",0
-717,1,1978,NoMatch,Unmatched,"UNIV CALIF BERKELEY,BERKELEY,CA 94720",0
-856,1,1977,NoMatch,Unmatched,"NO ARIZONA UNIV,FLAGSTAFF,AZ 86001",0
+681,1,1978,NoMatch,Unmatched,"YALE UNIV, NEW HAVEN, CT 06520 USA","BRUGAM, RB"
+717,1,1978,NoMatch,Unmatched,"UNIV CALIF BERKELEY,BERKELEY,CA 94720","PITT, MD"
+717,1,1978,NoMatch,Unmatched,"UNIV CALIF BERKELEY,BERKELEY,CA 94720"," HEADY, HF"
+856,1,1977,NoMatch,Unmatched,"NO ARIZONA UNIV,FLAGSTAFF,AZ 86001","REICHMAN, OJ"
 864,1,1977,NoMatch,Unmatched," TUSKEGEE INST,TUSKEGEE,AL 36088"," STEPHENS, EP"
-865,1,1977,NoMatch,Unmatched,"FLORIDA STATE UNIV,TALLAHASSEE,FL 32306",0
+865,1,1977,NoMatch,Unmatched,"FLORIDA STATE UNIV,TALLAHASSEE,FL 32306","STRONG, DR"
 943,1,1977,NoMatch,Unmatched,"UNIV OKLAHOMA,STOVALL MUSEUM,NORMAN,OK 73019","SCHNELL, GD"
-999,1,1976,NoMatch,Unmatched,"UNIV ILLINOIS,CHAMPAIGN,IL 61820",0
+999,1,1976,NoMatch,Unmatched,"UNIV ILLINOIS,CHAMPAIGN,IL 61820","KENDEIGH, SC"
 1004,5,2014,NoMatch,Unmatched," Sci Serv, ZA-1350 Skukuza, South Africa; ","Govender, Navashni"
 1004,6,2014,NoMatch,Unmatched," Sci Serv, Ndlovu Node, SAEON, ZA-1390 Phalaborwa, South Africa; ","Thompson, Dave I."
 1008,3,2014,NoMatch,Unmatched," Stanford Univ, RISE High Sch Internship Program, Off Sci Outreach, Stanford, CA 94305 USA; ","Mesfun, Eyobed"
@@ -163,10 +164,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1026,1,2014,NoMatch,Unmatched," CNRS Univ Rochelle, CEBC, UMR 7372, F-79360 Villiers En Bois, France; ","Weimerskirch, H."
 1026,1,2014,NoMatch,Unmatched," CNRS Univ Rochelle, CEBC, UMR 7372, F-79360 Villiers En Bois, France; ","Chastel, O."
 1028,1,2014,NoMatch,Unmatched," Athabasca Univ, Ctr Sci, Athabasca, AB T9S 3A3, Canada; ","Treu, Roland"
-1030,1,2014,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England",0
+1030,1,2014,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England","Reynolds, AM"
 1034,1,2014,NoMatch,Unmatched," Scion, Christchurch 8540, New Zealand; ","Brockerhoff, Eckehard G."
 1034,1,2014,NoMatch,Unmatched," Scion, Rotorua 3046, New Zealand; ","Kimberley, Mark"
-1043,1,2014,NoMatch,Unmatched,"Univ Massachusetts, Amherst, MA 01003 USA",0
+1043,1,2014,NoMatch,Unmatched,"Univ Massachusetts, Amherst, MA 01003 USA","Lavine, M"
 1049,3,2014,NoMatch,Unmatched," South Australian Res & Dev Inst, Henley Beach, SA 5022, Australia","Bradshaw, Corey J. A."
 1072,2,2014,NoMatch,Unmatched," Commonwealth Sci & Ind Res Org, Brisbane, Qld 4001, Australia","Dwyer, John M."
 1073,2,2014,NoMatch,Unmatched," Landcare Res, Dunedin, New Zealand; ","Lee, William G."
@@ -182,7 +183,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1092,3,2014,NoMatch,Unmatched," Univ Grenoble 1, Stn Alpine J Fourier, UMS CNRS UJF 3370, F-38041 Grenoble, France; ","Choler, Philippe"
 1092,7,2014,NoMatch,Unmatched," Wageningen Univ, NL-6700 AP Wageningen, Netherlands","ter Braak, Cajo J. F."
 1106,2,2014,NoMatch,Unmatched," MIT, Cambridge, MA 02139 USA","Follows, Michael J."
-1113,1,2014,NoMatch,Unmatched,"Univ Belgrade, Inst Multidisciplinary Res, Belgrade 11000, Serbia",0
+1113,1,2014,NoMatch,Unmatched,"Univ Belgrade, Inst Multidisciplinary Res, Belgrade 11000, Serbia","Jaric, I"
 1114,1,2014,NoMatch,Unmatched," CEA ZA, Coquimbo 1781681, Chile; ","Rivadeneira, Marcelo M."
 1114,1,2014,NoMatch,Unmatched," Univ Catolica Norte, Coquimbo 1781681, Chile; ","Rivadeneira, Marcelo M."
 1117,1,2013,NoMatch,Unmatched," Univ Calif Berkeley, Berkeley, CA 94720 USA; ","de Valpine, Perry"
@@ -221,8 +222,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1245,1,2013,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya; ","Goheen, Jacob R."
 1245,1,2013,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya; ","Pringle, Robert M."
 1261,1,2013,NoMatch,Unmatched," Sor Trondelag Univ Coll, N-7004 Trondheim, Norway","Grindeland, John Magne"
-1262,1,2013,NoMatch,Unmatched,"Univ Sherbrooke, Sherbrooke, PQ J1K 2R1, Canada",0
-1265,1,2013,NoMatch,Unmatched,"Univ Lyon, UMR 5558, F-69622 Villeurbanne, France",0
+1262,1,2013,NoMatch,Unmatched,"Univ Sherbrooke, Sherbrooke, PQ J1K 2R1, Canada","Festa-Bianchet, M"
+1265,1,2013,NoMatch,Unmatched,"Univ Lyon, UMR 5558, F-69622 Villeurbanne, France","Gaillard, JM"
 1282,1,2013,NoMatch,Unmatched," AT&T Labs Res, Florham Pk, NJ 07932 USA; ","Phillips, Steven J."
 1286,17,2013,NoMatch,Unmatched," Landowner Stewardship Program Audubon Calif, Winters, CA 95694 USA; ","Vaughn, Kurt J."
 1299,4,2013,NoMatch,Unmatched," Landcare Res, Lincoln 7640, New Zealand; ","Byrom, Andrea E."
@@ -278,7 +279,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1489,1,2012,NoMatch,Unmatched," ITESM Monterrey, Direcc Legado Sostenibilidad, Monterrey, Mexico; ","Cortes Montano, Citlali"
 1491,3,2012,NoMatch,Unmatched," Charles Darwin Fdn, Santa Cruz, Galapagos Islan, Ecuador; ","Gardener, Mark R."
 1491,3,2012,NoMatch,Unmatched," Charles Darwin Fdn, Santa Cruz, Galapagos Islan, Ecuador; ","Jaramillo, Patricia"
-1508,1,1976,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616",0
+1508,1,1976,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616","HANSON, CH"
 1552,1,1976,NoMatch,Unmatched,"OREGON STATE UNIV,CORVALLIS,OR 97331","SOLLINS, P"
 1552,1,1976,NoMatch,Unmatched," COLORADO STATE UNIV,FT COLLINS,CO 80521"," COLEMAN, D"
 1559,1,1976,NoMatch,Unmatched," UNIV OXFORD,NEW COLL,OXFORD,ENGLAND"," SWEATMAN, HPA"
@@ -286,39 +287,52 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 1559,1,1976,NoMatch,Unmatched," UNIV OXFORD,NEW COLL,OXFORD,ENGLAND"," CLELAND, MG"
 1560,1,1976,NoMatch,Unmatched," UNIV TORONTO,ERINDALE COLL,MISSISSAUGA L5L 1C6,ONTARIO,CANADA"," MITCHELL, R"
 1579,1,1975,NoMatch,Unmatched,"UNIV MICHIGAN,SOCIETY FELLOWS,ANN ARBOR,MI 48104","WILBUR, HM"
-1592,1,1975,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27607",0
+1592,1,1975,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27607","THORP, JH"
+1592,1,1975,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27607"," BARTHALMUS, GT"
 1595,1,1975,NoMatch,Unmatched,"RUTGERS STATE UNIV,COOK COLL,NEW BRUNSWICK,NJ 08903","STOUT, BB"
-1599,1,1975,NoMatch,Unmatched,"GILBERT ASSOC INC,POB 1498,READING,PA 19603",0
+1599,1,1975,NoMatch,Unmatched,"GILBERT ASSOC INC,POB 1498,READING,PA 19603","GHISELIN, J"
 1613,1,1975,NoMatch,Unmatched," UNIV MICHIGAN MUSEUM,ANN ARBOR,MI 48104"," HADLEY, NF"
 1619,1,1975,NoMatch,Unmatched,"ROCKEFELLER UNIV,NEW YORK,NY 10021","LIEBERBURG, I"
 1619,2,1975,NoMatch,Unmatched," BROWN UNIV,PROVIDENCE,RI 02912"," SEIP, A"
-1620,1,1975,NoMatch,Unmatched,"SUNY COLL, FREDONIA, NY 14063 USA",0
+1620,1,1975,NoMatch,Unmatched,"SUNY COLL, FREDONIA, NY 14063 USA","WOOD, KG"
 1663,1,1975,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850","WHITTAKER, RH"
-1673,1,1975,NoMatch,Unmatched,"ELECT COUNCIL,RES CTR,CAPENHURST,CHESTER,ENGLAND",0
-1699,1,1975,NoMatch,Unmatched,"UNIV ARIZONA,TUCSON,AZ 85721",0
-1727,1,1975,NoMatch,Unmatched,"VIRGINIA POLYTECH INST & STATE UNIV, BLACKSBURG, VA 24060 USA",0
-1749,1,1974,NoMatch,Unmatched,"ROCKEFELLER UNIV,NEW YORK,NY 10021",0
-1762,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850",0
-1807,1,1974,NoMatch,Unmatched,"ROCKEFELLER UNIV,CTR FIELD RES,MILLBROOK,NY 12545",0
+1673,1,1975,NoMatch,Unmatched,"ELECT COUNCIL,RES CTR,CAPENHURST,CHESTER,ENGLAND","GILROY, D"
+1699,1,1975,NoMatch,Unmatched,"UNIV ARIZONA,TUCSON,AZ 85721","PULLIAM, HR"
+1699,1,1975,NoMatch,Unmatched,"UNIV ARIZONA,TUCSON,AZ 85721"," BRAND, MR"
+1727,1,1975,NoMatch,Unmatched,"VIRGINIA POLYTECH INST & STATE UNIV, BLACKSBURG, VA 24060 USA","MARTIN, RE"
+1727,1,1975,NoMatch,Unmatched,"VIRGINIA POLYTECH INST & STATE UNIV, BLACKSBURG, VA 24060 USA"," MILLER, RL"
+1727,1,1975,NoMatch,Unmatched,"VIRGINIA POLYTECH INST & STATE UNIV, BLACKSBURG, VA 24060 USA"," CUSHWA, CT"
+1749,1,1974,NoMatch,Unmatched,"ROCKEFELLER UNIV,NEW YORK,NY 10021","BAKER, MC"
+1762,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850","WALLACE, B"
+1807,1,1974,NoMatch,Unmatched,"ROCKEFELLER UNIV,CTR FIELD RES,MILLBROOK,NY 12545","BAKER, AEM"
 1829,1,1974,NoMatch,Unmatched,"UNIV FLORIDA,GAINESVILLE,FL 32611","HALLER, WT"
-1870,1,1974,NoMatch,Unmatched,"UNIV CALIF,DAVIS,CA 95616",0
+1870,1,1974,NoMatch,Unmatched,"UNIV CALIF,DAVIS,CA 95616","BARBOUR, MG"
+1870,1,1974,NoMatch,Unmatched,"UNIV CALIF,DAVIS,CA 95616"," DIAZ, DV"
+1870,1,1974,NoMatch,Unmatched,"UNIV CALIF,DAVIS,CA 95616"," BREIDENBACH, RW"
 1881,1,1974,NoMatch,Unmatched," UNIV MICHIGAN,STATISTICAL RES LAB,ANN ARBOR,MI 48104"," LANDWEHR, JM"
-1885,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850",0
-1886,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850",0
-1895,1,1973,NoMatch,Unmatched,"NEW MEXICO HIGHLANDS UNIV,INST SCI RES,LAS VEGAS,NM 87701",0
-1911,1,1973,NoMatch,Unmatched,"UNIV CALIF,HASTINGS RESERVATION,CARMEL VALLEY,CA 93924",0
-1919,1,1973,NoMatch,Unmatched,"UNIV NEW MEXICO,ALBUQUERQUE,NM 87106",0
-1950,1,1973,NoMatch,Unmatched,"UNIV KANSAS,LAWRENCE,KS 66044",0
+1885,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850","GAUCH, HG"
+1885,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850"," CHASE, GB"
+1886,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850","GAUCH, HG"
+1886,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850"," CHASE, GB"
+1886,1,1974,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850"," WHITTAKER, RH"
+1895,1,1973,NoMatch,Unmatched,"NEW MEXICO HIGHLANDS UNIV,INST SCI RES,LAS VEGAS,NM 87701","OFARRELL, MJ"
+1895,1,1973,NoMatch,Unmatched,"NEW MEXICO HIGHLANDS UNIV,INST SCI RES,LAS VEGAS,NM 87701"," STUDIER, EH"
+1911,1,1973,NoMatch,Unmatched,"UNIV CALIF,HASTINGS RESERVATION,CARMEL VALLEY,CA 93924","DAVIS, J"
+1919,1,1973,NoMatch,Unmatched,"UNIV NEW MEXICO,ALBUQUERQUE,NM 87106","DITTMER, HJ"
+1950,1,1973,NoMatch,Unmatched,"UNIV KANSAS,LAWRENCE,KS 66044","KUCHLER, AW"
 1959,1,1973,NoMatch,Unmatched,"SUNY, PURCHASE, NY 10577 USA","UTTER, JM"
 1959,1,1973,NoMatch,Unmatched," SO ILLINOIS UNIV, CARBONDALE, IL 62901 USA"," LEFEBVRE, EA"
-1962,1,1973,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850",0
-1969,1,1973,NoMatch,Unmatched,"UNIV SUSSEX, BRIGHTON, ENGLAND",0
+1962,1,1973,NoMatch,Unmatched,"CORNELL UNIV,ITHACA,NY 14850","GAUCH, HG"
+1969,1,1973,NoMatch,Unmatched,"UNIV SUSSEX, BRIGHTON, ENGLAND","STROBECK, C"
 1970,1,1973,NoMatch,Unmatched,"MID APPALACHIA COLL,TEACHING & RES CTR,LAFOLLETTE,TN 37766","SKEEN, JN"
-1971,1,1973,NoMatch,Unmatched,"PRINCETON UNIV, PRINCETON, NJ 08540 USA",0
+1971,1,1973,NoMatch,Unmatched,"PRINCETON UNIV, PRINCETON, NJ 08540 USA","MACARTHUR, R"
+1971,1,1973,NoMatch,Unmatched,"PRINCETON UNIV, PRINCETON, NJ 08540 USA"," MACARTHUR, J"
+1971,1,1973,NoMatch,Unmatched,"PRINCETON UNIV, PRINCETON, NJ 08540 USA"," MACARTHUR, D"
+1971,1,1973,NoMatch,Unmatched,"PRINCETON UNIV, PRINCETON, NJ 08540 USA"," MACARTHUR, A"
 1991,1,1973,NoMatch,Unmatched," UNIV TORONTO, SCARBOROUGH COLL, TORONTO, ONTARIO, CANADA"," YARRANTON, GA"
 2022,1,1973,NoMatch,Unmatched,"ARKANSAS STATE UNIV, STATE UNIVERSITY, AK 72467 USA","NICKERSON, MA"
 2022,1,1973,NoMatch,Unmatched," DEPAUW UNIV, GREENCASTLE, IN 46135 USA"," MAYS, CE"
-2047,1,1973,NoMatch,Unmatched,"STERLING COLL,STERLING,KS 67579",0
+2047,1,1973,NoMatch,Unmatched,"STERLING COLL,STERLING,KS 67579","TAYLOR, DL"
 2497,1,2012,NoMatch,Unmatched," Ctr Maricole Iles De La Madeleine CeMIM, Cap Aux Meules, PQ G4T 1B3, Canada; ","Bourque, Francois"
 2497,1,2012,NoMatch,Unmatched," Ctr Maricole Iles De La Madeleine CeMIM, Cap Aux Meules, PQ G4T 1B3, Canada; ","Myrand, Bruno"
 2501,1,2012,NoMatch,Unmatched," Univ Wurzburg, Field Stn Fabrikschleichach, D-96181 Rauhenebrach, Germany; ","Fronhofer, Emanuel A."
@@ -330,7 +344,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2519,2,2012,NoMatch,Unmatched," Univ S Bohemia, Fac Sci, Ceske Budejovice 37005, Czech Republic; ","Klimes, Petr"
 2538,1,2012,NoMatch,Unmatched," Okayama Univ, Res Core Interdisciplinary Sci, Okayama 7008530, Japan","Hyodo, Fujio"
 2541,3,2012,NoMatch,Unmatched," S Australian Res & Dev Inst, Henley Beach, SA 5022, Australia","Bradshaw, Corey J. A."
-2548,1,2012,NoMatch,Unmatched,"Aarhus Univ, DK-8600 Silkeborg, Denmark",0
+2548,1,2012,NoMatch,Unmatched,"Aarhus Univ, DK-8600 Silkeborg, Denmark","Damgaard, C"
 2552,3,2012,NoMatch,Unmatched," Univ New S Wales, Sydney, NSW 2052, Australia; ","Hayward, Matt W."
 2553,1,2012,NoMatch,Unmatched," Univ Lyon 1, F-69622 Villeurbanne, France; ","Avril, Alexis"
 2553,1,2012,NoMatch,Unmatched," Univ Lyon 1, F-69622 Villeurbanne, France; ","Pontier, Dominique"
@@ -339,7 +353,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2553,1,2012,NoMatch,Unmatched," Direct Rech & Dev, ONCFS, F-34990 Juvignac, France; ","Leonard, Yves"
 2553,1,2012,NoMatch,Unmatched," Direct Rech & Dev, ONCFS, F-34990 Juvignac, France; ","Santin-Janin, Hugues"
 2593,3,2012,NoMatch,Unmatched," UPS, ENFA, CNRS, F-31062 Toulouse, France; ","Cucherousset, Julien"
-2598,1,2012,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England",0
+2598,1,2012,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England","Reynolds, AM"
 2631,1,2012,NoMatch,Unmatched," Landcare Res, Dunedin 9054, New Zealand; ","Tanentzap, Andrew J."
 2631,1,2012,NoMatch,Unmatched," Landcare Res, Dunedin 9054, New Zealand; ","Lee, William G."
 2646,1,2012,NoMatch,Unmatched," Kochi Univ, Grad Sch Kuroshio Sci, Kochi 7808520, Japan; ","Genkai-Kato, Motomi"
@@ -450,7 +464,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2936,2,2011,NoMatch,Unmatched," Pk Canada, Western & No Serv Ctr, Winnipeg, MB R3B 0R9, Canada; ","Wilmshurst, John F."
 2940,2,2010,NoMatch,Unmatched," Harvard Univ, Petersham, MA 01366 USA; ","Fitzpatrick, Matthew C."
 2940,2,2010,NoMatch,Unmatched," Harvard Univ, Petersham, MA 01366 USA; ","Ellison, Aaron M."
-2945,1,2010,NoMatch,Unmatched,"Univ Massachusetts, Amherst, MA 01003 USA",0
+2945,1,2010,NoMatch,Unmatched,"Univ Massachusetts, Amherst, MA 01003 USA","Lavine, M"
 2953,2,2010,NoMatch,Unmatched," Univ Calif Santa Cruz, Santa Cruz, CA 95060 USA","O'Donnell, James L."
 2957,1,2010,NoMatch,Unmatched," Univ Calif Santa Cruz, Santa Cruz, CA 95060 USA; ","O'Leary, Jennifer K."
 2975,1,2010,NoMatch,Unmatched," Ryukoku Univ, Otsu, Shiga, Japan; ","Kondoh, Michio"
@@ -463,7 +477,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 2994,2,2010,NoMatch,Unmatched," Tel Aviv Univ, IL-69978 Tel Aviv, Israel; ","Hefetz, Abraham"
 2994,2,2010,NoMatch,Unmatched," Univ Tours, CNRS, UMR 6035, IRBI, Tours, France; ","Lenoir, Alain"
 2994,2,2010,NoMatch,Unmatched," Univ Lyon 1, LBBE, CNRS, UMR 5558, F-69365 Lyon, France","van Oudenhove, Louise"
-3005,1,2010,NoMatch,Unmatched,"Univ Illinois, Chicago, IL 60607 USA",0
+3005,1,2010,NoMatch,Unmatched,"Univ Illinois, Chicago, IL 60607 USA","Howe, HF"
 3014,1,2010,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya","Sensenig, Ryan L."
 3018,2,2010,NoMatch,Unmatched," Univ Rovira & Virgili, ICREA, Tarragona 43007, Catalonia, Spain; ","Guimera, R."
 3023,1,2010,NoMatch,Unmatched,"Idaho State Univ, Pocatello, ID 83209 USA","Laundre, JW"
@@ -471,8 +485,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3032,1,2010,NoMatch,Unmatched," Univ Wurzburg, Field Stn Fabrikschleichach, D-96181 Rauhenebrach, Germany; ","Kubisch, Alexander"
 3032,1,2010,NoMatch,Unmatched," Univ Wurzburg, Field Stn Fabrikschleichach, D-96181 Rauhenebrach, Germany; ","Hovestadt, Thomas"
 3032,1,2010,NoMatch,Unmatched," Univ Wurzburg, Field Stn Fabrikschleichach, D-96181 Rauhenebrach, Germany; ","Poethke, Hans-Joachim"
-3040,1,2010,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA",0
-3041,1,2010,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA",0
+3040,1,2010,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Strong, DR"
+3041,1,2010,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA","Ellison, AM"
 3044,1,2010,NoMatch,Unmatched," AUT Univ, Sch Appl Sci, Auckland, New Zealand; ","Gillman, Len N."
 3053,1,2010,NoMatch,Unmatched," IBIF, Santa Cruz, Bolivia; ","Poorter, Lourens"
 3053,1,2010,NoMatch,Unmatched," IBIF, Santa Cruz, Bolivia; ","Mercado, Pablo"
@@ -562,8 +576,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3555,1,2009,NoMatch,Unmatched," Montana State Univ, Bozeman, MT 59717 USA; ","Bunn, Rebecca"
 3555,1,2009,NoMatch,Unmatched," Montana State Univ, Bozeman, MT 59717 USA; ","Zabinski, Catherine"
 3564,1,2009,NoMatch,Unmatched," Rothamsted Res, Harpenden AL5 2JQ, Herts, England; ","Reynolds, A. M."
-3566,1,2009,NoMatch,Unmatched,"Univ Lancaster, Lancaster LA1 4YW, England",0
-3570,1,2009,NoMatch,Unmatched,"Princeton Univ, Princeton, NJ 08544 USA",0
+3566,1,2009,NoMatch,Unmatched,"Univ Lancaster, Lancaster LA1 4YW, England","Wilson, K"
+3570,1,2009,NoMatch,Unmatched,"Princeton Univ, Princeton, NJ 08544 USA","Dobson, A"
 3574,1,2009,NoMatch,Unmatched," Univ Utrecht, NL-3584 CL Utrecht, Netherlands","Heesterbeek, Hans"
 3598,3,2009,NoMatch,Unmatched," Northwestern Univ, Weinberg Coll Arts & Sci, Evanston, IL 60201 USA","Egerton-Warburton, Louise M."
 3622,1,2009,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki 10400, Kenya","Riginos, Corinna"
@@ -596,7 +610,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3692,1,2008,NoMatch,Unmatched," Univ Calif Davis, Bodega Bay, CA 94923 USA","Kimbro, David L."
 3702,1,2008,NoMatch,Unmatched," Lillehammer Univ Coll, N-2604 Lillehammer, Norway","Tjorve, Even"
 3702,1,2008,NoMatch,Unmatched," Lillehammer Univ Coll, N-2604 Lillehammer, Norway","Tjorve, Kathleen M. Calf"
-3737,1,2008,NoMatch,Unmatched,"Duke Univ, Durham, NC 27706 USA",0
+3737,1,2008,NoMatch,Unmatched,"Duke Univ, Durham, NC 27706 USA","Cunningham, CW"
 3738,1,2008,NoMatch,Unmatched," Gulf Maine Res Inst, Portland, ME 04101 USA; ","Pershing, Andrew J."
 3740,1,2008,NoMatch,Unmatched," Univ Algarve, CCMAR, P-8005139 Faro, Portugal; ","Castilho, Rita"
 3741,1,2008,NoMatch,Unmatched," Univ Algarve, CCMAR, Faro, Portugal; ","Serrao, Ester A."
@@ -619,7 +633,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3802,1,2008,NoMatch,Unmatched," Pontificia Univ Catolica Chile, CASEB, Santiago 6513677, Chile; ","Lima, Mauricio"
 3825,1,2008,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki 10400, Kenya; ","Riginos, Corinna"
 3830,1,2008,NoMatch,Unmatched," Utah State Univ, Brigham City, UT 84302 USA","Young, Kevin V."
-3836,1,2008,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England",0
+3836,1,2008,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England","Reynolds, A"
 3841,1,2008,NoMatch,Unmatched," Linkoping Univ, IFM, Linkoping, Sweden; ","Lindstroem, Tom"
 3841,1,2008,NoMatch,Unmatched," Linkoping Univ, IFM, Linkoping, Sweden; ","Westerberg, Lars"
 3841,1,2008,NoMatch,Unmatched," Linkoping Univ, IFM, Linkoping, Sweden; ","Wennergren, Uno"
@@ -647,7 +661,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 3936,1,2008,NoMatch,Unmatched," Univ Gottingen, D-37073 Gottingen, Germany; ","Tscharntke, Teja"
 3936,1,2008,NoMatch,Unmatched," Univ Gottingen, D-37073 Gottingen, Germany; ","Hoehn, Patrick"
 3937,4,2008,NoMatch,Unmatched," Univ Calif Berkeley, Berkeley, CA 94720 USA; ","Lindberg, David R."
-3941,1,2008,NoMatch,Unmatched,"Monterey Bay Aquarium Res Inst, Moss Landing, CA 95039 USA",0
+3941,1,2008,NoMatch,Unmatched,"Monterey Bay Aquarium Res Inst, Moss Landing, CA 95039 USA","Ruhl, HA"
 3946,4,2008,NoMatch,Unmatched," Harvard Univ, Petersham, MA 01366 USA; ","Stinson, Kristina"
 3953,1,2008,NoMatch,Unmatched," Univ Pretoria, Tony & Lisette Lewis Fdn, Upington, South Africa; ","Mills, M. G. L."
 3956,1,2008,NoMatch,Unmatched," Kanagawa Prefectural Ashigara Kami Reg Prefectura, Ashigara Kami, Japan; ","Motai, Hideyo"
@@ -678,11 +692,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4074,1,2007,NoMatch,Unmatched," Univ Lyon 1, UMR 5558, FR-69622 Villeurbanne, France; ","Gaillard, J. -M."
 4074,1,2007,NoMatch,Unmatched," Univ Lyon 1, UMR 5558, FR-69622 Villeurbanne, France; ","Bonenfant, C."
 4074,1,2007,NoMatch,Unmatched," Univ Lyon 1, UMR 5558, FR-69622 Villeurbanne, France; ","Van Moorter, B."
-4079,1,2007,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA",0
+4079,1,2007,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Rosenheim, JA"
 4084,2,2007,NoMatch,Unmatched," Estacion Expt La Mayora, Malaga, Spain"," Magalhaes, S"
 4084,2,2007,NoMatch,Unmatched," Estacion Expt La Mayora, Malaga, Spain"," Montserrat, M"
 4084,2,2007,NoMatch,Unmatched," Estacion Expt La Mayora, Malaga, Spain"," Van der Hammen, T"
-4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France",0
+4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France","Lagrue, C"
+4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France"," Kaldonski, N"
+4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France"," Perrot-Minnot, MJ"
+4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France"," Motreuil, B"
+4099,1,2007,NoMatch,Unmatched,"Univ Bourgogne, UMR, CNRS, F-21000 Dijon, France"," Bollache, L"
 4118,1,2007,NoMatch,Unmatched,"IFP, Pondicherry 605001, India","Munoz, F"
 4118,1,2007,NoMatch,Unmatched," UMR AMAP, IRD, F-34398 Montpellier 5, France"," Couteron, P"
 4151,1,2007,NoMatch,Unmatched," Univ Potsdam, D-14469 Potsdam, Germany"," Mosner, E"
@@ -694,7 +712,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4160,1,2007,NoMatch,Unmatched," Univ Paris 11, CNRS, UNR 8079, Unite Mixte Rech, F-91405 Orsay, France"," Giuge, L"
 4160,1,2007,NoMatch,Unmatched," Univ Paris 11, CNRS, UNR 8079, Unite Mixte Rech, F-91405 Orsay, France"," Courchamp, F"
 4162,12,2007,NoMatch,Unmatched," Illinois State Museum, Res & Collect Ctr, Springfield, IL 62703 USA"," Kerr, JT"
-4163,1,2007,NoMatch,Unmatched,"Reprint Dept, Washington, DC 20006 USA",0
+4163,1,2007,NoMatch,Unmatched,"Reprint Dept, Washington, DC 20006 USA","Ellison, AM"
 4167,3,2007,NoMatch,Unmatched," CNRS, GEMI, IRD, UMR 2724, F-34394 Montpellier, France"," Guernier, V"
 4167,3,2007,NoMatch,Unmatched," CNRS, GEMI, IRD, UMR 2724, F-34394 Montpellier, France"," Guegan, JF"
 4174,1,2007,NoMatch,Unmatched,"Rothamsted Res, Harpenden AL5 2JQ, Herts, England","Reynolds, AM"
@@ -707,7 +725,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4226,1,2007,NoMatch,Unmatched," Univ Michigan, Ann Arbor, MI 48109 USA"," Adams, HE"
 4232,3,2007,NoMatch,Unmatched," CNRS, CEFE, UMR 5175, F-34293 Montpellier 5, France"," Morgan, BJT"
 4234,1,2007,NoMatch,Unmatched,"Illinois State Museum, Res & Collect Ctr, Springfield, IL 62703 USA","Qian, H"
-4266,1,2007,NoMatch,Unmatched,"Univ Calif Santa Cruz, EEB, EMS, Santa Cruz, CA 95064 USA",0
+4266,1,2007,NoMatch,Unmatched,"Univ Calif Santa Cruz, EEB, EMS, Santa Cruz, CA 95064 USA","Parker, IM"
+4266,1,2007,NoMatch,Unmatched,"Univ Calif Santa Cruz, EEB, EMS, Santa Cruz, CA 95064 USA"," Gilbert, GS"
 4270,1,2007,NoMatch,Unmatched,"Monterey Bay Aquarium Res Inst, Moss Landing, CA 95039 USA","Ruhl, HA"
 4303,1,2007,NoMatch,Unmatched,"Univ Calif Santa Cruz, Santa Cruz, CA 95064 USA","Gilbert, GS"
 4303,1,2007,NoMatch,Unmatched," Univ Calif Davis, Davis, CA 95616 USA"," Strong, DR"
@@ -722,15 +741,17 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4384,2,2007,NoMatch,Unmatched," CNRS, UMR 7093, LOV, F-06238 Villefranche Sur Mer, France"," Morales-Baquero, R"
 4386,2,2007,NoMatch,Unmatched," Gainesville State Coll, Gainesville, GA 30503 USA"," Lavers, CP"
 4387,1,2006,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA","Foster, DR"
-4399,1,2006,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany",0
+4399,1,2006,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany","Tylianakis, JM"
+4399,1,2006,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany"," Tscharntke, T"
+4399,1,2006,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany"," Klein, AM"
 4413,1,2006,NoMatch,Unmatched,"Illinois State Museum, Res & Collect Ctr, Springfield, IL 62703 USA","Fridley, JD"
-4419,1,2006,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA",0
+4419,1,2006,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Freestone, AL"
 4425,2,2006,NoMatch,Unmatched," Humboldt State Univ, Arcata, CA 95521 USA"," Sawyer, JO"
 4441,15,2006,NoMatch,Unmatched," Columbia Univ, New York, NY 10021 USA"," Jacob, U"
 4443,1,2006,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Freestone, AL"
 4453,2,2006,NoMatch,Unmatched," Illinois State Museum, Res & Collect Ctr, Springfield, IL 62703 USA"," Grimm, EC"
 4465,4,2006,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya"," Pringle, RM"
-4469,1,2006,NoMatch,Unmatched,"Univ Calif Los Angeles, Los Angeles, CA 90024 USA",0
+4469,1,2006,NoMatch,Unmatched,"Univ Calif Los Angeles, Los Angeles, CA 90024 USA","Nonacs, P"
 4487,1,2006,NoMatch,Unmatched," Harvard Univ, Cambridge, MA 02138 USA"," Ashton, PS"
 4489,1,2006,NoMatch,Unmatched,"Univ Quebec, GREFi, Montreal, PQ H3C 3P8, Canada","Bouchard, M"
 4489,1,2006,NoMatch,Unmatched," Univ Quebec, Rouyn Noranda, PQ J9X 5E4, Canada"," Kneeshaw, D"
@@ -775,8 +796,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4707,1,2006,NoMatch,Unmatched,"Univ Oklahoma, Norman, OK 73019 USA","Luo, YQ"
 4707,1,2006,NoMatch,Unmatched," Carnegie Inst Washington, Washington, DC 20005 USA"," Field, CB"
 4707,1,2006,NoMatch,Unmatched," Duke Univ, Durham, NC 27706 USA"," Jackson, RB"
-4713,1,2006,NoMatch,Unmatched,"Univ Nevada, Reno, NV 89557 USA",0
-4720,1,2006,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia",0
+4713,1,2006,NoMatch,Unmatched,"Univ Nevada, Reno, NV 89557 USA","Johnson, DW"
+4720,1,2006,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia","Brown, GP"
+4720,1,2006,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia"," Shine, R"
 4725,1,2006,NoMatch,Unmatched," Colorado State Univ, Grad Degree Program, Ft Collins, CO 80523 USA"," Skagen, SK"
 4732,1,2006,NoMatch,Unmatched,"Evergreen State Coll, Olympia, WA 98505 USA","LeRoy, CJ"
 4733,1,2005,NoMatch,Unmatched,"Univ Wisconsin, Madison, WI 53706 USA","Ives, AR"
@@ -784,13 +806,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4736,1,2005,NoMatch,Unmatched," DERF, DSF, F-75732 Paris, France"," Belrose, V"
 4737,2,2005,NoMatch,Unmatched," Univ Canterbury, Christchurch 8001, New Zealand"," Sheppard, AW"
 4737,2,2005,NoMatch,Unmatched," CSIRO, CRC, Canberra, ACT 2601, Australia"," Woodburn, TL"
-4753,1,2005,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany",0
+4753,1,2005,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany","Tylianakis, JM"
+4753,1,2005,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany"," Klein, AM"
+4753,1,2005,NoMatch,Unmatched,"Univ Gottingen, D-37073 Gottingen, Germany"," Tscharntke, T"
 4754,1,2005,NoMatch,Unmatched,"BDFFP, BR-69060001 Manaus, Amazonas, Brazil","Quintero, I"
 4754,1,2005,NoMatch,Unmatched," INPA, BR-69083000 Manaus, Amazonas, Brazil"," Roslin, T"
 4755,1,2005,NoMatch,Unmatched," Stanford Univ, Stanford, CA 94305 USA"," Tuljapurkar, S"
 4757,2,2005,NoMatch,Unmatched," Warren Wilson Coll, Asheville, NC 28815 USA"," Valentine, SK"
 4757,2,2005,NoMatch,Unmatched," Warren Wilson Coll, Asheville, NC 28815 USA"," Megonigal, JP"
-4765,1,2005,NoMatch,Unmatched,"Landcare Res, Dunedin, New Zealand",0
+4765,1,2005,NoMatch,Unmatched,"Landcare Res, Dunedin, New Zealand","Efford, MG"
 4766,1,2005,NoMatch,Unmatched," CNRS, CEFE, F-34293 Montpellier, France"," Schaub, M"
 4769,1,2005,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Stamps, J"
 4774,2,2005,NoMatch,Unmatched," Richard Stockton Coll New Jersey, Pomona, NJ 08240 USA"," Raouf, SA"
@@ -800,11 +824,13 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4790,2,2005,NoMatch,Unmatched," Univ Fed Parana, Dept Fis, BR-81531990 Curitiba, Parana, Brazil"," Viswanathan, GM"
 4790,2,2005,NoMatch,Unmatched," Univ Fed Alagoas, Dept Fis, BR-57072970 Maceio, AL, Brazil"," Catalan, J"
 4795,1,2005,NoMatch,Unmatched," Direct Rech Faune, Quebec City, PQ G1R 5V7, Canada"," Ouellet, JP"
-4817,1,2005,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia",0
+4817,1,2005,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia","Brown, GP"
+4817,1,2005,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia"," Shine, R"
 4826,1,2005,NoMatch,Unmatched,"Univ Calif Irvine, Irvine, CA 92717 USA","Hawkins, BA"
 4826,1,2005,NoMatch,Unmatched," Cornell Univ, Ithaca, NY 14853 USA"," Agrawal, AA"
 4827,1,2005,NoMatch,Unmatched," Gainesville Coll, Watkinsville, GA 30677 USA"," O'Brien, EM"
-4857,1,2005,NoMatch,Unmatched,"Univ Toronto, Toronto, ON, Canada",0
+4857,1,2005,NoMatch,Unmatched,"Univ Toronto, Toronto, ON, Canada","Fortin, MJ"
+4857,1,2005,NoMatch,Unmatched,"Univ Toronto, Toronto, ON, Canada"," Agrawal, AA"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Hochachka, WM"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Butcher, G"
 4863,1,2005,NoMatch,Unmatched," Audubon Sci Off, Ivyland, PA 18974 USA"," Dhondt, AA"
@@ -838,7 +864,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 4974,1,2005,NoMatch,Unmatched," Univ Autonoma Barcelona, Dept Fis, E-08193 Bellaterra, Catalonia, Spain"," Amaral, LAN"
 4982,1,2005,NoMatch,Unmatched,"French Inst Pondicherry, Pondicherry 605001, India","Couteron, P"
 4993,1,2005,NoMatch,Unmatched,"Lang Railsback & Associates, Arcata, CA 95521 USA","Railsback, SF"
-4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand",0
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand","Richardson, SJ"
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand"," Allen, RB"
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand"," Whitehead, D"
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand"," Carswell, FE"
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand"," Ruscoe, WA"
+4995,1,2005,NoMatch,Unmatched,"Landcare Res, Lincoln 8152, New Zealand"," Platt, KH"
 5001,2,2005,NoMatch,Unmatched," Richard Stockton Coll New Jersey, Pomona, NJ 08240 USA"," Raouf, SA"
 5001,2,2005,NoMatch,Unmatched," Richard Stockton Coll New Jersey, Pomona, NJ 08240 USA"," Smith, LC"
 5001,2,2005,NoMatch,Unmatched," Richard Stockton Coll New Jersey, Pomona, NJ 08240 USA"," Wingfield, JC"
@@ -855,11 +886,15 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5048,1,2005,NoMatch,Unmatched," Sogn Fjordane Univ Coll, Fac Sci, N-5801 Sogndal, Norway"," Seldal, T"
 5048,1,2005,NoMatch,Unmatched," Sogn Fjordane Univ Coll, Fac Sci, N-5801 Sogndal, Norway"," Breistol, A"
 5060,1,2005,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Stamps, JA"
-5063,1,2005,NoMatch,Unmatched,"Univ Quebec, Montreal, PQ H3C 3P8, Canada",0
+5063,1,2005,NoMatch,Unmatched,"Univ Quebec, Montreal, PQ H3C 3P8, Canada","Dubois, FD"
+5063,1,2005,NoMatch,Unmatched,"Univ Quebec, Montreal, PQ H3C 3P8, Canada"," Giraldeau, LA"
 5064,1,2005,NoMatch,Unmatched,"Landcare Res, Dunedin, New Zealand","Craine, JM"
 5064,3,2005,NoMatch,Unmatched," Kansas State Univ, Manhattan, KS 66506 USA"," Williams, RJ"
 5064,3,2005,NoMatch,Unmatched," Kansas State Univ, Manhattan, KS 66506 USA"," Johnson, LC"
-5065,1,2005,NoMatch,Unmatched,"Landcare Res, Canterbury 8152, New Zealand",0
+5065,1,2005,NoMatch,Unmatched,"Landcare Res, Canterbury 8152, New Zealand","Richardson, SJ"
+5065,1,2005,NoMatch,Unmatched,"Landcare Res, Canterbury 8152, New Zealand"," Peltzer, DA"
+5065,1,2005,NoMatch,Unmatched,"Landcare Res, Canterbury 8152, New Zealand"," Allen, RB"
+5065,1,2005,NoMatch,Unmatched,"Landcare Res, Canterbury 8152, New Zealand"," McGlone, MS"
 5112,1,2004,NoMatch,Unmatched," James Cook Univ N Queensland, Townsville, Qld 4811, Australia"," Fabricius, K"
 5112,1,2004,NoMatch,Unmatched," James Cook Univ N Queensland, Townsville, Qld 4811, Australia"," De'Ath, G"
 5112,1,2004,NoMatch,Unmatched," James Cook Univ N Queensland, Townsville, Qld 4811, Australia"," Negri, A"
@@ -886,8 +921,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5266,1,2004,NoMatch,Unmatched," Virginia Tech, Blacksburg, VA USA"," Adler, LS"
 5266,1,2004,NoMatch,Unmatched," Univ Toronto, Toronto, ON, Canada"," Agrawal, AA"
 5277,3,2004,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya"," Ogada, DL"
-5287,1,2004,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia",0
-5301,1,2004,NoMatch,Unmatched,"Univ Oslo, Oslo, Norway",0
+5287,1,2004,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia","Brown, GP"
+5287,1,2004,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia"," Shine, R"
+5301,1,2004,NoMatch,Unmatched,"Univ Oslo, Oslo, Norway","Hessen, DO"
 5330,1,2004,NoMatch,Unmatched," Univ Idaho, Moscow, ID 83844 USA"," Taper, ML"
 5330,1,2004,NoMatch,Unmatched," Univ Idaho, Moscow, ID 83844 USA"," Dennis, B"
 5356,1,2004,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya"," Karban, R"
@@ -895,7 +931,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5364,1,2004,NoMatch,Unmatched," Truman State Univ, Div Sci, Kirksville, MO 63501 USA"," Martin, WD"
 5368,1,2004,NoMatch,Unmatched," Autonomous Univ Barcelona, CREAF, E-08193 Bellaterra, Barcelona, Spain"," Retana, J"
 5370,1,2004,NoMatch,Unmatched,"Sheldon Jackson Coll, Sitka, AK 99835 USA","Schnurr, JL"
-5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France",0
+5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France","Elger, A"
+5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France"," Bornette, G"
+5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France"," Barrat-Segretain, MH"
+5382,1,2004,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5023, F-69622 Villeurbanne, France"," Amoros, C"
 5407,4,2004,NoMatch,Unmatched," URACCAN, Bluefields, Nicaragua"," Ruiz, J"
 5408,1,2004,NoMatch,Unmatched,"Univ Louisiana, Lafayette, LA USA","Mopper, S"
 5408,1,2004,NoMatch,Unmatched," Univ Toronto, Toronto, ON, Canada"," Agrawal, AA"
@@ -905,7 +944,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5448,7,2003,NoMatch,Unmatched," Oster Farimagsgade 2D, DK-1353 Copenhagen K, Denmark"," Gwynn-Jones, D"
 5448,7,2003,NoMatch,Unmatched," Oster Farimagsgade 2D, DK-1353 Copenhagen K, Denmark"," Kondratchuk, A"
 5448,7,2003,NoMatch,Unmatched," Oster Farimagsgade 2D, DK-1353 Copenhagen K, Denmark"," Jonasson, SE"
-5515,1,2003,NoMatch,Unmatched,"Univ New England, Armidale, NSW 2351, Australia",0
+5515,1,2003,NoMatch,Unmatched,"Univ New England, Armidale, NSW 2351, Australia","Jenkins, KM"
+5515,1,2003,NoMatch,Unmatched,"Univ New England, Armidale, NSW 2351, Australia"," Boulton, AJ"
 5518,1,2003,NoMatch,Unmatched," Univ Utrecht, NL-3508 TB Utrecht, Netherlands"," Bongers, F"
 5518,2,2003,NoMatch,Unmatched," Catholic Univ Nijmegen, NL-6525 ED Nijmegen, Netherlands"," Martinez-Ramos, M"
 5518,2,2003,NoMatch,Unmatched," Catholic Univ Nijmegen, NL-6525 ED Nijmegen, Netherlands"," De Kroon, H"
@@ -919,9 +959,12 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5551,1,2003,NoMatch,Unmatched," Catholic Univ Nijmegen, NL-6651 JN Druten, Netherlands"," Lensink, R"
 5551,1,2003,NoMatch,Unmatched," Catholic Univ Nijmegen, NL-6651 JN Druten, Netherlands"," Neubert, MG"
 5554,1,2003,NoMatch,Unmatched,"Museu Paraense Emilio Goeldi, Belem, Para, Brazil","Fragoso, JMV"
-5572,1,2003,NoMatch,Unmatched,"Univ Utrecht, NL-3508 TC Utrecht, Netherlands",0
+5572,1,2003,NoMatch,Unmatched,"Univ Utrecht, NL-3508 TC Utrecht, Netherlands","Venterink, HO"
+5572,1,2003,NoMatch,Unmatched,"Univ Utrecht, NL-3508 TC Utrecht, Netherlands"," Wassen, MJ"
+5572,1,2003,NoMatch,Unmatched,"Univ Utrecht, NL-3508 TC Utrecht, Netherlands"," Verkroost, AWM"
+5572,1,2003,NoMatch,Unmatched,"Univ Utrecht, NL-3508 TC Utrecht, Netherlands"," de Ruiter, PC"
 5590,2,2003,NoMatch,Unmatched," Luontotutkimus Solonen Oy, FIN-00960 Helsinki, Finland"," Solonen, T"
-5601,1,2003,NoMatch,Unmatched,"Duke Univ, Durham, NC 27706 USA",0
+5601,1,2003,NoMatch,Unmatched,"Duke Univ, Durham, NC 27706 USA","Clark, JS"
 5612,3,2003,NoMatch,Unmatched," Landcare Res, Auckland, New Zealand"," Hill, R"
 5612,3,2003,NoMatch,Unmatched," Richard Hill & Associates, Christchurch, New Zealand"," Memmot, J"
 5612,7,2003,NoMatch,Unmatched," CSIRO, European Lab, F-34980 Montferrier Sur Lez 5, France"," Winks, C"
@@ -932,9 +975,10 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5632,1,2003,NoMatch,Unmatched,"Yale Univ, New Haven, CT 06520 USA","Schmitz, OJ"
 5632,2,2003,NoMatch,Unmatched," Univ Toronto, Toronto, ON, Canada"," Agrawal, AA"
 5645,6,2003,NoMatch,Unmatched," Univ Tours, IRBI CNRS, UPRESA 6035, F-37200 Tours, France"," Casas, J"
-5658,1,2003,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA",0
+5658,1,2003,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Phillips, DA"
+5658,1,2003,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA"," Strong, DR"
 5661,1,2003,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Denison, RF"
-5685,1,2003,NoMatch,Unmatched,"Reprint Dept, Washington, DC 20006 USA",0
+5685,1,2003,NoMatch,Unmatched,"Reprint Dept, Washington, DC 20006 USA","Agrawal, AA"
 5697,3,2003,NoMatch,Unmatched," Iowa State Univ Sci & Technol, Ames, IA 50011 USA"," Danielson, BJ"
 5706,1,2003,NoMatch,Unmatched,"Aqua Restorat Res Ctr, Gifu 5016021, Japan","Kawaguchi, Y"
 5707,1,2003,NoMatch,Unmatched,"H T Harvey & Associates, San Jose, CA 95118 USA","Ainley, DG"
@@ -953,7 +997,9 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5798,1,2002,NoMatch,Unmatched," Lorrain Archael Reg Serv, F-57070 Metz, France"," Moares, C"
 5819,2,2002,NoMatch,Unmatched," Univ Nacl San Antonio Abad Cusco, Cuzco, Peru"," Silman, MR"
 5821,1,2002,NoMatch,Unmatched,"Cornell Univ, Ithaca, NY 14853 USA","Uriarte, M"
-5834,1,2002,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia",0
+5834,1,2002,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia","Shine, R"
+5834,1,2002,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia"," Barrott, EG"
+5834,1,2002,NoMatch,Unmatched,"Univ Sydney, Sydney, NSW 2006, Australia"," Elphick, MJ"
 5842,1,2002,NoMatch,Unmatched,"Abisko Sci Res Stn, CIRC, SE-98107 Abisko, Sweden","Karlsson, J"
 5878,1,2002,NoMatch,Unmatched,"CNRS, CEBC, Conseil Gen Deux Sevres, F-79360 Villiers En Bois, France","Bonnet, X"
 5878,1,2002,NoMatch,Unmatched," Univ Sydney, Sydney, NSW 2006, Australia"," Lourdais, O"
@@ -974,24 +1020,28 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 5957,3,2002,NoMatch,Unmatched," Univ Victoria, Wellington, New Zealand"," Brockie, RE"
 5964,1,2002,NoMatch,Unmatched,"Univ Montpellier 2, EPHE, F-34095 Montpellier 5, France","Prodon, R"
 5964,2,2002,NoMatch,Unmatched," Univ Paris 06, Lab Arago, URA CNRS 2156, F-66651 Banyuls sur Mer, France"," Dejaifve, PA"
-5998,1,2002,NoMatch,Unmatched,"James Cook Univ N Queensland, Cooperat Res Ctr, Townsville, Qld 4811, Australia",0
+5998,1,2002,NoMatch,Unmatched,"James Cook Univ N Queensland, Cooperat Res Ctr, Townsville, Qld 4811, Australia","De'Ath, G"
 6004,1,2002,NoMatch,Unmatched," Illinois State Museum Res & Collect Ctr, Springfield, IL 62703 USA"," Grimm, EC"
 6012,2,2002,NoMatch,Unmatched," Columbia Univ, New York, NY 10027 USA"," Cohen, JE"
 6014,1,2002,NoMatch,Unmatched,"Evergreen State Coll, Olympia, WA 98505 USA","Longino, JT"
-6029,1,2002,NoMatch,Unmatched,"Colorado State Univ, Ft Collins, CO 80523 USA",0
+6029,1,2002,NoMatch,Unmatched,"Colorado State Univ, Ft Collins, CO 80523 USA","Burke, IC"
+6029,1,2002,NoMatch,Unmatched,"Colorado State Univ, Ft Collins, CO 80523 USA"," Lauenroth, WK"
 6048,4,2002,NoMatch,Unmatched," HT Harvey & Associates, Fresno, CA 93711 USA"," Loft, ER"
 6052,1,2002,NoMatch,Unmatched," W Incorp, Laramie, WY 82070 USA"," Sanderson, JG"
 6082,1,2001,NoMatch,Unmatched," Univ Grenoble 1, Stn Alpine Lautaret, F-38041 Grenoble, France"," Michalet, R"
 6093,1,2001,NoMatch,Unmatched,"Delft Hydraul, NL-2600 MH Delft, Netherlands","Van De Koppel, J"
-6128,1,2001,NoMatch,Unmatched,"Univ Connecticut, Storrs, CT 06269 USA",0
-6129,1,2001,NoMatch,Unmatched,"CSIRO, Indooroopilly, Qld 4068, Australia",0
+6128,1,2001,NoMatch,Unmatched,"Univ Connecticut, Storrs, CT 06269 USA","Montgomery, RA"
+6128,1,2001,NoMatch,Unmatched,"Univ Connecticut, Storrs, CT 06269 USA"," Chazdon, RL"
+6129,1,2001,NoMatch,Unmatched,"CSIRO, Indooroopilly, Qld 4068, Australia","Olesen, T"
 6162,1,2001,NoMatch,Unmatched,"Landcare Res New Zealand, Hamilton, New Zealand","Leathwick, JR"
 6170,1,2001,NoMatch,Unmatched,"Fresh Pond Res Inst, Cambridge, MA 02140 USA","Orzack, SH"
 6190,2,2001,NoMatch,Unmatched," CNRS, UMR 5566, F-31401 Toulouse, France"," Levin, SA"
 6213,1,2001,NoMatch,Unmatched," ETH Zurich, CH-8092 Zurich, Switzerland"," Mutikainen, P"
 6222,1,2001,NoMatch,Unmatched,"Univ Oregon, Charleston, OR 97420 USA","Moran, AL"
-6252,1,2001,NoMatch,Unmatched,"Univ Wisconsin, Madison, WI 53706 USA",0
-6259,1,2001,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France",0
+6252,1,2001,NoMatch,Unmatched,"Univ Wisconsin, Madison, WI 53706 USA","Wallin, KF"
+6252,1,2001,NoMatch,Unmatched,"Univ Wisconsin, Madison, WI 53706 USA"," Raffa, KF"
+6259,1,2001,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France","Aubry, P"
+6259,1,2001,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France"," Debouzie, D"
 6261,1,2001,NoMatch,Unmatched,"Harvard Univ Hebaria, Cambridge, MA 02138 USA","Davies, SJ"
 6262,1,2001,NoMatch,Unmatched," Harvard Univ Hebaria, Cambridge, MA 02138 USA"," Winter, K"
 6285,1,2001,NoMatch,Unmatched," Res & Collect Ctr, Illinois State Museum, Springfield, IL 62703 USA"," Grimm, EC"
@@ -1001,7 +1051,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6341,1,2001,NoMatch,Unmatched,"Univ Canterbury, Christchurch 8001, New Zealand","Kelly, D"
 6341,1,2001,NoMatch,Unmatched," Landcare Res, Lincoln, New Zealand"," Hart, DE"
 6341,1,2001,NoMatch,Unmatched," Landcare Res, Lincoln, New Zealand"," Allen, RB"
-6389,1,2000,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA",0
+6389,1,2000,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA","Amezcua, AB"
+6389,1,2000,NoMatch,Unmatched,"Univ Calif Davis, Davis, CA 95616 USA"," Holyoak, M"
 6408,2,2000,NoMatch,Unmatched," Coll St Benedict, St Joseph, MN 56374 USA"," Phillips, H"
 6408,2,2000,NoMatch,Unmatched," Coll St Benedict, St Joseph, MN 56374 USA"," Menton, M"
 6408,2,2000,NoMatch,Unmatched," Coll St Benedict, St Joseph, MN 56374 USA"," Patel, A"
@@ -1013,7 +1064,8 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 6436,1,2000,NoMatch,Unmatched," Univ Rennes 1, CNRS, UMR 6553, F-35042 Rennes, France"," Leroux, A"
 6436,1,2000,NoMatch,Unmatched," Univ Rennes 1, CNRS, UMR 6553, F-35042 Rennes, France"," Bretagnolle, V"
 6460,1,2000,NoMatch,Unmatched," Int Inst Appl Syst Anal, Adapt Dynam Network, A-2361 Laxenburg, Austria"," Dieckmann, U"
-6475,1,2000,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA",0
+6475,1,2000,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA","Compton, JE"
+6475,1,2000,NoMatch,Unmatched,"Harvard Univ, Petersham, MA 01366 USA"," Boone, RD"
 6503,2,2015,NoMatch,Unmatched," Washington & Jefferson Coll, Washington, PA 15301 USA; ","Verrico, Brittany"
 6512,1,2015,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya; ","Ford, Adam T."
 6512,1,2015,NoMatch,Unmatched," Mpala Res Ctr, Nanyuki, Kenya; ","Goheen, Jacob R."
@@ -1183,7 +1235,7 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7022,1,2000,NoMatch,Unmatched," Univ Valle Guatemala, Inst Invest, Guatemala City, Guatemala"," MacVean, C"
 7022,1,2000,NoMatch,Unmatched," Univ Valle Guatemala, Inst Invest, Guatemala City, Guatemala"," Perez, R"
 7022,1,2000,NoMatch,Unmatched," Univ Valle Guatemala, Inst Invest, Guatemala City, Guatemala"," Cano, E"
-7042,1,2000,NoMatch,Unmatched,"Univ Kassel, FB 19, D-34132 Kassel, Germany",0
+7042,1,2000,NoMatch,Unmatched,"Univ Kassel, FB 19, D-34132 Kassel, Germany","Leuschner, C"
 7047,1,2000,NoMatch,Unmatched,"Portland State Univ, Portland, OR 97207 USA","Yeakley, JA"
 7048,1,2000,NoMatch,Unmatched," Mid Sweden Univ, Dept Appl Sci, SE-87188 Harnosand, Sweden"," Nilsson, C"
 7048,1,2000,NoMatch,Unmatched," Mid Sweden Univ, Dept Appl Sci, SE-87188 Harnosand, Sweden"," Renofalt, B"
@@ -1191,17 +1243,21 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7076,1,2000,NoMatch,Unmatched," Univ Chicago, Chicago, IL 60637 USA"," Pfister, C"
 7087,1,2000,NoMatch,Unmatched," Perkins Coie LLP, Portland, OR 97204 USA"," Courtney, AC"
 7096,1,2000,NoMatch,Unmatched,"Univ Paris 11, CNRS, UPRESA 8079, F-91405 Orsay, France","Ponsard, S"
-7119,1,2000,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France",0
-7126,1,2000,NoMatch,Unmatched,"Univ Missouri, St Louis, MO 63121 USA",0
-7133,1,2000,NoMatch,Unmatched,"Bennington Coll, Bennington, VT 05201 USA",0
+7119,1,2000,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France","Aubry, P"
+7119,1,2000,NoMatch,Unmatched,"Univ Lyon 1, CNRS, UMR 5558, F-69622 Villeurbanne, France"," Debouzie, D"
+7126,1,2000,NoMatch,Unmatched,"Univ Missouri, St Louis, MO 63121 USA","Mothershead, K"
+7126,1,2000,NoMatch,Unmatched,"Univ Missouri, St Louis, MO 63121 USA"," Marquis, RJ"
+7133,1,2000,NoMatch,Unmatched,"Bennington Coll, Bennington, VT 05201 USA","Woods, KD"
 7151,1,1999,NoMatch,Unmatched," Texas Tech Univ Museum, Lubbock, TX 79409 USA"," Willig, MR"
 7156,1,1999,NoMatch,Unmatched," Univ Lyon 1, UMR 5558, F-69622 Villeurbanne, France"," Festa-Bianchet, M"
 7173,1,1999,NoMatch,Unmatched," Rothamsted Expt Stn, IARC, Harpenden AL5 2JQ, Herts, England"," Meredith, J"
 7177,1,1999,NoMatch,Unmatched," Oregon State Univ, Corvallis, OR 97331 USA"," Polasky, S"
 7178,1,1999,NoMatch,Unmatched," Univ SW Louisiana, Lafayette, LA 70504 USA"," Twilley, RR"
 7178,1,1999,NoMatch,Unmatched," Univ SW Louisiana, Lafayette, LA 70504 USA"," Feller, IC"
-7182,1,1999,NoMatch,Unmatched,"Duke Univ, Durham, NC 27708 USA",0
-7186,1,1999,NoMatch,Unmatched,"James Cook Univ N Queensland, Townsville, Qld 4811, Australia",0
+7182,1,1999,NoMatch,Unmatched,"Duke Univ, Durham, NC 27708 USA","Richardson, CJ"
+7182,1,1999,NoMatch,Unmatched,"Duke Univ, Durham, NC 27708 USA"," Ferrell, GM"
+7182,1,1999,NoMatch,Unmatched,"Duke Univ, Durham, NC 27708 USA"," Vaithiyanathan, P"
+7186,1,1999,NoMatch,Unmatched,"James Cook Univ N Queensland, Townsville, Qld 4811, Australia","De'ath, G"
 7214,2,1999,NoMatch,Unmatched," Univ New Hampshire, Durham, NH 03824 USA"," McDowell, WH"
 7221,5,1999,NoMatch,Unmatched," Florida Atlantic Univ, Div Sci, Davie, FL 33314 USA"," Volin, JC"
 7235,3,1999,NoMatch,Unmatched," San Francisco State Univ, Tiburon, CA 94920 USA"," Martinez, ND"
@@ -1215,11 +1271,13 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7312,1,1999,NoMatch,Unmatched," Konnevesi Res Stn, FIN-40351 Jyvaskyla, Finland"," Suhonen, J"
 7312,1,1999,NoMatch,Unmatched," Konnevesi Res Stn, FIN-40351 Jyvaskyla, Finland"," Jantti, A"
 7312,1,1999,NoMatch,Unmatched," Konnevesi Res Stn, FIN-40351 Jyvaskyla, Finland"," Hakkari, T"
-7325,1,1999,NoMatch,Unmatched,"Vassar Coll, Poughkeepsie, NY 12601 USA",0
+7325,1,1999,NoMatch,Unmatched,"Vassar Coll, Poughkeepsie, NY 12601 USA","Fritz, RS"
 7350,1,1999,NoMatch,Unmatched,"Norwegian Acad Sci & Letters, Ctr Adv Study, N-0271 Oslo, Norway","Saitoh, T"
 7352,1,1999,NoMatch,Unmatched," CVC, Ctr Datos Conservac, Cali, Colombia"," Gomez, N"
 7352,1,1999,NoMatch,Unmatched," CVC, Ctr Datos Conservac, Cali, Colombia"," Heredia, S"
-7355,1,1999,NoMatch,Unmatched,"Landcare Res, Lincoln, New Zealand",0
+7355,1,1999,NoMatch,Unmatched,"Landcare Res, Lincoln, New Zealand","Allen, RB"
+7355,1,1999,NoMatch,Unmatched,"Landcare Res, Lincoln, New Zealand"," Bellingham, PJ"
+7355,1,1999,NoMatch,Unmatched,"Landcare Res, Lincoln, New Zealand"," Wiser, SK"
 7368,1,1999,NoMatch,Unmatched,"Univ Arkansas, Fayetteville, AR 72701 USA","Evans, RD"
 7373,3,1999,NoMatch,Unmatched," AquaSense, NL-1090 HC Amsterdam, Netherlands"," Weissing, FJ"
 7387,1,1998,NoMatch,Unmatched,"Michigan State Univ, Hickory Corners, MI 49060 USA","Foster, BL"
@@ -1231,18 +1289,22 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7488,2,1998,NoMatch,Unmatched," ETH Zurich, CH-8092 Zurich, Switzerland"," Mutikainen, P"
 7522,1,1998,NoMatch,Unmatched," Eastern Norway Res Inst, N-2601 Lillehammer, Norway"," Hertzberg, K"
 7522,1,1998,NoMatch,Unmatched," Eastern Norway Res Inst, N-2601 Lillehammer, Norway"," Ims, RA"
-7576,1,1998,NoMatch,Unmatched,"Ohio State Univ, Columbus, OH 43210 USA",0
-7602,1,1998,NoMatch,Unmatched,"Stanford Univ, Stanford, CA 94305 USA",0
-7606,1,1998,NoMatch,Unmatched,"Stanford Univ, Stanford, CA 94305 USA",0
-7614,1,1998,NoMatch,Unmatched,"Oregon State Univ, Corvallis, OR 97331 USA",0
+7576,1,1998,NoMatch,Unmatched,"Ohio State Univ, Columbus, OH 43210 USA","Snow, AA"
+7576,1,1998,NoMatch,Unmatched,"Ohio State Univ, Columbus, OH 43210 USA"," Parker, PG"
+7602,1,1998,NoMatch,Unmatched,"Stanford Univ, Stanford, CA 94305 USA","Hooper, DU"
+7606,1,1998,NoMatch,Unmatched,"Stanford Univ, Stanford, CA 94305 USA","Vitousek, PM"
+7614,1,1998,NoMatch,Unmatched,"Oregon State Univ, Corvallis, OR 97331 USA","Pedersen, BS"
 7624,1,1998,NoMatch,Unmatched,"Univ Guelph, Guelph, ON N1G 2W1, Canada","Fryxell, JM"
 7624,1,1998,NoMatch,Unmatched," Univ Toronto, Toronto, ON M5S 1A1, Canada"," Falls, JB"
 7624,1,1998,NoMatch,Unmatched," Univ Toronto, Toronto, ON M5S 1A1, Canada"," Falls, EA"
 7624,1,1998,NoMatch,Unmatched," Univ Toronto, Toronto, ON M5S 1A1, Canada"," Brooks, RJ"
 7661,1,1997,NoMatch,Unmatched," QUEENSLAND DEPT PRIMARY IND,EMERALD,QLD 4720,AUSTRALIA"," Dixon, AFG"
-7668,1,1997,NoMatch,Unmatched,"BROWN UNIV,PROVIDENCE,RI 02912",0
-7693,1,1997,NoMatch,Unmatched,"UNIV ARKANSAS,FAYETTEVILLE,AR 72701",0
-7699,1,1997,NoMatch,Unmatched,"UNIV ALASKA,FAIRBANKS,AK 99701",0
+7668,1,1997,NoMatch,Unmatched,"BROWN UNIV,PROVIDENCE,RI 02912","Kareiva, PM"
+7668,1,1997,NoMatch,Unmatched,"BROWN UNIV,PROVIDENCE,RI 02912"," Bertness, MD"
+7693,1,1997,NoMatch,Unmatched,"UNIV ARKANSAS,FAYETTEVILLE,AR 72701","Frank, DA"
+7693,1,1997,NoMatch,Unmatched,"UNIV ARKANSAS,FAYETTEVILLE,AR 72701"," Evans, RD"
+7699,1,1997,NoMatch,Unmatched,"UNIV ALASKA,FAIRBANKS,AK 99701","Strauss, SY"
+7699,1,1997,NoMatch,Unmatched,"UNIV ALASKA,FAIRBANKS,AK 99701"," Armbruster, WS"
 7835,2,1997,NoMatch,Unmatched," CTR RECH INSULAIRES,MOOREA,FR POLYNESIA"," HarmelinVivien, ML"
 7863,1,1997,NoMatch,Unmatched,"POLITECN MILAN,CIRITA,I-20133 MILAN,ITALY","Scheffer, M"
 7865,1,1997,NoMatch,Unmatched,"CARMABI FDN,CURACAO,NETH ANTILLES","Lichtenbelt, WDVM"
@@ -1256,10 +1318,13 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 7898,1,1996,NoMatch,Unmatched," LAB PENGENDALIAN HAMA PENYAKIT TANAMAN PANGAN,BANTUL,DIY,INDONESIA"," Lestari, AS"
 7898,1,1996,NoMatch,Unmatched," LAB PENGENDALIAN HAMA PENYAKIT TANAMAN PANGAN,BANTUL,DIY,INDONESIA", Pajarningsih
 7898,1,1996,NoMatch,Unmatched," LAB PENGENDALIAN HAMA PENYAKIT TANAMAN PANGAN,BANTUL,DIY,INDONESIA", Sartanto
-7905,1,1996,NoMatch,Unmatched,"SWISS FED INST TECHNOL,CH-8952 SCHLIEREN,SWITZERLAND",0
+7905,1,1996,NoMatch,Unmatched,"SWISS FED INST TECHNOL,CH-8952 SCHLIEREN,SWITZERLAND","Bugmann, HKM"
 7912,1,1996,NoMatch,Unmatched,"UNIV ILLINOIS,URBANA,IL 61801","Callaway, RM"
 7912,1,1996,NoMatch,Unmatched," UNIV NEVADA,RENO,NV 89557"," DeLucia, EH"
-8008,1,1996,NoMatch,Unmatched,"CNRS,CEFEI,F-34033 MONTPELLIER,FRANCE",0
+8008,1,1996,NoMatch,Unmatched,"CNRS,CEFEI,F-34033 MONTPELLIER,FRANCE","Cezilly, F"
+8008,1,1996,NoMatch,Unmatched,"CNRS,CEFEI,F-34033 MONTPELLIER,FRANCE"," Viallefont, A"
+8008,1,1996,NoMatch,Unmatched,"CNRS,CEFEI,F-34033 MONTPELLIER,FRANCE"," Boy, V"
+8008,1,1996,NoMatch,Unmatched,"CNRS,CEFEI,F-34033 MONTPELLIER,FRANCE"," Johnson, AR"
 8040,6,1996,NoMatch,Unmatched," BEN GURION UNIV NEGEV, RAMON SCI CTR, IL-80600 MITPE RAMON, ISRAEL"," Rogovin, KA"
 8040,6,1996,NoMatch,Unmatched," BEN GURION UNIV NEGEV, RAMON SCI CTR, IL-80600 MITPE RAMON, ISRAEL"," Shenbrot, G"
 8076,1,1996,NoMatch,Unmatched,"UNIV COLORADO MUSEUM,BOULDER,CO 80309","Stamp, NE"
@@ -1270,33 +1335,52 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 8142,2,1995,NoMatch,Unmatched," UNIV COLORADO,BOULDER,CO 80309"," FALL, R"
 8142,2,1995,NoMatch,Unmatched," UNIV COLORADO,BOULDER,CO 80309"," MONSON, R"
 8146,1,1995,NoMatch,Unmatched," UNIV TOKYO MUSEUM,BUNKYO KU,TOKYO 113,JAPAN"," MASUZAWA, T"
-8167,1,1995,NoMatch,Unmatched,"UNIV CAPE TOWN, FITZPATRICK INST, RONDEBOSCH 7700, SOUTH AFRICA",0
-8174,1,1995,NoMatch,Unmatched,"UNIV UTRECHT,3584 CH UTRECHT,NETHERLANDS",0
+8167,1,1995,NoMatch,Unmatched,"UNIV CAPE TOWN, FITZPATRICK INST, RONDEBOSCH 7700, SOUTH AFRICA","WIEGAND, T"
+8167,1,1995,NoMatch,Unmatched,"UNIV CAPE TOWN, FITZPATRICK INST, RONDEBOSCH 7700, SOUTH AFRICA"," MILTON, SJ"
+8167,1,1995,NoMatch,Unmatched,"UNIV CAPE TOWN, FITZPATRICK INST, RONDEBOSCH 7700, SOUTH AFRICA"," WISSEL, C"
+8174,1,1995,NoMatch,Unmatched,"UNIV UTRECHT,3584 CH UTRECHT,NETHERLANDS","SCHEFFER, M"
+8174,1,1995,NoMatch,Unmatched,"UNIV UTRECHT,3584 CH UTRECHT,NETHERLANDS"," DEBOER, RJ"
 8205,2,1995,NoMatch,Unmatched," UNIV PARIS SUD 11,F-91405 ORSAY,FRANCE"," ARDITI, R"
-8246,1,1995,NoMatch,Unmatched,"UNIV TURKU,ARCHIPELAGO RES INST,SF-20500 TURKU,FINLAND",0
-8263,1,1995,NoMatch,Unmatched,"KONNEVESI RES STN,SF-40351 JYVASKYLA,FINLAND",0
-8276,1,1995,NoMatch,Unmatched,"UNIV CALGARY,KANANASKIS FIELD STN,CALGARY,AB T2N 1N4,CANADA",0
+8246,1,1995,NoMatch,Unmatched,"UNIV TURKU,ARCHIPELAGO RES INST,SF-20500 TURKU,FINLAND","LEHTILA, K"
+8246,1,1995,NoMatch,Unmatched,"UNIV TURKU,ARCHIPELAGO RES INST,SF-20500 TURKU,FINLAND"," SYRJANEN, K"
+8263,1,1995,NoMatch,Unmatched,"KONNEVESI RES STN,SF-40351 JYVASKYLA,FINLAND","MAPPES, T"
+8263,1,1995,NoMatch,Unmatched,"KONNEVESI RES STN,SF-40351 JYVASKYLA,FINLAND"," YLONEN, H"
+8263,1,1995,NoMatch,Unmatched,"KONNEVESI RES STN,SF-40351 JYVASKYLA,FINLAND"," VIITALA, J"
+8276,1,1995,NoMatch,Unmatched,"UNIV CALGARY,KANANASKIS FIELD STN,CALGARY,AB T2N 1N4,CANADA","BESSIE, WC"
+8276,1,1995,NoMatch,Unmatched,"UNIV CALGARY,KANANASKIS FIELD STN,CALGARY,AB T2N 1N4,CANADA"," JOHNSON, EA"
 8297,1,1995,NoMatch,Unmatched,"UNIV PARIS 11,F-91405 ORSAY,FRANCE","AKCAKAYA, HR"
-8451,1,1994,NoMatch,Unmatched,"GEORGIA INST TECHNOL,GEORGIA TECH RES INST,ATLANTA,GA 30332",0
+8451,1,1994,NoMatch,Unmatched,"GEORGIA INST TECHNOL,GEORGIA TECH RES INST,ATLANTA,GA 30332","BENKE, AC"
+8451,1,1994,NoMatch,Unmatched,"GEORGIA INST TECHNOL,GEORGIA TECH RES INST,ATLANTA,GA 30332"," JACOBI, DI"
 8473,1,1994,NoMatch,Unmatched,"UNIV ILLINOIS,URBANA,IL 61801","CALLAWAY, RM"
-8492,1,1994,NoMatch,Unmatched,"UNIV MARYLAND EASTERN SHORE,PRINCESS ANNE,MD 21853",0
+8492,1,1994,NoMatch,Unmatched,"UNIV MARYLAND EASTERN SHORE,PRINCESS ANNE,MD 21853","FURBISH, CE"
+8492,1,1994,NoMatch,Unmatched,"UNIV MARYLAND EASTERN SHORE,PRINCESS ANNE,MD 21853"," ALBANO, M"
 8533,2,1994,NoMatch,Unmatched," PETROBRAS SA,DEPEX SEBINT,BR-20035 RIO JANEIRO,BRAZIL"," ADAMS, JB"
-8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND",0
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND","HOLLINGER, DY"
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND"," KELLIHER, FM"
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND"," BYERS, JN"
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND"," HUNT, JE"
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND"," MCSEVENY, TM"
+8576,1,1994,NoMatch,Unmatched,"LANDCARE RES NEW ZEALAND LTD,CHRISTCHURCH,NEW ZEALAND"," WEIR, PL"
 8599,6,1993,NoMatch,Unmatched," LOUISIANA STATE UNIV,RICE STN,CROWLEY,LA 70526"," ROBINSON, JF"
-8621,1,1993,NoMatch,Unmatched,"UNIV SYDNEY,SYDNEY,NSW 2006,AUSTRALIA",0
+8621,1,1993,NoMatch,Unmatched,"UNIV SYDNEY,SYDNEY,NSW 2006,AUSTRALIA","SCHWARZKOPF, L"
 8633,1,1993,NoMatch,Unmatched," UNIV COLORADO MUSEUM,BOULDER,CO 80309"," BOWERS, MD"
-8677,1,1993,NoMatch,Unmatched,"UNIV YORK,YORK YO1 5DD,N YORKSHIRE,ENGLAND",0
+8677,1,1993,NoMatch,Unmatched,"UNIV YORK,YORK YO1 5DD,N YORKSHIRE,ENGLAND","LAW, R"
+8677,1,1993,NoMatch,Unmatched,"UNIV YORK,YORK YO1 5DD,N YORKSHIRE,ENGLAND"," MORTON, RD"
 8720,1,1993,NoMatch,Unmatched,"CARMABI FDN,CURACAO,NETH ANTILLES","LICHTENBELT, WDV"
 8733,1,1993,NoMatch,Unmatched,"HARVARD UNIV,CAMBRIDGE,MA 02138","PETERSON, BJ"
 8822,1,1993,NoMatch,Unmatched,"MONTEVERDE,SAN JOSE 1000,COSTA RICA","MATELSON, TJ"
-8845,1,1992,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616",0
+8845,1,1992,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616","POWER, ME"
+8845,1,1992,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616"," MARKS, JC"
+8845,1,1992,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616"," PARKER, MS"
 8938,1,1992,NoMatch,Unmatched," W ALTON JONES FDN,CHARLOTTESVILLE,VA 22901"," MYERS, JP"
 8938,1,1992,NoMatch,Unmatched," W ALTON JONES FDN,CHARLOTTESVILLE,VA 22901"," RICKLEFS, RE"
 8954,1,1992,NoMatch,Unmatched," MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," PRICE, PW"
 8957,1,1992,NoMatch,Unmatched," ILLINOIS STATE MUSEUM, CTR RES & COLLECT, SPRINGFIELD, IL 62703 USA"," HANSEN, BCS"
 8957,1,1992,NoMatch,Unmatched," ILLINOIS STATE MUSEUM, CTR RES & COLLECT, SPRINGFIELD, IL 62703 USA"," GRIMM, EC"
 9027,1,1992,NoMatch,Unmatched,"POSEIDON SYST,CUPERTINO,CA 95014","CROLL, DA"
-9064,1,1991,NoMatch,Unmatched,"BRIGHTON POLYTECH,BRIGHTON BN2 4GJ,E SUSSEX,ENGLAND",0
+9064,1,1991,NoMatch,Unmatched,"BRIGHTON POLYTECH,BRIGHTON BN2 4GJ,E SUSSEX,ENGLAND","HUTCHINGS, MJ"
+9064,1,1991,NoMatch,Unmatched,"BRIGHTON POLYTECH,BRIGHTON BN2 4GJ,E SUSSEX,ENGLAND"," BOOTH, KD"
+9064,1,1991,NoMatch,Unmatched,"BRIGHTON POLYTECH,BRIGHTON BN2 4GJ,E SUSSEX,ENGLAND"," WAITE, S"
 9081,2,1991,NoMatch,Unmatched," UNIV COLORADO,BOULDER,CO 80309"," MITTON, JB"
 9081,2,1991,NoMatch,Unmatched," NO ARIZONA UNIV,BILBY RES CTR,FLAGSTAFF,AZ 86011"," ANDERSON, RS"
 9131,1,1991,NoMatch,Unmatched," INST NACL PESQUISAS,BR-69000 MANAUS,AMAZONAS,BRAZIL"," JUNK, WJ"
@@ -1306,26 +1390,35 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 9201,2,1991,NoMatch,Unmatched," VERSAR,COLUMBIA,MD 20771"," STREBEL, DE"
 9201,2,1991,NoMatch,Unmatched," BENNINGTON COLL,DIV SCI,BENNINGTON,VT 05201"," WOODS, KD"
 9201,2,1991,NoMatch,Unmatched," SCI APPLICAT RES,LANHAM,MD 20771"," GOETZ, SJ"
-9237,1,1991,NoMatch,Unmatched,"FULTON MONTGOMERY COMMUNITY COLL,JOHNSTOWN,NY 12905",0
-9330,1,1990,NoMatch,Unmatched,"SIMONS ROCK COLL BARD,GREAT BARRINGTON,MA 01230",0
+9237,1,1991,NoMatch,Unmatched,"FULTON MONTGOMERY COMMUNITY COLL,JOHNSTOWN,NY 12905","CWYNAR, LC"
+9237,1,1991,NoMatch,Unmatched,"FULTON MONTGOMERY COMMUNITY COLL,JOHNSTOWN,NY 12905"," SPEAR, RW"
+9330,1,1990,NoMatch,Unmatched,"SIMONS ROCK COLL BARD,GREAT BARRINGTON,MA 01230","LIMBURG, KE"
+9330,1,1990,NoMatch,Unmatched,"SIMONS ROCK COLL BARD,GREAT BARRINGTON,MA 01230"," SCHMIDT, RE"
 9368,1,1990,NoMatch,Unmatched," UNIV BRISTOL,BRISTOL BS8 1TW,ENGLAND"," HOUSTON, AI"
 9368,1,1990,NoMatch,Unmatched," UNIV BRISTOL,BRISTOL BS8 1TW,ENGLAND"," MCNAMARA, JM"
 9386,1,1990,NoMatch,Unmatched," UNIV COLORADO MUSEUM,BOULDER,CO 80309"," BOWERS, MD"
-9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305",0
+9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305","HUENNEKE, LF"
+9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305"," HAMBURG, SP"
+9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305"," KOIDE, R"
+9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305"," MOONEY, HA"
+9416,1,1990,NoMatch,Unmatched,"STANFORD UNIV,STANFORD,CA 94305"," VITOUSEK, PM"
 9502,1,1989,NoMatch,Unmatched," MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," ITAMI, JK"
 9502,1,1989,NoMatch,Unmatched," MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," PRICE, PW"
-9558,1,1989,NoMatch,Unmatched,"UNIV CONNECTICUT,STORRS,CT 06268",0
+9558,1,1989,NoMatch,Unmatched,"UNIV CONNECTICUT,STORRS,CT 06268","CAIN, ML"
 9579,4,1989,NoMatch,Unmatched," LOUISIANA STATE UNIV,RICE EXPT STN,CROWLEY,LA 70526"," ROBINSON, JF"
-9588,1,1989,NoMatch,Unmatched,"UNIV CALIF SANTA CRUZ,SANTA CRUZ,CA 95064",0
-9628,1,1989,NoMatch,Unmatched,"SUNY STONY BROOK,STONY BROOK,NY 11794",0
-9630,1,1989,NoMatch,Unmatched,"WHEATON COLL,NORTON,MA 02766",0
+9588,1,1989,NoMatch,Unmatched,"UNIV CALIF SANTA CRUZ,SANTA CRUZ,CA 95064","MORROW, PA"
+9588,1,1989,NoMatch,Unmatched,"UNIV CALIF SANTA CRUZ,SANTA CRUZ,CA 95064"," FOX, LR"
+9628,1,1989,NoMatch,Unmatched,"SUNY STONY BROOK,STONY BROOK,NY 11794","ARMSTRONG, RA"
+9630,1,1989,NoMatch,Unmatched,"WHEATON COLL,NORTON,MA 02766","MORRIS, WF"
+9630,1,1989,NoMatch,Unmatched,"WHEATON COLL,NORTON,MA 02766"," WOOD, DM"
 9651,1,1989,NoMatch,Unmatched," CALIF POLYTECH STATE UNIV SAN LUIS OBISPO,SAN LUIS OBISPO,CA 93407"," DAVIS, FW"
 9651,1,1989,NoMatch,Unmatched," CALIF POLYTECH STATE UNIV SAN LUIS OBISPO,SAN LUIS OBISPO,CA 93407"," MICHAELSEN, J"
 9651,1,1989,NoMatch,Unmatched," CALIF POLYTECH STATE UNIV SAN LUIS OBISPO,SAN LUIS OBISPO,CA 93407"," OYLER, LD"
 9723,1,1988,NoMatch,Unmatched,"UNIV LYON 1,F-69622 VILLEURBANNE,FRANCE","BLONDEL, J"
 9723,1,1988,NoMatch,Unmatched," UNIV BOURGOGNE,F-21004 DIJON,FRANCE"," CHESSEL, D"
 9723,1,1988,NoMatch,Unmatched," UNIV BOURGOGNE,F-21004 DIJON,FRANCE"," FROCHOT, B"
-9735,1,1988,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001",0
+9735,1,1988,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001","PRESZLER, RW"
+9735,1,1988,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," PRICE, PW"
 9736,1,1988,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001","SACCHI, CF"
 9853,1,1988,NoMatch,Unmatched,"AGCY INT DEV,LIMA,PERU","UHL, C"
 9853,1,1988,NoMatch,Unmatched," EDIF EDELCA,PUERTO ORDAZ,VENEZUELA"," CLARK, K"
@@ -1337,40 +1430,56 @@ Paper_ID,Affiliation_ID,Year,Keyword,AffiliationGroup,OriginalAffiliation,Author
 10158,1,1986,NoMatch,Unmatched,"DUKE UNIV,DUKE UNIV PHYTOTRON,DURHAM,NC 27706","SHAVER, GR"
 10165,1,1986,NoMatch,Unmatched," MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," CLANCY, KM"
 10166,1,1986,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001","CLANCY, KM"
-10224,1,1986,NoMatch,Unmatched,"ESSA LTD, VANCOUVER V5Z 1G6, BC, CANADA",0
+10224,1,1986,NoMatch,Unmatched,"ESSA LTD, VANCOUVER V5Z 1G6, BC, CANADA","GAZEY, WJ"
+10224,1,1986,NoMatch,Unmatched,"ESSA LTD, VANCOUVER V5Z 1G6, BC, CANADA"," STALEY, MJ"
 10226,1,1986,NoMatch,Unmatched,"UNIV MAINE,INST QUATENARY STUDIES,ORONO,ME 04469","JACOBSON, GL"
-10279,1,1986,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001",0
+10279,1,1986,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001","CRAIG, TP"
+10279,1,1986,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," PRICE, PW"
+10279,1,1986,NoMatch,Unmatched,"MUSEUM NO ARIZONA,FLAGSTAFF,AZ 86001"," ITAMI, JK"
 10447,1,1985,NoMatch,Unmatched," AG EDWARDS & SONS,VERO BEACH,FL 32960"," ORCUTT, JD"
 10447,1,1985,NoMatch,Unmatched," AG EDWARDS & SONS,VERO BEACH,FL 32960"," PORTER, KG"
 10527,1,1985,NoMatch,Unmatched," SWEDISH SPORTSMENS ASSOC,RES UNIT,S-75007 UPPSALA,SWEDEN"," HUSSDANELL, K"
 10578,1,1984,NoMatch,Unmatched,"TALL TIMBERS RES STN,TALLAHASSEE,FL 32312","PLATT, WJ"
-10657,1,1984,NoMatch,Unmatched,"TRANSVAAL MUSEUM, PRETORIA 0001, SOUTH AFRICA",0
-10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139",0
-10745,1,1984,NoMatch,Unmatched,"DUPONT CO,SAVANNAH RIVER LAB,AIKE,SC 29808",0
-10760,1,1984,NoMatch,Unmatched,"KELSALL RES LTD,DELTA V4M 2W9,BC,CANADA",0
-10772,1,1984,NoMatch,Unmatched,"UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521",0
+10657,1,1984,NoMatch,Unmatched,"TRANSVAAL MUSEUM, PRETORIA 0001, SOUTH AFRICA","GREENACRE, MJ"
+10657,1,1984,NoMatch,Unmatched,"TRANSVAAL MUSEUM, PRETORIA 0001, SOUTH AFRICA"," VRBA, ES"
+10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139","FETCHER, N"
+10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139"," BEATTY, TF"
+10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139"," MULLINAX, B"
+10698,1,1984,NoMatch,Unmatched,"SCH FIELD STUDIES,CAMBRIDGE,MA 02139"," WINKLER, DS"
+10745,1,1984,NoMatch,Unmatched,"DUPONT CO,SAVANNAH RIVER LAB,AIKE,SC 29808","MURPHY, CE"
+10760,1,1984,NoMatch,Unmatched,"KELSALL RES LTD,DELTA V4M 2W9,BC,CANADA","TELFER, ES"
+10760,1,1984,NoMatch,Unmatched,"KELSALL RES LTD,DELTA V4M 2W9,BC,CANADA"," KELSALL, JP"
+10772,1,1984,NoMatch,Unmatched,"UNIV CALIF RIVERSIDE,RIVERSIDE,CA 92521","VIRGINIA, RA"
 10809,1,1983,NoMatch,Unmatched," BREEDLOVE & ASSOCIATES INC,GAINESVILLE,FL 32601"," BONACCORSO, FJ"
 10809,1,1983,NoMatch,Unmatched," BREEDLOVE & ASSOCIATES INC,GAINESVILLE,FL 32601"," ZINN, TL"
-10811,1,1983,NoMatch,Unmatched,"SERENGETI RES INST,SERONERA,TANZANIA",0
-10826,1,1983,NoMatch,Unmatched,"UNIV LOS ANDES,FAC CIENCIAS,MERIDA,VENEZUELA",0
+10811,1,1983,NoMatch,Unmatched,"SERENGETI RES INST,SERONERA,TANZANIA","MCNAUGHTON, SJ"
+10811,1,1983,NoMatch,Unmatched,"SERENGETI RES INST,SERONERA,TANZANIA"," WALLACE, LL"
+10811,1,1983,NoMatch,Unmatched,"SERENGETI RES INST,SERONERA,TANZANIA"," COUGHENOUR, MB"
+10826,1,1983,NoMatch,Unmatched,"UNIV LOS ANDES,FAC CIENCIAS,MERIDA,VENEZUELA","JOSE, JJS"
+10826,1,1983,NoMatch,Unmatched,"UNIV LOS ANDES,FAC CIENCIAS,MERIDA,VENEZUELA"," FARINAS, MR"
 10946,3,1983,NoMatch,Unmatched," DAMES & MOORE,LOS ANGELES,CA 90024"," OLSON, RJ"
 10956,1,1983,NoMatch,Unmatched,"WEYERHAEUSER CO,WRIGHT CITY,OK 74766","LASSOIE, JP"
-11014,1,1982,NoMatch,Unmatched,"FLORIDA DEPT TRANSPORTAT, DELAND, FL 32720 USA",0
+11014,1,1982,NoMatch,Unmatched,"FLORIDA DEPT TRANSPORTAT, DELAND, FL 32720 USA","JAMES, FC"
+11014,1,1982,NoMatch,Unmatched,"FLORIDA DEPT TRANSPORTAT, DELAND, FL 32720 USA"," WAMER, NO"
 11064,1,1982,NoMatch,Unmatched,"YALE UNIV, YALE COLL, NEW HAVEN, CT 06511 USA","MELILLO, JM"
-11101,1,1982,NoMatch,Unmatched,"MUSEUM NO ARIZONA,HAROLD S COLTON RES CTR,FLAGSTAFF,AZ 86001",0
+11101,1,1982,NoMatch,Unmatched,"MUSEUM NO ARIZONA,HAROLD S COLTON RES CTR,FLAGSTAFF,AZ 86001","ZUCKER, WV"
 11122,2,1982,NoMatch,Unmatched," LEISURE LOGGING CO,RICES MILLS,VT 05704"," GILBERT, JJ"
 11151,1,1982,NoMatch,Unmatched," TEXAS TECH UNIV MUSEUM, LUBBOCK, TX 79409 USA"," PIMM, JW"
-11155,1,1982,NoMatch,Unmatched,"UNIV N CAROLINA,CHAPEL HILL,NC 27514",0
-11172,1,1982,NoMatch,Unmatched,"MUNDELEIN COLL,CHICAGO,IL 60660",0
-11203,1,1981,NoMatch,Unmatched,"SW RES STN,PORTAL,AZ 85632",0
+11155,1,1982,NoMatch,Unmatched,"UNIV N CAROLINA,CHAPEL HILL,NC 27514","KNEIB, RT"
+11155,1,1982,NoMatch,Unmatched,"UNIV N CAROLINA,CHAPEL HILL,NC 27514"," STIVEN, AE"
+11172,1,1982,NoMatch,Unmatched,"MUNDELEIN COLL,CHICAGO,IL 60660","BREDEN, F"
+11172,1,1982,NoMatch,Unmatched,"MUNDELEIN COLL,CHICAGO,IL 60660"," KELLY, CH"
+11203,1,1981,NoMatch,Unmatched,"SW RES STN,PORTAL,AZ 85632","HOWELL, DJ"
+11203,1,1981,NoMatch,Unmatched,"SW RES STN,PORTAL,AZ 85632"," ROTH, BS"
 11264,1,1981,NoMatch,Unmatched," DSIR,CHRISTCHURCH,NEW ZEALAND"," PATON, DM"
 11264,1,1981,NoMatch,Unmatched," DSIR,CHRISTCHURCH,NEW ZEALAND"," WARDLE, P"
 11271,1,1981,NoMatch,Unmatched," TALL TIMBERS RES STN,TALLAHASSEE,FL 32312"," SIMBERLOFF, D"
 11272,1,1981,NoMatch,Unmatched," TALL TIMBERS RES STN,TALLAHASSEE,FL 32312"," SIMBERLOFF, D"
-11302,1,1981,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616",0
+11302,1,1981,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616","GARSD, A"
+11302,1,1981,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616"," HOWARD, WE"
 11312,1,1981,NoMatch,Unmatched,"HARVARD UNIV,CAMBRIDGE,MA 02138","BELOVSKY, GE"
 11355,1,1981,NoMatch,Unmatched,"UNIV TEXAS,AUSTIN,TX 78712","RICKLEFS, RE"
-11394,1,1980,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616",0
-11429,1,1980,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27650",0
-11430,1,1980,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27650",0
-11452,1,1980,NoMatch,Unmatched,"UNIV TORONTO,ERINDALE COLL,MISSISSAUGA L5L 1C6,ONTARIO,CANADA",0
+11394,1,1980,NoMatch,Unmatched,"UNIV CALIF DAVIS,DAVIS,CA 95616","WITTENBERGER, JF"
+11429,1,1980,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27650","BROWNE, RA"
+11430,1,1980,NoMatch,Unmatched,"N CAROLINA STATE UNIV,RALEIGH,NC 27650","BROWNE, RA"
+11452,1,1980,NoMatch,Unmatched,"UNIV TORONTO,ERINDALE COLL,MISSISSAUGA L5L 1C6,ONTARIO,CANADA","COLLINS, NC"

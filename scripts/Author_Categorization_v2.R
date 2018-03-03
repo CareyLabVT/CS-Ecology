@@ -60,18 +60,18 @@ for (jj in 2:length(raw$Affiliation1)) {
     authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
-        authorsAndAffils = cbind(authorsAndAffils, c(authors[j], affiliations[1]))
+        authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[1])))
       }
     } else if (length(authors) == length(affiliations)) { 
       for (j in 1:length(authors)) {
-        authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[j]))
+        authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
       }
     } else {
       for (j in 1:length(authors)) {
         if (j < length(affiliations)) {
-          authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, c(authors[j], affiliations[j]))))
+          authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))))
         } else {
-          authorsAndAffils = rbind(authorsAndAffils, c(authors[j], affiliations[length(affiliations)]))
+          authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[length(affiliations)])))
         }
       }
     }
