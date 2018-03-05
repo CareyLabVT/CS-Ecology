@@ -49,6 +49,8 @@ for (jj in 2:length(raw$Affiliation1)) {
   # create a character string the length of the total number of authors on each paper,
   # with each value in the string containing the complete affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
+  
+  #affiliations = affiliations[(affiliations != "")] # remove empty entries
   goHere = FALSE
   if (length(affiliations) == 1) {
     #if (length(authors) > 1) {
@@ -83,10 +85,18 @@ for (jj in 2:length(raw$Affiliation1)) {
     if (length(authors) > 0) {
       for (j in 1:length(authors)) {
         strippedAuthors = unlist(strsplit(authors[j], ";"))
+        strippedAuthors = strippedAuthors[(trimws(strippedAuthors) != "")] # remove empty entries
         for (t in 1:length(strippedAuthors)) {
-          if (length(affiliations) != 0) {
+          affiliationsTemp = c(unlist(strsplit(as.character(affiliations[j]), ";")))
+          affiliationsTemp = affiliations[(affiliations != "")] # remove empty entries
+          currAuthor = gsub("Univ.*", "", trimws(strippedAuthors[t]))
+          if (length(affiliationsTemp) == 1) {
             authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliations[j])))
             # create a matrix with the first column = authors and the second column = their affiliation
+          } else if (length(affiliationsTemp) > 0) {
+            for (qq in 1:length(affiliationsTemp)) {
+              authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliationsTemp[qq])))
+            }
           }
         }
       }
