@@ -240,7 +240,7 @@ EnvironmentalBiology,wild
 LifeScience,ctr louis emberger
 EnvironmentalBiology,fram
 LifeScience,ophthalmol
-EnvironmentalBiology,james hutton
+Remove,james hutton
 EnvironmentalBiology,percy fitzpatrick
 LifeScience,usda
 EnvironmentalBiology,barnes lab
@@ -348,7 +348,7 @@ Remove,oceanopolis
 EnvironmentalBiology,arid land
 EnvironmentalBiology,woods hole
 Remove,inra
-EnvironmentalBiology,Fabrikschleichach 
+EnvironmentalBiology,fabrikschleichach
 EnvironmentalBiology,wave res lab
 EnvironmentalBiology,ctr no studies
 EnvironmentalBiology,ismer
@@ -394,3 +394,11 @@ Remove,pacific nw lab
 EnvironmentalBiology,mt res stn
 Remove,swiss fed res
 EnvironmentalBiology,cary inst
+Remove,chinese acad sci
+Remove,environm canada
+Remove,nat hist museum
+Remove,inst mediterrani estud avancats
+Remove,canadian wildlife serv
+Remove,us forest serv
+Remove,skagit river syst cooperat
+EnvironmentalBiology,ccmar
