@@ -52,7 +52,7 @@ Remove,fish and wildlife
 EarthScience,spatial
 InterdisciplinaryComputing,inform tech
 ComputerScience,madalgo
-Math,statistics
+Math,statistic
 Humanities,literature
 EnvironmentalBiology,eco
 LifeScience,food
@@ -242,7 +242,6 @@ EnvironmentalBiology,fram
 LifeScience,ophthalmol
 Remove,james hutton
 EnvironmentalBiology,percy fitzpatrick
-LifeScience,usda
 EnvironmentalBiology,barnes lab
 LifeScience,physiol
 EnvironmentalBiology,clodomiro picado
@@ -392,9 +391,9 @@ Remove,nih
 Remove,us epa
 Remove,pacific nw lab
 EnvironmentalBiology,mt res stn
-Remove,swiss fed res
+Remove,swiss fed
 EnvironmentalBiology,cary inst
-Remove,chinese acad sci
+Remove,chinese acad
 Remove,environm canada
 Remove,nat hist museum
 Remove,inst mediterrani estud avancats
@@ -402,3 +401,90 @@ Remove,canadian wildlife serv
 Remove,us forest serv
 Remove,skagit river syst cooperat
 EnvironmentalBiology,ccmar
+EnvironmentalBiology,estn expt zaidin
+EnvironmentalBiology,lehrstuhl
+EnvironmentalBiology,uem pea nupelia
+EnvironmentalBiology,stn alpine
+EnvironmentalBiology,edytem
+EnvironmentalBiology,south iceland res ctr
+EnvironmentalBiology,imar cma
+EnvironmentalBiology,cabi
+EnvironmentalBiology,ctr northern studies
+EnvironmentalBiology,estacion expt la mayora
+EnvironmentalBiology,unite dynam syst anthropises
+EnvironmentalBiology,ceaza
+EnvironmentalBiology,ibed
+EnvironmentalBiology,inst invest recursos cineget
+EnvironmentalBiology,ceab
+EnvironmentalBiology,ctr field res
+EnvironmentalBiology,umr g eau
+EnvironmentalBiology,sierra nevada res inst
+EnvironmentalBiology,creaf
+EnvironmentalBiology,eeb
+EnvironmentalBiology,grefi
+EnvironmentalBiology,thule inst
+EnvironmentalBiology,res & extens ctr
+EnvironmentalBiology,yukon res ctr
+EnvironmentalBiology,cesam
+EnvironmentalBiology,distav
+EnvironmentalBiology,rothamsted expt stn
+EnvironmentalBiology,konnevesi res stn
+InterdisciplinaryComputing,cirita
+EnvironmentalBiology,fitzpatrick inst
+EnvironmentalBiology,archipelago res inst
+EnvironmentalBiology,kananaskis field sn
+EnvironmentalBiology,duke univ phytotron
+InterdisciplinaryEnvironmental,criobe
+InterdisciplinaryEnvironmental,ctr rech insulaires
+InterdisciplinaryEnvironmental,umr amap
+InterdisciplinaryEnvironmental,bilby res ctr
+Engineering,dept signal theory & commun
+Physics,dept fis 
+SocialScience,eastern normay res inst
+Remove,wsl inst snow & avalanche res slf
+Remove,australian res & dev inst
+Remove,commonwealth sci & ind res org
+Remove,csiro
+Remove,oncfs
+Remove,imarpe
+Remove,itam[comma]
+Remove,florida dept transportat
+Remove,abisko sci res stn
+Remove,lab pengendalian
+EnvironmentalBiology,cebc
+EnvironmentalBiology,lbbe
+EnvironmentalBiology,ise m
+EnvironmentalBiology,irbi
+EnvironmentalBiology,gemi
+EnvironmentalBiology,uft neamb
+EnvironmentalBiology,cbetm
+EarthScience,palynol lab
+Remove,direct res faune[comma] quebec
+EnvironmentalBiology,tesaf
+EnvironmentalBiology,carmargue alsacienne
+Remove,lawrence berkeley lab
+Remove,Western & No Serv Ctr
+Remove,cemim
+SocialScience,"CNRS UMR 7041, F-92023 Nanterre, France"
+Remove,DERF[comma] DSF
+SocialScience,lorrain archael
+EnvironmentalBiology,manejo basques amazonia boliviana
+Remove,natl lab
+Remove,elkhourn slough natl
+Remove,natl rech
+Remove,natl pk
+Remove,natl sci fdn
+Remove,natl zoo
+Remove,natl marine
+Remove,natl ecol
+Remove,natl ocean
+Remove,natl biol
+Remove,natl museum
+Remove,patuxent
+Remove,pk canada
+Remove,natl guard
+Remove,us fish & wildlife
+Remove,usfws
+Remove,us dept interior
+Remove,us doe
+Remove,natl monument
