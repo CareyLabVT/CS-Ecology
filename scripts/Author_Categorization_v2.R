@@ -2,11 +2,10 @@
 #' assign authors to disciplinary categories based on their institutional affiliations 
 #'
 #' Written by AIK based on original script by NKW, and edited by KJF and CCC
-#' Last edits by AIK on 21 February 2018
+#' Last edits by KJF on 7 Mar 2018
 
 #### Install and load packages #### 
-pacman::p_load(tidyverse)
-library(stringr) # for me this doesn't load with tinyverse for some reason
+pacman::p_load(tidyverse, stringr)
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
