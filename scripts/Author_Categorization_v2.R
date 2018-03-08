@@ -88,10 +88,10 @@ for (jj in 2:length(raw$Affiliation1)) {
         strippedAuthors = strippedAuthors[(trimws(strippedAuthors) != "")] # remove empty entries
         for (t in 1:length(strippedAuthors)) {
           affiliationsTemp = c(unlist(strsplit(as.character(affiliations[j]), ";")))
-          affiliationsTemp = affiliations[(affiliations != "")] # remove empty entries
+          affiliationsTemp = trimws(affiliationsTemp[(affiliationsTemp != "") & (affiliationsTemp != " ")]) # remove empty entries
           currAuthor = gsub("Univ.*", "", trimws(strippedAuthors[t]))
           if (length(affiliationsTemp) == 1) {
-            authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliations[j])))
+            authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), affiliationsTemp)))
             # create a matrix with the first column = authors and the second column = their affiliation
           } else if (length(affiliationsTemp) > 0) {
             for (qq in 1:length(affiliationsTemp)) {
@@ -106,6 +106,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     authorsAndAffils = c(trimws(affiliations[2]), trimws(affiliations[1]))
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
+  # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
   
   if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) { # now we match each affiliation with the keywords
