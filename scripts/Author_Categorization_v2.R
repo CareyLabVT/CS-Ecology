@@ -59,7 +59,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 )) {#(length(authors) == 0 && length(affiliations)>0) {
-    authors = c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";")))
+    authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[1])))
@@ -69,6 +69,10 @@ for (jj in 2:length(raw$Affiliation1)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
       }
     } else {
+      affiliationRe = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) )
+      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(affiliationRe[1]), trimws(affiliationRe[2]))))
+      authors = authors[authors != affiliationRe[1]]
+      affiliations = trimws(affiliations[trimws(affiliations) != trimws(affiliationRe[2])])
       for (j in 1:length(authors)) {
         if (j < length(affiliations)) {
           authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))))
@@ -102,8 +106,8 @@ for (jj in 2:length(raw$Affiliation1)) {
       }
     }
   } else {
-    affiliations = unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) 
-    authorsAndAffils = c(trimws(affiliations[2]), trimws(affiliations[1]))
+    affiliations = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")))
+    authorsAndAffils = c(trimws(affiliations[1]), trimws(affiliations[2]))
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
