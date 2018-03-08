@@ -74,11 +74,14 @@ for (jj in 2:length(raw$Affiliation1)) {
       authors = authors[authors != affiliationRe[1]]
       affiliations = trimws(affiliations[trimws(affiliations) != trimws(affiliationRe[2])])
       for (j in 1:length(authors)) {
-        if (j < length(affiliations)) {
-          authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))))
-        } else {
-          authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[length(affiliations)])))
+        if (length(authors) == length(affiliations)) {
+          authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
         }
+        #if (j < length(affiliations)) {
+        #  authorsAndAffils = invisible(suppressWarnings(rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))))
+        #} else {
+        #  authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[length(affiliations)])))
+        #}
       }
     }
   } else if (length(affiliations) > 0) {
