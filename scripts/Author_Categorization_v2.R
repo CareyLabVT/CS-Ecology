@@ -5,6 +5,7 @@
 #' Last edits by KJF on 7 Mar 2018
 
 #### Install and load packages #### 
+#install.packages('pacman')
 pacman::p_load(tidyverse, stringr)
 
 #### Read in raw data from Web of Science #### 
