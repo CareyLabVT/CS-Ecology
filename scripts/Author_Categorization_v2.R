@@ -50,9 +50,9 @@ for (jj in 2:length(raw$Affiliation1)) {
   # with each value in the string containing the complete affiliation for each author
   authors = gsub("\\].*?;", "", raw$Affiliation1[jj]) # collect the authors from the Affiliation1 list
   
-  #affiliations = affiliations[(affiliations != "")] # remove empty entries
+  affiliations = affiliations[(affiliations != "")] # remove empty entries
   goHere = FALSE
-  if (length(affiliations) == 1) {
+  if (length(affiliations) == 1 && length(grep('\\[', authors)) == 0) {
     #if (length(authors) > 1) {
     goHere = TRUE
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
@@ -85,10 +85,12 @@ for (jj in 2:length(raw$Affiliation1)) {
       }
     }
   } else if (length(affiliations) > 0) {
-    authors = unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
-    authors = authors[-(authors == "")] # remove empty entries
-    authors[length(authors)] = # remove final untrimmed affiliation for last author
-      (unlist(strsplit(authors[length(authors)], "\\]")))[1]
+    authors = gsub("\\].*", "", raw$Affiliation1[jj])
+    authors = gsub("\\[", "", authors)
+      #unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
+    #authors = authors[-(authors == "")] # remove empty entries
+    #authors[length(authors)] = # remove final untrimmed affiliation for last author
+    #  (unlist(strsplit(authors[length(authors)], "\\]")))[1]
     if (length(authors) > 0) {
       for (j in 1:length(authors)) {
         strippedAuthors = unlist(strsplit(authors[j], ";"))
