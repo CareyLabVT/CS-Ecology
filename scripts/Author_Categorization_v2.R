@@ -113,11 +113,12 @@ for (jj in 2:length(raw$Affiliation1)) {
     }
   } else {
     affiliations = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")))
-    authorsAndAffils = c(trimws(affiliations[1]), trimws(affiliations[2]))
+    authorsAndAffils = t(c(trimws(affiliations[1]), trimws(affiliations[2])))
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
+  authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
   
   if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) { # now we match each affiliation with the keywords
     colnames(authorsAndAffils) = c("Author", "Affiliation") # add column names
@@ -139,7 +140,7 @@ for (jj in 2:length(raw$Affiliation1)) {
         thisRow[5] = "Remove"
         thisRow[6] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
         thisRow[7] = as.character(authorsAndAffils[i,1]) # author's name
-        if (is.na(author_matched)) {
+        if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
           authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
           thisRow[8] = length(authorDB) - 1
         } else {
@@ -170,7 +171,7 @@ for (jj in 2:length(raw$Affiliation1)) {
             thisRow[5] = groups[z]
             thisRow[6] = as.character(authorsAndAffils[i,2])
             thisRow[7] = as.character(authorsAndAffils[i,1])
-            if (is.na(author_matched)) {
+            if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
               authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
               thisRow[8] = length(authorDB) - 1
             } else {
@@ -189,7 +190,7 @@ for (jj in 2:length(raw$Affiliation1)) {
             thisRow[5] = "Unmatched"
             thisRow[6] = as.character(authorsAndAffils[i,2])
             thisRow[7] = as.character(authorsAndAffils[i,1])
-            if (is.na(author_matched)) {
+            if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
               authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
               thisRow[8] = length(authorDB) - 1
             } else {
