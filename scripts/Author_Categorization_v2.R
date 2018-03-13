@@ -211,7 +211,7 @@ for (jj in 2:length(raw$Affiliation1)) {
 } # suppressing warning because loop concatenates multiple instances of the same paper IDs and treats it as a dataframe
 options(warn = 0)
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
-colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
+colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author", "Author_ID")
 
 withoutUnmatched = affiliationDataFrame[affiliationDataFrame$Keyword != "NoMatch",]
 unmatchedEntries = affiliationDataFrame[affiliationDataFrame$Keyword == "NoMatch",]
