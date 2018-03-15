@@ -96,10 +96,14 @@ for (jj in 2:length(raw$Affiliation1)) {
       }
     }
   } else if (length(affiliations) > 0) {
-    authors = gsub("\\].*", "", raw$Affiliation1[jj])
-    authors = gsub("\\[", "", authors)
+    authors = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\["))
+    for (q in 1:length(authors)) {
+      authors[q] = gsub("\\].*\\[", "", authors[q])
+      authors[q] = gsub("\\].*", "", authors[q])
+      authors[q] = gsub("\\[", "", authors[q])
+    }
       #unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
-    #authors = authors[-(authors == "")] # remove empty entries
+    authors = authors[-(authors == "")] # remove empty entries
     #authors[length(authors)] = # remove final untrimmed affiliation for last author
     #  (unlist(strsplit(authors[length(authors)], "\\]")))[1]
     if (length(authors) > 0) {
@@ -166,7 +170,8 @@ for (jj in 2:length(raw$Affiliation1)) {
         } else {
           thisRow[8] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
         }
-        print(paste0("Affiliation: ", affiliations[i], " was assigned to |", groups[z], "|"))
+        print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |Remove|"))
+                     #affiliations[i], " was assigned to |", groups[z], "|"))
       } else {
         for (z in 1:length(groups)) {
           innerCategories = c(as.character(na.exclude(matchUp[,z]))) # identify each discipline within the disciplinary groups to match keywords
