@@ -75,13 +75,23 @@ for (jj in 2:length(raw$Affiliation1)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[2]))))
       }
     } else {
-      affiliationRe = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) )
-      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(affiliationRe[1]), trimws(affiliationRe[2]))))
-      authors = authors[authors != affiliationRe[1]]
-      affiliations = trimws(affiliations[trimws(affiliations) != trimws(affiliationRe[2])])
+      giveAll = FALSE
+      if (length(grep("\\(reprint author),.*?", raw$Affiliation2[jj]))  == 0) {
+        affiliations = trimws(affiliations)
+        giveAll = TRUE
+      } else {
+        affiliationRe = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) )
+        authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(affiliationRe[1]), trimws(affiliationRe[2]))))
+        authors = authors[authors != affiliationRe[1]]
+        affiliations = trimws(affiliations[trimws(affiliations) != trimws(affiliationRe[2])])
+      }
       for (j in 1:length(authors)) {
         if (length(authors) == length(affiliations)) {
           authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
+        } else if (giveAll) {
+          for (zz in 1:length(affiliations)) {
+            authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[zz])))
+          }
         }
       }
     }
@@ -116,15 +126,19 @@ for (jj in 2:length(raw$Affiliation1)) {
     authorsAndAffils = t(c(trimws(affiliations[1]), trimws(affiliations[2])))
   }
   authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
+  #authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   for (k in 1:length(authors)) {
-    if (length(grep(authors[k], paste0(authorsAndAffils[,1], collapse = "|"))) == 0) {
-      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), "University"))) # deliberately set to unmatched
+    if (length(authors[k]) > 0 &&
+        length(grep(unlist(strsplit(authors[k], ","))[1], paste0(authorsAndAffils[,1], collapse = "|"))) == 0) {
+      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(authors[k]), "1University1"))) # deliberately set to unmatched
     }
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
-  authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
+  if (length((which(is.na(authorsAndAffils[,2])))) > 0) {
+    authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
+  }
   
   if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) { # now we match each affiliation with the keywords
     colnames(authorsAndAffils) = c("Author", "Affiliation") # add column names
