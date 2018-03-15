@@ -140,9 +140,12 @@ for (jj in 2:length(raw$Affiliation1)) {
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   # authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
-  if (length(authorsAndAffils) > 2 && length((which(is.na(authorsAndAffils[,2])))) > 0) {
-    authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == "")),]
+  if (!is.null(ncol(authorsAndAffils)) && length((which(is.na(authorsAndAffils[,2])))) > 0) {
+    #authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == "")),]
+    #authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == 0)),]
     authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
+  } else if (!is.null(ncol(authorsAndAffils))) {
+    authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == 0)),]
   }
   
   if (!is.null(nrow(authorsAndAffils)) && nrow(authorsAndAffils) > 0) { # now we match each affiliation with the keywords
