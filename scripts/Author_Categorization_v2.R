@@ -115,6 +115,12 @@ for (jj in 2:length(raw$Affiliation1)) {
     affiliations = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")))
     authorsAndAffils = t(c(trimws(affiliations[1]), trimws(affiliations[2])))
   }
+  authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
+  for (k in 1:length(authors)) {
+    if (length(grep(authors[k], paste0(authorsAndAffils[,1], collapse = "|"))) == 0) {
+      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(strippedAuthors[t]), "University"))) # deliberately set to unmatched
+    }
+  }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
@@ -133,11 +139,11 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
         author_matched = str_extract(tolower(trimws(as.character(authorsAndAffils[i,1]))), 
                                       paste(tolower(authorDB), collapse = "|"))
+        thisRow[5] = "Remove"
         thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
         thisRow[2] = paperAffilNumber #paper ID number
         thisRow[3] = as.numeric(as.character(raw$YEAR[jj])) # year of paper
         thisRow[4] = keyword_matched # identifies the words in the affiliation that matched the disciplinary keywords
-        thisRow[5] = "Remove"
         thisRow[6] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
         thisRow[7] = as.character(authorsAndAffils[i,1]) # author's name
         if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
