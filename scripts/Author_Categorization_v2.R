@@ -132,7 +132,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
   #authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   for (k in 1:length(authors)) {
-    if (length(authors[k]) > 0 &&
+    if (length(authors[k]) > 0 && length(authorsAndAffils) > 2 &&
         length(grep(unlist(strsplit(authors[k], ","))[1], paste0(authorsAndAffils[,1], collapse = "|"))) == 0) {
       authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(authors[k]), "1University1"))) # deliberately set to unmatched
     }
@@ -140,7 +140,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
   authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
-  if (length((which(is.na(authorsAndAffils[,2])))) > 0) {
+  if (length(authorsAndAffils) > 2 && length((which(is.na(authorsAndAffils[,2])))) > 0) {
     authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
   }
   
