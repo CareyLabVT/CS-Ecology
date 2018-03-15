@@ -10,8 +10,8 @@ pacman::p_load(tidyverse, stringr)
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
-  select("paper_ID", "AUTHOR", "Affiliation1", "Affiliation2", "YEAR") # Retain only these columns
-
+  select("paper_ID", "AUTHOR2", "Affiliation1", "Affiliation2", "YEAR") # Retain only these columns
+colnames(raw)[colnames(raw) == "AUTHOR2"] = "AUTHOR"
 #### Read in categorization keywords and reshape from long to wide ####
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
@@ -132,15 +132,16 @@ for (jj in 2:length(raw$Affiliation1)) {
   authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
   #authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   for (k in 1:length(authors)) {
-    if (length(authorsAndAffils) == 2 || (length(authors[k]) > 0 &&
+    if (is.null(ncol(authorsAndAffils)) || (length(authors[k]) > 0 &&
         length(grep(unlist(strsplit(authors[k], ","))[1], paste0(authorsAndAffils[,1], collapse = "|"))) == 0)) {
       authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(authors[k]), "1University1"))) # deliberately set to unmatched
     }
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
-  authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
+  # authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
   if (length(authorsAndAffils) > 2 && length((which(is.na(authorsAndAffils[,2])))) > 0) {
+    authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == "")),]
     authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
   }
   
