@@ -12,96 +12,85 @@ auth <- read_csv('./output_data/author_affiliations.csv') # Load author categori
 ## Analysis of Env Biologist Collaborations Over Time #### 
 collabs = 0
 collabsrecent = 0
-years = sort(unique(as.numeric(papersShoverPaps[,2])))[sort(unique(as.numeric(papersShoverPaps[,2]))) != 0 &
-                                                         sort(unique(as.numeric(papersShoverPaps[,2]))) != 2017]
-countemup = matrix(0, ncol = length(years), nrow = 3)
-countemupCSES = matrix(0, ncol = length(years), nrow = 3) # CS person with ecologist
-countemupMAES = matrix(0, ncol = length(years), nrow = 3) # math person with ecologist
-countemupEGES = matrix(0, ncol = length(years), nrow = 3) # engineering person with ecologist
-countemupPSES = matrix(0, ncol = length(years), nrow = 3) # math person with ecologist
-for (g in 2:nrow(papersShoverPaps)) {
-  if (sum(papersShoverPaps[g,3]) != 0 && sum(papersShoverPaps[g,8]) != 0 # && papersShoverPaps[g,8] != 0 && !is.na(papersShoverPaps[g, 2]) 
-      && papersShoverPaps[g, 2] - years[1]  + 1 <= ncol(countemup)) {
-    collabs = collabs + 1
-    countemupCSES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = 
-      countemupCSES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + 1
-  }
+years = sort(unique(as.numeric(auth$Year)))[sort(unique(as.numeric(auth$Year))) != 0 &
+                                            sort(unique(as.numeric(auth$Year))) != 2017]
+affil_hist = auth %>%
+             filter(Year != 0) %>%
+             filter(Year != 2017) %>%
+             group_by(Year, AffiliationGroup) %>%
+             distinct(AffiliationGroup, Paper_ID)
+
+affil_CS = affil_hist %>%
+           filter(AffiliationGroup == "CS")
+
+affil_combos = affil_hist %>%
+               count(Paper_ID, Year, AffiliationGroup) %>%
+               spread(key = AffiliationGroup, value = n)
   
-  if (sum(papersShoverPaps[g,4]) != 0 && sum(papersShoverPaps[g,8]) != 0 # && papersShoverPaps[g,8] != 0 && !is.na(papersShoverPaps[g, 2]) 
-      && papersShoverPaps[g, 2] - years[1]  + 1 <= ncol(countemup)) {
-    collabs = collabs + 1
-    countemupMAES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = 
-      countemupMAES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + 1
-  }
-  
-  if (sum(papersShoverPaps[g,5]) != 0 && sum(papersShoverPaps[g,8]) != 0 # && papersShoverPaps[g,8] != 0 && !is.na(papersShoverPaps[g, 2]) 
-      && papersShoverPaps[g, 2] - years[1]  + 1 <= ncol(countemup)) {
-    collabs = collabs + 1
-    countemupEGES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = 
-      countemupEGES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + 1
-  }
-  
-  if (sum(papersShoverPaps[g,6]) != 0 && sum(papersShoverPaps[g,8]) != 0 # && papersShoverPaps[g,8] != 0 && !is.na(papersShoverPaps[g, 2]) 
-      && papersShoverPaps[g, 2] - years[1]  + 1 <= ncol(countemup)) {
-    collabs = collabs + 1
-    countemupPSES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = 
-      countemupPSES[1, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + 1
-  }
-  
-  if (!is.na(papersShoverPaps[g, 2]) && (papersShoverPaps[g, 2] - years[1]  + 1) <= ncol(countemup)) {
-    countemupCSES[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = # set all second rows to be total # ES
-      countemupMAES[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemupEGES[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemupPSES[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemup[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemup[2, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + 1
-    collabsrecent = collabsrecent + sum(papersShoverPaps[g, 3: 7])#8])
-    countemupCSES[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] = # set all second rows to be total # non-ES
-      countemupMAES[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemupEGES[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemupPSES[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemup[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] =
-      countemup[3, as.numeric(papersShoverPaps[g, 2]) - years[1] + 1] + sum(papersShoverPaps[g, 3:7])#8])
-  }
-}
+yearly_counts = affil_combos %>% 
+                group_by(Year) %>%
+                filter(CS == 1) %>%
+                filter(ES == 1) %>%
+                summarize(ct = n())
 
-# Get mean within different timeframes #
-fromVar = 'CS' # enter relationship you want with Env Sci
-toVar = 'ES' # don't change this 
-pastYears = 6 # number of years prior to 2016 you consider recent
-oldYears = 8 # number of years to look at from the start of the dataset
-means = eval(as.name(paste0('countemup', fromVar, toVar)))[1,] /
-  eval(as.name(paste0('countemup', fromVar, toVar)))[2,] # create mean of ES with some other var
-print(paste0("The overall mean of papers with authors from ", fromVar, " with ", toVar, " is:"))
-print(mean(means))
-meansrecent = eval(as.name(paste0('countemup', fromVar, toVar)))[1, (ncol(countemup) - pastYears):ncol(countemup)] /
-  eval(as.name(paste0('countemup', fromVar, toVar)))[2, (ncol(countemup) - pastYears):ncol(countemup)] 
+tallied_CSES = affil_combos %>%
+          count(CS, ES) %>%
+          filter(CS == 1 & ES == 1) %>%
+          rename(CSES = n)
+tallied_CSEG = affil_combos %>%
+          count(CS, EG) %>%
+          filter(CS == 1 & EG == 1) %>%
+          rename(CSEG = n)
+tallied_CSMA = affil_combos %>%
+          count(CS, MA) %>%
+          filter(CS == 1 & MA == 1) %>%
+          rename(CSMA = n)
+tallied_CSPS = affil_combos %>%
+          count(CS, PS) %>%
+          filter(CS == 1 & PS == 1) %>%
+          rename(CSPS = n)
+tallied_CSSS = affil_combos %>%
+          count(CS, SS) %>%
+          filter(CS == 1 & SS == 1) %>%
+          rename(CSSS = n)
 
-print(paste0("The mean of papers with authors from ", fromVar, " with ", toVar, " in the last ", pastYears, " years is:"))
-print(mean(meansrecent))
-meansold = eval(as.name(paste0('countemup', fromVar, toVar)))[1, 1:oldYears] /
-  eval(as.name(paste0('countemup', fromVar, toVar)))[2, 1:oldYears] 
-print(paste0("The mean of papers with authors from ", fromVar, " with ", toVar, " in the first ", oldYears, " years is:"))
-print(mean(meansold))
+CSandothers = tallied_CSES %>%
+              full_join(tallied_CSEG) %>%
+              full_join(tallied_CSMA) %>%
+              full_join(tallied_CSPS) %>%
+              full_join(tallied_CSSS) %>%
+              select(c(-CS, -ES, -EG, -MA, -PS, -SS))
 
+tallied_ESCS = affil_combos %>%
+  count(ES, CS) %>%
+  filter(ES == 1 & CS == 1) %>%
+  rename(ESCS = n)
+tallied_ESEG = affil_combos %>%
+  count(ES, EG) %>%
+  filter(ES == 1 & EG == 1) %>%
+  rename(ESEG = n)
+tallied_ESMA = affil_combos %>%
+  count(ES, MA) %>%
+  filter(ES == 1 & MA == 1) %>%
+  rename(ESMA = n)
+tallied_ESPS = affil_combos %>%
+  count(ES, PS) %>%
+  filter(ES == 1 & PS == 1) %>%
+  rename(ESPS = n)
+tallied_ESSS = affil_combos %>%
+  count(ES, SS) %>%
+  filter(ES == 1 & SS == 1) %>%
+  rename(ESSS = n)
 
-##### Histogram for paper #####
-sums = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]), sum(papersShoverPaps[,7]))
-sumsnoenv = c(sum(papersShoverPaps[,2]), sum(papersShoverPaps[,3]), sum(papersShoverPaps[,4]), sum(papersShoverPaps[,5]), sum(papersShoverPaps[,6]))
-
+ESandothers = tallied_ESCS %>%
+  full_join(tallied_ESEG) %>%
+  full_join(tallied_ESMA) %>%
+  full_join(tallied_ESPS) %>%
+  full_join(tallied_ESSS) %>%
+  select(c(-CS, -ES, -EG, -MA, -PS, -SS)) %>%
+  mutate(Sum = sum(ESEG, ESMA, ESPS, ESSS, ESCS, na.rm = TRUE))
 
 ## Plot outputs ## <-- subheading where we'll organize our plots!
-plot(as.numeric(rownames(yearSaver))[1:nrow(yearSaver) - 1], yearSaver[(1:nrow(yearSaver) - 1), 2], col = colors[1], pch = 20, ylab = "Frequency", xlab = "Year")
-for (i in 2:(ncol(yearSaver) - 1)) {
-  points(yearSaver[(1:nrow(yearSaver) - 1), i + 1] ~ as.numeric(rownames(yearSaver))[1:nrow(yearSaver) - 1], col = colors[i], pch = 20)
-  lines(rowsum(yearSaver[1:nrow(yearSaver) - 1,]) ~ as.numeric(rownames(yearSaver))[1:nrow(yearSaver) - 1])
-}
-legend("topleft", categories[1:length(categories) - 1], fill = colors)
-
-sumsnoES = sum(yearSaver[1,1:5])
-for (i in 2:(nrow(yearSaver) - 1)) {
-  sumsnoES = c(sumsnoES, sum(yearSaver[i,1:5]))
-}
 holder = yearSaver[1:nrow(yearSaver) - 1,1:5]
 holder = holder / sumsnoES
 holder = holder[6:nrow(holder),]
