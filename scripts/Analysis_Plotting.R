@@ -10,28 +10,39 @@ library(reshape2)
 auth <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
 
 ## Analysis of Env Biologist Collaborations Over Time #### 
-collabs = 0
-collabsrecent = 0
 years = sort(unique(as.numeric(auth$Year)))[sort(unique(as.numeric(auth$Year))) != 0 &
                                             sort(unique(as.numeric(auth$Year))) != 2017]
+
+# Exclude recent years and years that don't make sense
+# Get rid of duplicate categorizations on the same paper 
 affil_hist = auth %>%
              filter(Year != 0) %>%
              filter(Year != 2017) %>%
              group_by(Year, AffiliationGroup) %>%
              distinct(AffiliationGroup, Paper_ID)
 
+# This keeps track of all the CS authors
 affil_CS = affil_hist %>%
            filter(AffiliationGroup == "CS")
 
+# Spread the data out into a table format with columns as affils 
 affil_combos = affil_hist %>%
-               count(Paper_ID, Year, AffiliationGroup) %>%
+               count(Paper_ID) %>% #, Year, AffiliationGroup) %>%
                spread(key = AffiliationGroup, value = n)
   
+# Dataframe of just nonzero CS-ES collaborations counted by year
 yearly_counts = affil_combos %>% 
                 group_by(Year) %>%
                 filter(CS == 1) %>%
                 filter(ES == 1) %>%
                 summarize(ct = n())
+
+# Counts of CS and then CS with other disciplines 
+tallied_CS = affil_combos %>%
+  group_by(Year) %>%
+  count(CS) %>%
+  filter(CS == 1) %>%
+  rename(sumCS = n)
 
 tallied_CSES = affil_combos %>%
           count(CS, ES) %>%
@@ -54,6 +65,7 @@ tallied_CSSS = affil_combos %>%
           filter(CS == 1 & SS == 1) %>%
           rename(CSSS = n)
 
+# Pulls together CS with all other disciplines 
 CSandothers = tallied_CSES %>%
               full_join(tallied_CSEG) %>%
               full_join(tallied_CSMA) %>%
@@ -61,7 +73,9 @@ CSandothers = tallied_CSES %>%
               full_join(tallied_CSSS) %>%
               select(c(-CS, -ES, -EG, -MA, -PS, -SS))
 
+# Same process for Environmental Biologists collaborating with other disciplines 
 tallied_ESCS = affil_combos %>%
+  group_by(Year) %>%
   count(ES, CS) %>%
   filter(ES == 1 & CS == 1) %>%
   rename(ESCS = n)
@@ -94,13 +108,15 @@ gatheredES = ESandothers %>%
              gather(key = ESMatch, value = count,
                       ESCS, ESEG, ESMA, ESPS, ESSS, -Sum) %>%
              mutate(relfreq = count / Sum)
-#             select(c(-ESCS, -ESEG, -ESMA, -ESPS, -ESSS))
 
 colorsnew = c("red", gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL)) # grayscale for non-CS, red for CS
-colorsnew[5] = "white" # can change individual colors 
+#colorsnew[5] = "white" # can change individual colors 
+names = unique(gatheredES$ESMatch)
+colsinds = colorsnew[which(gatheredES$ESMatch == names)]
+
+# Create histogram of environmental biologists working with other disciplines 
 t = ggplot(gatheredES, aes(x = Year, y = relfreq, fill = ESMatch))
 t+ geom_col(show.legend = TRUE) + ylab('Relative frequency per year') + xlab('Year') + theme(panel.background = element_blank(), axis.line = element_line(colour = "black")) + scale_x_continuous(expand = c(0,0)) +
-  scale_y_continuous(expand = c(0,0)) +
+  scale_y_continuous(expand = c(0,0)) + scale_fill_manual("Legend", values = colorsnew) + 
   theme(axis.text=element_text(size=16),axis.title=element_text(size=18), legend.text = element_text(size = 14), 
         legend.title = element_text(size = 16), legend.title.align = 0.5)
-#theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
