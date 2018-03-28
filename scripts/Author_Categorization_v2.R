@@ -54,7 +54,6 @@ for (jj in 2:length(raw$Affiliation1)) {
   affiliations = affiliations[(affiliations != "")] # remove empty entries
   goHere = FALSE
   if (length(affiliations) == 1 && length(grep('\\[', authors)) == 0) {
-    #if (length(authors) > 1) {
     goHere = TRUE
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
@@ -102,10 +101,7 @@ for (jj in 2:length(raw$Affiliation1)) {
       authors[q] = gsub("\\].*", "", authors[q])
       authors[q] = gsub("\\[", "", authors[q])
     }
-      #unlist(strsplit(authors, "\\[")) # split author list by their affiliations 
     authors = authors[-(authors == "")] # remove empty entries
-    #authors[length(authors)] = # remove final untrimmed affiliation for last author
-    #  (unlist(strsplit(authors[length(authors)], "\\]")))[1]
     if (length(authors) > 0) {
       for (j in 1:length(authors)) {
         strippedAuthors = unlist(strsplit(authors[j], ";"))
@@ -130,7 +126,6 @@ for (jj in 2:length(raw$Affiliation1)) {
     authorsAndAffils = t(c(trimws(affiliations[1]), trimws(affiliations[2])))
   }
   authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
-  #authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
   for (k in 1:length(authors)) {
     if (is.null(ncol(authorsAndAffils)) || (length(authors[k]) > 0 &&
         length(grep(unlist(strsplit(authors[k], ","))[1], paste0(authorsAndAffils[,1], collapse = "|"))) == 0)) {
@@ -138,11 +133,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     }
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
-  # authorsAndAffils = authorsAndAffils[-(which(duplicated(authorsAndAffils[,1]))),]
-  # authorsAndAffils = authorsAndAffils[2:nrow(authorsAndAffils),] # remove empty first row
   if (!is.null(ncol(authorsAndAffils)) && length((which(is.na(authorsAndAffils[,2])))) > 0) {
-    #authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == "")),]
-    #authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == 0)),]
     authorsAndAffils = authorsAndAffils[-(which(is.na(authorsAndAffils[,2]))),]
   } else if (!is.null(ncol(authorsAndAffils))) {
     authorsAndAffils = authorsAndAffils[-(which((authorsAndAffils[,2]) == 0)),]
@@ -175,7 +166,6 @@ for (jj in 2:length(raw$Affiliation1)) {
           thisRow[8] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
         }
         print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |Remove|"))
-                     #affiliations[i], " was assigned to |", groups[z], "|"))
       } else {
         for (z in 1:length(groups)) {
           innerCategories = c(as.character(na.exclude(matchUp[,z]))) # identify each discipline within the disciplinary groups to match keywords
