@@ -1,6 +1,6 @@
 #' Use categorized author affiliations to estimate and plot collaboration rates
 #' ("author_affiliations.csv", output from "Author_Categorization.R" script)
-#' Written by AIK and KJF, last updated 6 Feb 2018
+#' Written by AIK and KJF, last updated 28 March 2018
 
 ### Load packages and data file ####
 # install.packages('pacman') 
@@ -90,29 +90,17 @@ ESandothers = tallied_ESCS %>%
   select(c(-CS, -ES, -EG, -MA, -PS, -SS)) %>%
   mutate(Sum = sum(ESEG, ESMA, ESPS, ESSS, ESCS, na.rm = TRUE))
 
-## Plot outputs ## <-- subheading where we'll organize our plots!
-holder = yearSaver[1:nrow(yearSaver) - 1,1:5]
-holder = holder / sumsnoES
-holder = holder[6:nrow(holder),]
-colnames(holder) = c(categories[1:length(categories) - 1])
-holder2 = melt(holder) # should use "gather" function from tidyverse to minimize number of packages used (so no reshape2 needed)
+gatheredES = ESandothers %>%
+             gather(key = ESMatch, value = count,
+                      ESCS, ESEG, ESMA, ESPS, ESSS, -Sum) %>%
+             mutate(relfreq = count / Sum)
+#             select(c(-ESCS, -ESEG, -ESMA, -ESPS, -ESSS))
 
-colorsnew = c(gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL), "red") # grayscale for non-CS, red for CS
-colorsnew[4] = "white" # can change individual colors 
-colornums = c(0)
-for (t in 1:nrow(holder2)) {
-  colornums = c(colornums, colorsnew[holder2$Var2[t] == categories])
-}
-holder2$cols = colornums[2:length(colornums)]
-
-holder2 <- within(holder2, Var2 <- factor(Var2, levels = c("MA", "EG", "PS", "SS", "CS")))
-levels(holder2$Var2) = c("Math", "Engineering", "Physical Science", "Human Sciences", "Computer Science")
-colnames(holder2)[colnames(holder2) == "Var2"] = "Affiliation"
-g = ggplot(holder2, aes(x = Var1, y = value, fill = Affiliation), colour = cols)
-g + geom_col(colour = "black", show.legend = TRUE) + 
-  ylab('Relative frequency per year') + xlab('Year') + scale_fill_manual(values = rep(colorsnew, length(holder2$cols) / 
-                                                                                        length(colorsnew))) + theme(panel.background = element_blank(), axis.line = element_line(colour = "black")) + scale_x_continuous(expand = c(0,0)) +
+colorsnew = c("red", gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL)) # grayscale for non-CS, red for CS
+colorsnew[5] = "white" # can change individual colors 
+t = ggplot(gatheredES, aes(x = Year, y = relfreq, fill = ESMatch))
+t+ geom_col(show.legend = TRUE) + ylab('Relative frequency per year') + xlab('Year') + theme(panel.background = element_blank(), axis.line = element_line(colour = "black")) + scale_x_continuous(expand = c(0,0)) +
   scale_y_continuous(expand = c(0,0)) +
   theme(axis.text=element_text(size=16),axis.title=element_text(size=18), legend.text = element_text(size = 14), 
         legend.title = element_text(size = 16), legend.title.align = 0.5)
-theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
+#theme(axis.text.x = element_text(angle = 90, hjust = 1)) 
