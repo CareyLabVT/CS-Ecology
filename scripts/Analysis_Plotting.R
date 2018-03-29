@@ -4,9 +4,9 @@
 
 # Load packages ####
 # install.packages('pacman') 
-pacman::p_load(tidyverse) # Install and load libraries
+pacman::p_load(tidyverse, lubridate) # Install and load libraries
 
-# Analysis of Collaborations Over Time #### 
+# Load author categorization and count affiliations per paper #### 
 affiliation_groups <- read_csv('./output_data/author_affiliations.csv') %>% # Load author categorizations
   filter(Year >= 1969 & Year <= 2016) %>% # Select for focal years
   group_by(Year, AffiliationGroup) %>%
@@ -25,7 +25,7 @@ CS_papers_by_year <- CS_authored_papers %>%
 affiliation_combos <- affiliation_groups %>%
   spread(key = AffiliationGroup, value = Author_Count)
 
-# Count number of papers per year with collaboration between CS and other disciplines ####
+# Count papers per year with collaboration between Comp Sci and other disciplines ####
 CS_collaborations <- full_join((affiliation_combos %>%    # Comp Sci and Env Sci
                            filter(CS >= 1 & ES >= 1) %>% 
                            summarize(CSES = n())), 
@@ -42,7 +42,7 @@ CS_collaborations <- full_join((affiliation_combos %>%    # Comp Sci and Env Sci
                   filter(CS >= 1 & SS >=1) %>% 
                   summarize(CSSS = n())))
 
-# Count number of papers per year with collaboration between Env. Sci and other disciplines ####
+# Count papers per year with collaboration between Env Sci and other disciplines ####
 ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
                                   filter(ES >= 1 & CS >= 1) %>% 
                                   summarize(ESCS = n())), 
@@ -60,19 +60,25 @@ ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
                   summarize(ESSS = n()))) %>%
   mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T))
 
-gatheredES <- ES_collaborations %>%
+ES_collab_frequency <- ES_collaborations %>%
              gather(key = Collaboration, value = Num_Papers, ESCS:ESSS, -Total_Collab_Papers) %>%
-             mutate(RelativeFreq = Num_Papers / Total_Collab_Papers)
+             mutate(RelativeFreq = Num_Papers / Total_Collab_Papers,
+                    Collaboration = factor(Collaboration,
+                                           levels=c("ESMA", "ESEG", "ESPS", "ESSS", "ESCS"), 
+                                           labels=c("Math", "Engineering", "Physical Science",
+                                                    "Social Science", "Computer Science")))
 
 # Plot frequencies of collaborations among groups ####
-colorsnew = c("red", gray.colors(4, start = 0.3, end = 0.9, gamma = 2.2, alpha = NULL)) # grayscale for non-CS, red for CS
-#colorsnew[5] = "white" # can change individual colors 
-names = unique(gatheredES$ESMatch)
-colsinds = colorsnew[which(gatheredES$ESMatch == names)]
+mytheme <- theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
+                 axis.text=element_text(size=16, colour = "black"), axis.title=element_text(size=18, colour = "black"), 
+                 legend.text = element_text(size = 14), legend.title = element_text(size = 16), legend.title.align = 0.5)
 
-# Create histogram of environmental biologists working with other disciplines 
-t = ggplot(gatheredES, aes(x = Year, y = relfreq, fill = ESMatch))
-t+ geom_col(show.legend = TRUE) + ylab('Relative frequency per year') + xlab('Year') + theme(panel.background = element_blank(), axis.line = element_line(colour = "black")) + scale_x_continuous(expand = c(0,0)) +
-  scale_y_continuous(expand = c(0,0)) + scale_fill_manual("Legend", values = colorsnew) + 
-  theme(axis.text=element_text(size=16),axis.title=element_text(size=18), legend.text = element_text(size = 14), 
-        legend.title = element_text(size = 16), legend.title.align = 0.5)
+colors = c("gray20", "gray35", "gray60", "gray75", "red") # Red for CS collaborations
+
+# Collaborations between Environmental scientists and other disciplines 
+ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collaboration)) + mytheme + 
+  geom_col() + 
+  labs(x = "Year", y = "Relative frequency per year") + 
+  scale_x_continuous(expand = c(0,0), limits = c(1973, 2016), breaks=seq(1975,2015,5)) +
+  scale_y_continuous(expand = c(0,0)) + 
+  scale_fill_manual("Discipline", values = colors) 
