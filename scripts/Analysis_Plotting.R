@@ -2,41 +2,39 @@
 #' ("author_affiliations.csv", output from "Author_Categorization.R" script)
 #' Written by AIK and KJF, last updated 29 March 2018
 
-#### Load packages and data file ####
+#### Load packages ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse) # Install and load libraries
 
-authors <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
+#### Analysis of Collaborations Over Time #### 
+affiliation_groups <- read_csv('./output_data/author_affiliations.csv') %>% # Load author categorizations
+  filter(Year >= 1969 & Year <= 2016) %>% # Select for focal years
+  group_by(Year, AffiliationGroup) %>%
+  count(AffiliationGroup, Paper_ID) %>% # Count authors per affiliation for each paper
+  rename(Author_Count = n)
 
-#### Analysis of Env Biologist Collaborations Over Time #### 
-
-affiliation_groups = authors %>%
-             filter(Year >= 1969 & Year <= 2016) %>% # Select for focal years
-             group_by(Year, AffiliationGroup) %>%
-             distinct(AffiliationGroup, Paper_ID) # Retain unique Affiliation groups for each paper paper 
-
-# PaperIDs that include a CS author
-CS_authored_papers = affiliation_groups %>%
+# PaperIDs that include a CS author; count of CS authors for those papers
+CS_authored_papers <- affiliation_groups %>%
            filter(AffiliationGroup == "CS")
 
-# Spread the data out into a table format with columns as affils 
+CS_papers_by_year <- CS_authored_papers %>%
+  group_by(Year) %>%
+  summarize(Annual_CS_Papers = n_distinct(Paper_ID))
+
+# Authors per affiliation for each paper
 affiliation_combos = affiliation_groups %>%
-               count(Paper_ID) %>% #, Year, AffiliationGroup) %>%
-               spread(key = AffiliationGroup, value = n)
+  spread(key = AffiliationGroup, value = Author_Count)
   
 # Dataframe of just nonzero CS-ES collaborations counted by year
 yearly_counts = affiliation_combos %>% 
                 group_by(Year) %>%
-                filter(CS == 1) %>%
-                filter(ES == 1) %>%
+                filter(CS >= 1 & ES >= 1) %>%
                 summarize(ct = n())
 
 # Counts of CS and then CS with other disciplines 
-tallied_CS = affiliation_combos %>%
+tallied_CS = CS_authored_papers %>%
   group_by(Year) %>%
-  count(CS) %>%
-  filter(CS == 1) %>%
-  rename(sumCS = n)
+  summarize(CS_Papers = n_distinct(Paper_ID))
 
 tallied_CSES = affiliation_combos %>%
           count(CS, ES) %>%
