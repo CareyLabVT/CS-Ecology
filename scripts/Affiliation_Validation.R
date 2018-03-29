@@ -17,26 +17,20 @@ subset <- read_csv('./output_data/author_affiliations.csv') %>% # Load author af
   
 write_csv(subset, './output_data/validation/validation.csv') # Export as csv to validation subfolder
 
-all_affildata = read_csv('./output_data/author_affiliations.csv')
-for (t in 1:length(val)) {
-  if (val[t] != 'JPD') {
-  currFile = paste0('./output_data/validation/validation_', val[t], '.csv')
-  curr_data = read_csv(currFile) %>%
-              filter(Validator == val[t])
-  if (t == 1) {
-    all_valdata = curr_data
-  } else {
-    all_valdata = all_valdata %>%
-                  bind_rows(curr_data)
-  }
-  }
-}
+#### Compare completed validation to automated author affiliation ####
+# Read in author affiliations based on Author_Categorization script
+author_affiliations <- read_csv('./output_data/author_affiliations.csv')
 
-all_valdata = all_valdata %>%
-              arrange(Paper_ID) %>%
-              mutate(ID_affil = paste0(all_valdata$Paper_ID, '_', all_valdata$Author_ID, '_', all_valdata$Affiliation_ID))
+# Pull individual validation files from validation folder
+validation_path <- "output_data/validation"
 
-all_affildata = all_affildata %>%
-                arrange(Paper_ID) %>%
-                mutate(ID_affil = paste0(all_affildata$Paper_ID, '_', all_affildata$Author_ID, '_', all_affildata$Affiliation_ID)) %>%
-                filter(ID_affil %in% all_valdata$ID_affil)
+manual_validation <- dir(validation_path, pattern = "*.csv") %>% 
+  map_df(~ read_csv(file.path(validation_path, .))) %>%  
+  filter(ManualAffiliation != "NA") %>% 
+  arrange(Paper_ID) %>%
+  mutate(ID_affil = paste0(.$Paper_ID, '_', .$Author_ID, '_', .$Affiliation_ID)) 
+
+validated_affiliations = author_affiliations %>%
+  arrange(Paper_ID) %>%
+  mutate(ID_affil = paste0(.$Paper_ID, '_', .$Author_ID, '_', .$Affiliation_ID)) %>%
+  filter(ID_affil %in% manual_validation$ID_affil)
