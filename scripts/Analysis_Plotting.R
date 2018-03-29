@@ -24,46 +24,23 @@ CS_papers_by_year <- CS_authored_papers %>%
 # Authors per affiliation for each paper
 affiliation_combos = affiliation_groups %>%
   spread(key = AffiliationGroup, value = Author_Count)
-  
-# Dataframe of just nonzero CS-ES collaborations counted by year
-yearly_counts = affiliation_combos %>% 
-                group_by(Year) %>%
-                filter(CS >= 1 & ES >= 1) %>%
-                summarize(ct = n())
 
-# Counts of CS and then CS with other disciplines 
-tallied_CS = CS_authored_papers %>%
-  group_by(Year) %>%
-  summarize(CS_Papers = n_distinct(Paper_ID))
-
-tallied_CSES = affiliation_combos %>%
-          count(CS, ES) %>%
-          filter(CS == 1 & ES == 1) %>%
-          rename(CSES = n)
-tallied_CSEG = affiliation_combos %>%
-          count(CS, EG) %>%
-          filter(CS == 1 & EG == 1) %>%
-          rename(CSEG = n)
-tallied_CSMA = affiliation_combos %>%
-          count(CS, MA) %>%
-          filter(CS == 1 & MA == 1) %>%
-          rename(CSMA = n)
-tallied_CSPS = affiliation_combos %>%
-          count(CS, PS) %>%
-          filter(CS == 1 & PS == 1) %>%
-          rename(CSPS = n)
-tallied_CSSS = affiliation_combos %>%
-          count(CS, SS) %>%
-          filter(CS == 1 & SS == 1) %>%
-          rename(CSSS = n)
-
-# Pulls together CS with all other disciplines 
-CSandothers = tallied_CSES %>%
-              full_join(tallied_CSEG) %>%
-              full_join(tallied_CSMA) %>%
-              full_join(tallied_CSPS) %>%
-              full_join(tallied_CSSS) %>%
-              select(c(-CS, -ES, -EG, -MA, -PS, -SS))
+# Count number of papers per year with collaboration between CS and other disciplines 
+CS_collaborations <- left_join((affiliation_combos %>%    # Comp Sci and Env Sci
+                           filter(CS >= 1 & ES >= 1) %>% 
+                           summarize(CSES = n())), 
+                        (affiliation_combos %>%           # Comp Sci and Eng
+                           filter(CS >= 1 & EG >= 1) %>% 
+                           summarize(CSEG = n()))) %>%
+  left_join(., (affiliation_combos %>%                    # Comp Sci and Math
+                  filter(CS >= 1 & MA >=1) %>% 
+                  summarize(CSMA = n()))) %>%
+  left_join(., (affiliation_combos %>%                    # Comp Sci and Physics
+                  filter(CS >= 1 & PS >=1) %>% 
+                  summarize(CSPS = n()))) %>%
+  left_join(., (affiliation_combos %>%                    # Comp Sci and Social Sci
+                  filter(CS >= 1 & SS >=1) %>% 
+                  summarize(CSSS = n())))
 
 # Same process for Environmental Biologists collaborating with other disciplines 
 tallied_ESCS = affiliation_combos %>%
