@@ -10,53 +10,51 @@ authors <- read_csv('./output_data/author_affiliations.csv') # Load author categ
 
 #### Analysis of Env Biologist Collaborations Over Time #### 
 
-# Select for focal years
-# Retain only unique Affiliation groups for a given paper 
-affil_hist = authors %>%
-             filter(Year >= 1969 & Year <= 2016) %>%
+affiliation_groups = authors %>%
+             filter(Year >= 1969 & Year <= 2016) %>% # Select for focal years
              group_by(Year, AffiliationGroup) %>%
-             distinct(AffiliationGroup, Paper_ID)
+             distinct(AffiliationGroup, Paper_ID) # Retain unique Affiliation groups for each paper paper 
 
-# This keeps track of all the CS authors
-affil_CS = affil_hist %>%
+# PaperIDs that include a CS author
+CS_authored_papers = affiliation_groups %>%
            filter(AffiliationGroup == "CS")
 
 # Spread the data out into a table format with columns as affils 
-affil_combos = affil_hist %>%
+affiliation_combos = affiliation_groups %>%
                count(Paper_ID) %>% #, Year, AffiliationGroup) %>%
                spread(key = AffiliationGroup, value = n)
   
 # Dataframe of just nonzero CS-ES collaborations counted by year
-yearly_counts = affil_combos %>% 
+yearly_counts = affiliation_combos %>% 
                 group_by(Year) %>%
                 filter(CS == 1) %>%
                 filter(ES == 1) %>%
                 summarize(ct = n())
 
 # Counts of CS and then CS with other disciplines 
-tallied_CS = affil_combos %>%
+tallied_CS = affiliation_combos %>%
   group_by(Year) %>%
   count(CS) %>%
   filter(CS == 1) %>%
   rename(sumCS = n)
 
-tallied_CSES = affil_combos %>%
+tallied_CSES = affiliation_combos %>%
           count(CS, ES) %>%
           filter(CS == 1 & ES == 1) %>%
           rename(CSES = n)
-tallied_CSEG = affil_combos %>%
+tallied_CSEG = affiliation_combos %>%
           count(CS, EG) %>%
           filter(CS == 1 & EG == 1) %>%
           rename(CSEG = n)
-tallied_CSMA = affil_combos %>%
+tallied_CSMA = affiliation_combos %>%
           count(CS, MA) %>%
           filter(CS == 1 & MA == 1) %>%
           rename(CSMA = n)
-tallied_CSPS = affil_combos %>%
+tallied_CSPS = affiliation_combos %>%
           count(CS, PS) %>%
           filter(CS == 1 & PS == 1) %>%
           rename(CSPS = n)
-tallied_CSSS = affil_combos %>%
+tallied_CSSS = affiliation_combos %>%
           count(CS, SS) %>%
           filter(CS == 1 & SS == 1) %>%
           rename(CSSS = n)
@@ -70,24 +68,24 @@ CSandothers = tallied_CSES %>%
               select(c(-CS, -ES, -EG, -MA, -PS, -SS))
 
 # Same process for Environmental Biologists collaborating with other disciplines 
-tallied_ESCS = affil_combos %>%
+tallied_ESCS = affiliation_combos %>%
   group_by(Year) %>%
   count(ES, CS) %>%
   filter(ES == 1 & CS == 1) %>%
   rename(ESCS = n)
-tallied_ESEG = affil_combos %>%
+tallied_ESEG = affiliation_combos %>%
   count(ES, EG) %>%
   filter(ES == 1 & EG == 1) %>%
   rename(ESEG = n)
-tallied_ESMA = affil_combos %>%
+tallied_ESMA = affiliation_combos %>%
   count(ES, MA) %>%
   filter(ES == 1 & MA == 1) %>%
   rename(ESMA = n)
-tallied_ESPS = affil_combos %>%
+tallied_ESPS = affiliation_combos %>%
   count(ES, PS) %>%
   filter(ES == 1 & PS == 1) %>%
   rename(ESPS = n)
-tallied_ESSS = affil_combos %>%
+tallied_ESSS = affiliation_combos %>%
   count(ES, SS) %>%
   filter(ES == 1 & SS == 1) %>%
   rename(ESSS = n)
