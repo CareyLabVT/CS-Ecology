@@ -13,6 +13,12 @@ affiliation_groups <- read_csv('./output_data/author_affiliations.csv') %>% # Lo
   count(AffiliationGroup, Paper_ID) %>% # Count authors per affiliation for each paper
   rename(Author_Count = n)
 
+# Calculate papers per year: total papers and papers with a CS author ####
+# Total papers per year: 1972-2016
+Papers_per_year <- affiliation_groups %>%
+  group_by(Year) %>%
+  summarize(Total_Annual_Papers = n_distinct(Paper_ID))
+
 # PaperIDs that include a CS author; count of CS authors for those papers
 CS_authored_papers <- affiliation_groups %>%
            filter(AffiliationGroup == "CS")
@@ -21,6 +27,7 @@ CS_papers_by_year <- CS_authored_papers %>%
   group_by(Year) %>%
   summarize(Annual_CS_Papers = n_distinct(Paper_ID))
 
+# Group each paper by author affiliations
 # Authors per affiliation for each paper
 affiliation_combos <- affiliation_groups %>%
   spread(key = AffiliationGroup, value = Author_Count)
@@ -40,7 +47,8 @@ CS_collaborations <- full_join((affiliation_combos %>%    # Comp Sci and Env Sci
                   summarize(CSPS = n()))) %>%
   full_join(., (affiliation_combos %>%                    # Comp Sci and Social Sci
                   filter(CS >= 1 & SS >=1) %>% 
-                  summarize(CSSS = n())))
+                  summarize(CSSS = n()))) %>%
+  mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T)) # Sum of collaborative papers per year
 
 # Count papers per year with collaboration between Env Sci and other disciplines ####
 ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
@@ -58,23 +66,48 @@ ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
   full_join(., (affiliation_combos %>%                    # Env Sci and Social Sci
                   filter(ES >= 1 & SS >=1) %>% 
                   summarize(ESSS = n()))) %>%
-  mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T))
+  mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T)) %>% # Sum of collaborative papers per year
+  full_join(., Papers_per_year) %>%
+  mutate(Prop_Collaborative = round((Total_Collab_Papers / Total_Annual_Papers), 2))
 
 ES_collab_frequency <- ES_collaborations %>%
-             gather(key = Collaboration, value = Num_Papers, ESCS:ESSS, -Total_Collab_Papers) %>%
+             gather(key = Collaboration, value = Num_Papers, ESCS:ESSS, 
+                    -(Total_Collab_Papers:Prop_Collaborative)) %>%
              mutate(RelativeFreq = Num_Papers / Total_Collab_Papers,
                     Collaboration = factor(Collaboration,
                                            levels=c("ESMA", "ESEG", "ESPS", "ESSS", "ESCS"), 
                                            labels=c("Math", "Engineering", "Physical Science",
                                                     "Social Science", "Computer Science")))
 
-# Plot frequencies of collaborations among groups ####
+
+# Plot setup ####
 mytheme <- theme(panel.background = element_blank(), axis.line = element_line(colour = "black"),
                  axis.text=element_text(size=16, colour = "black"), axis.title=element_text(size=18, colour = "black"), 
                  legend.text = element_text(size = 14), legend.title = element_text(size = 16), legend.title.align = 0.5)
 
 colors = c("gray20", "gray35", "gray60", "gray75", "red") # Red for CS collaborations
 
+# Plot total papers and collaborative papers per year ####
+prop_collab <- ES_collaborations %>% select(Year, Total_Collab_Papers, Total_Annual_Papers) %>%
+    gather(Metric, Value, Total_Collab_Papers:Total_Annual_Papers)
+
+ggplot(prop_collab, aes(x = Year, y = Value, col = Metric)) + mytheme + 
+  geom_line(lwd = 1.05) + geom_point(size = 2) +
+  #geom_smooth() +
+  scale_y_continuous(limits = c(0, 400)) +
+  scale_x_continuous() + 
+  labs(y = "Papers published", title = "Total Papers") +
+  theme(legend.position = 'none') + 
+  annotate("text", x = c(1995, 2000), y = c(40, 350), label = c('Collaborative Papers', 'Total Papers'), cex=5)
+
+ggplot(ES_collaborations, aes(x = Year, y =  Prop_Collaborative)) + mytheme + 
+  geom_point(size = 2) +
+  geom_smooth(color= 'black') +
+  scale_y_continuous(limits = c(0, 0.25)) +
+  scale_x_continuous() + 
+  labs(y = "Proportion of papers published", title = "Collaborative Papers")
+
+# Plot frequencies of collaborations among groups ####
 # Collaborations between Environmental scientists and other disciplines 
 ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collaboration)) + mytheme + 
   geom_col() + 
@@ -82,3 +115,6 @@ ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collaboration
   scale_x_continuous(expand = c(0,0), limits = c(1973, 2016), breaks=seq(1975,2015,5)) +
   scale_y_continuous(expand = c(0,0)) + 
   scale_fill_manual("Discipline", values = colors) 
+
+# Raw number of papers over time 
+ggplot()
