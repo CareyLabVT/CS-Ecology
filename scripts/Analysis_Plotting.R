@@ -1,23 +1,19 @@
 #' Use categorized author affiliations to estimate and plot collaboration rates
 #' ("author_affiliations.csv", output from "Author_Categorization.R" script)
-#' Written by AIK and KJF, last updated 28 March 2018
+#' Written by AIK and KJF, last updated 29 March 2018
 
-### Load packages and data file ####
+#### Load packages and data file ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse) # Install and load libraries
-library(reshape2)
 
-auth <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
+authors <- read_csv('./output_data/author_affiliations.csv') # Load author categorizations
 
-## Analysis of Env Biologist Collaborations Over Time #### 
-years = sort(unique(as.numeric(auth$Year)))[sort(unique(as.numeric(auth$Year))) != 0 &
-                                            sort(unique(as.numeric(auth$Year))) != 2017]
+#### Analysis of Env Biologist Collaborations Over Time #### 
 
-# Exclude recent years and years that don't make sense
-# Get rid of duplicate categorizations on the same paper 
-affil_hist = auth %>%
-             filter(Year != 0) %>%
-             filter(Year != 2017) %>%
+# Select for focal years
+# Retain only unique Affiliation groups for a given paper 
+affil_hist = authors %>%
+             filter(Year >= 1969 & Year <= 2016) %>%
              group_by(Year, AffiliationGroup) %>%
              distinct(AffiliationGroup, Paper_ID)
 
