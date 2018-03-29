@@ -2,7 +2,6 @@
 #' assign authors to disciplinary categories based on their institutional affiliations 
 #'
 #' Written by AIK based on original script by NKW, and edited by KJF and CCC
-#' Last edits by KJF on 7 Mar 2018
 
 #### Install and load packages #### 
 #install.packages('pacman')
@@ -10,8 +9,9 @@ pacman::p_load(tidyverse, stringr)
 
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
-  select("paper_ID", "AUTHOR2", "Affiliation1", "Affiliation2", "YEAR") # Retain only these columns
-colnames(raw)[colnames(raw) == "AUTHOR2"] = "AUTHOR"
+  select(paper_ID, AUTHOR2, Affiliation1, Affiliation2, YEAR, DOI) %>%  # Retain only these columns
+  rename(AUTHOR = AUTHOR2)
+
 #### Read in categorization keywords and reshape from long to wide ####
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
   group_by(category) %>% mutate(id=1:n()) %>% # group by category
@@ -37,13 +37,15 @@ matchUp <- data.frame() %>% bind_rows(list(  # Assign discipline categories to g
   ES = c("EarthScience", "EnvironmentalBiology", "LifeScience", "InterdisciplinaryEnvironmental")))
 
 #### Create the author database ####
-affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
-  #in loop to have columns with c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author")
+affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be populated 
+  #in loop to have columns with c("Paper_ID", "DOI", Affiliation_ID", "Year", 
+  #"Keyword", "AffiliationGroup", "ListedAffiliation", "Author", "Author_ID")
 authorDB = c(0)
 rownamecounter = 1
 options(warn = -1) # turning off warnings for inner concatenation 
 for (jj in 2:length(raw$Affiliation1)) {
   paperNum = raw$paper_ID[jj] # unique paper ID
+  DOI = as.character(raw$DOI[jj]) # DOI pulled in Web of Science 
   currYear = as.numeric(as.character(raw$YEAR[jj])) #year in which paper was published
   authorsAndAffils = c(0, 0)
   affiliations = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\[.*?\\]")) 
@@ -143,7 +145,7 @@ for (jj in 2:length(raw$Affiliation1)) {
     colnames(authorsAndAffils) = c("Author", "Affiliation") # add column names
     paperAffilNumber = 1
     for (i in 1:nrow(authorsAndAffils)) {
-      thisRow = c(rep(0, 8))
+      thisRow = c(rep(0, 9))
       keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                     paste(keywords$Remove, collapse = "|"))
       if (!is.na(keyword_matched)) {
@@ -152,18 +154,19 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
         author_matched = str_extract(tolower(trimws(as.character(authorsAndAffils[i,1]))), 
                                       paste(tolower(authorDB), collapse = "|"))
-        thisRow[5] = "Remove"
+        thisRow[6] = "Remove"
         thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
-        thisRow[2] = paperAffilNumber #paper ID number
-        thisRow[3] = as.numeric(as.character(raw$YEAR[jj])) # year of paper
-        thisRow[4] = keyword_matched # identifies the words in the affiliation that matched the disciplinary keywords
-        thisRow[6] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
-        thisRow[7] = as.character(authorsAndAffils[i,1]) # author's name
+        thisRow[2] = DOI # paper DOI
+        thisRow[3] = paperAffilNumber #paper ID number
+        thisRow[4] = as.numeric(as.character(raw$YEAR[jj])) # year of paper
+        thisRow[5] = keyword_matched # identifies the words in the affiliation that matched the disciplinary keywords
+        thisRow[7] = as.character(authorsAndAffils[i,2]) # original affiliation from paper
+        thisRow[8] = as.character(authorsAndAffils[i,1]) # author's name
         if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
           authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
-          thisRow[8] = length(authorDB) - 1
+          thisRow[9] = length(authorDB) - 1
         } else {
-          thisRow[8] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
+          thisRow[9] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
         }
         print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |Remove|"))
       } else {
@@ -184,17 +187,18 @@ for (jj in 2:length(raw$Affiliation1)) {
             author_matched = str_extract(tolower(trimws(as.character(authorsAndAffils[i,1]))), 
                                          paste(tolower(authorDB), collapse = "|"))
             thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
-            thisRow[2] = paperAffilNumber
-            thisRow[3] = as.numeric(as.character(raw$YEAR[jj]))
-            thisRow[4] = keyword_matched
-            thisRow[5] = groups[z]
-            thisRow[6] = as.character(authorsAndAffils[i,2])
-            thisRow[7] = as.character(authorsAndAffils[i,1])
+            thisRow[2] = DOI
+            thisRow[3] = paperAffilNumber
+            thisRow[4] = as.numeric(as.character(raw$YEAR[jj]))
+            thisRow[5] = keyword_matched
+            thisRow[6] = groups[z]
+            thisRow[7] = as.character(authorsAndAffils[i,2])
+            thisRow[8] = as.character(authorsAndAffils[i,1])
             if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
               authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
-              thisRow[8] = length(authorDB) - 1
+              thisRow[9] = length(authorDB) - 1
             } else {
-              thisRow[8] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
+              thisRow[9] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
             }
             print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was assigned to |", groups[z], "|"))
             break
@@ -203,17 +207,18 @@ for (jj in 2:length(raw$Affiliation1)) {
             author_matched = str_extract(tolower(trimws(as.character(authorsAndAffils[i,1]))), 
                                          paste(tolower(authorDB), collapse = "|"))
             thisRow[1] = as.numeric(as.character(raw$paper_ID[jj]))
-            thisRow[2] = paperAffilNumber
-            thisRow[3] = as.numeric(as.character(raw$YEAR[jj]))
-            thisRow[4] = "NoMatch"
-            thisRow[5] = "Unmatched"
-            thisRow[6] = as.character(authorsAndAffils[i,2])
-            thisRow[7] = as.character(authorsAndAffils[i,1])
+            thisRow[2] = DOI
+            thisRow[3] = paperAffilNumber
+            thisRow[4] = as.numeric(as.character(raw$YEAR[jj]))
+            thisRow[5] = "NoMatch"
+            thisRow[6] = "Unmatched"
+            thisRow[7] = as.character(authorsAndAffils[i,2])
+            thisRow[8] = as.character(authorsAndAffils[i,1])
             if (is.na(author_matched) || length(which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1]))))) == 0) {
               authorDB = c(authorDB, trimws(as.character(authorsAndAffils[i,1])))
-              thisRow[8] = length(authorDB) - 1
+              thisRow[9] = length(authorDB) - 1
             } else {
-              thisRow[8] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
+              thisRow[9] = which(tolower(authorDB) == tolower(trimws(as.character(authorsAndAffils[i,1])))) - 1
             }
             print(paste0("Affiliation: ", as.character(authorsAndAffils[i,2]), " was not assigned"))
           }
@@ -230,7 +235,8 @@ for (jj in 2:length(raw$Affiliation1)) {
 } # suppressing warning because loop concatenates multiple instances of the same paper IDs and treats it as a dataframe
 options(warn = 0)
 affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationDataFrame),])
-colnames(affiliationDataFrame) = c("Paper_ID", "Affiliation_ID", "Year", "Keyword", "AffiliationGroup", "OriginalAffiliation", "Author", "Author_ID")
+colnames(affiliationDataFrame) = c("Paper_ID", "DOI", "Affiliation_ID", "Year", 
+                                   "Keyword", "AffiliationGroup", "ListedAffiliation", "Author", "Author_ID")
 
 withoutUnmatched = affiliationDataFrame[affiliationDataFrame$Keyword != "NoMatch",]
 unmatchedEntries = affiliationDataFrame[affiliationDataFrame$Keyword == "NoMatch",]
