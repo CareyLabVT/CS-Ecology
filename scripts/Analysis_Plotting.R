@@ -69,9 +69,6 @@ ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
   mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T)) %>% # Sum of collaborative papers per year
   full_join(., Papers_per_year) 
 
-ES_and_CS_papers <- ES_collaborations %>%
-  
-
 ES_collab_frequency <- ES_collaborations %>%
              gather(key = Collaboration, value = Num_Collab_Papers, ESCS:ESSS, 
                     -(Total_Collab_Papers:Total_Annual_Papers)) %>%
@@ -103,10 +100,10 @@ a <- ggplot(prop_collab, aes(x = Year, y = Value, col = Metric)) + mytheme +
   geom_line(lwd = 1.05) + 
   geom_point(size = 2) +
   #geom_smooth() +
-  scale_y_continuous(limits = c(0, 400)) +
+  scale_y_continuous(limits = c(0, 400), breaks = seq(0,400, 50)) +
   scale_x_continuous(limits = c(1973, 2016), breaks=seq(1975,2015,5)) + 
   scale_colour_manual(values = c('black', 'gray50', 'red')) +
-  labs(y = "Papers published", title = "Total Papers") +
+  labs(y = expression(paste("Papers published in", italic("Ecology")))) +
   theme(legend.position = c(0,1), legend.justification = c(0,1), legend.title = element_blank()) 
 
 ggplot(ES_collaborations, aes(x = Year, y =  round((Total_Collab_Papers / Total_Annual_Papers), 2))) + mytheme + 
@@ -114,13 +111,13 @@ ggplot(ES_collaborations, aes(x = Year, y =  round((Total_Collab_Papers / Total_
   geom_smooth(color= 'black') +
   scale_y_continuous(limits = c(0, 0.25)) +
   scale_x_continuous() + 
-  labs(y = "Proportion of papers published", title = "Collaborative Papers")
+  labs(y = expression(paste("Proportion of papers published in", italic("Ecology"))), title = "Collaborative Papers")
 
 # Plot frequencies of collaborations among groups ####
 # Frequency of collaborations among all papers: Figure 1B
 b <- ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collaboration)) + mytheme + 
   geom_col() + 
-  labs(x = "Year", y = "Relative frequency per year", title = "Collaborative Papers") + 
+  labs(x = "Year", y = "Proportion of collaborative papers") + 
   scale_x_continuous(expand = c(0,0), limits = c(1973, 2016), breaks=seq(1975,2015,5)) +
   scale_y_continuous(expand = c(0,0)) + 
   scale_fill_manual("Discipline", values = colors) 
@@ -128,11 +125,11 @@ b <- ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collabor
 # Frequency within Collaborative Papers: Env Sci and other disciplines 
 ggplot(ES_collab_frequency, aes(x = Year, y = OverallFreq, fill = Collaboration)) + mytheme + 
   geom_col() + 
-  labs(x = "Year", y = "Overall frequency per year") + 
+  labs(x = "Year", y = "Overall frequency") + 
   scale_x_continuous(expand = c(0,0), limits = c(1973, 2016), breaks=seq(1975,2015,5)) +
   scale_y_continuous(expand = c(0,0), limits=c(0,0.25)) + 
   scale_fill_manual("Discipline", values = colors) 
 
 
 # Figure 1 panel: ####
-plot_grid(a, b, nrow = 1, align='hv')
+plot_grid(a, b, nrow = 1, labels = c('A', 'B'), rel_widths = c(1, 1.4))
