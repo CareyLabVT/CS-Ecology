@@ -5,15 +5,24 @@
 # Load packages ####
 # install.packages('pacman') 
 pacman::p_load(tidyverse, cowplot) # Install and load libraries
+author_affiliations <- read_csv('./output_data/author_affiliations.csv')
 
 # Load author categorization and count affiliations per paper #### 
-affiliation_groups <- read_csv('./output_data/author_affiliations.csv') %>% # Load author categorizations
+affiliation_groups <- author_affiliations %>% 
   filter(Year >= 1969 & Year <= 2016) %>% # Select for focal years
   group_by(Year, AffiliationGroup) %>%
   count(AffiliationGroup, Paper_ID) %>% # Count authors per affiliation for each paper
   rename(Author_Count = n)
 
-# Calculate papers per year: total papers and papers with a CS author ####
+# Calculate author and paper metrics ####
+# Total authors with non-governmental affiliations
+authors_retained <- author_affiliations %>% 
+  filter(Year >= 1969 & Year <= 2016, # Select for focal years
+         AffiliationGroup != "Remove") %>% # Omit government-affiliated authors
+  summarize(Authors_Retained = n_distinct(Author_ID))
+
+print(authors_retained)
+
 # Total papers per year: 1972-2016
 Papers_per_year <- affiliation_groups %>%
   group_by(Year) %>%
