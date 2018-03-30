@@ -24,6 +24,7 @@ CS_subset <- read_csv('./output_data/author_affiliations.csv') %>% # Load author
   mutate(SearchString = paste(Author, ListedAffiliation, sep = ' ')) %>% # Concatenate author and affiliation
   mutate(ManualKeyword = '', ManualAffiliation = '') # Add empty column for validator to assign keyword & affiliation
 
+write_csv(CS_subset, './output_data/validation/CSvalidation.csv') # Export computer science authors as csv to validation subfolder
 
 #### Compare completed validation to automated author affiliation ####
 # Read in author affiliations based on Author_Categorization script
