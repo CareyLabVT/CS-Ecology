@@ -17,6 +17,14 @@ subset <- read_csv('./output_data/author_affiliations.csv') %>% # Load author af
   
 write_csv(subset, './output_data/validation/validation.csv') # Export as csv to validation subfolder
 
+#### Manually check all of the CS authors 
+CS_subset <- read_csv('./output_data/author_affiliations.csv') %>% # Load author affiliations
+  filter(AffiliationGroup == "CS") %>% # Just pick out the CS authors 
+  select(-Keyword, -AffiliationGroup) %>% # Omit algorithm-assigned affiliations
+  mutate(SearchString = paste(Author, ListedAffiliation, sep = ' ')) %>% # Concatenate author and affiliation
+  mutate(ManualKeyword = '', ManualAffiliation = '') # Add empty column for validator to assign keyword & affiliation
+
+
 #### Compare completed validation to automated author affiliation ####
 # Read in author affiliations based on Author_Categorization script
 author_affiliations <- read_csv('./output_data/author_affiliations.csv')
