@@ -63,7 +63,9 @@ mismatches <- validation_check %>%
 
 # Calculate total number of mismatches of validation entries
 mismatch_metrics <- mismatches %>%
-  mutate(Total_Mismatches = sum(N_Mismatches)) %>%
+  mutate(Total_Mismatches = sum(N_Mismatches),
+         Prop_Mismatches = round(Total_Mismatches/ nrow(validation_check),2)) %>%
   filter(ManualGroup != "UNKNOWN") %>%
-  mutate(Non_UNKNOWN_Mismatches = sum(N_Mismatches)) %>%
+  mutate(Non_UNKNOWN_Mismatches = sum(N_Mismatches),
+         Prop_Non_UNKNOWN_Mismatches = round(Non_UNKNOWN_Mismatches / nrow(validation_check),2)) %>%
   distinct(Total_Mismatches, Prop_Mismatches, Non_UNKNOWN_Mismatches, Prop_Non_UNKNOWN_Mismatches)
