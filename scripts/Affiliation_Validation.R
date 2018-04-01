@@ -55,6 +55,8 @@ validation_check <- right_join(assigned_affiliations, manual_validation,
                               by = c("Paper_ID", "ListedAffiliation", "Author")) %>%
   mutate(Match = ifelse(AffiliationGroup == ManualGroup, "YES", "NO")) # Add indicator of Affiliation match
 
+write_csv(validation_check, './output_data/validation/validation_matches.csv')
+
 # Summarize number of mis-matched affiliations between categorization script and manual validation
 mismatches <- validation_check %>%
   filter(Match == "NO") %>%
