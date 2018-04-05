@@ -70,7 +70,8 @@ for (jj in 2:length(raw$Affiliation1)) {
       for (j in 1:length(authors)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
       }
-    } else if (length(affiliations) == 2) { # probably just a dual affiliation for everyone
+    } else if (length(affiliations) == 2 && (substr(affiliations[1], 1, 5) == substr(affiliations[2], 1, 5))) { # probably just a dual affiliation for everyone
+      # added 4/3/18: check whether affiliations start with same thing, then probably dual (look at paper_ID = 4672 for why not to assume otherwise)
       for (j in 1:length(authors)) { # give everyone each
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[1]))))
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[2]))))
