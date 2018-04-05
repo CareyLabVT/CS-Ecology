@@ -42,6 +42,7 @@ affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be
   #"Keyword", "AffiliationGroup", "ListedAffiliation", "Author", "Author_ID")
 authorDB = c(0)
 rownamecounter = 1
+excludedNums = c(6125, 4569, 9155, 9693) # paper_IDs we've concluded can't be properly matched
 options(warn = -1) # turning off warnings for inner concatenation 
 for (jj in 2:length(raw$Affiliation1)) {
   paperNum = raw$paper_ID[jj] # unique paper ID
@@ -60,7 +61,8 @@ for (jj in 2:length(raw$Affiliation1)) {
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
-  if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 )) {#(length(authors) == 0 && length(affiliations)>0) {
+  if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 )
+      && (length(which(paperNum == excludedNums)) == 0)) {#(length(authors) == 0 && length(affiliations)>0) {
     authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
@@ -70,8 +72,8 @@ for (jj in 2:length(raw$Affiliation1)) {
       for (j in 1:length(authors)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
       }
-    } else if (length(affiliations) == 2 && (substr(affiliations[1], 1, 5) == substr(affiliations[2], 1, 5))) { # probably just a dual affiliation for everyone
-      # added 4/3/18: check whether affiliations start with same thing, then probably dual (look at paper_ID = 4672 for why not to assume otherwise)
+    } else if (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))) { # probably just a dual affiliation for everyone
+      # added 4/3/18 (AIK): check whether affiliations start with same thing, then probably dual (look at paper_ID = 7863 for why not to assume otherwise)
       for (j in 1:length(authors)) { # give everyone each
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[1]))))
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[2]))))
@@ -85,19 +87,24 @@ for (jj in 2:length(raw$Affiliation1)) {
         affiliationRe = trimws(unlist(strsplit(as.character(raw$Affiliation2[jj]), "\\(reprint author),.*?")) )
         authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(affiliationRe[1]), trimws(affiliationRe[2]))))
         authors = authors[authors != affiliationRe[1]]
-        affiliations = trimws(affiliations[trimws(affiliations) != trimws(affiliationRe[2])])
+        affiliations = trimws(affiliations[(trimws(affiliations) != trimws(affiliationRe[2])) &&
+                                           (substr(affiliations, 1, 10) != substr(affiliationRe[2], 1, 10))])
+        # added 4/3/18 (AIK): check whether two are sufficiently similar as well due to paper_ID = 4672
       }
       for (j in 1:length(authors)) {
         if (length(authors) == length(affiliations)) {
           authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
-        } else if (giveAll) {
+        } else if (giveAll && ((length(affiliations) == 1) || 
+                   (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))))) { # causing problem in paper_ID == 5762
+          # added 4/3/18 (AIK): changed to reflect that we should only be giving all under the same circumstances
+          # as above (1 affil or 2 affils that begin similarly, not always)
           for (zz in 1:length(affiliations)) {
             authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[zz])))
           }
         }
       }
     }
-  } else if (length(affiliations) > 0) {
+  } else if (length(affiliations) > 0 && length(which(paperNum == excludedNums)) == 0) {
     authors = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\["))
     for (q in 1:length(authors)) {
       authors[q] = gsub("\\].*\\[", "", authors[q])
