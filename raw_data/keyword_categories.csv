@@ -353,7 +353,7 @@ EnvironmentalBiology,ctr no studies
 EnvironmentalBiology,ismer
 EnvironmentalBiology,marinas
 EnvironmentalBiology,ciencias mar
-EnvironmentalBiology,grönlandlehre
+EnvironmentalBiology,gršnlandlehre
 InterdisciplinaryEnvironmental,global change
 EnvironmentalBiology,leidy lab
 Remove,inst wsl
@@ -487,3 +487,5 @@ Remove,usfws
 Remove,us dept interior
 Remove,us doe
 Remove,natl monument
+Remove,queensland dept sci informat technol & innovat
+Remove,ufz helmholtz ctr environm res
