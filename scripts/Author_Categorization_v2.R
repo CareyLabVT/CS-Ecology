@@ -91,15 +91,17 @@ for (jj in 2:length(raw$Affiliation1)) {
                                            (substr(affiliations, 1, 10) != substr(affiliationRe[2], 1, 10))])
         # added 4/3/18 (AIK): check whether two are sufficiently similar as well due to paper_ID = 4672
       }
-      for (j in 1:length(authors)) {
-        if (length(authors) == length(affiliations)) {
-          authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
-        } else if (giveAll && ((length(affiliations) == 1) || 
-                   (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))))) { # causing problem in paper_ID == 5762
-          # added 4/3/18 (AIK): changed to reflect that we should only be giving all under the same circumstances
-          # as above (1 affil or 2 affils that begin similarly, not always)
-          for (zz in 1:length(affiliations)) {
-            authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[zz])))
+      if (length(authors) > 0) {
+        for (j in 1:length(authors)) {
+          if (length(authors) == length(affiliations)) {
+            authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
+          } else if (giveAll && ((length(affiliations) == 1) || 
+                     (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))))) { # causing problem in paper_ID == 5762
+            # added 4/3/18 (AIK): changed to reflect that we should only be giving all under the same circumstances
+            # as above (1 affil or 2 affils that begin similarly, not always)
+            for (zz in 1:length(affiliations)) {
+              authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[zz])))
+            }
           }
         }
       }
