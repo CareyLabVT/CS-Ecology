@@ -61,8 +61,8 @@ for (jj in 2:length(raw$Affiliation1)) {
     affiliations = c(unlist(strsplit(as.character(affiliations), ";"))) # separates each affiliation with a semicolon
   }
   affiliations = affiliations[(affiliations != "")] # remove empty entries
-  if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 )
-      && (length(which(paperNum == excludedNums)) == 0)) {#(length(authors) == 0 && length(affiliations)>0) {
+  if (goHere || (trimws(authors) == trimws(affiliations) && length(affiliations) > 0 ))
+      {
     authors = trimws(c(unlist(strsplit(as.character(raw$AUTHOR[jj]), ";"))))
     if (length(affiliations) == 1) { # create a matrix with the first column = authors and the second column = their affiliation
       for (j in 1:length(authors)) {
@@ -106,7 +106,7 @@ for (jj in 2:length(raw$Affiliation1)) {
         }
       }
     }
-  } else if (length(affiliations) > 0 && length(which(paperNum == excludedNums)) == 0) {
+  } else if (length(affiliations) > 0) {
     authors = unlist(strsplit(as.character(raw$Affiliation1[jj]), "\\["))
     for (q in 1:length(authors)) {
       authors[q] = gsub("\\].*\\[", "", authors[q])
