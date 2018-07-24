@@ -250,6 +250,6 @@ colnames(affiliationDataFrame) = c("Paper_ID", "DOI", "Affiliation_ID", "Year",
 
 withoutUnmatched = affiliationDataFrame[affiliationDataFrame$Keyword != "NoMatch",]
 unmatchedEntries = affiliationDataFrame[affiliationDataFrame$Keyword == "NoMatch",]
-write_csv(withoutUnmatched,"./output_data/author_affiliations.csv")
-write_csv(unmatchedEntries,"./output_data/unmatched_authors.csv")
+#write_csv(withoutUnmatched,"./output_data/author_affiliations.csv")
+#write_csv(unmatchedEntries,"./output_data/unmatched_authors.csv")
 write_csv(affiliationDataFrame,"./output_data/matched_unmatched.csv")
