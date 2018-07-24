@@ -42,7 +42,6 @@ affiliationDataFrame = c(0, 0, 0, 0, 0, 0, 0, 0, 0) # Initialize dataframe to be
   #"Keyword", "AffiliationGroup", "ListedAffiliation", "Author", "Author_ID")
 authorDB = c(0)
 rownamecounter = 1
-excludedNums = c(6125, 4569, 9155, 9693) # paper_IDs we've concluded can't be properly matched
 options(warn = -1) # turning off warnings for inner concatenation 
 for (jj in 2:length(raw$Affiliation1)) {
   paperNum = raw$paper_ID[jj] # unique paper ID
