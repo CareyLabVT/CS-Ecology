@@ -10,7 +10,8 @@ pacman::p_load(tidyverse, stringr)
 #### Read in raw data from Web of Science #### 
 raw = read.csv("./raw_data/Ecology_FullRecords.csv") %>% # Load Web of Science entries
   select(paper_ID, AUTHOR2, Affiliation1, Affiliation2, YEAR, DOI) %>%  # Retain only these columns
-  rename(AUTHOR = AUTHOR2)
+  rename(AUTHOR = AUTHOR2) %>%
+  filter(YEAR < 2017)
 
 #### Read in categorization keywords and reshape from long to wide ####
 keywords <- read_csv('./raw_data/keyword_categories.csv', trim_ws = FALSE) %>% # load keywords long format
