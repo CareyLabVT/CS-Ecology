@@ -1,6 +1,5 @@
 #' Load Web of Science records pulled for Ecology journal articles and
 #' assign authors to disciplinary categories based on their institutional affiliations 
-#'
 #' Written by AIK based on original script by NKW, and edited by KJF and CCC
 
 #### Install and load packages #### 
@@ -72,9 +71,8 @@ for (jj in 2:length(raw$Affiliation1)) {
       for (j in 1:length(authors)) {
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
       }
-    } else if (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))) { # probably just a dual affiliation for everyone
-      # added 4/3/18 (AIK): check whether affiliations start with same thing, then probably dual (look at paper_ID = 7863 for why not to assume otherwise)
-      for (j in 1:length(authors)) { # give everyone each
+    } else if (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))) { 
+      for (j in 1:length(authors)) { 
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[1]))))
         authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], trimws(affiliations[2]))))
       }
@@ -89,16 +87,14 @@ for (jj in 2:length(raw$Affiliation1)) {
         authors = authors[authors != affiliationRe[1]]
         affiliations = trimws(affiliations[(trimws(affiliations) != trimws(affiliationRe[2])) &&
                                            (substr(affiliations, 1, 10) != substr(affiliationRe[2], 1, 10))])
-        # added 4/3/18 (AIK): check whether two are sufficiently similar as well due to paper_ID = 4672
       }
       if (length(authors) > 0) {
         for (j in 1:length(authors)) {
           if (length(authors) == length(affiliations)) {
             authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[j])))
           } else if (giveAll && ((length(affiliations) == 1) || 
-                     (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))))) { # causing problem in paper_ID == 5762
-            # added 4/3/18 (AIK): changed to reflect that we should only be giving all under the same circumstances
-            # as above (1 affil or 2 affils that begin similarly, not always)
+                     (length(affiliations) == 2 && (substr(affiliations[1], 1, 10) == substr(affiliations[2], 1, 10))))) { 
+
             for (zz in 1:length(affiliations)) {
               authorsAndAffils = rbind(authorsAndAffils, t(c(authors[j], affiliations[zz])))
             }
@@ -141,7 +137,7 @@ for (jj in 2:length(raw$Affiliation1)) {
   for (k in 1:length(authors)) {
     if (is.null(ncol(authorsAndAffils)) || (length(authors[k]) > 0 &&
         length(grep(unlist(strsplit(authors[k], ","))[1], paste0(authorsAndAffils[,1], collapse = "|"))) == 0)) {
-      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(authors[k]), "1University1"))) # deliberately set to unmatched
+      authorsAndAffils = rbind(authorsAndAffils, t(c(trimws(authors[k]), "1University1"))) 
     }
   }
   authorsAndAffils = data.frame(authorsAndAffils) # convert matrix to dataframe
@@ -185,8 +181,7 @@ for (jj in 2:length(raw$Affiliation1)) {
           colnums = which(grepl(paste0(innerCategories, collapse = "|"), colnames(keywords))) # identify columns of keyword dataframe to analyze
           words = ""
           for (j in 1:length(colnums)) {
-            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant
-            # keywords 
+            words = c(words, as.character(na.exclude(pull(keywords[,colnums[j]])))) # combine all relevant keywords 
           }
           keyword_matched = str_extract(tolower(as.character(authorsAndAffils[i,2])), 
                                         paste0(as.character(words[2:length(words)]), collapse = "|"))
@@ -248,8 +243,4 @@ affiliationDataFrame = as.data.frame(affiliationDataFrame[2:nrow(affiliationData
 colnames(affiliationDataFrame) = c("Paper_ID", "DOI", "Affiliation_ID", "Year", 
                                    "Keyword", "AffiliationGroup", "ListedAffiliation", "Author", "Author_ID")
 
-withoutUnmatched = affiliationDataFrame[affiliationDataFrame$Keyword != "NoMatch",]
-unmatchedEntries = affiliationDataFrame[affiliationDataFrame$Keyword == "NoMatch",]
 #write_csv(withoutUnmatched,"./output_data/author_affiliations.csv")
-#write_csv(unmatchedEntries,"./output_data/unmatched_authors.csv")
-write_csv(affiliationDataFrame,"./output_data/matched_unmatched.csv")
