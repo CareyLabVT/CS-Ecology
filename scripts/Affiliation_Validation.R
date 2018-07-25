@@ -55,7 +55,7 @@ validation_check <- right_join(assigned_affiliations, manual_validation,
                               by = c("Paper_ID", "ListedAffiliation", "Author")) %>%
   mutate(Match = ifelse(AffiliationGroup == ManualGroup, "YES", "NO")) # Add indicator of Affiliation match
 
-write_csv(validation_check, './output_data/validation/validation_matches.csv')
+#write_csv(validation_check, './output_data/validation/validation_matches.csv')
 
 # Summarize number of mis-matched affiliations between categorization script and manual validation
 mismatches <- validation_check %>%
@@ -71,3 +71,9 @@ mismatch_metrics <- mismatches %>%
   mutate(Non_UNKNOWN_Mismatches = sum(N_Mismatches),
          Prop_Non_UNKNOWN_Mismatches = round(Non_UNKNOWN_Mismatches / nrow(validation_check),2)) %>%
   distinct(Total_Mismatches, Prop_Mismatches, Non_UNKNOWN_Mismatches, Prop_Non_UNKNOWN_Mismatches)
+
+#Total number of entries validated
+validation_check %>% summarize(n())
+
+# Non-unknown % correctly validated
+100 - mismatch_metrics$Prop_Non_UNKNOWN_Mismatches

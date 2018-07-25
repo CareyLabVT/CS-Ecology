@@ -94,14 +94,22 @@ ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
   full_join(., (affiliation_combos %>%                    # Env Sci and Social Sci
                   filter(ES >= 1 & SS >=1) %>% 
                   summarize(ESSS = n()))) %>%
+  full_join(., (affiliation_combos %>%                    # Env Sci and Social Sci
+                  filter(ES >= 1) %>% 
+                  summarize(ESES = n()))) %>%
+  arrange(Year)%>%
   mutate(Total_Collab_Papers = rowSums(.[2:6], na.rm=T),
          NonCS_Collab_Papers = Total_Collab_Papers - ESCS) %>% # Sum of collaborative papers per year
   full_join(., Papers_per_year) %>% # Add column of total papers per year
   mutate(ES_Only_Papers = Total_Annual_Papers - Total_Collab_Papers)
 
 # Sum ES collaborations with each other category 
-ES_collaborations %>%
-  summarise_all(sum, na.rm=T)
+collaboration_proportions <- ES_collaborations %>%
+  summarise_all(sum, na.rm=T) %>%
+  mutate(ESMA_prop = round(ESMA / Total_Annual_Papers *100,1),
+         ESSS_prop = round(ESSS / Total_Annual_Papers*100,1),
+         ESPS_prop = round(ESPS / Total_Annual_Papers*100,1), 
+         ESEG_prop = round(ESEG / Total_Annual_Papers*100,1))
 
 # Estimate proportion of papers that are collaborative between ES and anyone non-ES 
 Interdisc_collab <- ES_collaborations %>%
@@ -122,7 +130,7 @@ ES_collab_frequency <- ES_collaborations %>%
                     OverallFreq = Num_Collab_Papers / Total_Annual_Papers,
                     Collaboration = factor(Collaboration,
                                            levels=c("ESMA", "ESEG", "ESPS", "ESSS", "ESCS"), 
-                                           labels=c("Math", "Engineering", "Physical Science",
+                                           labels=c("Mathematics", "Engineering", "Physical Science",
                                                     "Social Science", "Computer Science")))
 
 
@@ -135,21 +143,21 @@ colors = c("gray20", "gray35", "gray60", "gray75", "red") # Red for CS collabora
 
 # Plot total papers and collaborative papers per year ####
 prop_collab <- left_join(ES_collaborations, CS_papers_by_year) %>% 
-  select(Year, NonCS_Collab_Papers, Total_Annual_Papers, Annual_CS_Papers) %>%
-  gather(Metric, Value, NonCS_Collab_Papers:Annual_CS_Papers) %>%
-  mutate(Metric = factor(Metric, levels= c("Total_Annual_Papers", "NonCS_Collab_Papers", "Annual_CS_Papers"), 
-                                           labels = c("Total Analyzed", "Non-Computer Science Collaborative", 
-                                                      "Computer Science Collaborative")))
+  select(Year, Total_Collab_Papers, NonCS_Collab_Papers, Total_Annual_Papers, Annual_CS_Papers) %>%
+  gather(Metric, Value, Total_Collab_Papers:Annual_CS_Papers) %>%
+  mutate(Metric = factor(Metric, levels= c("Total_Annual_Papers", "Total_Collab_Papers", "NonCS_Collab_Papers", "Annual_CS_Papers"), 
+                                           labels = c("Total Analyzed", "Total Interdisciplinary", "Non-Computer Science Collaborative", 
+                                                      "Computer Science")))
 
 # Paper Figure 1A
-a <- ggplot(prop_collab, aes(x = Year, y = Value, col = Metric)) + mytheme + 
+a <- ggplot(subset(prop_collab, Metric != "Non-Computer Science Collaborative"), aes(x = Year, y = Value, col = Metric)) + mytheme + 
   geom_line(lwd = 1.05) + 
   geom_point(size = 2) +
   #geom_smooth() +
   scale_y_continuous(limits = c(0, 400), breaks = seq(0,400, 50)) +
   scale_x_continuous(limits = c(1973, 2016), breaks=seq(1975,2015,5)) + 
   scale_colour_manual(values = c('black', 'gray50', 'red')) +
-  labs(y = expression(paste("Papers published in", italic("Ecology")))) +
+  labs(y = expression(paste("Papers analyzed from ", italic("Ecology")))) +
   theme(legend.position = c(0,1), legend.justification = c(0,1), legend.title = element_blank()) 
 
 ggplot(ES_collaborations, aes(x = Year, y =  round((Total_Collab_Papers / Total_Annual_Papers), 2))) + mytheme + 
@@ -163,8 +171,8 @@ ggplot(ES_collaborations, aes(x = Year, y =  round((Total_Collab_Papers / Total_
 # Frequency of collaborations among all papers: Figure 1B
 b <- ggplot(ES_collab_frequency, aes(x = Year, y = RelativeFreq, fill = Collaboration)) + mytheme + 
   geom_col() + 
-  labs(x = "Year", y = "Proportion of interdisciplinary collaborative papers") + 
-  scale_x_continuous(expand = c(0,0), limits = c(1973, 2016), breaks=seq(1975,2015,5)) +
+  labs(x = "Year", y = "Proportion of interdisciplinary papers") + 
+  scale_x_continuous(expand = c(0,0), limits = c(1971, 2016), breaks=seq(1975,2015,5)) +
   scale_y_continuous(expand = c(0,0)) + 
   scale_fill_manual("Discipline", values = colors) 
 
