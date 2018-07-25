@@ -1714,7 +1714,6 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 418,10.1890/15-0564.1,1,2016,fish,ES,"Fisheries & Oceans Canada, Pacific Biol Stn, 3190 Hammond Bay Rd, Nanaimo, BC V9T 6N7, Canada","Tucker, Strahan",1263
 418,10.1890/15-0564.1,2,2016,fish,ES,"Fisheries & Oceans Canada, Pacific Biol Stn, 3190 Hammond Bay Rd, Nanaimo, BC V9T 6N7, Canada","Trudel, Marc",1264
 418,10.1890/15-0564.1,3,2016,environm canada,Remove,"Environm Canada, Wildlife Res Div, RR 1 5421 Robertson Rd, Delta, BC V4K 3N2, Canada","Hipfner, J. Mark",1265
-419,10.1890/15-0220.1,1,2016,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Sect Ecoinformat & Biodivers, Aarhus, Denmark","Sandel, Brody",1266
 419,10.1890/15-0220.1,2,2016,comp sci,CS,"Aarhus Univ, Dept Comp Sci, Ctr Mass Data Algorithm MADALGO, Ny Munkegade, DK-8000 Aarhus, Denmark","Sandel, Brody",1266
 419,10.1890/15-0220.1,3,2016,comp sci,CS,"Aarhus Univ, Dept Comp Sci, Ctr Mass Data Algorithm MADALGO, Ny Munkegade, DK-8000 Aarhus, Denmark","Tsirogiannis, Constantinos",1267
 420,10.1890/15-0635.1,2,2016,bio,ES,"Stanford Univ, Dept Biol, Stanford, CA 94305 USA","Fukami, Tadashi",554
@@ -4210,7 +4209,6 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 1298,,3,2013,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Ecoinformat & Biodivers Grp, DK-8000 Aarhus C, Denmark","Flojgaard, Camilla",3134
 1298,,4,2013,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Ecoinformat & Biodivers Grp, DK-8000 Aarhus C, Denmark","Kissling, W. Daniel",2610
 1298,,5,2013,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Ecoinformat & Biodivers Grp, DK-8000 Aarhus C, Denmark","Lenoir, Jonathan",3135
-1298,,6,2013,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Ecoinformat & Biodivers Grp, DK-8000 Aarhus C, Denmark","Sandel, Brody",1266
 1298,,7,2013,ecoinfo,CS,"Aarhus Univ, Dept Biosci, Ecoinformat & Biodivers Grp, DK-8000 Aarhus C, Denmark","Svenning, Jens-Christian",2612
 1298,,8,2013,bio,ES,"Aarhus Univ, Dept Biosci, DK-8410 Ronde, Denmark","Sandom, Christopher",3132
 1298,,9,2013,bio,ES,"Aarhus Univ, Dept Biosci, DK-8410 Ronde, Denmark","Dalby, Lars",3133
@@ -6268,9 +6266,9 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 2550,NA,4,2012,evol,ES,"Univ Zurich, Inst Evolutionary Biol & Environm Studies, CH-8057 Zurich, Switzerland","Paul-Victor, Cloe",5012
 2550,NA,5,2012,evol,ES,"Univ Zurich, Inst Evolutionary Biol & Environm Studies, CH-8057 Zurich, Switzerland","Saner, Philippe",5013
 2550,NA,6,2012,evol,ES,"Univ Zurich, Inst Evolutionary Biol & Environm Studies, CH-8057 Zurich, Switzerland","Hector, Andy",542
-2550,NA,7,2012,computat,CS,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Turnbull, Lindsay A.",3487
-2550,NA,8,2012,computat,CS,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Purves, Drew W.",5014
-2550,NA,9,2012,computat,CS,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Hector, Andy",542
+2550,NA,7,2012,Microsoft,Remove,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Turnbull, Lindsay A.",3487
+2550,NA,8,2012,Microsoft,Remove,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Purves, Drew W.",5014
+2550,NA,9,2012,Microsoft,Remove,"Microsoft Res, Computat Ecol & Environm Sci Grp, Cambridge CB3 0FB, England","Hector, Andy",542
 2550,NA,10,2012,anim,ES,"Univ Sheffield, Dept Anim & Plant Sci, Sheffield S10 2TN, S Yorkshire, England","Atkinson, Rebecca L.",5015
 2550,NA,11,2012,anim,ES,"Univ Sheffield, Dept Anim & Plant Sci, Sheffield S10 2TN, S Yorkshire, England","Cunniff, Jennifer",5016
 2550,NA,12,2012,anim,ES,"Univ Sheffield, Dept Anim & Plant Sci, Sheffield S10 2TN, S Yorkshire, England","Goodenough, Anne",5017
@@ -6592,8 +6590,8 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 2624,NA,3,2012,env,ES,"Duke Univ, Nicholas Sch Environm, Durham, NC 27708 USA","Manzoni, Stefano",5204
 2624,NA,4,2012,env,ES,"Duke Univ, Nicholas Sch Environm, Durham, NC 27708 USA","Porporato, Amilcare",5205
 2624,NA,5,2012,eco,ES,"Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA","Schimel, Joshua P.",5206
-2625,NA,1,2012,informat ,CS,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Moran, Christopher J.",5207
-2625,NA,2,2012,informat ,CS,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Cochrane, Mark A.",5208
+2625,NA,1,2012,Geog Informat,ES,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Moran, Christopher J.",5207
+2625,NA,2,2012,Geog Informat,ES,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Cochrane, Mark A.",5208
 2626,NA,1,2012,us forest serv,Remove,"US Forest Serv, Rocky Mt Res Stn, Fire Sci Lab, Missoula, MT 59808 USA","Jolly, W. Matt",5209
 2626,NA,2,2012,us forest serv,Remove,"US Forest Serv, Rocky Mt Res Stn, Fire Sci Lab, Missoula, MT 59808 USA","Parsons, Russell",5210
 2626,NA,3,2012,us forest serv,Remove,"US Forest Serv, Rocky Mt Res Stn, Fire Sci Lab, Missoula, MT 59808 USA","Butler, Bret W.",5211
@@ -7750,7 +7748,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 2888,NA,4,2011,bio,ES,"Emory Univ, Dept Biol, Atlanta, GA 30322 USA","de Roode, Jacobus C.",5927
 2889,NA,1,2011,bio,ES,"Univ Calif Santa Barbara, Inst Collaborat Biotechnol, Santa Barbara, CA 93106 USA","Ananthasubramaniam, Bharath",5928
 2889,NA,2,2011,bio,ES,"Queens Univ, Dept Biol, Kingston, ON K7L 3N6, Canada","Nelson, William A.",5929
-2889,NA,3,2011,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, William S. C.",5930
+2889,NA,3,2011,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, William S. C.",5930
 2890,NA,1,2011,aquat,ES,"Univ Washington, Sch Aquat & Fishery Sci, Seattle, WA 98195 USA","Holtgrieve, Gordon W.",5460
 2890,NA,2,2011,aquat,ES,"Univ Washington, Sch Aquat & Fishery Sci, Seattle, WA 98195 USA","Schindler, Daniel E.",903
 2890,NA,3,2011,bio,ES,"Univ Washington, Dept Biol, Seattle, WA 98195 USA","Holtgrieve, Gordon W.",5460
@@ -8605,8 +8603,8 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 3098,10.1890/09-1359.1,5,2010,eco,ES,"Wageningen Univ, Resource Ecol Grp, NL-6700 AA Wageningen, Netherlands","van der Waal, C.",6429
 3098,10.1890/09-1359.1,6,2010,eco,ES,"Wageningen Univ, Resource Ecol Grp, NL-6700 AA Wageningen, Netherlands","Prins, H. H. T.",6430
 3098,10.1890/09-1359.1,7,2010,nat,ES,"Colorado State Univ, Nat Resource Ecol Lab, Ft Collins, CO 80523 USA","Coughenour, M. B.",6431
-3098,10.1890/09-1359.1,8,2010,informat ,CS,"Int Inst Geoinformat Sci & Earth Observat, Dept Nat Resources, NL-7500 AA Enschede, Netherlands","Skidmore, A. K.",6432
-3098,10.1890/09-1359.1,9,2010,informat ,CS,"Int Inst Geoinformat Sci & Earth Observat, Dept Nat Resources, NL-7500 AA Enschede, Netherlands","Knox, N. M.",6433
+3098,10.1890/09-1359.1,8,2010,Geoinformat,ES,"Int Inst Geoinformat Sci & Earth Observat, Dept Nat Resources, NL-7500 AA Enschede, Netherlands","Skidmore, A. K.",6432
+3098,10.1890/09-1359.1,9,2010,Geoinformat,ES,"Int Inst Geoinformat Sci & Earth Observat, Dept Nat Resources, NL-7500 AA Enschede, Netherlands","Knox, N. M.",6433
 3098,10.1890/09-1359.1,10,2010,nat,ES,"Univ KwaZulu Natal, Sch Biol & Conservat Sci, ZA-4000 Durban, South Africa","Slotow, R.",6434
 3099,10.1890/09-1033.1,1,2010,geol survey,Remove,"US Geol Survey, Gainesville, FL 32611 USA","Dorazio, Robert M.",2956
 3099,10.1890/09-1033.1,2,2010,"stat,",MA,"Univ Florida, Dept Stat, Gainesville, FL 32611 USA","Dorazio, Robert M.",2956
@@ -8654,7 +8652,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 3107,10.1890/09-1931.1,9,2010,eco,ES,"Univ Bern, Inst Ecol & Evolut, Div Conservat Biol, CH-3012 Bern, Switzerland","Schaub, Michael",2915
 3107,10.1890/09-1931.1,10,2010,ornit,ES,"Swiss Ornithol Inst, CH-6204 Sempach, Switzerland","Schaub, Michael",2915
 3107,10.1890/09-1931.1,11,2010,nat,ES,"CNERA Faune Montagne, Off Natl Chasse & Faune Sauvage, F-38610 Gieres, France","Toigo, Carole",6456
-3108,10.1890/09-0865.1,1,2010,informat ,CS,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Wright, Christopher K.",6457
+3108,10.1890/09-0865.1,1,2010,Geog Informat,ES,"S Dakota State Univ, Geog Informat Sci Ctr Excellence, Brookings, SD 57007 USA","Wright, Christopher K.",6457
 3109,10.1890/09-1376.1,1,2010,lake,ES,"Lakehead Univ, Fac Forestry & Forest Environm, Thunder Bay, ON P7B 5E1, Canada","Bartels, Samuel F.",6458
 3109,10.1890/09-1376.1,2,2010,lake,ES,"Lakehead Univ, Fac Forestry & Forest Environm, Thunder Bay, ON P7B 5E1, Canada","Chen, Han Y. H.",6459
 3110,10.1890/09-1160.1,1,2010,geog,SS,"Univ Bayreuth, Dept Biogeog, D-95440 Bayreuth, Germany","Kreyling, Juergen",6460
@@ -11099,8 +11097,8 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 3730,10.1890/07-1993.1,1,2008,bio,ES,"Syracuse Univ, Dept Biol, Syracuse, NY 13244 USA","Segraves, Kari A.",7830
 3731,10.1890/07-1988.1,1,2008,zoo,ES,"Univ Cologne, Inst Zool, Dept Gen Ecol & Limnol, D-50939 Cologne, Germany","Becks, Lutz",7831
 3731,10.1890/07-1988.1,2,2008,zoo,ES,"Univ Cologne, Inst Zool, Dept Gen Ecol & Limnol, D-50939 Cologne, Germany","Arndt, Hartmut",7832
-3732,10.1890/07-0140.1,1,2008,bioinform,CS,"TA51A PS2, IRD, UMR AMAP BotAn & BioinforMat Architecture Plantes, F-34398 Montpellier 05, France","Pelissier, Raphael",7833
-3732,10.1890/07-0140.1,2,2008,bioinform,CS,"TA51A PS2, IRD, UMR AMAP BotAn & BioinforMat Architecture Plantes, F-34398 Montpellier 05, France","Couteron, Pierre",7834
+3732,10.1890/07-0140.1,1,2008,UMR AMAP,Remove,"TA51A PS2, IRD, UMR AMAP BotAn & BioinforMat Architecture Plantes, F-34398 Montpellier 05, France","Pelissier, Raphael",7833
+3732,10.1890/07-0140.1,2,2008,UMR AMAP,Remove,"TA51A PS2, IRD, UMR AMAP BotAn & BioinforMat Architecture Plantes, F-34398 Montpellier 05, France","Couteron, Pierre",7834
 3732,10.1890/07-0140.1,3,2008,pondichery,SS,"Inst Francais Pondichery, Pondicherry 605001, India","Couteron, Pierre",7834
 3732,10.1890/07-0140.1,4,2008,bio,ES,"Univ Lyon 1, CNRS, UMR 5558, Lab Biometrie & Biol Evolut, F-69622 Villeurbanne, France","Dray, Stephane",2452
 3733,10.1890/07-0201.1,1,2008,forest,ES,"Univ Canterbury, Sch Forestry, Christchurch 8140, New Zealand","Laliberte, Etienne",5376
@@ -11633,7 +11631,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 3872,10.1890/07-0365.1,1,2008,sociol,SS,"Univ Libre Bruxelles, Serv Bot Systemat & Phytosociol, B-1050 Brussels, Belgium","Barbier, Nicolas",8160
 3872,10.1890/07-0365.1,2,2008,env,ES,"Univ Oxford, Ctr Environm, ECI, Oxford OX1 3QP, England","Barbier, Nicolas",8160
 3872,10.1890/07-0365.1,3,2008,pondichery,SS,"Inst Francais Pondichery, Pondicherry 605001, India","Couteron, Pierre",7834
-3872,10.1890/07-0365.1,4,2008,bioinform,CS,"IRD UMR Bot & Bioinformat Architecture Plantes AM, F-34398 Montpellier 05, France","Couteron, Pierre",7834
+3872,10.1890/07-0365.1,4,2008,UMR,Remove,"IRD UMR Bot & Bioinformat Architecture Plantes AM, F-34398 Montpellier 05, France","Couteron, Pierre",7834
 3872,10.1890/07-0365.1,5,2008,phys ,PS,"Univ Libre Bruxelles, Serv Chim Phys & Biol Theor, B-1050 Brussels, Belgium","Lefever, Rene",8161
 3872,10.1890/07-0365.1,6,2008,phys ,PS,"Univ Libre Bruxelles, Serv Chim Phys & Biol Theor, B-1050 Brussels, Belgium","Lejeune, Olivier",8162
 3872,10.1890/07-0365.1,7,2008,eco,ES,"Univ Libre Bruxelles, FRIA, Lab Ecol Paysage, B-1050 Brussels, Belgium","Deblauwe, Vincent",8163
@@ -14931,7 +14929,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 5519,10.1890/01-0444,1,2003,min,ES,"Univ Minnesota, Dept Ecol Evolut & Behav, St Paul, MN 55108 USA","McFadden, JP",11776
 5519,10.1890/01-0444,2,2003,geog,SS," Univ Bern, Inst Geog, CH-3012 Bern, Switzerland","Eugster, W",11777
 5519,10.1890/01-0444,3,2003,arct,ES," Univ Alaska, Inst Arctic Biol, Fairbanks, AK 99775 USA","Chapin, FS",4177
-5520,10.1890/02-0536,1,2003,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Livingstone Tower,Richmond St, Glasgow G1 1XT, Lanark, Scotland.","Gurney, WSC",11055
+5520,10.1890/02-0536,1,2003,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Livingstone Tower,Richmond St, Glasgow G1 1XT, Lanark, Scotland.","Gurney, WSC",11055
 5521,10.1890/02-3108,1,2003,bio,ES,"Univ Basel, Dept Integrat Biol, Sect Conservat Biol, NLU, CH-4056 Basel, Switzerland","Mevi-Schutz, J",11780
 5521,10.1890/02-3108,2,2003,bio,ES,"Univ Basel, Dept Integrat Biol, Sect Conservat Biol, NLU, CH-4056 Basel, Switzerland","Erhardt, A",11781
 5522,10.1890/02-3115,1,2003,eco,ES,"Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA","Stewart-Oaten, A",11782
@@ -15726,7 +15724,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 5956,10.2307/3071936,1,2002,ent,ES,"Univ Calif Davis, Dept Entomol, Davis, CA 95616 USA","Karban, R",9791
 5956,10.2307/3071936,2,2002,bot,ES," Univ Washington, Dept Bot, Seattle, WA 98195 USA","Maron, J",12494
 5957,10.2307/3071937,1,2002,eco,ES,"Inst Ecosyst Studies, Box AB, Millbrook, NY 12545 USA.","Schauber, EM",10047
-5958,10.1890/0012-9658(2002)083[1226:POSEAG]2.0.CO;2,1,2002,informat ,CS,"Hokkaido Forest Res Inst, Greenery Res & Informat Ctr, Bibai, Hokkaido 0790198, Japan","Sato, T",12500
+5958,10.1890/0012-9658(2002)083[1226:POSEAG]2.0.CO;2,1,2002,Hokkaido Forest Res Inst,Remove,"Hokkaido Forest Res Inst, Greenery Res & Informat Ctr, Bibai, Hokkaido 0790198, Japan","Sato, T",12500
 5959,10.2307/3071939,1,2002,eco,ES,"Univ Calif Santa Barbara, Dept Ecol Evolut & Marine Biol, Santa Barbara, CA 93106 USA","Gaylord, B",10970
 5959,10.2307/3071939,2,2002,marine,ES," Univ Calif Santa Barbara, Inst Marine Sci, Santa Barbara, CA 93106 USA","Reed, DC",10969
 5959,10.2307/3071939,3,2002,bio,ES," Univ Calif Santa Cruz, Dept Biol, Santa Cruz, CA 95064 USA","Raimondi, PT",10968
@@ -16252,8 +16250,8 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 6237,10.1890/0012-9658(2001)082[1781:FSAESP]2.0.CO;2,1,2001,desert,ES,"Ben Gurion Univ Negev, Jacob Blaustein Inst Desert Res, Mitrani Dept Desert Ecol, Sede Boqer Campus, IL-84990 Sede Boqer, Israel.","Kotler, BP",11428
 6238,10.1890/0012-9658(2001)082[1205:LCAGTP]2.0.CO;2,1,2001,env,ES,"Duke Univ, Nicholas Sch Environm, Durham, NC 27708 USA","Urban, D",12935
 6238,10.1890/0012-9658(2001)082[1205:LCAGTP]2.0.CO;2,2,2001,nat,ES," Natl Ctr Ecol Anal & Synth, Santa Barbara, CA 93101 USA","Keitt, T",12936
-6239,10.1890/0012-9658(2001)082[1219:PPIRAE]2.0.CO;2,1,2001,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Speirs, DC",12937
-6239,10.1890/0012-9658(2001)082[1219:PPIRAE]2.0.CO;2,2,2001,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, WSC",11055
+6239,10.1890/0012-9658(2001)082[1219:PPIRAE]2.0.CO;2,1,2001,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Speirs, DC",12937
+6239,10.1890/0012-9658(2001)082[1219:PPIRAE]2.0.CO;2,2,2001,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, WSC",11055
 6240,,1,2001,nat,ES,"Natl Inst Environm Studies, Tsukuba, Ibaraki 3050053, Japan","Fukushima, M",12938
 6241,10.1890/0012-9658(2001)082[1247:DRTFAS]2.0.CO;2,1,2001,zoo,ES,"Univ British Columbia, Dept Zool, Vancouver, BC V6T 1Z4, Canada","Keeley, ER",12939
 6242,10.1890/0012-9658(2001)082[1260:MLOZSC]2.0.CO;2,1,2001,max planck,Remove,"Max Planck Inst Limnol, D-24306 Plon, Germany","Plath, K",12940
@@ -18318,7 +18316,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 6775,10.1890/13-1424.1,6,2015,marine,ES,"Pontificia Univ Catolica Chile, Ctr Marine Conservat, Dept Ecol, Santiago, Chile","Wieters, Evie A.",14136
 6775,10.1890/13-1424.1,7,2015,marine,ES,"Pontificia Univ Catolica Chile, Ctr Marine Conservat, Dept Ecol, Santiago, Chile","Navarrete, Sergio A.",5362
 6775,10.1890/13-1424.1,8,2015,bio,ES,"Rhodes Univ, Dept Biol, ZA-6140 Grahamstown, South Africa","Wieters, Evie A.",14136
-6775,10.1890/13-1424.1,9,2015,computat,CS,"Microsoft Res, Computat Ecol & Environm Sci, Cambridge CB1 2FB, England","Joppa, Lucas N.",14137
+6775,10.1890/13-1424.1,9,2015,Microsoft,Remove,"Microsoft Res, Computat Ecol & Environm Sci, Cambridge CB1 2FB, England","Joppa, Lucas N.",14137
 6775,10.1890/13-1424.1,10,2015,capita,Remove,"Univ Washington, Nat Capital Project, Sch Environm & Forest Sci, Seattle, WA 98195 USA","Wood, Spencer A.",14138
 6776,,1,2014,wild,ES,"Univ Florida, Dept Wildlife Ecol & Conservat, Gainesville, FL 32611 USA","Bruna, Emilio M.",5827
 6776,,2,2014,latin,SS,"Univ Florida, Ctr Latin Amer Studies, Gainesville, FL 32611 USA","Bruna, Emilio M.",5827
@@ -18937,7 +18935,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 6893,,2,2014,bio,ES,"Univ Wisconsin, Dept Biol Sci, Milwaukee, WI 53210 USA","Schnitzer, Stefan A.",7
 6893,,3,2014,smithsonian,Remove,"Smithsonian Trop Res Inst, Miami, FL 34002 USA","Schnitzer, Stefan A.",7
 6894,,1,2014,bioinform,CS,"Univ Montpellier 2, UMR AMAP Bot & bioinforMat Architecture Plantes, F-34398 Montpellier 5, France","Munoz, Francois",14417
-6894,,2,2014,bioinform,CS,"IRD, UMR AMAP Bot & bioinforMat Architecture Plantes, F-34398 Montpellier 5, France","Couteron, Pierre",7834
+6894,,2,2014,UMR AMAP,Remove,"IRD, UMR AMAP Bot & bioinforMat Architecture Plantes, F-34398 Montpellier 5, France","Couteron, Pierre",7834
 6895,,1,2014,geog,SS,"Univ Oxford, Sch Geog & Environm, Environm Change Inst, Oxford OX1 3QY, England","Doughty, Christopher E.",14418
 6895,,2,2014,geog,SS,"Univ Oxford, Sch Geog & Environm, Environm Change Inst, Oxford OX1 3QY, England","Malhi, Yadvinder",14419
 6895,,3,2014,geog,SS,"Univ Oxford, Sch Geog & Environm, Environm Change Inst, Oxford OX1 3QY, England","Arroyo, Luzmila",14420
@@ -20220,10 +20218,10 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 7436,10.1890/0012-9658(1998)079[2494:CLTAEP]2.0.CO;2,2,1998,lake,ES," Univ Virginia, Mt Lake Biol Stn, Pembroke, VA 24136 USA","Jaeger, RG",4467
 7437,10.1890/0012-9658(1998)079[2503:MDEOHQ]2.0.CO;2,1,1998,eco,ES,"Univ Helsinki, Dept Systemat & Ecol, Div Populat Biol, FIN-00014 Helsinki, Finland","Moilanen, A",12579
 7437,10.1890/0012-9658(1998)079[2503:MDEOHQ]2.0.CO;2,2,1998,eco,ES,"Univ Helsinki, Dept Systemat & Ecol, Div Populat Biol, FIN-00014 Helsinki, Finland","Hanski, I",12348
-7438,,1,1998,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, WSC",11055
-7438,,2,1998,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Veitch, AR",11779
-7438,,3,1998,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Cruickshank, I",15269
-7438,,4,1998,modelling sci,CS,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","McGeachin, G",15270
+7438,,1,1998,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Gurney, WSC",11055
+7438,,2,1998,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Veitch, AR",11779
+7438,,3,1998,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","Cruickshank, I",15269
+7438,,4,1998,Stat & Modelling,MA,"Univ Strathclyde, Dept Stat & Modelling Sci, Glasgow G1 1XH, Lanark, Scotland","McGeachin, G",15270
 7439,10.2307/176841,1,1998,"stat,",MA,"New Mexico State Univ, Ctr Stat, Las Cruces, NM 88003 USA","Gould, WR",12825
 7439,10.2307/176841,2,1998,geol survey,Remove," US Geol Survey, Biol Resources Div, Laurel, MD 20708 USA","Nichols, JD",8933
 7440,10.1890/0012-9658(1998)079[2539:AGTATD]2.0.CO;2,1,1998,evol,ES,"Univ Chicago, Comm Evolutionary Biol, Chicago, IL 60637 USA","Wardle, GM",15271
@@ -22232,7 +22230,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 8970,10.2307/1940753,2,1992,bio,ES,"MICHIGAN STATE UNIV,KELLOGG BIOL STN,HICKORY CORNERS,MI 49060","WILSON, DS",4316
 8971,10.2307/1940754,1,1992,zoo,ES,"UNIV WASHINGTON,DEPT ZOOL,SEATTLE,WA 98195","DWYER, G",15435
 8972,10.2307/1940755,1,1992,"math,",MA,"UNIV CALIF DAVIS,GRAD GRP APPL MATH,DAVIS,CA 95616","JAFFEE, B",16538
-8972,10.2307/1940755,2,1992,theoret dynam,CS," UNIV CALIF DAVIS,INST THEORET DYNAM,DAVIS,CA 95616","PHILLIPS, R",16539
+8972,10.2307/1940755,2,1992,theoret dynam,MA," UNIV CALIF DAVIS,INST THEORET DYNAM,DAVIS,CA 95616","PHILLIPS, R",16539
 8972,10.2307/1940755,3,1992,zoo,ES," UNIV CALIF DAVIS,DEPT ZOOL,DAVIS,CA 95616","MULDOON, A",16540
 8972,10.2307/1940755,4,1992,populat,ES," UNIV CALIF DAVIS,CTR POPULAT BIOL,DAVIS,CA 95616","MANGEL, M",11880
 8973,10.2307/1940756,1,1992,bio,ES,"UNIV CALIF BERKELEY,DEPT INTEGRAT BIOL,BERKELEY,CA 94720","GROSHOLZ, ED",9936
@@ -22444,8 +22442,8 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 9152,10.2307/1940588,1,1991,water,ES,"UNIV LOUISVILLE,WATER RESOURCES LAB,LOUISVILLE,KY 40292","HEMPHILL, N",15009
 9153,10.2307/1940589,1,1991,zoo,ES,"UNIV BRITISH COLUMBIA,DEPT ZOOL,ECOL GRP,VANCOUVER V6T 2A9,BC,CANADA","RICHARDSON, JS",16654
 9154,10.2307/1940590,1,1991,eco,ES,"SIMON FRASER UNIV,BEHAV ECOL RES GRP,BURNABY V5A 1S6,BC,CANADA","CARTAR, RV",11100
-9155,10.2307/1940591,1,1991,theoret dynam,CS,"UNIV CALIF DAVIS,INST THEORET DYNAM,DAVIS,CA 95616","HASTINGS, A",10967
-9155,10.2307/1940591,2,1991,theoret dynam,CS,"UNIV CALIF DAVIS,INST THEORET DYNAM,DAVIS,CA 95616","POWELL, T",16655
+9155,10.2307/1940591,1,1991,theoret dynam,MA,"UNIV CALIF DAVIS,INST THEORET DYNAM,DAVIS,CA 95616","HASTINGS, A",10967
+9155,10.2307/1940591,2,1991,env,ES,"UNIV CALIF DAVIS,DIV ENV STUD,DAVIS,CA 95616","POWELL, T",16655
 9157,10.2307/1940593,1,1991,bio,ES,"DARTMOUTH COLL,DEPT BIOL SCI,HANOVER,NH 03755","KIRK, KL",14910
 9158,10.2307/1940594,1,1991,bio,ES,"DARTMOUTH COLL,DEPT BIOL SCI,HANOVER,NH 03755","MACISAAC, HJ",16656
 9158,10.2307/1940594,2,1991,bio,ES,"DARTMOUTH COLL,DEPT BIOL SCI,HANOVER,NH 03755","GILBERT, JJ",2046
@@ -23034,7 +23032,7 @@ Paper_ID,DOI,Affiliation_ID,Year,Keyword,AffiliationGroup,ListedAffiliation,Auth
 9689,10.2307/1938429,1,1989,min,ES,"UNIV MINNESOTA,DEPT ECOL & BEHAV BIOL,MINNEAPOLIS,MN 55455","STERNER, RW",11263
 9692,,1,1989,marine,ES,"MARINE BIOL LAB,CTR ECOSYST,WOODS HOLE,MA 02543","CHAPIN, FS",4177
 9692,,2,1989,marine,ES,"MARINE BIOL LAB,CTR ECOSYST,WOODS HOLE,MA 02543","SHAVER, GR",3876
-9693,10.2307/1938433,1,1989,comp sci,CS,"UNIV MANITOBA,DEPT COMP SCI,WINNIPEG R3T 2N2,MANITOBA,CANADA","KENKEL, NC",16924
+9693,10.2307/1938433,1,1989,bot,ES,"UNIV MANITOBA,DEPT BOTANY,WINNIPEG R3T 2N2,MANITOBA,CANADA","KENKEL, NC",16924
 9693,10.2307/1938433,2,1989,comp sci,CS,"UNIV MANITOBA,DEPT COMP SCI,WINNIPEG R3T 2N2,MANITOBA,CANADA","HOSKINS, JA",16925
 9693,10.2307/1938433,3,1989,comp sci,CS,"UNIV MANITOBA,DEPT COMP SCI,WINNIPEG R3T 2N2,MANITOBA,CANADA","HOSKINS, WD",16926
 9695,10.2307/1938435,1,1989,forest,ES,"UNIV WASHINGTON,COLL FOREST RESOURCES,SEATTLE,WA 98195","OSAWA, A",16361
