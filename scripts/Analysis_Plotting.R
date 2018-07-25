@@ -52,11 +52,17 @@ Papers_per_year <- affiliation_groups %>%
   summarize(Total_Annual_Papers = n_distinct(Paper_ID))
 
 # PaperIDs that include a CS author; count of CS authors for those papers
-CS_authored_papers <- affiliation_groups %>%
-           filter(AffiliationGroup == "CS")
+CS_authored_papers <- papers_retained %>%
+  filter(AffiliationGroup == 'CS')
 
 # Number of papers with a CS-affiliated author
 print(n_distinct(CS_authored_papers$Paper_ID)) 
+
+# Number of CS-affiliated authors
+CS_authored_papers %>% summarize(n())
+
+# Number of distinct CS-affiliated authors
+print(n_distinct(CS_authored_papers$Author_ID)) 
 
 # Number of CS-affiliated papers by year
 CS_papers_by_year <- CS_authored_papers %>%
@@ -92,6 +98,10 @@ ES_collaborations <- full_join((affiliation_combos %>%    # Env Sci and Comp Sci
          NonCS_Collab_Papers = Total_Collab_Papers - ESCS) %>% # Sum of collaborative papers per year
   full_join(., Papers_per_year) %>% # Add column of total papers per year
   mutate(ES_Only_Papers = Total_Annual_Papers - Total_Collab_Papers)
+
+# Sum ES collaborations with each other category 
+ES_collaborations %>%
+  summarise_all(sum, na.rm=T)
 
 # Estimate proportion of papers that are collaborative between ES and anyone non-ES 
 Interdisc_collab <- ES_collaborations %>%
